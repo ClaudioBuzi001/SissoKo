@@ -1,0 +1,22 @@
+<msg>
+
+<list ROW_ID="@UID@" condition="@ISSTCA@">
+	<attributes ID="STCA TIMETABLE @KEY_ID@" 
+			behavior_if_empty="delete"		
+			side="GRP_TOP_LEFT" 
+			open_in_grp="true"
+			visible="false"
+			CLOSE_BUTTON_CALLBACK= "DUMMY"			
+		/>
+	<col key="col1" indata="@KEY_ID@" outdata="STCA NAME" />
+	<col key="col2" indata="@dateFr@" outdata="ACT DATE" />
+	<col key="col3" indata="@dateTo@" outdata="DEACT DATE"   />
+	<col key="col4" indata="@monFr@-@monTo@" outdata="MON"  col_width="100" />
+	<col key="col5" indata="@tueFr@-@tueTo@" outdata="TUE"   />
+	<col key="col6" indata="@wedFr@-@wedTo@" outdata="WED"   />
+	<col key="col7" indata="@thuFr@-@thuTo@" outdata="THU"   />
+	<col key="col8" indata="@friFr@-@friTo@" outdata="FRI"   />
+	<col key="col9" indata="@satFr@-@satTo@" outdata="SAT"   />
+	<col key="col10" indata="@sunFr@-@sunTo@" outdata="SUN"   />
+</list>
+</msg>

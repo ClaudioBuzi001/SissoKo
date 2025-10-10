@@ -1,0 +1,28 @@
+<msg>
+<list ROW_ID="@FLIGHT_NUM@" condition="@ISARR@">
+
+<attributes
+	ID					="ARR:@ADES@"
+	BEHAVIOR_IF_EMPTY	="delete"
+	GROUP				="ARR"
+	SIDE				="SFL:2"
+	SWAP				="true"
+	SORT				=""
+	LIST_TYPE			="OPAQUE"
+	multicolumnname		="ADES"
+/>
+<col key="col1"		indata="@CALLSIGN@"	outdata="CALLSIGN"	 row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE_ARR , DEFAULT=#fafafa)@"	row_middleClick="CONTEXT_MENU(MENU_FILE=Executive.xml, TITLE=EXECUTIVE)" row_leftClick="CONTEXT_MENU(MENU_FILE=Planner.xml,TITLE=PLANNER_MENU)" row_rightClick="CONTEXT_MENU(MENU_FILE=Flight.xml,TITLE=FLIGHT_MENU)"/>
+<col key="col2"	indata="@ATY@"			outdata="TYPE"		col_state="filteredVisible" />
+<col key="col3"	indata="@ETL@"			outdata="ETL/ATL"		col_state="filteredVisible"  row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW ,ORDER_ID=LND, OBJECT_TYPE=LND,  PREVIEW_NAME=previewLND)" />
+<col key="col4"	indata="@ARWY@"			outdata="RWY"		col_state="filteredVisible"  row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW ,ORDER_ID=RWADES, OBJECT_TYPE=RWADES,  PREVIEW_NAME=choiceRWADES)"/>
+
+<col key="col6"	indata="@ARR_PKBAY@"	outdata="PKB"		col_state="filteredVisible"  row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW ,ORDER_ID=EPKBARR, OBJECT_TYPE=EPKBARR,  PREVIEW_NAME=previewEPKBARR)" />
+
+<col key="col8" indata="@RP_ROUTE@" outdata="GROUND_ROUTE" col_state="filteredVisible"/>
+<col key="col9" indata="@NEXTORDER@" outdata="NEXTORDER" col_state="filteredVisible" order="$Alias"/>
+<col key="col10" indata="@ADEP@"			outdata="ADEP" col_state="filteredNotVisible"  />
+<col key="col11"	indata="@SSR_CODE@"		outdata="ASSR"		col_state="filteredNotVisible" row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , DEFAULT=#CECECE)@"	/>
+
+</list>
+
+</msg>

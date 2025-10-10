@@ -1,0 +1,21 @@
+<msg>
+
+<list ROW_ID="@callSign@_@DirectionID@_@timeStamp@_@messageID@" condition="">
+
+	<attributes ID="HISTORY LIST:@callSign@" 
+			behavior_if_empty="delete" 
+			side="GRP" 
+			visible ="true"
+			ORIGINX="500"
+			ORIGINY="500"			
+			CLOSE_BUTTON_CALLBACK="EXTERNAL_ORDER( ORDER_ID=HCL ,  OBJECT_TYPE=LIST , PREVIEW_NAME=quickHCL , FLIGHT_NUM=@@ ,  DATA={  'FLIGHT_NUM' :'@FLIGHT_NUM@' , 'CALLSIGN' :'@callSign@'})" 
+			sort="" 
+			/>
+<!--
+	<col key="col1"	indata="@callSign@"		    outdata="CALLSIGN"	    col_state="filteredVisible" /> 
+-->
+	<col key="col1"	indata="@timeStamp@"		outdata="TIME"	    col_state="filteredVisible"  row_fgr="@color@"/>
+	<col key="col2"	indata="@stringFreeText@"	outdata="MESSAGE"	col_width="300" col_state="filteredVisible"  row_fgr="@color@" />			
+</list>
+
+</msg>

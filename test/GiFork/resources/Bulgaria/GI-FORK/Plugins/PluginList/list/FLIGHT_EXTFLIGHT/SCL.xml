@@ -1,0 +1,26 @@
+<msg>
+	<list
+		ROW_ID="@FLIGHT_NUM@" condition="@ISSCL@">
+		<attributes	ID="SECTOR LIST" behavior_if_empty="delete"	behavior_if_full="visible"	side="SFL:0"		sort="CALLSIGN:ASC"/>
+<!-- mettendo ".." nei parametri della ServiceCall come nel'esempio seguente tale parametro verra passato al servizio senza elaborarne il recupero dalla Blackboard:-->
+<!--  	ATTENZIONE PER L'INVOCAZIONE SERVIZIO LOST_FGR_COLOR  IL PARAMETRO :
+		 FILED_TO_CHECK DEVE AVERE I ".." COME PREFISSO PER FARLO CAPIRE
+		 CORRETTAMENTE AL PARSER DEL SRIVIZIO STESSO-->
+		<col key="col1"		indata=""		outdata="H"	 row_fgr="@SCL_LIST_UTILITY(FIELD_TO_CHECK=..DIRECTION, VAL_1=HEADING_DIRECTION )@" row_image="ACK"/>
+		<col key="col2"		indata="@CALLSIGN@"					outdata="CALLSIGN"	 row_fgr="@TEMPLATE_COLOR@"	row_middleClick="CONTEXT_MENU(MENU_FILE=Executive.xml, TITLE=EXECUTIVE)" row_leftClick="CONTEXT_MENU(MENU_FILE=Planner.xml,TITLE=PLANNER_MENU)" row_rightClick="CONTEXT_MENU(MENU_FILE=Flight.xml,TITLE=FLIGHT_MENU)"/>
+		<col key="col3"		indata="@SSR_CODE@"					outdata="SSR"		 />
+		<col key="col4"     indata="@EQ_833_STATUS@ @EQ_833_PERMISSION@" choicefield="$FUSION" outdata="8.33" col_state="filteredNotVisible" />
+		<col key="col5"		indata="@FR@@FTYPE@"				outdata="FR"	col_state="filteredNotVisible"  row_fgr="@FR_COLOR_IOAT@"  choicefield="$FUSION" />
+		<col key="col6"		indata="@ATY@"						outdata="TYPE"	col_state="filteredNotVisible"	 />
+		<col key="col7" 	indata="@WTC@"				        outdata="W"   />
+		<col key="col8"		indata="@ADEP@"						outdata="ADEP"	col_state="filteredNotVisible"	 row_leftClick="@FLIGHT_PLAN_ORDER(FIELD_TO_CHECK=..FLIGHT_CAT, VAL_1=FLC)@"  />
+		<col key="col9"  	indata="@ADES@"					    outdata="ADES"	col_state="filteredNotVisible"	 row_leftClick="@FLIGHT_PLAN_ORDER(FIELD_TO_CHECK=..LANDING_LOCAL, VAL_1=FLC)@"  />
+		<col key="col10"	indata="@IFIXNAME@"					outdata="INFIX"		row_fgr="@SCL_LIST_UTILITY(FIELD_TO_CHECK=..IFIXCOLOR ,  VAL_1=TEMPLATE)@" />
+		<col key="col11"	indata="@ETOIFIXID@" outdata="ETO INFIX" 	col_state="filteredVisible"	 />
+		<col key="col12"    indata="@PEL@"						outdata="PEL"		col_state="filteredVisible" row_fgr="@SCL_LIST_UTILITY(FIELD_TO_CHECK=..PELCOLOR, VAL_1=COORD_IN, VAL_2=COORD_OUT, VAL_3=COORD_STATUS, VAL_4=VERT_DEV_FLAG)@" row_leftClick=""  />
+		<col key="col13"	indata="@OFIXNAME@"	outdata="OUTFIX"		row_fgr="@SCL_LIST_UTILITY(FIELD_TO_CHECK=..OFIXCOLOR ,  VAL_1=LDVAVALUE)@" row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW ,GRAPHIC_ORDER=PREVIEW , ORDER_ID=REP , OBJECT_TYPE=REP ,  PREVIEW_NAME=previewREP)" row_middleClick="SHOW_TRAJECTORY" />
+		<col key="col14"	indata="@ETOOUTFIXID@" outdata="ETO OUTFIX" 	col_state="filteredVisible"	 />
+		<col key="col15"    indata="@XFL@"			            outdata="XFL" col_state="filteredVisible" row_fgr="@SCL_LIST_UTILITY(FIELD_TO_CHECK=..XFLCOLOR)@" row_leftClick="" />
+		<col key="col16"	indata="@REG@"						outdata="REG NUMBER"	col_state="filteredNotVisible"	 />
+	</list>
+</msg>

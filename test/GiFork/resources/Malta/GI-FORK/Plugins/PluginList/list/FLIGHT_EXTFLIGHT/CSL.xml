@@ -1,0 +1,15 @@
+<msg>
+	<list
+		ROW_ID="@FLIGHT_NUM@" condition="@ISCOAST@">
+		<attributes	ID="COAST LIST" behavior_if_empty="delete"	side="GRP_BOTTOM_LEFT" open_in_grp="true" visible="true"		
+			sort="CALLSIGN:ASC"	CLOSE_BUTTON_CALLBACK="INHIBIT"
+		/>
+<!-- mettendo ".." nei parametri della ServiceCall come nel'esempio seguente tale parametro verra passato al servizio senza elaborarne il recupero dalla Blackboard:
+@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , DEFAULT=#CECECE)@
+-->
+		<col key="col1"	indata="@FLIGHT_EXTFLIGHT<FLIGHT_NUM>.CALLSIGN@"	     outdata="CALLSIGN" row_middleClick="CONTEXT_MENU(MENU_FILE=Executive.xml, TITLE=EXECUTIVE)" row_leftClick="CONTEXT_MENU(MENU_FILE=Planner.xml,TITLE=PLANNER_MENU)" row_rightClick="CONTEXT_MENU(MENU_FILE=Flight.xml,TITLE=FLIGHT_MENU)" col_state="filteredVisible"  />
+		<col key="col2"	indata="@FLIGHT_EXTFLIGHT<FLIGHT_NUM>.SSR_CODE@"	     outdata="SSR  "	    col_state="filteredVisible"	  />
+		<col key="col3"	indata="@FLIGHT_EXTFLIGHT<FLIGHT_NUM>.CFL@"		         outdata="CFL"	    col_state="filteredVisible"   />
+		<col key="col4"	indata="@FLIGHT_EXTFLIGHT<FLIGHT_NUM>.COORDINATE_COAST@" outdata="LOST COORDINATES     "	col_state="filteredVisible"	  />	
+	</list>
+</msg>

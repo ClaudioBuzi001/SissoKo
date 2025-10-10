@@ -1,0 +1,20 @@
+<msg>
+
+<!--  LISTE LIS MAP  -->
+<list ROW_ID="@UID@" condition="@ISMSAW@">
+	<attributes ID="MSAW EXCLUSION CRITERIA @KEY_ID@" behavior_if_empty="delete"		
+			side="GRP" 
+			open_in_grp="true"
+			visible="false" 
+			CLOSE_BUTTON_CALLBACK= "DUMMY"
+			 />
+	<!--col key="col1" indata="@KEY_ID@" outdata="MAP"  /-->
+    <col key="col1" indata="@vfr@" outdata="VFR"    />
+	<col key="col2" indata="@mil@" outdata="MIL"    />
+	<col key="col3" indata="@pen@" outdata="PEN"    />
+	<col key="col4" indata="@mcs@" outdata="SSR"    />
+	<col key="col5" indata="@mcs1@ @mcs2@ @mcs3@ @mcs4@ @mcs5@ @mcs6@ @mcs7@ @mcs8@ @mcs9@ @mcs10@ @mcs11@ @mcs12@ @mcs13@ @mcs14@ @mcs15@" outdata="SSRs" col_width="150"     />
+	<col key="col6" indata="@css@" outdata="CALLSIGN"   row_blink_state="@ALIAS_LIST(FIELD_TO_CHECK=..TEMPLATE, INFO_TYPE=BLINK)@" />
+	<col key="col7" indata="@css1@ @css2@ @css3@ @css4@ @css5@ @css6@ @css7@ @css8@ @css9@ @css10@ @css11@ @css12@ @css13@ @css14@ @css15@" outdata="CALLSIGNs" col_width="150"     />
+</list>
+</msg>

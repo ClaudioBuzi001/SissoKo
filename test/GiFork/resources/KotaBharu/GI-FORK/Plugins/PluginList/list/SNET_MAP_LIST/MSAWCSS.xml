@@ -1,0 +1,25 @@
+<msg>
+
+<!--  LISTE LIS MAP  -->
+<list ROW_ID="@UID@" condition="@ISMSAW@">
+	<attributes ID="MSAW CALLSIGN FILT LIST" behavior_if_empty="delete" sort="MAP:ASC" side="SNET:1" />
+	<col key="col1" indata="@id@" outdata="MAP" messagetype="lisMap" col_state="filteredVisible" row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW , ORDER_ID=UPDSNETCS, OBJECT_TYPE=UPDSNETCS,PREVIEW_NAME=previewUPDSNETCS)"  />
+	<col key="col2" indata="@css1@" outdata="CALLSIGN1" messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col3" indata="@css2@" outdata="CALLSIGN2" messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col4" indata="@css3@" outdata="CALLSIGN3" messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col5" indata="@css4@" outdata="CALLSIGN4" messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col6" indata="@css5@" outdata="CALLSIGN5" messagetype="lisMap" col_state="filteredVisible"  />	
+	<col key="col7" indata="@css6@" outdata="CALLSIGN6" messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col8" indata="@css7@" outdata="CALLSIGN7" messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col9" indata="@css8@" outdata="CALLSIGN8" messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col10" indata="@css9@" outdata="CALLSIGN9" messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col11" indata="@css10@" outdata="CALLSIGN10" messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col12" indata="@css11@" outdata="CALLSIGN11" messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col13" indata="@css12@" outdata="CALLSIGN12" messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col14" indata="@css13@" outdata="CALLSIGN13" messagetype="lisMap" col_state="filteredVisible"  />	
+	<col key="col15" indata="@css14@" outdata="CALLSIGN14" messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col16" indata="@css15@" outdata="CALLSIGN15" messagetype="lisMap" col_state="filteredVisible"  />
+</list>
+
+
+</msg>

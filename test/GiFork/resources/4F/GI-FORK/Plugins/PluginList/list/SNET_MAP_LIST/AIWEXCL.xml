@@ -1,0 +1,29 @@
+<msg>
+
+<!--  LISTE AIW EXCL MAP for Sectors  -->
+<list ROW_ID="@AIW_ID@" condition="@ISAIW@">
+
+	<attributes ID="AIW EXCLUSION CRITERIA" behavior_if_empty="delete" side="SNET:0"   />
+	
+    <col key="col1" indata="@vfr@" outdata="VFR"    
+    	row_leftClick="@SNET_LIST(CALLBACK_TO_CHECK=..CALLBACK_CHANGE_VFR)@" />
+    	<!-- row_leftClick="EXTERNAL_ORDER(ORDER_ID=EXC, OBJECT_TYPE=EXC, DATA={'FUNCION_NAME':'AIW', #VFR},  PREVIEW_NAME=quickEXC)"  /> -->
+	<col key="col2" indata="@mil@" outdata="MIL"  
+		row_leftClick="@SNET_LIST(CALLBACK_TO_CHECK=..CALLBACK_CHANGE_MIL)@" />
+		<!-- row_leftClick="EXTERNAL_ORDER(ORDER_ID=EXC, OBJECT_TYPE=EXC, DATA={'FUNCION_NAME':'AIW', #MIL},  PREVIEW_NAME=quickEXC)" /> -->  
+	<col key="col3" indata="@pen@" outdata="PEN"    
+		row_leftClick="@SNET_LIST(CALLBACK_TO_CHECK=..CALLBACK_CHANGE_PEN)@" />
+		<!-- row_leftClick="EXTERNAL_ORDER(ORDER_ID=EXC, OBJECT_TYPE=EXC, DATA={'FUNCION_NAME':'AIW', #PEN},  PREVIEW_NAME=quickEXC)" /> -->
+	<col key="col4" indata="@mcs@" outdata="SSR"    
+		row_fgr="@SNET_LIST(FIELD_TO_CHECK1=..mcs, INFO_TYPE1=COLOR)@"
+		row_leftClick="@SNET_LIST(CALLBACK_TO_CHECK=..CALLBACK_CHANGE_SSR)@" /> 
+		<!-- row_leftClick="EXTERNAL_ORDER(ORDER_ID=EXC, OBJECT_TYPE=EXC, DATA={'FUNCION_NAME':'AIW', #SSR},  PREVIEW_NAME=quickEXC)" /> -->
+	<col key="col5" indata="@mcs1@ @mcs2@ @mcs3@ @mcs4@ @mcs5@ @mcs6@ @mcs7@ @mcs8@ @mcs9@ @mcs10@ @mcs11@ @mcs12@ @mcs13@ @mcs14@ @mcs15@" outdata="SSRs" col_width="150"   row_leftClick="EXTERNAL_ORDER(ORDER_ID=MCS, OBJECT_TYPE=MCS, DATA={'FUNCION_NAME':'AIW'},  PREVIEW_NAME=previewMCS)"  />
+	<col key="col6" indata="@css@" outdata="CALLSIGN"  
+		row_blink_state="@SNET_LIST(FIELD_TO_CHECK=..TEMPLATE, INFO_TYPE=BLINK)@"
+		row_fgr="@SNET_LIST(FIELD_TO_CHECK1=..css, INFO_TYPE1=COLOR)@"
+		row_leftClick="@SNET_LIST(CALLBACK_TO_CHECK=..CALLBACK_CHANGE_CALLSIGN)@" />
+		<!-- row_leftClick="EXTERNAL_ORDER(ORDER_ID=EXC, OBJECT_TYPE=EXC, DATA={'FUNCION_NAME':'AIW', #CALLSIGN},  PREVIEW_NAME=quickEXC)"  /> -->
+	<col key="col7" indata="@css1@ @css2@ @css3@ @css4@ @css5@ @css6@ @css7@ @css8@ @css9@ @css10@ @css11@ @css12@ @css13@ @css14@ @css15@" outdata="CALLSIGNs" col_width="150"  row_leftClick="EXTERNAL_ORDER(ORDER_ID=CSS, OBJECT_TYPE=CSS, DATA={'FUNCION_NAME':'AIW'},  PREVIEW_NAME=previewCSS)"     />
+</list>
+</msg>

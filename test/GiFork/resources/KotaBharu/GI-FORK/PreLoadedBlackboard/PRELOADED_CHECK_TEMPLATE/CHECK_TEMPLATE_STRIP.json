@@ -1,0 +1,40 @@
+{      
+"STRIP":
+[
+       {"RULE":"1",  "LAYOUT" : "ARR_TWR", "CHECK_FIELD":{"ISARR": {"FROM" : "*", "TO": "true"},"SFPL_STATE":{"FROM" : "IN", "TO": "PN"}}},
+       {"RULE":"2",  "LAYOUT" : "ARR_TWR", "CHECK_FIELD":{"ISARR": {"FROM" : "*", "TO": "true"},"SFPL_STATE":{"FROM" : "PN", "TO": "AV"}}},
+       {"RULE":"3",  "LAYOUT" : "ARR_TWR", "CHECK_FIELD":{"ISARR": {"FROM" : "*", "TO": "true"},"SFPL_STATE":{"FROM" : "PN", "TO": "AE"}}},
+       {"RULE":"4",  "LAYOUT" : "ARR_TWR", "CHECK_FIELD":{"ISARR": {"FROM" : "*", "TO": "true"},"SFPL_STATE":{"FROM" : "PN", "TO": "AA"}}},
+       {"RULE":"5",  "LAYOUT" : "ARR_TWR", "CHECK_FIELD":{"ISARR": {"FROM" : "*", "TO": "true"},"SFPL_STATE":{"FROM" : "AV", "TO": "LE"}}},
+       {"RULE":"6",  "LAYOUT" : "ARR_TWR", "CHECK_FIELD":{"ISARR": {"FROM" : "*", "TO": "true"},"SFPL_STATE":{"FROM" : "AE", "TO": "LE"}}},
+       {"RULE":"7",  "LAYOUT" : "ARR_TWR", "CHECK_FIELD":{"ISARR": {"FROM" : "*", "TO": "true"},"SFPL_STATE":{"FROM" : "AE", "TO": "LH"}}},
+       {"RULE":"8",  "LAYOUT" : "ARR_TWR", "CHECK_FIELD":{"ISARR": {"FROM" : "*", "TO": "true"},"SFPL_STATE":{"FROM" : "AA", "TO": "LV"}}},
+       {"RULE":"9",  "LAYOUT" : "ARR_TWR", "CHECK_FIELD":{"ISARR": {"FROM" : "*", "TO": "true"},"SFPL_STATE":{"FROM" : "AA", "TO": "LT"}}},
+       {"RULE":"10",  "LAYOUT" : "ARR_TWR", "CHECK_FIELD":{"ISARR": {"FROM" : "*", "TO": "true"},"SFPL_STATE":{"FROM" : "AA", "TO": "LA"}}},
+       
+       {"RULE":"11",  "LAYOUT" : "DEP_TWR", "CHECK_FIELD":{"ISDEP": {"FROM" : "*", "TO": "true"},"SFPL_STATE":{"FROM" : "IN", "TO": "PN"}}},
+       {"RULE":"12",  "LAYOUT" : "DEP_TWR", "CHECK_FIELD":{"ISDEP": {"FROM" : "*", "TO": "true"},"SFPL_STATE":{"FROM" : "PN", "TO": "AV"}}},
+       {"RULE":"13",  "LAYOUT" : "DEP_TWR", "CHECK_FIELD":{"ISDEP": {"FROM" : "*", "TO": "true"},"SFPL_STATE":{"FROM" : "PN", "TO": "AE"}}},
+       {"RULE":"14",  "LAYOUT" : "DEP_TWR", "CHECK_FIELD":{"ISDEP": {"FROM" : "*", "TO": "true"},"SFPL_STATE":{"FROM" : "PN", "TO": "AA"}}},
+       {"RULE":"15",  "LAYOUT" : "DEP_TWR", "CHECK_FIELD":{"ISDEP": {"FROM" : "*", "TO": "true"},"SFPL_STATE":{"FROM" : "AV", "TO": "LE"}}},
+       {"RULE":"16",  "LAYOUT" : "DEP_TWR", "CHECK_FIELD":{"ISDEP": {"FROM" : "*", "TO": "true"},"SFPL_STATE":{"FROM" : "AE", "TO": "LE"}}},
+       {"RULE":"17",  "LAYOUT" : "DEP_TWR", "CHECK_FIELD":{"ISDEP": {"FROM" : "*", "TO": "true"},"SFPL_STATE":{"FROM" : "AE", "TO": "LH"}}},
+       {"RULE":"18",  "LAYOUT" : "DEP_TWR", "CHECK_FIELD":{"ISDEP": {"FROM" : "*", "TO": "true"},"SFPL_STATE":{"FROM" : "AA", "TO": "LV"}}},
+       {"RULE":"19",  "LAYOUT" : "DEP_TWR", "CHECK_FIELD":{"ISDEP": {"FROM" : "*", "TO": "true"},"SFPL_STATE":{"FROM" : "AA", "TO": "LT"}}},
+       {"RULE":"20",  "LAYOUT" : "DEP_TWR", "CHECK_FIELD":{"ISDEP": {"FROM" : "*", "TO": "true"},"SFPL_STATE":{"FROM" : "AA", "TO": "LA"}}},
+            
+     
+       {"RULE":"21",  "LAYOUT" : "OVR_APP", "CHECK_FIELD":{"FLC": {"FROM" : "*", "TO": "0"},"SFPL_STATE":{"FROM" : "IN", "TO": "PN"}}},
+       {"RULE":"22",  "LAYOUT" : "OVR_APP", "CHECK_FIELD":{"FLC": {"FROM" : "*", "TO": "0"},"SFPL_STATE":{"FROM" : "PN", "TO": "AV"}}},
+       {"RULE":"23",  "LAYOUT" : "OVR_APP", "CHECK_FIELD":{"FLC": {"FROM" : "*", "TO": "0"},"SFPL_STATE":{"FROM" : "PN", "TO": "AE"}}},
+       {"RULE":"24",  "LAYOUT" : "OVR_APP", "CHECK_FIELD":{"FLC": {"FROM" : "*", "TO": "0"},"SFPL_STATE":{"FROM" : "PN", "TO": "AA"}}},
+       {"RULE":"25",  "LAYOUT" : "OVR_APP", "CHECK_FIELD":{"FLC": {"FROM" : "*", "TO": "0"},"SFPL_STATE":{"FROM" : "AV", "TO": "LE"}}},
+       {"RULE":"26",  "LAYOUT" : "OVR_APP", "CHECK_FIELD":{"FLC": {"FROM" : "*", "TO": "0"},"SFPL_STATE":{"FROM" : "AE", "TO": "LE"}}},
+       {"RULE":"27",  "LAYOUT" : "OVR_APP", "CHECK_FIELD":{"FLC": {"FROM" : "*", "TO": "0"},"SFPL_STATE":{"FROM" : "AE", "TO": "LH"}}},
+       {"RULE":"28",  "LAYOUT" : "OVR_APP", "CHECK_FIELD":{"FLC": {"FROM" : "*", "TO": "0"},"SFPL_STATE":{"FROM" : "AA", "TO": "LV"}}},
+       {"RULE":"29",  "LAYOUT" : "OVR_APP", "CHECK_FIELD":{"FLC": {"FROM" : "*", "TO": "0"},"SFPL_STATE":{"FROM" : "AA", "TO": "LT"}}},
+       {"RULE":"30",  "LAYOUT" : "OVR_APP", "CHECK_FIELD":{"FLC": {"FROM" : "*", "TO": "0"},"SFPL_STATE":{"FROM" : "AA", "TO": "LA"}}}
+          
+          
+]
+}

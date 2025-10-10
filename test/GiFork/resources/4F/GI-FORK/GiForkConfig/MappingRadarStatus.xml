@@ -1,0 +1,25 @@
+<Radar>
+		<item sic="4" sac="34" name="RA"/>
+		<item sic="7" sac="34" name="MA"/>
+		<item sic="10" sac="34" name="MO"/>
+		<item sic="13" sac="34" name="CA"/>
+		<item sic="27" sac="34" name="LZ"/>
+		<item sic="9" sac="34" name="MS"/>
+		<item sic="11" sac="34" name="US"/>
+		<item sic="1" sac="34" name="LE"/>
+		<item sic="3" sac="34" name="PE"/>
+		<item sic="5" sac="34" name="PL"/>
+		<item sic="20" sac="34" name="FL"/>
+		<item sic="8" sac="34" name="MC"/>
+		<item sic="23" sac="34" name="OL"/>
+		<item sic="12" sac="34" name="CC"/>
+		<item sic="21" sac="34" name="NA"/>
+		<item sic="6" sac="34" name="FM"/>
+		<item sic="22" sac="34" name="FS"/>
+		<item sic="19" sac="34" name="PA"/>
+		<item sic="4" sac="120" name="FW"/>
+		<item sic="29" sac="34" name="RADSIM1"/>
+		<item sic="30" sac="34" name="RADSIM2"/>
+		<item sic="3" sac="3" name="RAD1_TES"/>
+		<item sic="4" sac="4" name="RAD2_TES"/>
+</Radar>

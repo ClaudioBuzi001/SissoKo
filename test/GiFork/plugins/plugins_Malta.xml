@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!-- Mercury for KotaBharu Plugins Manifest -->
+<project name="KotaBharu">
+	<plugin name="LisListPlugin" />
+	<plugin name="LisSdaPlugin"/>
+	<plugin name="LisLabelPlugin" />
+	<plugin name="LisMapPlugin" />
+	<plugin name="LisXaiPlugin" />
+</project>

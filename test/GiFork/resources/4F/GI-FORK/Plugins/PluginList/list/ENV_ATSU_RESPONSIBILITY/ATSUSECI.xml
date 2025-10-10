@@ -1,0 +1,21 @@
+<msg>
+	<list 
+		ROW_ID="@RESPN@" condition="true">
+
+		<attributes 
+			ID="ATSU Sector Information LIST" 	
+			behavior_if_empty="delete"		
+			side="DL:0" 
+				
+			
+		/>
+
+		<col key="col1" indata="@LPNAME@"	 outdata="Sec"   />
+		<col key="col2" indata="@RESPN@"	 outdata="SecABS"  col_width="72" row_leftClick="EXTERNAL_ORDER(ORDER_ID=ENF , OBJECT_TYPE=ENF,  PREVIEW_NAME=previewENF )" />
+		<col key="col3" indata="@ATSU_LIST(FIELD_TO_CHECK1=..FREQLIST)@"  outdata="SecFreq"  col_width="80"/>
+		<col key="col4" indata="" outdata="FreqUse"  col_width="80" row_image="@ATSU_LIST(FIELD_TO_CHECK1=..FREQINUSE , INFO_TYPE=IMAGE)@" /> 
+		<col key="col5" indata="" outdata="Freq833"  col_width="80" row_image="@ATSU_LIST(FIELD_TO_CHECK1=..FREQ833 , INFO_TYPE=IMAGE)@" />
+		<col key="col6" indata="@ATSU_LIST(FIELD_TO_CHECK1=..LP_CPDLC_ENABLED)@" col_width="72"	outdata="SecCFS"   row_leftClick="@ATSU_LIST(FIELD_TO_CHECK=..CALLBACK_LP_CPDLC)@" />
+	
+	</list>
+</msg>

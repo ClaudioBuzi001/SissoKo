@@ -1,0 +1,22 @@
+<msg>
+  <list 
+  		ROW_ID="@LOCALSFPLID@" condition="@ISCPDLCFLIGHT@">
+		<attributes 
+			ID="CPDLC FLIGHT LIST" 
+			behavior_if_empty="delete" 
+			side="DL:1" 
+			 
+			
+		/>
+		<col key="col1"  indata="@CALLSIGN@" outdata="CALLSIGN"  row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , DEFAULT=#fafafa)@" row_blink_state="@ALIAS_LIST(FIELD_TO_CHECK=..TEMPLATE, INFO_TYPE=BLINK)@" row_middleClick="SHOW_TRAJECTORY" automatic="" />
+		<col key="col2"  indata="@CONN_CPDLC_STATUS@" outdata="CONNECTION" col_width="200" col_state="filteredVisible"  />
+		<col key="col3"  indata="@FCFS@" outdata="FUNCTION" col_state="filteredVisible" />
+		<col key="col4" indata="" outdata="ROU" col_state="filteredVisible"  row_image="@CPDLC_LIST(FIELD_TO_CHECK1=..ROUTE_AI_DIALOGUE_STATUS, FIELD_TO_CHECK2=..ROUTE_GI_DIALOGUE_STATUS, INFO_TYPE=IMAGE)@" />
+		<col key="col5" indata="" outdata="VER" col_state="filteredVisible"  row_image="@CPDLC_LIST(FIELD_TO_CHECK1=..VERT_AI_DIALOGUE_STATUS, FIELD_TO_CHECK2=..VERT_GI_DIALOGUE_STATUS, INFO_TYPE=IMAGE)@" />
+		<col key="col6" indata="" outdata="SPD" col_state="filteredVisible"  row_image="@CPDLC_LIST(FIELD_TO_CHECK1=..SPEED_AI_DIALOGUE_STATUS, FIELD_TO_CHECK2=..SPEED_GI_DIALOGUE_STATUS, INFO_TYPE=IMAGE)@" />
+	    <col key="col7" indata="" outdata="CRS" col_state="filteredVisible"  row_image="@CPDLC_LIST(FIELD_TO_CHECK1=..CROSS_AI_DIALOGUE_STATUS, FIELD_TO_CHECK2=..CROSS_GI_DIALOGUE_STATUS, INFO_TYPE=IMAGE)@" />		
+		<col key="col8" indata="" outdata="SUR" col_state="filteredVisible"  row_image="@CPDLC_LIST(FIELD_TO_CHECK1=..SURV_GI_DIALOGUE_STATUS, INFO_TYPE=IMAGE)@" />
+		<col key="col9" indata="" outdata="TRF" col_state="filteredVisible"  row_image="@CPDLC_LIST(FIELD_TO_CHECK1=..TRANSFER_GI_DIALOGUE_STATUS, INFO_TYPE=IMAGE)@" />		
+		<col key="col10" indata="@ALL_QUALIFIER@" outdata="QUALIFIER" col_state="filteredVisible" />			
+	</list>
+</msg>

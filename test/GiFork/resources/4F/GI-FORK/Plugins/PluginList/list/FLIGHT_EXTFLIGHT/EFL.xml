@@ -1,0 +1,22 @@
+<msg>
+	<list
+		ROW_ID="@FLIGHT_NUM@" condition="@ISEFL@">
+
+		<attributes	
+			ID="EXTENDED FLIGHT LIST" 
+			behavior_if_empty="delete" 
+			side="DIR:3"	
+			sort="CALLSIGN:ASC" 		
+		/>
+
+		<col key="col1"	indata="@FR@ @FTYPE@"	outdata="FR" col_width="40"	col_state="filteredVisible"	 />
+		<col key="col2"	indata="@CALLSIGN@"	outdata="CALLSIGN"	 row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , DEFAULT=#fafafa)@" row_blink_state="@ALIAS_LIST(FIELD_TO_CHECK=..TEMPLATE, INFO_TYPE=BLINK)@" row_middleClick="SHOW_TRAJECTORY" row_rightClick="EXTERNAL_ORDER(ORDER_ID=CHG , OBJECT_TYPE=CHG,  PREVIEW_NAME=previewCHG )" />
+		<col key="col3" indata="@ADEP@"		outdata="DEP" 	col_width="50" 	col_state="filteredVisible"  />
+		<col key="col4"	indata="@ADES@"		outdata="DES"	col_width="50"	col_state="filteredVisible"  />
+		<col key="col5"	indata="@SSR_CODE@"	outdata="SSR"	col_width="50"	col_state="filteredVisible"	 />
+		<col key="col6"	indata="@RVSM@"		outdata="RVSM"	col_width="55"	col_state="filteredVisible"	 />
+		<col key="col7"	indata="@EQ_833_STATUS@ @EQ_833_PERMISSION@" outdata="8.33"	col_width="55"	col_state="filteredVisible"	 /> 
+		<col key="col8"	indata="@SCT@" 		outdata="SCT"	col_width="45" 	col_state="filteredVisible"	 />
+
+	</list>
+</msg>

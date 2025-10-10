@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<project name="GiFork Build" default="dist" basedir=".">
+	<property name="project.home" value="." />
+	<!--<property name="dist.home" value="${project.home}/dist" />-->
+	<property name="plugins.folder" value="plugins" />
+
+	<target name="dist">
+		<subant target="dist">
+
+			<!-- INFRASTRUCTURE -->
+			<filelist dir="../../Commons/infrastructure" files="build.xml" />
+			
+			<!-- EXCHANGE DATA MODEL -->
+			<filelist dir="../../Commons/jedm" files="build.xml" />
+			
+			<!-- GIFork Common -->
+			<filelist dir="../../Commons/GiForkCommonLib" files="build.xml" />
+
+			<!-- Gi-FORK -->
+			<filelist dir="." files="build4F.xml" />
+			<filelist dir="." files="buildLIS.xml" />
+			
+ 
+			<!-- 4FXaiPlugin -->
+			<filelist dir="../4FXaiPlugin" files="build.xml" />
+			
+			<!-- 4FSdaPlugin -->
+			<filelist dir="../4FSdaPlugin" files="build.xml" />
+
+			<!-- 4FLabelPlugin -->
+			<filelist dir="../4FLabelPlugin" files="build.xml" />
+
+			<!-- 4FListPlugin -->
+			<filelist dir="../4FListPlugin" files="build.xml" />
+			
+			<!-- LisLabelPlugin -->
+		    <filelist dir="../LisLabelPlugin" files="build.xml" />
+			
+			<!-- ../LisListPlugin -->
+	        <filelist dir="../LisListPlugin" files="build.xml" />
+			
+			<!-- ../LisMapPlugin -->
+			<filelist dir="../LisMapPlugin" files="build.xml" />
+			
+			<!-- ../LisSdaPlugin -->
+			<filelist dir="../LisSdaPlugin" files="build.xml" />
+			
+			<!-- ../LisXaiPlugin -->
+			<filelist dir="../LisXaiPlugin" files="build.xml" />
+			
+			<!-- ../LisC2Plugin -->
+			<!--<filelist dir="../LisC2Plugin" files="build.xml" />-->
+			
+			<!-- ../LisGroundPlugin -->
+			<filelist dir="../LisGroundPlugin" files="build.xml" />
+			
+			<!-- ../LisAmiLabelPlugin -->
+			<filelist dir="../LisAmiLabelPlugin" files="build.xml" />
+			
+			<!-- ../LisQatarLabelPlugin -->
+			<filelist dir="../LisQatarLabelPlugin" files="build.xml" />
+			<!-- ../recPlugin -->
+			<filelist dir="../recPlugin" files="build.xml" />
+		</subant>
+
+		<!--Copia i plugins -->
+		<!--<copy todir="${dist.home}/${plugins.folder}">
+			<fileset dir="${project.home}/${plugins.folder}" includes="**/*.jar" />
+		</copy>-->
+		
+		<!--Copia il manifest dei plugins da utilizzare -->
+		<!--<copy file="${basedir}/${plugins.folder}/plugins.xml" todir="${dist.home}/${plugins.folder}" />-->
+
+	</target>
+	
+	<target name="run-tests" depends="dist">
+		<subant target="run-tests">
+			<filelist dir="../LisLabelPlugin" files="build.xml" />
+		</subant>
+	</target>
+
+	<target name="clean">
+		<subant target="clean">
+			<!-- INFRASTRUCTURE -->
+			<filelist dir="../../Commons/infrastructure" files="build.xml" />
+
+			<!-- Gi-FORK -->
+			<filelist dir="." files="build4F.xml" />
+			<filelist dir="." files="buildLIS.xml" />
+ 
+			<!-- 4FXaiPlugin -->
+			<filelist dir="../4FXaiPlugin" files="build.xml" />
+
+			<!-- 4FSdaPlugin -->
+			<filelist dir="../4FSdaPlugin" files="build.xml" />
+
+			<!-- 4FLabelPlugin -->
+			<filelist dir="../4FLabelPlugin" files="build.xml" />
+
+			<!-- 4FListPlugin -->
+			<filelist dir="../4FListPlugin" files="build.xml" />
+			
+			<!-- LisLabelPlugin -->
+			<filelist dir="../LisLabelPlugin" files="build.xml" />
+			
+			<!-- ../LisListPlugin -->
+		    <filelist dir="../LisListPlugin" files="build.xml" />
+			
+			<!-- ../LisMapPlugin -->
+			<filelist dir="../LisMapPlugin" files="build.xml" />
+			
+			<!-- ../LisSdaPlugin -->
+			<filelist dir="../LisSdaPlugin" files="build.xml" />
+			
+			<!-- ../LisXaiPlugin -->
+			<filelist dir="../LisXaiPlugin" files="build.xml" />
+			
+			<!-- ../LisC2Plugin -->
+			<filelist dir="../LisC2Plugin" files="build.xml" />
+			
+			<!-- ../LisGroundPlugin -->
+			<filelist dir="../LisGroundPlugin" files="build.xml" />
+			
+			<!-- ../LisAmiLabelPlugin -->
+			<filelist dir="../LisAmiLabelPlugin" files="build.xml" />
+			
+			<!-- ../LisQatarLabelPlugin -->
+			<filelist dir="../LisQatarLabelPlugin" files="build.xml" />
+			<!-- ../../recPlugin -->
+			<filelist dir="../recPlugin" files="build.xml" />
+			
+		</subant>
+	</target>
+
+</project>

@@ -1,0 +1,23 @@
+<msg>
+<list ROW_ID="@TIME@" condition="true">
+
+	<!-- PARAMENTRI COMPORTAMENTALI DELLA LISTA  -->
+
+	<attributes ID="DIAGNOSTIC" LATITUDE="" LONGITUDE="" BEHAVIOR_IF_EMPTY="visible" MAX_ITEM_SHOWED="10" SIDE="DIAG"  SORT="TIME:DESC," />
+
+		<!-- CONFIGURAZIONE DELLE COLONGITUDENE -->
+	<!-- nell'attributo indata vanno inseriti allinterno della tag "@" i campi da recuperare dal messaggio-->
+	<!-- possono essere combinati anche piu campi e testo libero es :
+
+	 indata="DATA @DD@ / @MM@ / @HH@ - @HH@ : @MM@ : @SS@"
+
+	gli attributi con prefisso "col_" vengono riportati in output sull xml sulle coLONGITUDEne
+	gli attributi con prefisso "row_" vengono riportati in output sull'XML sui field delle righe
+ 	-->
+
+	<col key="col1"  indata="@TIME@"			outdata="TIME" />
+	<col key="col2" indata="@ORDERID@"		outdata="ORDER" />
+	<col key="col3" indata="@ORDERRESULT@"	outdata="RESULT" />
+	<col key="col4" indata="@CALLSIGN@"		outdata="CALLSIGN" />
+</list>
+</msg>

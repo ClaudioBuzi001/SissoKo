@@ -1,0 +1,16 @@
+{
+    "QNH_PREFIX": "A",
+    "LDAP_TENTATIVE": "3",
+    "LDAP_Address": "ldap://10.5.11.9:389",
+    "PWD_Hide": true,
+    "SETTINGS_TIMER": "500",
+    "MAX_SETTINGS_NUM":20,
+    "FTP_SETTINGS_DIR":"/",
+    "SETTINGS_FTP_USER":"root",
+    "SETTINGS_FTP_PWD":"Alenia",
+    "CPDLC_TIMER_DELETE": 60,
+    "CPDLC_SEPARATOR_MSG": "---",
+    "RADAR_INDEX": -1,
+    "FLG_POST_WILCO": "false",
+    "QNH_STATE_RESET": 15	
+}

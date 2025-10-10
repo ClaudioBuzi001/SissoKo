@@ -1,0 +1,32 @@
+<msg>
+<list ROW_ID="@FLIGHT_NUM@" condition="@ISARR@">
+
+<attributes
+	ID					="ARR:@ADES@"
+	BEHAVIOR_IF_EMPTY	="delete"
+	GROUP				="ARR"
+	SIDE				="SFL:1"
+	SWAP				="true"
+	SORT				=""
+	LIST_TYPE			="OPAQUE"
+	multicolumnname		="ADES"
+/>
+	<col key="col1"		indata="@CALLSIGN@"	outdata="CALLSIGN"	 row_fgr="@TEMPLATE_COLOR@"	row_middleClick="CONTEXT_MENU(MENU_FILE=Executive.xml, TITLE=EXECUTIVE)" row_leftClick="CONTEXT_MENU(MENU_FILE=Planner.xml,TITLE=PLANNER_MENU)" row_rightClick="CONTEXT_MENU(MENU_FILE=Flight.xml,TITLE=FLIGHT_MENU)"/>
+<!-- 	<col key="col2"	indata="@ETL@"			outdata="ETL/ATL"		col_state="filteredVisible"  row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW ,ORDER_ID=LND, OBJECT_TYPE=LND,  PREVIEW_NAME=previewLND)" /> -->
+	<col key="col2"	indata="@ATY@"			outdata="TYPE"		col_state="filteredVisible" />
+<!-- 	<col key="col4"	indata="@WTC@"			outdata="W"		col_state="filteredNotVisible" /> -->
+	<col key="col3"	indata="@SSR_CODE@"		outdata="ASSR"		col_state="filteredVisible" row_fgr="@TEMPLATE_COLOR@"	/>
+<!-- 	<col key="col7"	indata="@STAR@"			outdata="STAR   "		col_state="filteredVisible"   row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW ,ORDER_ID=CSA, OBJECT_TYPE=CSA,  PREVIEW_NAME=previewCSA)" /> -->
+<!-- 	<col key="col8"	indata="@PEL@"			outdata="PEL"		col_state="filteredNotVisible"  row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW ,ORDER_ID=PEL, OBJECT_TYPE=PEL, PREVIEW_NAME=choicePEL)"   />-->
+	<col key="col4" indata="@FR@ @FTYPE@" choicefield="$FUSION" outdata="FR " col_state="filteredNotVisible" />
+<!-- 	<col key="col10"	indata="@IAF_FIX@"			outdata="IAF"		col_state="filteredVisible" />-->
+<!-- 	<col key="col11"	indata="@ARR_PKBAY@"	outdata="PBAY"		col_state="filteredVisible"  row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW ,ORDER_ID=EPKBARR, OBJECT_TYPE=EPKBARR,  PREVIEW_NAME=previewEPKBARR)" />-->
+	<col key="col5" indata="@CFL@"				outdata="CFL" col_state="filteredVisible" row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..CFL_WARNING_FLAG , DEFAULT=#CECECE)@" row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW ,ORDER_ID=ALV, OBJECT_TYPE=ALV, PREVIEW_NAME=choiceALV)" />
+	<col key="col6" 	indata="@ADEP@"			outdata="ADEP" col_state="filteredNotVisible"  />
+	<col key="col7" indata="@EQ_833_STATUS@ @EQ_833_PERMISSION@" choicefield="$FUSION" outdata="8.33" col_state="filteredNotVisible" />
+	<col key="col8" indata="@RVSM@"			outdata="RVSM" col_state="filteredNotVisible"  />
+	<col key="col9"	indata="@ADES@"			outdata="ADES"		col_state="filteredVisible"  />
+	<col key="col10"	indata="@ARWY@"			outdata="RWY"		col_state="filteredVisible"  row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW ,ORDER_ID=RWADES, OBJECT_TYPE=RWADES,  PREVIEW_NAME=choiceRWADES)"/>
+</list>
+
+</msg>

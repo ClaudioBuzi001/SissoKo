@@ -1,0 +1,17 @@
+<msg>
+
+<list ROW_ID="@VIF_ID@" condition="@ISLISCPDLCOUT@">
+	<attributes ID="VIF OUT LIST" behavior_if_empty="delete" side="DL" swap="true" list_type="OPAQUE" args="-time_delta=60000" SORT="Time:DESC," />
+	<col key="col1" indata="@VID@"        outdata="Vehicle"  col_state="filteredVisible" row_fgr="#CECECE" row_middleClick="" />
+	<col key="col2" indata="@TIMESTAMP@"  outdata="Time"     col_width="100" col_state="filteredVisible" row_fgr="#FFFFFF"/>
+	<col key="col3" indata="@DATA_MESSAGE@"    outdata="Message"  col_width="250" col_state="filteredVisible" row_fgr="#FFFFFF"/>
+<!-- 	<col key="col3" indata="@ANSWER@"     outdata="Answer"   col_state="filteredVisible" row_fgr="#FFFFFF" row_leftClick=""/> -->
+</list>
+
+</msg>
+
+
+<!-- outdata = nome colonne -->
+<!-- indata = valore -->
+<!-- col_state= serve per la visibilità del dato (cari valori) -->
+<!-- res --> 

@@ -1,0 +1,12 @@
+<msg>
+<!-- modificare il row id con un identificativo univoco dell'allarme (da capire)--> 
+<list ROW_ID="@CONFLICT_NUMBER@" > 
+	<attributes ID="SCA ALARM LIST" behavior_if_empty="delete" side="GRP_BOTTOM_RIGHT" open_in_grp="true" visible="true"/>
+	<col key="col1" indata="" outdata="Ack" col_state="filteredVisible" row_image="@ALARM_LIST(FIELD_TO_CHECK=..ACK_SCA , INFO_TYPE=IMAGE)@" row_leftClick="EXTERNAL_ORDER(ORDER_ID=ACKSCA , OBJECT_TYPE=ACKSCA ,  PREVIEW_NAME=quickACKSCA)"/>
+	<col key="col2" indata="@ALERT_STR@ "   col_width="250" choicefield="$KEYALARMCONFIG" outdata="Conflict Type" col_state="filteredVisible" row_fgr="@ALARM_LIST(FIELD_TO_CHECK=..ALARM_STATUS , DEFAULT=#CECECE)@"/>
+	<col key="col3" indata="@ALARM_LIST(FIELD_TO_CHECK=..CS_VID, VAL_TO_CHECK=STN_1)@" outdata="Target1" col_state="filteredVisible"  row_fgr="#CECECE"/>
+	<col key="col4" indata="@ALARM_LIST(FIELD_TO_CHECK=..CS_VID, VAL_TO_CHECK=STN_2)@" outdata="Target2" col_state="filteredVisible" row_fgr="#CECECE"/>
+	<col key="col5" indata="@AREA_ID@"       outdata="Area"           col_state="filteredVisible" row_fgr="#CECECE"/>
+	<col key="col6" indata="@CONFLICT_TIME@" outdata="Detection Time" col_state="filteredVisible" row_fgr="#CECECE"/>
+</list>
+</msg>

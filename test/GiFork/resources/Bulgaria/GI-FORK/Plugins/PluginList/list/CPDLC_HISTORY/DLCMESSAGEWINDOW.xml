@@ -1,0 +1,9 @@
+<msg>
+  <list ROW_ID="@messageID@" condition="true">
+	<attributes ID="DCL MESSAGE WINDOW" behavior_if_empty="delete" side="GRP" visible="true"  />
+	<col key="col1"	indata="@callSign@"	outdata="CALLSIGN"	 />
+	<col key="col2"	indata="@timeStamp@"	outdata="TIME"	 />
+	<col key="col3"	indata="@DirectionID@"	    outdata="U/D"	     />
+	<col key="col4"	indata="@stringFreeText@"	outdata="MESSAGE"	 />	
+  </list>
+</msg>

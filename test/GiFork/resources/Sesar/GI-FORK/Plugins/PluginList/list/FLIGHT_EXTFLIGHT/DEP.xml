@@ -1,0 +1,40 @@
+<msg>
+	<list 
+		ROW_ID="@FLIGHT_NUM@" condition="@ISDEP@">
+		<attributes 
+			ID="DEP LIST:@ADEP@" 
+			LATITUDE="42.04" 
+			LONGITUDE="12.52" 
+			behavior_if_empty="delete" 
+			group="DEP LIST:" 
+			side="DEP" 
+			sort="ETD:ASC" 
+		/>
+		
+		<col key="col1"	indata="@CALLSIGN@"	outdata="CALLSIGN"	 row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , DEFAULT=#fafafa)@"	row_blink_state="@ALIAS_LIST(FIELD_TO_CHECK=..TEMPLATE, INFO_TYPE=BLINK)@" row_middleClick="SHOW_TRAJECTORY" row_rightClick="EXTERNAL_ORDER(ORDER_ID=CHG , OBJECT_TYPE=CHG,  PREVIEW_NAME=previewCHG )"/>
+		<col key="col2"	indata="@N@"		outdata="SQN"	  col_width="50"  />
+		<col key="col3"	indata="@STS@"		outdata="STS" 	  col_width="50"  />
+		<col key="col4"	indata="@SSR_CODE@"	outdata="SSR"     col_width="50"  />
+		<col key="col5" indata="@ADEP@"		outdata="DEP"	  col_width="50"  />
+		<col key="col6" indata="@ATY@"		outdata="TYPE"    col_width="55"  />
+		<col key="col7"	indata="@WTC@"		outdata="WTC"	  col_width="50"  />
+		<col key="col8" indata="@ATD?ATD;ETD@"	outdata="ETD" col_width="50" row_fgr="@ALIAS_LIST(FIELD_TO_CHECK1=..ATD, INFO_TYPE=COLOR)@" />
+		<col key="col9" indata="@CTOT@"		outdata="CTOT" 	  col_width="55"  />
+		<col key="col10" indata="@SID@"		outdata="SID"  	  col_width="50"  />
+		<col key="col11" indata="@DEPRWY@"	outdata="RWY"  	  col_width="50" row_fgr="@ALIAS_LIST(FIELD_TO_CHECK1=..DEPARTURE, INFO_TYPE=COLOR)@" />
+		<col key="col12" indata="@ALIAS_LIST(FIELD_TO_CHECK1=..CFL)@"	outdata="CFL" col_width="50"  />
+		<col key="col13" indata="@ALIAS_LIST(FIELD_TO_CHECK1=..XFL)@"	outdata="XFL" col_width="50"  /> 
+		<col key="col14" indata="@ROUTE@" 	outdata="ROUTE"  />
+		<col key="col15" indata="@ADES@"	outdata="DES"	  col_width="50" />
+		<col key="col16" indata="@PLV@"		outdata="PLV"     col_width="50" />
+		<col key="col17" indata="@RVSM@"	outdata="RVSM"    col_width="55" />
+		<col key="col18" indata="@EQ_833_STATUS@ @EQ_833_PERMISSION@" outdata="8.33" col_width="55" />
+		<col key="col19" indata="@DLE@"		outdata="DL" 	  col_width="40"  />
+		<col key="col20" indata="@ALIAS_LIST(FIELD_TO_CHECK1=..TCS)@"	outdata="TCS"    row_rightClick="EXTERNAL_ORDER(ORDER_ID=ESD, OBJECT_TYPE=ESD, PREVIEW_NAME=quickESD, DATA={'CALLBACK':'EXTERNAL_ORDER(ORDER_ID=DCL, OBJECT_TYPE=DCL, PREVIEW_NAME=previewDCL)'})" row_middleClick="@ALIAS_LIST(FIELD_TO_CHECK1=..CALLBACK_STARTUP)@"/> 
+		<col key="col21" indata="@DEP_PKBAY@"	outdata="PB"  col_state="filteredVisible"  />
+		<col key="col22" indata="@SFPL_STATE@"	outdata="FS"  col_state="filteredVisible" />
+		<col key="col23" indata="@TRUEAIRSPEEDINKNOTS@"	outdata="TAS" col_width="50" col_state="filteredVisible" />
+		<col key="col24" indata="@GAT_OAT@"	outdata="G/O" col_state="filteredVisible" />
+	
+	</list>
+</msg>

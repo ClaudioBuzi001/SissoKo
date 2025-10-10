@@ -1,0 +1,19 @@
+<msg>
+
+<list ROW_ID="@FLIGHT_NUM@" condition="@ISNOTRANSIT@">
+
+
+<attributes ID="NO TRANSIT LIST" LATITUDE="" LONGITUDE="" BEHAVIOR_IF_EMPTY="delete" SIDE="SFL:1"  sort="CALLSIGN:ASC"/>
+
+<col key="col1"	 indata="@CALLSIGN@"							outdata="CALLSIGN"	col_state="filteredVisible"	row_fgr="@TEMPLATE_COLOR@"	row_middleClick="CONTEXT_MENU(MENU_FILE=Executive.xml, TITLE=EXECUTIVE)"	row_leftClick="CONTEXT_MENU(MENU_FILE=Planner.xml,TITLE=PLANNER_MENU)"	row_rightClick="CONTEXT_MENU(MENU_FILE=Flight.xml,TITLE=FLIGHT_MENU)"/>
+<col key="col2"  indata="@ALIAS_LIST(FIELD_TO_CHECK=..DEPIFX)@"	outdata="DEP/IFX"	col_state="filteredVisible" />
+<col key="col3"	 indata="@ALIAS_LIST(FIELD_TO_CHECK=..ETDETI)@"	outdata="ETD/ETI"	col_state="filteredVisible" />
+<col key="col4"	 indata="@ALIAS_LIST(FIELD_TO_CHECK=..DESOFX)@"	outdata="DES/OFX"	col_state="filteredVisible" />
+<col key="col5"	 indata="@ALIAS_LIST(FIELD_TO_CHECK=..ETLETO)@"	outdata="ETL/ETI"	col_state="filteredVisible" />
+<col key="col6"  indata="@REG@"									outdata="REGN"		col_state="filteredVisible" row_bgr="@REG_COLOR@"  />
+<col key="col7"  indata="@ATY@"									outdata="TYPE"		col_state="filteredVisible" />
+<col key="col8"  indata="@RVSM@"								outdata="RVSM"		col_state="filteredVisible" />
+<col key="col9"  indata="@EQ_833_STATUS@ @EQ_833_PERMISSION@"	outdata="8.33"		col_state="filteredVisible" choicefield="$FUSION"   />
+</list>
+
+</msg>

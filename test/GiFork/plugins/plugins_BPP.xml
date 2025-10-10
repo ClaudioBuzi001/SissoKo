@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!-- Mercury for Macedonia Plugins Manifest -->
+<project name="BPP">
+	<plugin name="LisListPlugin" />
+	<plugin name="LisSdaPlugin"/>
+	<plugin name="LisLabelPlugin" />
+	<plugin name="LisMapPlugin" />
+	<plugin name="LisXaiPlugin" />
+	<plugin name="LisGroundPlugin" />
+</project>

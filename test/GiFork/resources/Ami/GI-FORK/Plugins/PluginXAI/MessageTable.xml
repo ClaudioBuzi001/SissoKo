@@ -1,0 +1,1432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Entirety.xsl"?>
+<MessageTable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MessageTable.xsd">
+  <Direction value="uplink">
+    <Class id="1" name="Responses/Acknowledgements">
+      <Message id="0">
+        <Description>Indicates that ATC cannot comply with the request.</Description>
+        <Attributes urgence="N" alert="V" response="NE"/>
+        <Information>
+          <Parameter>
+            <Text>UNABLE</Text>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="1">
+        <Description>Indicates that ATC has received the message and will respond.</Description>
+        <Attributes urgence="N" alert="V" response="NE"/>
+        <Information>
+          <Parameter>
+            <Text>STANDBY</Text>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="3">
+        <Description>Indicates that ATC has received and understood the message.</Description>
+        <Attributes urgence="N" alert="V" response="NE"/>
+        <Information>
+          <Parameter>
+            <Text>ROGER</Text>
+          </Parameter>
+        </Information>
+      </Message>
+    </Class>
+    <Class id="2" name="Vertical Clearances/Requests">
+      <Message id="19">
+        <Description>Instruction to maintain the specified level.</Description>
+        <Attributes urgence="N" alert="A" response="W/U"/>
+        <Information>
+          <Parameter>
+            <Text>MAINTAIN LEVEL </Text>
+            <Data placeholder="[altitude]" dataType="FlightLevel"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="20">
+        <Description>Instruction that a climb to a specified level is to commence and once reached the specified level is to be maintained.</Description>
+        <Attributes urgence="N" alert="A" response="W/U"/>
+        <Information>
+          <Parameter>
+            <Text>CLIMB TO AND MAINTAIN LEVEL </Text>
+            <Data placeholder="[altitude]" dataType="FlightLevel"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="23">
+        <Description>Instruction that a descent to a specified level is to commence and once reached the specified level is to be maintained.</Description>
+        <Attributes urgence="N" alert="A" response="W/U"/>
+        <Information>
+          <Parameter>
+            <Text>DESCEND TO AND MAINTAIN LEVEL </Text>
+            <Data placeholder="[altitude]" dataType="FlightLevel"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="26">
+        <Description>Instruction that a climb is to commence at a rate such that the specified level is reached at or before the specified time.</Description>
+        <Attributes urgence="N" alert="A" response="W/U"/>
+        <Information>
+          <Parameter>
+            <Text>CLIMB TO REACH LEVEL </Text>
+            <Data placeholder="[altitude]" dataType="FlightLevel"/>
+          </Parameter>
+          <Parameter>
+            <Text> BY </Text>
+            <Data placeholder="[time]" dataType="Time"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="27">
+        <Description>Instruction that a climb is to commence at a rate such that the specified level is reached at or before the specified position.</Description>
+        <Attributes urgence="N" alert="A" response="W/U"/>
+        <Information>
+          <Parameter>
+            <Text>CLIMB TO REACH LEVEL </Text>
+            <Data placeholder="[altitude]" dataType="FlightLevel"/>
+          </Parameter>
+          <Parameter>
+            <Text> BY </Text>
+            <Data placeholder="[position]" dataType="Position"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="28">
+        <Description>Instruction that a descent is to commence at a rate such that the specified level is reached at or before the specified time.</Description>
+        <Attributes urgence="N" alert="A" response="W/U"/>
+        <Information>
+          <Parameter>
+            <Text>DESCEND TO REACH LEVEL </Text>
+            <Data placeholder="[altitude]" dataType="FlightLevel"/>
+          </Parameter>
+          <Parameter>
+            <Text> BY </Text>
+            <Data placeholder="[time]" dataType="Time"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="29">
+        <Description>Instruction that a descent is to commence at a rate such that the specified level is reached at or before the specified position.</Description>
+        <Attributes urgence="N" alert="A" response="W/U"/>
+        <Information>
+          <Parameter>
+            <Text>DESCEND TO REACH LEVEL </Text>
+            <Data placeholder="[altitude]" dataType="FlightLevel"/>
+          </Parameter>
+          <Parameter>
+            <Text> BY </Text>
+            <Data placeholder="[position]" dataType="Position"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="36">
+        <Description>Instruction that the climb to the specified level should be made at aircraft's best rate.</Description>
+        <Attributes urgence="U" alert="A" response="W/U" navigationType="1"/>
+        <Information>
+          <Parameter>
+            <Text>EXPEDITE CLIMB TO LEVEL </Text>
+            <Data placeholder="[altitude]" dataType="FlightLevel"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="37">
+        <Description>Instruction that the descend to the specified level should be made at aircraft's best rate.</Description>
+        <Attributes urgence="U" alert="A" response="W/U" navigationType="1"/>
+        <Information>
+          <Parameter>
+            <Text>EXPEDITE DESCEND TO LEVEL </Text>
+            <Data placeholder="[altitude]" dataType="FlightLevel"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="38">
+        <Description>Urgent instruction to immediately climb to the specified level.</Description>
+        <Attributes urgence="D" alert="A/D" response="W/U" navigationType="1"/>
+        <Information>
+          <Parameter>
+            <Text>IMMEDIATELY CLIMB TO LEVEL </Text>
+            <Data placeholder="[altitude]" dataType="FlightLevel"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="39">
+        <Description>Urgent instruction to immediately descend to the specified level.</Description>
+        <Attributes urgence="D" alert="A/D" response="W/U" navigationType="1"/>
+        <Information>
+          <Parameter>
+            <Text>IMMEDIATELY DESCEND TO LEVEL </Text>
+            <Data placeholder="[altitude]" dataType="FlightLevel"/>
+          </Parameter>
+        </Information>
+      </Message>           
+      <Message id="171">
+        <Description>Instruction to climb at not less than the specified rate.</Description>
+        <Attributes urgence="N" alert="A" response="W/U"/>
+        <Information>
+          <Parameter>
+            <Text>CLIMB AT </Text>
+            <Data placeholder="[verticalRate]" dataType="VerticalRate"/>
+          </Parameter>
+          <Parameter>
+            <Text> MINIMUM</Text>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="172">
+        <Description>Instruction to climb at not above the specified rate.</Description>
+        <Attributes urgence="N" alert="A" response="W/U"/>
+        <Information>
+          <Parameter>
+            <Text>CLIMB AT </Text>
+            <Data placeholder="[verticalRate]" dataType="VerticalRate"/>
+          </Parameter>
+          <Parameter>
+            <Text> MAXIMUM</Text>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="173">
+        <Description>Instruction to descend at not less than the specified rate.</Description>
+        <Attributes urgence="N" alert="A" response="W/U"/>
+        <Information>
+          <Parameter>
+            <Text>DESCEND AT </Text>
+            <Data placeholder="[verticalRate]" dataType="VerticalRate"/>
+          </Parameter>
+          <Parameter>
+            <Text> MINIMUM</Text>
+          </Parameter>
+        </Information>
+      </Message>
+     <Message id="174">
+        <Description>Instruction to descend at not above the specified rate.</Description>
+        <Attributes urgence="N" alert="A" response="W/U"/>
+        <Information>
+          <Parameter>
+            <Text>DESCEND AT </Text>
+            <Data placeholder="[verticalRate]" dataType="VerticalRate"/>
+          </Parameter>
+          <Parameter>
+            <Text> MAXIMUM</Text>
+          </Parameter>
+        </Information>
+      </Message>
+    </Class>
+    <Class id="3" name="Crossing Constraints">
+      <Message id="51">
+        <Description>Instruction that the specified position is to be crossed at the specified time.</Description>
+        <Attributes urgence="N" alert="A" response="W/U"/>
+        <Information>
+          <Parameter>
+            <Text>CROSS POSITION </Text>
+            <Data placeholder="[position]" dataType="Position"/>
+          </Parameter>
+            <Parameter>
+            <Text> AT </Text>
+            <Data placeholder="[time]" dataType="Time"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="52">
+        <Description>Instruction that the specified position is to be crossed at or before the specified time.</Description>
+        <Attributes urgence="N" alert="A" response="W/U"/>
+        <Information>
+          <Parameter>
+            <Text>CROSS POSITION </Text>
+            <Data placeholder="[position]" dataType="Position"/>
+          </Parameter>
+            <Parameter>
+            <Text> AT OR BEFORE </Text>
+            <Data placeholder="[time]" dataType="Time"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="53">
+        <Description>Instruction that the specified position is to be crossed at or after the specified time.</Description>
+        <Attributes urgence="N" alert="A" response="W/U"/>
+        <Information>
+          <Parameter>
+            <Text>CROSS POSITION </Text>
+            <Data placeholder="[position]" dataType="Position"/>
+          </Parameter>
+            <Parameter>
+            <Text> AT OR AFTER </Text>
+            <Data placeholder="[time]" dataType="Time"/>
+          </Parameter>
+        </Information>
+      </Message>        
+    </Class>
+    <Class id="4" name="Lateral Offsets/Requests">
+      <Message id="64">
+        <Description>Instruction to fly a parallel track to the cleared route at a displacement of the specified distance in the specified direction.</Description>
+        <Attributes urgence="N" alert="A" response="W/U"/>
+        <Information>
+          <Parameter>
+            <Text>OFFSET </Text>
+            <Data placeholder="[distance offset]" dataType="SpecifiedDistance"/>
+          </Parameter>
+          <Parameter>
+            <Text> </Text>
+            <Data placeholder="[direction]" dataType="DirectionSet"/>
+          </Parameter>
+          <Parameter>
+            <Text> OF ROUTE</Text>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="65">
+        <Description>Instruction to fly a parallel track to the cleared route at a displacement of the specified distance in the specified direction and commencing at the specified position.</Description>
+        <Attributes urgence="N" alert="A" response="W/U"/>
+        <Information>
+          <Parameter>
+            <Text>AT </Text>
+            <Data placeholder="[position]" dataType="Position"/>
+          </Parameter>
+          <Parameter>
+            <Text> OFFSET </Text>
+            <Data placeholder="[distance offset]" dataType="SpecifiedDistance"/>
+          </Parameter>
+          <Parameter>
+            <Text> </Text>
+            <Data placeholder="[direction]" dataType="DirectionSet"/>
+          </Parameter>
+          <Parameter>
+            <Text> OF ROUTE</Text>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="67">
+        <Description>Instruction that the cleared flight route is to be rejoined.</Description>
+        <Attributes urgence="N" alert="A" response="W/U" navigationType="1"/>
+        <Information>
+          <Parameter>
+            <Text>PROCEED BACK ON ROUTE</Text>
+          </Parameter>
+        </Information>
+      </Message>      
+    </Class>
+    <Class id="5" name="Route Modifications/Requests">
+      <Message id="74">
+        <Description>Instruction to proceed directly from its present position to the specified position.</Description>
+        <Attributes urgence="N" alert="A" response="W/U"/>
+        <Information>
+          <Parameter>
+            <Text>PROCEED DIRECT TO </Text>
+            <Data placeholder="[position]" dataType="Position"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="75">
+        <Description>Instruction to proceed, when able, directly to the specified position.</Description>
+        <Attributes urgence="N" alert="A" response="W/U"/>
+        <Information>
+          <Parameter>
+            <Text>WHEN ABLE PROCEED DIRECT TO </Text>
+            <Data placeholder="[position]" dataType="Position"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="79">
+        <Description>Instruction to proceed to the specified position via the specified route.</Description>
+        <Attributes urgence="N" alert="A" response="W/U"/>
+        <Information>
+          <Parameter>
+            <Text>CLEARED TO </Text>
+            <Data placeholder="[position]" dataType="Position"/>
+          </Parameter>
+          <Parameter>
+            <Text> VIA </Text>
+            <Data placeholder="[route clearance]" dataType="RouteClearance"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="80"> 
+        <Description>Instruction to proceed via the specified route.</Description>
+        <Attributes urgence="N" alert="A" response="W/U"/>
+        <Information>
+          <Parameter>
+            <Text>CLEARED </Text>
+            <Data placeholder="[route clearance]" dataType="RouteClearance"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="82">
+        <Description>Instruction giving approval to deviate up to the specified distance from the cleared route in the specified direction.</Description>
+        <Attributes urgence="N" alert="A" response="W/U"/>
+        <Information>
+          <Parameter>
+            <Text>CLEARED TO DEVIATE UP TO </Text>
+            <Data placeholder="[distance offset]" dataType="SpecifiedDistance"/>
+          </Parameter>
+          <Parameter>
+            <Text> </Text>
+            <Data placeholder="[direction]" dataType="DirectionSet"/>
+          </Parameter>
+          <Parameter>
+            <Text> OF ROUTE</Text>
+          </Parameter>
+        </Information>
+      </Message>      
+      <Message id="94">
+        <Description>Instruction to to turn left or right as specified on to the specified heading.</Description>
+        <Attributes urgence="N" alert="A" response="W/U"/>
+        <Information>
+          <Parameter>
+            <Text>TURN </Text>
+            <Data placeholder="[direction]" dataType="DirectionSubset"/>
+          </Parameter>
+          <Parameter>
+            <Text> HEADING </Text>
+            <Data placeholder="[degrees]" dataType="Degrees_ABS"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="96">
+        <Description>Instruction to continue to fly on the current heading.</Description>
+        <Attributes urgence="N" alert="A" response="W/U"/>
+        <Information>
+          <Parameter>
+            <Text>CONTINUE PRESENT HEADING</Text>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="190">
+        <Description>Instruction to fly on the specified heading from the specified position.</Description>
+        <Attributes urgence="N" alert="A" response="W/U"/>
+        <Information>
+          <Parameter>
+            <Text>FLY HEADING </Text>
+            <Data placeholder="[degrees]" dataType="Degrees_ABS"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="215">
+        <Description>Instruction to turn a specified number of degrees left or right.</Description>
+        <Attributes urgence="N" alert="A" response="W/U"/>
+        <Information>
+          <Parameter>
+            <Text>TURN </Text>
+            <Data placeholder="[direction]" dataType="DirectionSubset"/>
+          </Parameter>
+          <Parameter>
+            <Text> </Text>
+            <Data placeholder="[degrees]" dataType="Degrees"/>
+          </Parameter>
+          <Parameter>
+            <Text> DEGREES</Text>
+          </Parameter>
+        </Information>
+      </Message>
+    </Class>
+    <Class id="6" name="Speed Changes/Requests">
+      <Message id="106">
+        <Description>Instruction that the specified speed is to be maintained.</Description>
+        <Attributes urgence="N" alert="A" response="W/U"/>
+        <Information>
+          <Parameter>
+            <Text>MAINTAIN SPEED </Text>
+            <Data placeholder="[speed]" dataType="Speed"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="107">
+        <Description>Instruction that the present speed is to be maintained.</Description>
+        <Attributes urgence="N" alert="A" response="W/U"/>
+        <Information>
+          <Parameter>
+            <Text>MAINTAIN PRESENT SPEED</Text>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="108">
+        <Description>Instruction that the specified speed or a greater speed is to be maintained.</Description>
+        <Attributes urgence="N" alert="A" response="W/U"/>
+        <Information>
+          <Parameter>
+            <Text>MAINTAIN SPEED </Text>
+            <Data placeholder="[speed]" dataType="Speed"/>
+          </Parameter>
+          <Parameter>
+            <Text> OR GREATER</Text>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="109">
+        <Description>Instruction that the specified speed or a lesser speed is to be maintained.</Description>
+        <Attributes urgence="N" alert="A" response="W/U"/>
+        <Information>
+          <Parameter>
+            <Text>MAINTAIN SPEED </Text>
+            <Data placeholder="[speed]" dataType="Speed"/>
+          </Parameter>
+          <Parameter>
+            <Text> OR LESS</Text>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="116">
+        <Description>Notification that the aircraft need no longer comply with the previously issued speed restriction.</Description>
+        <Attributes urgence="N" alert="A" response="W/U"/>
+        <Information>
+          <Parameter>
+            <Text>RESUME NORMAL SPEED</Text>
+          </Parameter>
+        </Information>
+      </Message>
+    </Class>
+    <Class id="7" name="Surveillance Requests">
+      <Message id="123">
+        <Description>Instruction that the specified code (SSR code) is to be selected.</Description>
+        <Attributes urgence="N" alert="A" response="W/U"/>
+        <Information>
+          <Parameter>
+            <Text>SQUAWK </Text>
+            <Data placeholder="[beacon code]" dataType="SSRCode"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="179">
+        <Description>Instruction that the "ident" function on the SSR transponder is to be actuated.</Description>
+        <Attributes urgence="N" alert="A" response="W/U"/>
+        <Information>
+          <Parameter>
+            <Text>SQUAWK IDENT</Text>
+          </Parameter>
+        </Information>
+      </Message>
+    </Class>
+    <Class id="8" name="Report/Confirmation Requests">
+      <Message id="127">
+        <Description>Instruction to report when the aircraft is back on the cleared route.</Description>
+        <Attributes urgence="N" alert="A" response="R" navigationType="1"/>
+        <Information>
+          <Parameter>
+            <Text>REPORT BACK ON ROUTE</Text>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="129">
+        <Description>Instruction to report when the aircraft is maintaining level flight at the specified level.</Description>
+        <Attributes urgence="N" alert="A" response="W/U+R"/>
+        <Information>
+          <Parameter>
+            <Text>REPORT ALTITUDE </Text>
+            <Data placeholder="[altitude]" dataType="FlightLevel"/>
+          </Parameter>
+        </Information>
+      </Message>
+       <Message id="130">
+        <Description>Instruction to report when the aircraft has passed the specified position.</Description>
+        <Attributes urgence="N" alert="A" response="R" navigationType="1"/>
+        <Information>
+          <Parameter>
+            <Text>REPORT PASSING POSITION </Text>
+            <Data placeholder="[position]" dataType="Position"/>
+          </Parameter>
+        </Information>
+      </Message>      
+      <Message id="132">
+        <Description>Instruction to report the present position.</Description>
+        <Attributes urgence="N" alert="A" response="NE" navigationType="1"/>
+        <Information>
+          <Parameter>
+            <Text>CONFIRM POSITION</Text>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="133">
+        <Description>Instruction to report the present level.</Description>
+        <Attributes urgence="N" alert="A" response="Y+NE"/>
+        <Information>
+          <Parameter>
+            <Text>CONFIRM ALTITUDE</Text>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="147">
+        <Description>Instruction to make a position report.</Description>
+        <Attributes urgence="N" alert="A" response="NE" navigationType="1"/>
+        <Information>
+          <Parameter>
+            <Text>REQUEST POSITION REPORT</Text>
+          </Parameter>
+        </Information>
+      </Message>
+<!-- ROMEO 10.11.11 MALESIA -->
+      <Message id="181">
+        <Description>Instruction to make a report distance.</Description>
+        <Attributes urgence="N" alert="A" response="NE" navigationType="1"/>
+        <Information>
+          <Parameter>
+            <Text>REPORT DISTANCE </Text>
+            <Data placeholder="[tofrom]" dataType="ToFrom"/>
+          </Parameter>
+          <Parameter>
+            <Text> </Text>
+            <Data placeholder="[position]" dataType="Position"/>
+          </Parameter>
+        </Information>
+      </Message>
+    </Class>
+
+    <!-- FaVi 11.01.11 MIP2 -->
+    <Class id="9" name="Negotiation Requests/Response">
+    <Message id="148">
+        <Description>Request for the earliest time or position at which the specified level can be accepted.</Description>
+        <Attributes urgence="N" alert="A" response="Y+NE"/>
+        <Information>
+          <Parameter>
+            <Text>WHEN CAN YOU ACCEPT LEVEL </Text>
+            <Data placeholder="[altitude]" dataType="FlightLevel"/>
+          </Parameter>
+        </Information>
+      </Message>
+    <Message id="150">
+        <Description>Istruction to report whether or not the specified level can be accepted at the specified time.</Description>
+        <Attributes urgence="N" alert="A" response="A/N" navigationType="1"/>
+        <Information>
+          <Parameter>
+            <Text>CAN YOU ACCEPT LEVEL </Text>
+            <Data placeholder="[altitude]" dataType="FlightLevel"/>
+          </Parameter>
+          <Parameter>
+            <Text> AT </Text>
+            <Data placeholder="[time]" dataType="Time"/>
+          </Parameter>
+        </Information>
+      </Message>
+    </Class>
+    <Class id="10" name="Air Traffic Advisories">
+    <Message id="157">
+        <Description>Instruction that a continuos transmission is detected on the specified frequency.Check the microphone button.</Description>
+<!--ROMEO 25-05-11: MODIFICA RISPETTO AL DOCUMENTO SR sulla gestione CHECK STUCK MICROPHONE : dual stack FANS e ATN uniformate (precedente response = "NE+R"-->
+        <Attributes urgence="U" alert="A" response="NE"/>
+        <Information>
+          <Parameter>
+            <Text>CHECK STUCK MICROPHONE </Text>
+            <Data placeholder="[frequency]" dataType="Frequency"/>
+          </Parameter>
+        </Information>
+      </Message>      
+    </Class>
+    <Class id="11" name="System Management Messages">
+      <Message id="159">
+        <Description>A system generated message notifying that the ground system has detected an error.</Description>
+        <Attributes urgence="U" alert="A" response="NE"/>
+        <Information>
+          <Parameter>
+            <Text>ERROR </Text>
+            <Data placeholder="[error information]" dataType="FreeText"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="160">
+        <Description>Notification to the avionics that the specified data authority is the next data authority. If no data authority is specified, this indicates that any previously specified next data authority is no longer valid.</Description>
+        <Attributes urgence="L" alert="N" response="NE"/>
+        <Information>
+          <Parameter>
+            <Text>NEXT DATA AUTHORITY </Text>
+            <Data placeholder="[facility designation]" dataType="FacilityDesignation"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <!-- Only HCI/AIF internal use (MEDUP like) -->
+      <Message id="161">
+        <Description>Notification to the avionics that the data link connection with the current data authority is being terminated.</Description>
+        <Attributes urgence="L" alert="N" response="NE" navigationType="1"/>
+        <Information>
+          <Parameter>
+            <Text>END SERVICE</Text>
+          </Parameter>
+        </Information>
+      </Message>
+      <!-- END Only HCI/AIF internal use (MEDUP like) -->
+      <Message id="162">
+        <Description>Notification that the ground system does not support this message.</Description>
+        <Attributes urgence="L" alert="V" response="NE"/>
+        <Information>
+          <Parameter>
+            <Text>SERVICE UNAVAILABLE</Text>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="163">
+        <Description>Notification to the pilot of an ATSU identifier.</Description>
+        <Attributes urgence="L" alert="N" response="N/E"/>
+        <Information>
+          <Parameter>
+            <Text>CONNECTION REQUEST </Text>
+            <Data placeholder="[facility designation]" dataType="FacilityDesignation"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <!-- Only ATN internal use MIMI Spostato di classe-->
+      <Message id="227">
+        <Description>Confirmation to the aircraft system that the ground system has received the message to which the logical acknoledgment refers and found it acceptable for display to the responsible person.</Description>
+        <Attributes urgence="N" alert="A" response="NE" navigationType="2"/>
+        <Information>
+          <Parameter>
+            <Text>LOGICAL ACKNOWLEDGMENT</Text>
+          </Parameter>
+        </Information>
+      </Message>
+      <!-- END Only ATN internal use -->
+
+    </Class>
+    <Class id="12" name="Additional Messages">
+      <Message id="165">
+        <Description>Used to link two messages, indicating the proper order of execution of clearances/ instructions.</Description>
+        <Attributes urgence="L" alert="N" response="NE"/>
+        <Information>
+          <Parameter>
+            <Text>THEN</Text>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="166">
+        <Description>The associated instruction is issued due to traffic considerations.</Description>
+        <Attributes urgence="L" alert="N" response="NE" navigationType="1"/>
+        <Information>
+          <Parameter>
+            <Text>DUE TO TRAFFIC</Text>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="168">
+        <Description>The associated instruction is issued due to traffic considerations.</Description>
+        <Attributes urgence="N" alert="A" response="R" navigationType="1"/>
+        <Information>
+          <Parameter>
+            <Text>DISREGARD </Text>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="169">
+        <Description>No description available.</Description>
+        <Attributes urgence="N" alert="V" response="R" navigationType="1"/>
+        <Information>
+          <Parameter>
+            <!-- ROMEO 27.07.2011 - Inserito presentation -->
+            <Data placeholder="[free text]" dataType="FreeText" presentation="continue"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="170">
+        <Description>No description available.</Description>
+        <Attributes urgence="D" alert="A/D" response="R" navigationType="1"/>
+        <Information>
+          <Parameter>
+            <Data placeholder="[free text urgent]" dataType="FreeText"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="183">
+        <Description>No description available.</Description>
+        <Attributes urgence="L" alert="N" response="N" navigationType="2"/>
+        <Information>
+          <Parameter>
+            <Data placeholder="[free text]" dataType="FreeText"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="500">
+        <Description>No description available.</Description>
+        <Attributes urgence="N" alert="L" response="NE"/>
+        <Information>
+          <Parameter>
+            <Data placeholder="[free text]" dataType="FreeText"/>
+          </Parameter>
+        </Information>
+      </Message>
+    </Class>
+    <Class id="13" name="Voice Change Instruction">
+      <Message id="117">
+        <Description>Instruction that the ATS unit with the specified ATS unit name is to be contacted on the specified frequency.</Description>
+        <Attributes urgence="N" alert="A" response="W/U"/>
+        <Information>
+          <Parameter>
+            <Text>CONTACT </Text>
+            <Data placeholder="[ICAO unit name]" dataType="UnitName"/>
+          </Parameter>
+          <Parameter>
+            <Text> </Text>
+            <Data placeholder="[frequency]" dataType="Frequency"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <!-- FaVi 11.01.11 MIP2 -->
+      <Message id="118">
+        <Description>At the specified position the ATS unit with the specified ATS unit name is to be contacted on specified frequency.</Description>
+        <Attributes urgence="N" alert="A" response="W/U"/>
+        <Information>
+          <Parameter>
+            <Text>AT POSITION </Text>
+            <Data placeholder="[position]" dataType="Position"/>
+          </Parameter>
+          <Parameter>
+            <Text> CONTACT </Text>
+            <Data placeholder="[unitname]" dataType="UnitName"/>
+          </Parameter>
+          <Parameter>
+            <Text> </Text>
+            <Data placeholder="[frequency]" dataType="Frequency"/>
+          </Parameter>
+        </Information>
+      </Message>
+     <!-- FaVi 11.01.11 END MIP2 -->
+    </Class>
+  </Direction>
+  <Direction value="downlink">
+    <Class id="1" name="Responses/Acknowledgements">
+      <Message id="0">
+        <Description>The instruction is understood and will be complied with.</Description>
+        <Attributes urgence="N" alert="M" response="N"/>
+        <Information>
+          <Parameter>
+            <Text>WILCO</Text>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="1">
+        <Description>The instruction cannot be complied with.</Description>
+        <Attributes urgence="N" alert="M" response="N"/>
+        <Information>
+          <Parameter>
+            <Text>UNABLE</Text>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="2">
+        <Description>Wait for a reply.</Description>
+        <Attributes urgence="N" alert="M" response="N"/>
+        <Information>
+          <Parameter>
+            <Text>STANDBY</Text>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="3">
+        <Description>Message received and understood.</Description>
+        <Attributes urgence="N" alert="M" response="N"/>
+        <Information>
+          <Parameter>
+            <Text>ROGER</Text>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="4">
+        <Description>Yes.</Description>
+        <Attributes urgence="N" alert="M" response="N"/>
+        <Information>
+          <Parameter>
+            <Text>AFFIRM</Text>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="5">
+        <Description>No.</Description>
+        <Attributes urgence="N" alert="M" response="N"/>
+        <Information>
+          <Parameter>
+            <Text>NEGATIVE</Text>
+          </Parameter>
+        </Information>
+      </Message>
+    </Class>
+    <Class id="2" name="Vertical Clearances/Requests">
+      <Message id="6">
+        <Description>Request to fly at the specified level.</Description>
+        <Attributes urgence="N" alert="L" response="Y"/>
+        <Information>
+          <Parameter>
+            <Text>REQUEST LEVEL </Text>
+            <Data placeholder="[altitude]" dataType="FlightLevel"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="7">
+        <Description>Request to fly at a level within the specified vertical range.</Description>
+        <Attributes urgence="N" alert="L" response="Y" navigationType="1"/>
+        <Information>
+          <Parameter>
+            <Text>REQUEST BLOCK LEVEL </Text>
+            <Data placeholder="[altitude]" dataType="FlightLevel"/>
+          </Parameter>
+          <Parameter>
+            <Text> TO LEVEL </Text>
+            <Data placeholder="[altitude]" dataType="FlightLevel"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="8">
+        <Description>Request to cruise climb to the specified level.</Description>
+        <Attributes urgence="N" alert="L" response="Y" navigationType="1"/>
+        <Information>
+          <Parameter>
+            <Text>REQUEST CRUISE CLIMB TO LEVEL </Text>
+            <Data placeholder="[altitude]" dataType="FlightLevel"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="9">
+        <Description>Request to climb to the specified level.</Description>
+        <Attributes urgence="N" alert="L" response="Y"/>
+        <Information>
+          <Parameter>
+            <Text>REQUEST CLIMB TO LEVEL </Text>
+            <Data placeholder="[altitude]" dataType="FlightLevel"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="10">
+        <Description>Request to descend to the specified level.</Description>
+        <Attributes urgence="N" alert="L" response="Y"/>
+        <Information>
+          <Parameter>
+            <Text>REQUEST DESCENT TO LEVEL </Text>
+            <Data placeholder="[altitude]" dataType="FlightLevel"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="11">
+        <Description>Request that at the specified position a climb to the specified level be approved.</Description>
+        <Attributes urgence="N" alert="L" response="Y" navigationType="1"/>
+        <Information>
+          <Parameter>
+            <Text>AT </Text>
+            <Data placeholder="[position]" dataType="Position"/>
+          </Parameter>
+          <Parameter>
+            <Text> REQUEST CLIMB TO LEVEL </Text>
+            <Data placeholder="[altitude]" dataType="FlightLevel"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="12">
+        <Description>Request that at the specified position a descent to the specified level be approved.</Description>
+        <Attributes urgence="N" alert="L" response="Y" navigationType="1"/>
+        <Information>
+          <Parameter>
+            <Text>AT </Text>
+            <Data placeholder="[position]" dataType="Position"/>
+          </Parameter>
+          <Parameter>
+            <Text> REQUEST DESCENT TO LEVEL </Text>
+            <Data placeholder="[altitude]" dataType="FlightLevel"/>
+          </Parameter>
+        </Information>
+      </Message>
+    </Class>
+    <Class id="4" name="Lateral Offsets/Requests">
+      <Message id="15">
+        <Description>Request that a parallel track, offset from the cleared track by the specified distance in the specified direction, be approved.</Description>
+        <Attributes urgence="N" alert="L" response="Y" navigationType="1"/>
+        <Information>
+          <Parameter>
+            <Text>REQUEST OFFSET </Text>
+            <Data placeholder="[distance offset]" dataType="SpecifiedDistance"/>
+          </Parameter>
+          <Parameter>
+            <Text> </Text>
+            <Data placeholder="[direction]" dataType="DirectionSet"/>
+          </Parameter>
+          <Parameter>
+            <Text> OF ROUTE</Text>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="16">
+        <Description>Request that a parallel track, offset from the cleared track by the specified distance in the specified direction, be approved from the specified position.</Description>
+        <Attributes urgence="N" alert="L" response="Y" navigationType="1"/>
+        <Information>
+          <Parameter>
+            <Text>AT </Text>
+            <Data placeholder="[position]" dataType="Position"/>
+          </Parameter>
+          <Parameter>
+            <Text> REQUEST OFFSET </Text>
+            <Data placeholder="[distance offset]" dataType="SpecifiedDistance"/>
+          </Parameter>
+          <Parameter>
+            <Text> </Text>
+            <Data placeholder="[direction]" dataType="DirectionSet"/>
+          </Parameter>
+          <Parameter>
+            <Text> OF ROUTE</Text>
+          </Parameter>
+        </Information>
+      </Message>
+    </Class>
+    <Class id="6" name="Speed Changes/Requests">
+      <Message id="18">
+        <Description>Request to fly at the specified speed.</Description>
+        <Attributes urgence="N" alert="L" response="Y"/>
+        <Information>
+          <Parameter>
+            <Text>REQUEST SPEED </Text>
+            <Data placeholder="[speed]" dataType="Speed"/>
+          </Parameter>
+        </Information>
+      </Message>
+    </Class>
+    <Class id="5" name="Route Modifications/Requests">
+      <Message id="22">
+        <Description>Request to track from the present position direct to the specified position.</Description>
+        <Attributes urgence="N" alert="L" response="Y"/>
+        <Information>
+          <Parameter>
+            <Text>REQUEST DIRECT TO </Text>
+            <Data placeholder="[position]" dataType="Position"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="23">
+        <Description>Request for the specified procedure clearance.</Description>
+        <Attributes urgence="N" alert="L" response="Y"/>
+        <Information>
+          <Parameter>
+            <Text>REQUEST </Text>
+            <Data placeholder="[procedure name]" dataType="ProcedureName"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="24">
+        <Description>Request for a route clearance.</Description>
+        <Attributes urgence="N" alert="L" response="Y"/>
+        <Information>
+          <Parameter>
+            <Text>REQUEST </Text>
+            <Data placeholder="[route clearance]" dataType="RouteClearance"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="25">
+        <Description>Request for a clearance.</Description>
+        <Attributes urgence="N" alert="L" response="Y"/>
+        <Information>
+          <Parameter>
+            <Text>REQUEST CLEARANCE </Text>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="27">
+        <Description>Request for a weather deviation up to the  specified distance off track in the specified direction</Description>
+        <Attributes urgence="N" alert="L" response="Y"/>
+        <Information>
+          <Parameter>
+            <Text>REQUEST WEATHER DEVIATION UP TO </Text>
+            <Data placeholder="[distance offset]" dataType="SpecifiedDistance"/>
+          </Parameter>
+          <Parameter>
+            <Text> </Text>
+            <Data placeholder="[direction]" dataType="DirectionSet"/>
+          </Parameter>
+          <Parameter>
+            <Text> OF ROUTE</Text>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="70">
+        <Description>Request a clearance to adopt the specified heading.</Description>
+        <Attributes urgence="N" alert="L" response="Y"/>
+        <Information>
+          <Parameter>
+            <Text>REQUEST HEADING </Text>
+            <Data placeholder="[degrees]" dataType="Degrees"/>
+          </Parameter>
+        </Information>
+      </Message>
+    </Class>
+    <Class id="8" name="Report/Confirmation Requests">
+      <Message id="28">
+        <Description>Notification of leaving the specified level.</Description>
+        <Attributes urgence="N" alert="M" response="N"/>
+        <Information>
+          <Parameter>
+            <Text>LEAVING LEVEL </Text>
+            <Data placeholder="[altitude]" dataType="FlightLevel"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="29">
+        <Description>Notification of climbing to the specified level.</Description>
+        <Attributes urgence="N" alert="M" response="N"/>
+        <Information>
+          <Parameter>
+            <Text>CLIMBING TO LEVEL </Text>
+            <Data placeholder="[altitude]" dataType="FlightLevel"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="30">
+        <Description>Notification of descending to the specified level.</Description>
+        <Attributes urgence="N" alert="M" response="N"/>
+        <Information>
+          <Parameter>
+            <Text>DESCENDING TO LEVEL </Text>
+            <Data placeholder="[altitude]" dataType="FlightLevel"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="31">
+        <Description>Notification of passing the specified position</Description>
+        <Attributes urgence="N" alert="M" response="N" navigationType="1"/>
+        <Information>
+          <Parameter>
+            <Text>PASSING POSITION</Text>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="32">
+        <Description>Notification of the present level.</Description>
+        <Attributes urgence="N" alert="M" response="N"/>
+        <Information>
+          <Parameter>
+            <Text>PRESENT ALTITUDE </Text>
+            <Data placeholder="[altitude]" dataType="FlightLevel"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="33">
+        <Description>Notification of the present position.</Description>
+        <Attributes urgence="N" alert="M" response="N" navigationType="1"/>
+        <Information>
+          <Parameter>
+            <Text>PRESENT POSITION </Text>
+            <Data placeholder="[position]" dataType="Position"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="34">
+        <Description>Notification of the present speed.</Description>
+        <Attributes urgence="N" alert="M" response="N"/>
+        <Information>
+          <Parameter>
+            <Text>PRESENT SPEED </Text>
+            <Data placeholder="[speed]" dataType="Speed"/>
+          </Parameter>
+        </Information>
+      </Message>
+
+      <!-- FaVi 11.01.11 MIP2 -->
+      <Message id="37">
+       <Description>Notification that the aircraft is maintaining the specified level.</Description>
+        <Attributes urgence="N" alert="M" response="N"/>
+        <Information>
+          <Parameter>
+            <Text>MAINTAINING </Text>
+            <Data placeholder="[level]" dataType="FlightLevel"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <!-- FaVi 11.01.11 END MIP2 -->
+
+      <Message id="40">
+        <Description>Read-back of the assigned route.</Description>
+        <Attributes urgence="N" alert="M" response="N"/>
+        <Information>
+          <Parameter>
+            <Text>ASSIGNED ROUTE </Text>
+            <Data placeholder="[route clearance]" dataType="RouteClearance"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="41">
+        <Description>The aircraft has regained the cleared route.</Description>
+        <Attributes urgence="N" alert="M" response="N" navigationType="1"/>
+        <Information>
+          <Parameter>
+            <Text>BACK ON ROUTE</Text>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="43">
+        <Description>The ETA at the next waypoint is as specified.</Description>
+        <Attributes urgence="N" alert="M" response="N"/>
+        <Information>
+          <Parameter>
+            <Text>NEXT WAYPOINT ETA </Text>
+            <Data placeholder="[time]" dataType="Time"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="48">
+        <Description>Position report.</Description>
+        <Attributes urgence="N" alert="M" response="N" navigationType="1"/>
+        <Information>
+          <Parameter>
+            <Text>POSITION REPORT </Text>
+            <Data placeholder="[position report]" dataType="PositionReport"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="72">
+        <Description>Notification that the aircraft has reached the specified level.</Description>
+        <Attributes urgence="N" alert="M" response="N"/>
+        <Information>
+          <Parameter>
+            <Text>REACHING LEVEL </Text>
+            <Data placeholder="[altitude]" dataType="FlightLevel"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="89">
+        <Description>The specified ATS unit is being monitored on the specified frequency</Description>
+        <Attributes urgence="U" alert="M" response="N" navigationType="2"/>
+        <Information>
+          <Parameter>
+            <Text>MONITORING </Text>
+            <Data placeholder="[unitname]" dataType="UnitName"/>
+          </Parameter>
+          <Parameter>
+            <Text> </Text>
+            <Data placeholder="[frequency]" dataType="Frequency"/>
+          </Parameter>
+        </Information>
+      </Message>
+<!-- ROMEO 10.11.11 MALESIA -->
+      <Message id="78">
+        <Description> </Description>
+        <Attributes urgence="U" alert="M" response="N" navigationType="1"/>
+        <Information>
+          <Parameter>
+            <Text>AT </Text>
+            <Data placeholder="[time]" dataType="Time"/>
+          </Parameter>
+          <Parameter>
+            <Text> DISTANCE </Text>
+            <Data placeholder="[distance]" dataType="SpecifiedDistance"/>
+          </Parameter>
+          <Parameter>
+            <Text> </Text>
+            <Data placeholder="[tofrom]" dataType="ToFrom"/>
+          </Parameter>
+          <Parameter>
+            <Text> POSITION </Text>
+            <Data placeholder="[position]" dataType="Position"/>
+          </Parameter>
+        </Information>
+      </Message>
+    </Class>
+
+    <!-- FaVi 11.01.11 MIP2 -->
+    <Class id="9" name="Negotiation Requests/Response">
+      <Message id="53">
+        <Description>Request for the earlies time at which a clearance to climb can be expected.</Description>
+        <Attributes urgence=" " alert=" " response="Y" navigationType="1"/>
+        <Information>
+          <Parameter>
+            <Text>WHEN CAN WE EXPECT HIGHTER ALTITUDE</Text>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="81">
+      <Description>We can accepted the specified level at the specified time.</Description>
+        <Attributes urgence=" " alert=" " response="N" navigationType="2"/>
+        <Information>
+          <Parameter>
+            <Text>WE CAN ACCEPT LEVEL </Text>
+            <Data placeholder="[level]" dataType="FlightLevel"/>
+          </Parameter>
+          <Parameter>
+            <Text> AT </Text>
+            <Data placeholder="[time]" dataType="Time"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="82">
+      <Description>We cannot accept the specified level.</Description>
+        <Attributes urgence=" " alert=" " response="N" navigationType="2"/>
+        <Information>
+          <Parameter>
+            <Text>WE CANNOT ACCEPT LEVEL </Text>
+            <Data placeholder="[level]" dataType="FlightLevel"/>
+          </Parameter>
+        </Information>
+      </Message>
+    </Class>
+    <!-- FaVi 11.01.11 END MIP2 -->
+
+    <Class id="14" name="Emergency Messages">
+      <Message id="57">
+        <Description>Notification of fuel remaining and the number of person on board.</Description>
+        <Attributes urgence="U" alert="H" response="N" navigationType="1"/>
+        <Information>
+          <Parameter>
+            <Text></Text>
+            <Data placeholder="[remainingfuel]" dataType="Time"/>
+          </Parameter>
+          <Parameter>
+            <Text> OF FUEL REMAINING AND </Text>
+          </Parameter>
+          <Parameter>
+            <Text></Text>
+            <Data placeholder="[remainingsouls]" dataType="RemainingSouls"/>
+          </Parameter>
+          <Parameter>
+            <Text> SOULS ON BOARD</Text>
+          </Parameter>
+     </Information>
+    </Message>
+      <Message id="55">
+        <Description>Urgency prefix.</Description>
+        <Attributes urgence="U" alert="H" response="N" navigationType="1" emergency="H"/>
+        <Information>
+          <Parameter>
+            <Text>PAN PAN PAN</Text>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="56">
+        <Description>Distress prefix.</Description>
+        <!-- RoMa 07.01.11 Malesia Aggiunto attributo emergency -->
+        <Attributes urgence="D" alert="H" response="N" emergency="H"/>
+        <Information>
+          <Parameter>
+            <Text>MAYDAY MAYDAY MAYDAY</Text>
+          </Parameter>
+        </Information>
+      </Message>
+
+      <!-- FaVi 11.01.11 MIP2 -->
+      <Message id="58">
+        <Description>Notification that the pilot wishes to cancel the emergency condition.</Description>
+        <Attributes urgence="U" alert="M" response="N" navigationType="1"/>
+        <Information>
+          <Parameter>
+            <Text>CANCEL EMERGENCY </Text>
+          </Parameter>
+        </Information>
+      </Message>
+      <!-- FaVi 11.01.11 MIP2 -->
+    </Class>
+    <Class id="11" name="System Management Messages">
+      <Message id="62">
+        <Description>A system generated message that the avionics has detected an error.</Description>
+        <Attributes urgence="U" alert="L" response="N"/>
+        <Information>
+          <Parameter>
+            <Text>ERROR </Text>
+            <!-- RoMa 08.03.2011 MIP2 Continue - Inserito presentation -->
+            <Data placeholder="[error information]" dataType="FreeText" presentation="continue"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="63">
+        <Description>A system generated denial to any CPDLC message sent from a ground facility that is not the current data authorithy.</Description>
+        <Attributes urgence="L" alert="L" response="N"/>
+        <Information>
+          <Parameter>
+            <Text>NOT CURRENT DATA AUTHORITY</Text>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="64">
+        <Description>Notification to the ground system that the specified ATSU is the current data authority.</Description>
+        <Attributes urgence="L" alert="L" response="N" navigationType="1"/>
+        <Information>
+          <Parameter>
+            <Data placeholder="[ICAO facility designation]" dataType="FacilityDesignation"/>
+          </Parameter>
+        </Information>
+      </Message>
+
+      <!-- FaVi 11.01.11 MIP2 -->
+      <Message id="73">
+        <Description>A system generated message indicating the software version number.</Description>
+        <Attributes urgence="L" alert="L" response="N" navigationType="1"/>
+        <Information>
+          <Parameter>
+            <Data placeholder="[version number]" dataType="FreeText"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <!-- FaVi 11.01.11 END MIP2 -->
+
+      <!-- Only ATN -->
+      <Message id="107">
+        <Description>A system-generated message sent to a ground system that tries to connect to an aircraft whena current data authority has designed the ground system as the NDA</Description>
+        <Attributes urgence="L" alert="L" response="N" navigationType="2"/>
+        <Information>
+          <Parameter>
+            <Text>NOT AUTHORIZED NEXT DATA AUTHORITY</Text>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="100">
+        <Description>Confirmation to the aircraft system that the ground system has received the message to which the logical acknowledgment refers and found it acceptable for display to the responsible person.</Description>
+        <Attributes urgence="N" alert="M" response="N" navigationType="2"/>
+        <Information>
+          <Parameter>
+            <Text>LOGICAL ACKNOWLEDGMENT</Text>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="99">
+       <Description>A system generated message to inform a ground facility that it is now the current data</Description>
+        <Attributes urgence="L" alert="L" response="N" navigationType="2"/>
+        <Information>
+          <Parameter>
+            <Text>CURRENT DATA AUTHORITY</Text>
+          </Parameter>
+        </Information>
+      </Message>
+      <!-- END Only ATN -->
+    </Class>
+    <Class id="12" name="Additional Messages">
+      <Message id="65">
+        <Description>Used to explain reasons for pilot's message.</Description>
+        <Attributes urgence="L" alert="L" response="N"/>
+        <Information>
+          <Parameter>
+            <Text>DUE TO WEATHER</Text>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="66">
+        <Description>Used to explain reasons for pilot's message.</Description>
+        <Attributes urgence="L" alert="L" response="N"/>
+        <Information>
+          <Parameter>
+            <Text>DUE TO AIRCRAFT PERFORMANCE</Text>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="67">
+        <Description>No description available.</Description>
+        <Attributes urgence="N" alert="L" response="N"/>
+        <Information>
+          <Parameter>
+            <Data placeholder="[free text]" dataType="FreeText"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="68">
+        <Description>No description available.</Description>
+        <Attributes urgence="D" alert="H" response="Y" navigationType="1"/>
+        <Information>
+          <Parameter>
+            <Data placeholder="[free text]" dataType="FreeText"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="98">
+        <Description>No description available.</Description>
+        <Attributes urgence="N" alert="L" response="N" navigationType="2"/>
+        <Information>
+          <Parameter>
+            <Data placeholder="[free text]" dataType="FreeText"/>
+          </Parameter>
+        </Information>
+      </Message>
+      <Message id="501">
+        <Description>No description available.</Description>
+        <Attributes urgence="N" alert="L" response="NE"/>
+        <Information>
+          <Parameter>
+            <Data placeholder="[free text]" dataType="FreeText"/>
+          </Parameter>
+        </Information>
+      </Message>
+    </Class>
+  </Direction>
+</MessageTable>

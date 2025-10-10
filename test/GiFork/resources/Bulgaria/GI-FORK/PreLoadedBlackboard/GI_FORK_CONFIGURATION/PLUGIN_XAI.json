@@ -1,0 +1,5 @@
+{
+    "KILL_NODE": true,
+    "MTCD_PROBABILITY_TRESHOLD":1.0,
+    "SNET_APW_SUA_COMPRESSED":true
+}

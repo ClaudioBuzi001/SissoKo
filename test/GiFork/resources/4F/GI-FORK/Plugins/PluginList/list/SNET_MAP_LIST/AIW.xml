@@ -1,0 +1,14 @@
+<msg>
+
+<!--  LISTE AIW MAP for LP  -->
+<list ROW_ID="@main_sector@" condition="@ISAIW@">
+	<attributes ID="AIW" behavior_if_empty="delete" side="SNET:0"   />
+	<!-- col key="col1" indata="@sector@" outdata="LP"   /-->
+	<col key="col1" indata="@main_sector@" outdata="LP"   />
+	<col key="col2" indata="@sectors@" outdata="SECTORS"   />
+	<col key="col3" indata="@status@" outdata="STATUS" 
+		row_fgr="@SNET_LIST(FIELD_TO_CHECK1=..status, INFO_TYPE1=COLOR)@"       
+		row_leftClick="@SNET_LIST(CALLBACK_TO_CHECK=..CALLBACK_CHANGE_STATUS)@" />
+		<!-- row_leftClick="EXTERNAL_ORDER(ORDER_ID=AAI, OBJECT_TYPE=AAI,  PREVIEW_NAME=quickAAI, DATA={#STATUS})" /> -->
+</list>
+</msg>

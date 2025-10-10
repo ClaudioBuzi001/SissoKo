@@ -1,0 +1,10 @@
+<msg>
+	<list ROW_ID="@SEQ_ID@" condition="true">
+		<attributes	ID="AMAN LIST" behavior_if_empty="delete" behavior_if_full="delete"	side="AMAN"	 />
+		<col key="col1"	 indata="@SEQ_ID@"	outdata="SEQ_ID"	col_state="filteredVisible" />
+		<col key="col2"	 indata="@RWY@"     outdata="RWY"       col_state="filteredVisible" />
+		<col key="col3"	 indata="@AIRP@"    outdata="AIRP"      col_state="filteredVisible" />
+	</list>
+</msg>
+
+

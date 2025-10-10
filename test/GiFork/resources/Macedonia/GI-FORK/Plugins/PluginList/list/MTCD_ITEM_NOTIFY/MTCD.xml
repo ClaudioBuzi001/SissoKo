@@ -1,0 +1,26 @@
+<msg>
+
+<list ROW_ID="MTCD_@CONFLICT_ID@" condition="true">
+	<attributes ID="MTCD LIST" behavior_if_empty="hide" max_item_showed="10" side="CONFL:1" ADD_BUTTON_CALLBACK="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW, ORDER_ID=MTHP, OBJECT_TYPE=MTHP, PREVIEW_NAME=choiceMTHP, )" />
+	<extInfo key="BUTTONS" data="1"/>
+    <extInfo key="BUTTON#1" data="CONFLICT_ROLE" callback="FILTER_MTCD_CONFLICT_ROLE(STATUS=TOGGLE)" initcallback="FILTER_MTCD_CONFLICT_ROLE(STATUS=OFF)" side="DOWNRIGHT" text="@ALIAS_LIST(FIELD_TO_CHECK=..MY_ROLE)@"/>
+    <!-- col key="col1" messagetype="mtcd"		indata="@BHO@"																	outdata="ACK"			col_state="filteredVisible" row_fgr="#CECECE"/-->
+    <col key="col1" messagetype="mtcd"      indata="@ALIAS_LIST(FIELD_TO_CHECK=..MTCD_ACK)@"                                     outdata="ACK"           col_state="filteredVisible" row_fgr="#CECECE" row_leftClick="EXTERNAL_ORDER( ORDER_ID=EWA ,  OBJECT_TYPE=EWA , PREVIEW_NAME=quickEWA )"/>
+    <col key="col2" messagetype="mtcd"		indata="@TFI_HOURS@:@TFI_MINUTES@"												outdata="TFI"			col_state="filteredVisible"  choicefield="$FUSION"/>
+    <!-- col key="col3" messagetype="mtcd"		indata="@CROSSING_TYPE@"														outdata="CAT"			col_state="filteredVisible" row_fgr="#CECECE"/-->
+    <col key="col3" messagetype="mtcd"      indata="@CAT@"                                                                  outdata="CAT"           col_state="filteredVisible" row_fgr="#CECECE"/>
+    <col key="col4" messagetype="mtcd"		indata="@CONFLICT_ID@"		outdata="C ID" col_state="filteredVisible"  row_leftClick="SHOW_CONFLICT_TRAJECTORY(CALLSIGN1=@FLIGHT_TO_FLIGHT_CONFLICT_OBJECT_NAME_1@ , CALLSIGN2=@FLIGHT_TO_FLIGHT_CONFLICT_OBJECT_NAME_2@ , CONFLICT_ID=@CONFLICT_ID@ ,COLOR=@LIST_FGR_COLOR(FIELD_TO_CHECK=..CONFLICT_OR_RISK , DEFAULT=#fafafa)@)" order="$Alias" row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..CONFLICT_OR_RISK , DEFAULT=#fafafa)@"/>
+	<col key="col5" messagetype="mtcd"		indata="@FLIGHT_TO_FLIGHT_CONFLICT_OBJECT_NAME_1@"								outdata="CALLSIGN1"		col_state="filteredVisible" row_fgr="@CS1_COLOR@"  row_leftClick="SHOW_CONFLICT_TRAJECTORY(CALLSIGN=@FLIGHT_TO_FLIGHT_CONFLICT_OBJECT_NAME_1@, CONFLICT_ID=@CONFLICT_ID@)" order="$Alias"/>	
+	<col key="col6" messagetype="mtcd"		indata="@FLIGHT_TO_FLIGHT_CONFLICT_OBJECT_NAME_2@"								outdata="CALL2/AREA"		col_state="filteredVisible" row_fgr="@CS2_COLOR@"  row_leftClick="SHOW_CONFLICT_TRAJECTORY(CALLSIGN=@FLIGHT_TO_FLIGHT_CONFLICT_OBJECT_NAME_2@, CONFLICT_ID=@CONFLICT_ID@)" order="$Alias"/>
+	<col key="col7" messagetype="flight1"	indata="@FLIGHT_EXTFLIGHT<BB_CALLSIGN_FLIGHT<FLIGHT_TO_FLIGHT_CONFLICT_OBJECT_NAME_1>.FLIGHT_NUM>.ATY@"	outdata="ATY1"		col_state="filteredVisible"  />
+	<col key="col8" messagetype="flight2"	indata="@FLIGHT_EXTFLIGHT<BB_CALLSIGN_FLIGHT<FLIGHT_TO_FLIGHT_CONFLICT_OBJECT_NAME_2>.FLIGHT_NUM>.ATY@"	outdata="ATY2"		col_state="filteredVisible"  />
+	<col key="col9" messagetype="flight1"	indata="@FLIGHT_EXTFLIGHT<BB_CALLSIGN_FLIGHT<FLIGHT_TO_FLIGHT_CONFLICT_OBJECT_NAME_1>.FLIGHT_NUM>.WTC@"	outdata="WTC1"		col_state="filteredVisible"  />
+	<col key="col10" messagetype="flight2"	indata="@FLIGHT_EXTFLIGHT<BB_CALLSIGN_FLIGHT<FLIGHT_TO_FLIGHT_CONFLICT_OBJECT_NAME_2>.FLIGHT_NUM>.WTC@"	outdata="WTC2"		col_state="filteredVisible"  />
+	<col key="col11" messagetype="mtcd"		indata="@TMD_DISTANCE@"												outdata="MDIST(NM)"			col_state="filteredVisible" />
+	<col key="col12" messagetype="mtcd"		indata="@TMD_HOURS@:@TMD_MINUTES@"												outdata="TMD"			col_state="filteredVisible"  choicefield="$FUSION"/>
+	<col key="col13" messagetype="mtcd"		indata="@ALIAS_LIST(FIELD_TO_CHECK=..CONFLICT_OR_RISK)@"													outdata="TYPE"			col_state="filteredVisible" row_fgr="#CECECE"/>
+	<col key="col14" messagetype="mtcd"		indata="@ENCOUNTER_DURATION@"														outdata="DURATION"			col_state="filteredVisible" row_fgr="#CECECE"/>
+	<col key="col15" messagetype="mtcd"		indata="@ENCOUNTER_PROBABILITY@"												outdata="PROBABILITY"			col_state="filteredVisible"  />
+	<col key="col16" messagetype="mtcd"		indata="@ALIAS_LIST(FIELD_TO_CHECK=..OXF)@"												outdata="CONFLICT_ROLE"			col_state="notFilteredNotVisible"  />
+</list>
+</msg>

@@ -1,0 +1,26 @@
+<msg>
+
+<!--  LISTE LIS MAP  -->
+<list ROW_ID="@UID@" condition="@ISSTCA@">
+	<attributes ID="STCA PRESELECTION FILTER" behavior_if_empty="delete"		
+			side="GRP" 
+			open_in_grp="true"
+			visible="false" 
+			CLOSE_BUTTON_CALLBACK= "DUMMY"
+			 />
+    <col key="col1" indata="@KEY_ID@" outdata="MAP" />
+    <col key="col2" indata="@vfrPsf@" outdata="VFR"    />
+    <col key="col3" indata="@ifrPsf@" outdata="IFR"    />
+	<col key="col4" indata="@milPsf@" outdata="MIL"    />
+	<col key="col5" indata="@penPsf@" outdata="PEN"    />
+	<col key="col6" indata="@psrPsf@" outdata="PRI"    />
+	<col key="col7" indata="@macPsf@" outdata="NO MODE-A"    />
+	<col key="col8" indata="@rahPsf@" outdata="NO MODE-C"    />
+	<col key="col9" indata="@mcsPsf@" outdata="SSR"    />
+	<col key="col10" indata="@mcs1@ @mcs2@ @mcs3@ @mcs4@ @mcs5@ @mcs6@ @mcs7@ @mcs8@ @mcs9@ @mcs10@ @mcs11@ @mcs12@ @mcs13@ @mcs14@ @mcs15@" outdata="SSRs" col_width="150"     />
+	<col key="col11" indata="@cssPsf@" outdata="CALLSIGN"  row_blink_state="@ALIAS_LIST(FIELD_TO_CHECK=..TEMPLATE, INFO_TYPE=BLINK)@"  />
+	<col key="col12" indata="@css1@ @css2@ @css3@ @css4@ @css5@ @css6@ @css7@ @css8@ @css9@ @css10@ @css11@ @css12@ @css13@ @css14@ @css15@" outdata="CALLSIGNs" col_width="150"     />
+</list>
+
+
+</msg>

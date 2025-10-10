@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table>
+	<row code="0x004000" mask="0xfffffc00" mark="Z   "/>     <!--Zimbabwe-->
+	<row code="0x006000" mask="0xfffff000" mark="C9  "/>     <!--Mozambique-->
+	<row code="0x008000" mask="0xffff8000" mark="ZS  "/>     <!--South Africa-->
+	<row code="0x010000" mask="0xffff8000" mark="SU  "/>     <!--Egypt-->
+	<row code="0x018000" mask="0xffff8000" mark="5A  "/>     <!--Libyan  Arab Hamahiriya-->
+	<row code="0x020000" mask="0xffff8000" mark="CN  "/>     <!--Morocco-->
+	<row code="0x028000" mask="0xffff8000" mark="TS  "/>     <!--Tunisia-->
+	<row code="0x030000" mask="0xfffffc00" mark="A2  "/>     <!--Botswana-->
+	<row code="0x032000" mask="0xfffff000" mark="9U  "/>     <!--Burundy-->
+	<row code="0x034000" mask="0xfffff000" mark="TJ  "/>     <!--Cameroon-->
+	<row code="0x035000" mask="0xfffffc00" mark="****"/>     <!--Comoros-->
+	<row code="0x08c000" mask="0xfffff000" mark="TN  "/>     <!--Congo-->
+	<row code="0x038000" mask="0xfffff000" mark="TU  "/>     <!--Cote d'Ivoire-->
+	<row code="0x03e000" mask="0xfffff000" mark="TR  "/>     <!--Gabon-->
+	<row code="0x040000" mask="0xfffff000" mark="ET  "/>     <!--Ethiopia-->
+	<row code="0x042000" mask="0xfffff000" mark="3C  "/>     <!--Equatorial Guines-->
+	<row code="0x044000" mask="0xfffff000" mark="9G  "/>     <!--Ghana-->
+	<row code="0x046000" mask="0xfffff000" mark="3X  "/>     <!--Guinea-->
+	<row code="0x048000" mask="0xfffffc00" mark="****"/>     <!--Guinea Bissau-->
+	<row code="0x04a000" mask="0xfffffc00" mark="7P  "/>     <!--Lesotho-->
+	<row code="0x04c000" mask="0xfffff000" mark="5Y  "/>     <!--Kenya-->
+	<row code="0x050000" mask="0xfffff000" mark="EL  "/>     <!--Liberia-->
+	<row code="0x054000" mask="0xfffff000" mark="5R  "/>     <!--Madagascar-->
+	<row code="0x058000" mask="0xfffff000" mark="7QY "/>     <!--Malawi-->
+	<row code="0x05a000" mask="0xfffffc00" mark="8Q  "/>     <!--Maldives-->
+	<row code="0x05c000" mask="0xfffff000" mark="TZ  "/>     <!--Mali-->
+	<row code="0x05e000" mask="0xfffffc00" mark="5T  "/>     <!--Mauritania-->
+	<row code="0x060000" mask="0xfffffc00" mark="3B  "/>     <!--Mauritius-->
+	<row code="0x062000" mask="0xfffff000" mark="5U  "/>     <!--Niger-->
+	<row code="0x064000" mask="0xfffff000" mark="5N  "/>     <!--Nigeria-->
+	<row code="0x068000" mask="0xfffff000" mark="5X  "/>     <!--Uganda-->
+	<row code="0x06a000" mask="0xfffffc00" mark="A7  "/>     <!--Qatar-->
+	<row code="0x06c000" mask="0xfffff000" mark="TL  "/>     <!--Central African Rep.-->
+	<row code="0x06e000" mask="0xfffff000" mark="9XR "/>     <!--Rwanda-->
+	<row code="0x070000" mask="0xfffff000" mark="6V  "/>     <!--Senegal-->
+	<row code="0x074000" mask="0xfffffc00" mark="S7  "/>     <!--Seychelles-->
+	<row code="0x076000" mask="0xfffffc00" mark="9L  "/>     <!--Siera Leone-->
+	<row code="0x078000" mask="0xfffff000" mark="6O  "/>     <!--Somalia-->
+	<row code="0x07a000" mask="0xfffffc00" mark="3D  "/>     <!--Swaziland-->
+	<row code="0x07c000" mask="0xfffff000" mark="ST  "/>     <!--Sudan-->
+	<row code="0x080000" mask="0xfffff000" mark="5H  "/>     <!--United Rep. of Tanzania-->
+	<row code="0x084000" mask="0xfffff000" mark="TT  "/>     <!--Chad-->
+	<row code="0x088000" mask="0xfffff000" mark="5V  "/>     <!--Togo-->
+	<row code="0x08a000" mask="0xfffff000" mark="9J  "/>     <!--Zambia-->
+	<row code="0x090000" mask="0xfffff000" mark="D2  "/>     <!--Angola-->
+	<row code="0x094000" mask="0xfffffc00" mark="TY  "/>     <!--Benin-->
+	<row code="0x096000" mask="0xfffffc00" mark="D4  "/>     <!--Cape verde-->
+	<row code="0x098000" mask="0xfffffc00" mark="J2  "/>     <!--Djibouti-->
+	<row code="0x09a000" mask="0xfffff000" mark="C5  "/>     <!--Gambia-->
+	<row code="0x09c000" mask="0xfffff000" mark="XT  "/>     <!--Burkina Faso-->
+	<row code="0x09e000" mask="0xfffffc00" mark="S9  "/>     <!--Sao Tome and Principe-->
+	<row code="0x0a0000" mask="0xffff8000" mark="7T  "/>     <!--Algeria-->
+	<row code="0x0a8000" mask="0xfffff000" mark="C6  "/>     <!--Bahamas-->
+	<row code="0x0aa000" mask="0xfffffc00" mark="8P  "/>     <!--Barbados-->
+	<row code="0x0ab000" mask="0xfffffc00" mark="BLZ "/>     <!--Belize-->
+	<row code="0x0ac000" mask="0xfffff000" mark="HK  "/>     <!--Colombia-->
+	<row code="0x0ae000" mask="0xfffff000" mark="TI  "/>     <!--Costa Rica-->
+	<row code="0x0b0000" mask="0xfffff000" mark="CU  "/>     <!--Cuba-->
+	<row code="0x0b2000" mask="0xfffff000" mark="YS  "/>     <!--El Salvador-->
+	<row code="0x0b4000" mask="0xfffff000" mark="TG  "/>     <!--Guatemala-->
+	<row code="0x0b6000" mask="0xfffff000" mark="8R  "/>     <!--Guyana-->
+	<row code="0x0b8000" mask="0xfffff000" mark="HH  "/>     <!--Haity-->
+	<row code="0x0ba000" mask="0xfffff000" mark="HR  "/>     <!--Honduras-->
+	<row code="0x0bc000" mask="0xfffffc00" mark="J8  "/>     <!--Saint Vincent and the Grenadines-->
+	<row code="0x0be000" mask="0xfffff000" mark="6Y  "/>     <!--Jamaica-->
+	<row code="0x0c0000" mask="0xfffff000" mark="YN  "/>     <!--Nicaragua-->
+	<row code="0x0c2000" mask="0xfffff000" mark="HP  "/>     <!--Panama-->
+	<row code="0x0c4000" mask="0xfffff000" mark="HI  "/>     <!--Dominican Republic-->
+	<row code="0x0c6000" mask="0xfffff000" mark="9Y  "/>     <!--Trinidad and Tobago-->
+	<row code="0x0c8000" mask="0xfffff000" mark="PZ  "/>     <!--Suriname-->
+	<row code="0x0ca000" mask="0xfffffc00" mark="V2  "/>     <!--Antigua and Barbuda-->
+	<row code="0x0cc000" mask="0xfffffc00" mark="J3  "/>     <!--Grenada-->
+	<row code="0x0d0000" mask="0xffff8000" mark="XA  "/>     <!--Mexico-->
+	<row code="0x0d8000" mask="0xffff8000" mark="YV  "/>     <!--Venezuela-->
+	<row code="0x100000" mask="0xfff00000" mark="RSS "/>     <!--Russian Federation-->
+	<row code="0x201000" mask="0xfffffc00" mark="NMB "/>     <!--Namibia-->
+	<row code="0x202000" mask="0xfffffc00" mark="ERT "/>     <!--Eritrea-->
+	<row code="0x300000" mask="0xfffc0000" mark="I   "/>     <!--Italy-->
+	<row code="0x340000" mask="0xfffc0000" mark="EC  "/>     <!--Spain-->
+	<row code="0x380000" mask="0xfffc0000" mark="F   "/>     <!--France-->
+	<row code="0x3c0000" mask="0xfffc0000" mark="D   "/>     <!--Germany Fed. Rep. of-->
+	<row code="0x400000" mask="0xfffc0000" mark="G   "/>     <!--United Kingdom-->
+	<row code="0x440000" mask="0xffff8000" mark="OE  "/>     <!--Austria-->
+	<row code="0x448000" mask="0xffff8000" mark="OO  "/>     <!--Belgium-->
+	<row code="0x450000" mask="0xffff8000" mark="LZ  "/>     <!--Bulgaria-->
+	<row code="0x458000" mask="0xffff8000" mark="OY  "/>     <!--Denmark-->
+	<row code="0x460000" mask="0xffff8000" mark="OH  "/>     <!--Finland-->
+	<row code="0x468000" mask="0xffff8000" mark="SX  "/>     <!--Greece-->
+	<row code="0x470000" mask="0xffff8000" mark="HA  "/>     <!--Hungary-->
+	<row code="0x478000" mask="0xffff8000" mark="LN  "/>     <!--Norway-->
+	<row code="0x480000" mask="0xffff8000" mark="PH  "/>     <!--Netherlands Kingdom of the-->
+	<row code="0x488000" mask="0xffff8000" mark="SP  "/>     <!--Poland-->
+	<row code="0x490000" mask="0xffff8000" mark="CR  "/>     <!--Portugal-->
+	<row code="0x498000" mask="0xffff8000" mark="OK  "/>     <!--Czechoslovakia-->
+	<row code="0x4a0000" mask="0xffff8000" mark="YR  "/>     <!--Romania-->
+	<row code="0x4a8000" mask="0xffff8000" mark="SE  "/>     <!--Sweden-->
+	<row code="0x4b0000" mask="0xffff8000" mark="HB  "/>     <!--Switzerland-->
+	<row code="0x4b8000" mask="0xffff8000" mark="TC  "/>     <!--Turkey-->
+	<row code="0x4c0000" mask="0xffff8000" mark="YU  "/>     <!--Yugoslavia-->
+	<row code="0x4c8000" mask="0xfffffc00" mark="5B  "/>     <!--Cyprus-->
+	<row code="0x4ca000" mask="0xfffff000" mark="EI  "/>     <!--Ireland-->
+	<row code="0x4cc000" mask="0xfffff000" mark="TF  "/>     <!--Iceland-->
+	<row code="0x4d0000" mask="0xfffffc00" mark="LX  "/>     <!--Luxembourg-->
+	<row code="0x4d2000" mask="0xfffff000" mark="9H  "/>     <!--Malta-->
+	<row code="0x4d4000" mask="0xfffffc00" mark="3A  "/>     <!--Monaco-->
+	<row code="0x500000" mask="0xfffffc00" mark="SMR "/>     <!--San Marino-->
+	<row code="0x501000" mask="0xfffffc00" mark="ALB "/>     <!--Albania-->
+	<row code="0x501c00" mask="0xfffffc00" mark="CRT "/>     <!--Croatia-->
+	<row code="0x511000" mask="0xfffffc00" mark="EST "/>     <!--Estonia -->
+	<row code="0x502c00" mask="0xfffffc00" mark="YL  "/>     <!--Latvia-->
+	<row code="0x503c00" mask="0xfffffc00" mark="LTH "/>     <!--Lithuania-->
+	<row code="0x504c00" mask="0xfffffc00" mark="MLD "/>     <!--Moldova-->
+	<row code="0x512000" mask="0xfffffc00" mark="Z3  "/>     <!--Macedonia-->
+	<row code="0x513000" mask="0xfffffc00" mark="E7  "/>     <!--Bosnia-->
+	<row code="0x514000" mask="0xfffffc00" mark="4L  "/>     <!--Georgia-->
+	<row code="0x505c00" mask="0xfffffc00" mark="SLV "/>     <!--Slovakia-->
+	<row code="0x506c00" mask="0xfffffc00" mark="SLO "/>     <!--Slovenia-->
+	<row code="0x507c00" mask="0xfffffc00" mark="UZB "/>     <!--Uzbekistan-->
+	<row code="0x508000" mask="0xffff8000" mark="UKR "/>     <!--Ukraine-->
+	<row code="0x510000" mask="0xfffffc00" mark="BLR "/>     <!--Belarus-->
+	<row code="0x515000" mask="0xfffffc00" mark="TJK "/>     <!--Tajikistan-->
+	<row code="0x600000" mask="0xfffffc00" mark="ARM "/>     <!--Armenia-->
+	<row code="0x600800" mask="0xfffffc00" mark="AZR "/>     <!--Azerbaijan-->
+	<row code="0x601000" mask="0xfffffc00" mark="KJR "/>     <!--Kyrgyzstan-->
+	<row code="0x601800" mask="0xfffffc00" mark="TRK "/>     <!--Turkmenistan-->
+	<row code="0x680000" mask="0xfffffc00" mark="BHT "/>     <!--Bhutan-->
+	<row code="0x681000" mask="0xfffffc00" mark="MCR "/>     <!--Micronesia-->
+	<row code="0x682000" mask="0xfffffc00" mark="MNG "/>     <!--Mongolia-->
+	<row code="0x683000" mask="0xfffffc00" mark="KZK "/>     <!--Kazakhstan-->
+	<row code="0x684000" mask="0xfffffc00" mark="PLA "/>     <!--Palau-->
+	<row code="0x700000" mask="0xfffff000" mark="YA  "/>     <!--Afghanistan-->
+	<row code="0x702000" mask="0xfffff000" mark="S2  "/>     <!--Bangladesh-->
+	<row code="0x704000" mask="0xfffff000" mark="MYN "/>     <!--Myanmar-->
+	<row code="0x706000" mask="0xfffff000" mark="9K  "/>     <!--Kuwait-->
+	<row code="0x708000" mask="0xfffff000" mark="RDPL"/>     <!--Lao People's Democratic Republic-->
+	<row code="0x70a000" mask="0xfffff000" mark="9N  "/>     <!--Nepal-->
+	<row code="0x70c000" mask="0xfffffc00" mark="A4O "/>     <!--Oman-->
+	<row code="0x70e000" mask="0xfffff000" mark="CMB "/>     <!--Cambodia-->
+	<row code="0x710000" mask="0xffff8000" mark="HZ  "/>     <!--Saudi Arabia-->
+	<row code="0x718000" mask="0xffff8000" mark="HL  "/>     <!--Republic of Korea-->
+	<row code="0x720000" mask="0xffff8000" mark="P   "/>     <!--Democratic People's Republ. Korea-->
+	<row code="0x728000" mask="0xffff8000" mark="YI  "/>     <!--Iraq-->
+	<row code="0x730000" mask="0xffff8000" mark="EP  "/>     <!--Iran Islamic Rep of-->
+	<row code="0x738000" mask="0xffff8000" mark="4X  "/>     <!--Israel-->
+	<row code="0x740000" mask="0xffff8000" mark="JY  "/>     <!--Jordan-->
+	<row code="0x748000" mask="0xffff8000" mark="7P  "/>     <!--Lebanon-->
+	<row code="0x750000" mask="0xffff8000" mark="9M  "/>     <!--Malaysia-->
+	<row code="0x758000" mask="0xffff8000" mark="RP  "/>     <!--Philippines-->
+	<row code="0x760000" mask="0xffff8000" mark="AP  "/>     <!--Pakistan-->
+	<row code="0x768000" mask="0xffff8000" mark="9V  "/>     <!--Singapore-->
+	<row code="0x770000" mask="0xffff8000" mark="4R  "/>     <!--Sri Lanka-->
+	<row code="0x778000" mask="0xffff8000" mark="YK  "/>     <!--Syrian Arab Republic-->
+	<row code="0x780000" mask="0xfffc0000" mark="B   "/>     <!--China-->
+	<row code="0x7c0000" mask="0xfffc0000" mark="VH  "/>     <!--Australia-->
+	<row code="0x800000" mask="0xfffc0000" mark="IND "/>     <!--India-->
+	<row code="0x840000" mask="0xfffc0000" mark="JA  "/>     <!--Japan-->
+	<row code="0x880000" mask="0xffff8000" mark="HS  "/>     <!--Thailand-->
+	<row code="0x888000" mask="0xffff8000" mark="XV  "/>     <!--Viet Nam-->
+	<row code="0x890000" mask="0xfffff000" mark="4W  "/>     <!--Yemen-->
+	<row code="0x894000" mask="0xfffff000" mark="A9C "/>     <!--Bahrain-->
+	<row code="0x895000" mask="0xfffffc00" mark="V8  "/>     <!--Brunei Darussalam-->
+	<row code="0x896000" mask="0xfffff000" mark="A6  "/>     <!--United Arab Emirates-->
+	<row code="0x897000" mask="0xfffffc00" mark="H4  "/>     <!--Solomons Islands-->
+	<row code="0x898000" mask="0xfffff000" mark="P2  "/>     <!--Papua New Guinea-->
+	<row code="0x899000" mask="0xfffffc00" mark="IC2 "/>     <!--ICAO2-->
+	<row code="0x8a0000" mask="0xffff8000" mark="PK  "/>     <!--Indonesia-->
+	<row code="0x900000" mask="0xfffffc00" mark="MRS "/>     <!--Marshall Islands-->
+	<row code="0x901000" mask="0xfffffc00" mark="CKO "/>     <!--Cook Islands-->
+	<row code="0x902000" mask="0xfffffc00" mark="SMA "/>     <!--Samoa-->
+	<row code="0xa00000" mask="0xfff00000" mark="N   "/>     <!--United States-->
+	<row code="0xb00000" mask="0xffffffff" mark="    "/>     <!--Future use-->
+	<row code="0xc00000" mask="0xfffc0000" mark="C   "/>     <!--Canada-->
+	<row code="0xc80000" mask="0xffff8000" mark="ZK  "/>     <!--New Zeland-->
+	<row code="0xc88000" mask="0xfffff000" mark="DQ  "/>     <!--Fiji-->
+	<row code="0xc8a000" mask="0xfffffc00" mark="C2  "/>     <!--Nauru-->
+	<row code="0xc8c000" mask="0xfffffc00" mark="J6  "/>     <!--Saint Lucia-->
+	<row code="0xc8d000" mask="0xfffffc00" mark="A3  "/>     <!--Tonga-->
+	<row code="0xc8e000" mask="0xfffffc00" mark="****"/>     <!--Kiribati-->
+	<row code="0xc90000" mask="0xfffffc00" mark="YJ  "/>     <!--Venuatu-->
+	<row code="0xd00000" mask="0xffffffff" mark="    "/>     <!--Future use-->
+	<row code="0xe00000" mask="0xfffc0000" mark="LQ  "/>     <!--Argentina-->
+	<row code="0xe40000" mask="0xfffc0000" mark="PP  "/>     <!--Brazil-->
+	<row code="0xe80000" mask="0xfffff000" mark="CC  "/>     <!--Chile-->
+	<row code="0xe84000" mask="0xfffff000" mark="HC  "/>     <!--Ecuador-->
+	<row code="0xe88000" mask="0xfffff000" mark="ZP  "/>     <!--Paraguay-->
+	<row code="0xe8c000" mask="0xfffff000" mark="OB  "/>     <!--Peru-->
+	<row code="0xe90000" mask="0xfffff000" mark="CX  "/>     <!--Uruguay-->
+	<row code="0xe94000" mask="0xfffff000" mark="CP  "/>     <!--Bolivia-->
+	<row code="0xf00000" mask="0xffff8000" mark="IC1 "/>     <!--ICAO1-->
+	<row code="0xf09000" mask="0xfffffc00" mark="IC3 "/>     <!--ICAO3-->
+</table>

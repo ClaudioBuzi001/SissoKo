@@ -1,0 +1,33 @@
+<msg>
+	<list
+		ROW_ID="@CONSTRAINT_KEY@" condition="true">
+
+		<attributes	
+			ID="STRATEGIC CONSTRAINT LIST" 
+			behavior_if_empty="delete" 
+			side="OPSUP"	
+			sort="NAME:ASC" 	
+			visible="true"	
+		/>
+
+		<col key="col1"	indata="@CONSTRAINT_NAME@"	outdata="NAME" />
+		<col key="col2" indata="@CONSTRAINT_TYPE@"		outdata="TYPE"
+			 col_width="65" />
+		<col key="col3" indata="@CONSTRAINT_TARGET@"		outdata="TARGET"
+			 col_width="75" />
+		<col key="col4"	indata="@CONSTRAINT_VALUE@"		outdata="VALUE"
+			 col_width="65" />
+		<col key="col5"	indata="@CONSTRAINT_POINT@"	outdata="POINT"
+			 col_width="75" />
+		<col key="col6"	indata="@CONSTRAINT_RULE@"		outdata="RULE"
+			 col_width="380" />
+		<!--<col key="col7"	indata="@CONSTRAINT_SCT@" 		outdata="SCT"/>-->
+		<col key="col7"	indata="@CONSTRAINT_PHASE@" outdata="PHASE"
+			 col_width="65" />
+		<col key="col8"	indata="@CONSTRAINT_STATUS@" outdata="STATUS"
+			col_width="75"
+			row_fgr="@OPSUP_LIST(FIELD_TO_CHECK1=..CONSTRAINT_STATUS, INFO_TYPE1=COLOR)@"
+			row_leftClick="CONTEXT_MENU(MENU_FILE=strategicStatusContextMenu.xml) "/> 
+
+	</list>
+</msg>

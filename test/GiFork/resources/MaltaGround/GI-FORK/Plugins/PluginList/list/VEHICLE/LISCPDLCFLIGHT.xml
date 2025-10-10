@@ -1,0 +1,16 @@
+<msg>
+  <list ROW_ID="@VID@" condition="@ISLISCPDLCVEHIC@">
+	<attributes ID="CPDLC VEHICLE LIST" behavior_if_empty="delete" side="DL" />
+	<col key="col1"  indata="@VID@" outdata="Vehicle ID" col_state="filteredVisible" row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE_ARR , DEFAULT=#fafafa)@" row_middleClick="SHOW_TRAJECTORY" automatic="" />
+	<col key="col2"  indata="@CPDLC_ALIAS(FIELD_TO_CHECK1=..CCS)@" outdata="CONNECTION" col_state="filteredVisible"  />
+	<col key="col3"  indata="@CPDLC_ALIAS(FIELD_TO_CHECK1=..CFS)@" outdata="FUNCTION" col_state="filteredVisible" />
+	
+	<col key="col4" indata="" outdata="VHDL" row_fgr="@CPDLC_ALIAS(FIELD_TO_CHECK1=..UMDS , FIELD_TO_CHECK2=..DMDS , DEFAULT=#CECECE, INFO_TYPE=COLOR)@" col_state="filteredVisible" row_image="@CPDLC_ALIAS(FIELD_TO_CHECK1=..UMDS , FIELD_TO_CHECK2=..DMDS , INFO_TYPE=IMAGE)@" />
+	<col key="col5"  indata="@CPDLC_ALIAS(FIELD_TO_CHECK1=..NDA)@" outdata="NDA" col_state="filteredVisible" />
+	<col key="col6"  indata="@CPDLC_ALIAS(FIELD_TO_CHECK1=..CTS)@" outdata="CONTACT" col_state="filteredVisible" />	
+	
+<!-- 	<col key="col3"  indata="@CPDLC_ALIAS(FIELD_TO_CHECK1=..ACS)@" outdata="ACS" col_state="filteredVisible"  /> -->
+<!-- 	<col key="col8"  indata="" outdata="TU" row_fgr="@CPDLC_ALIAS(FIELD_TO_CHECK1=..TCUDS , DEFAULT=#CECECE , INFO_TYPE=COLOR)@" col_state="filteredVisible" row_image="@CPDLC_ALIAS(FIELD_TO_CHECK1=..TCUDS, INFO_TYPE=IMAGE)@" row_MOD_BLINK="@CPDLC_ALIAS(FIELD_TO_CHECK1=..TCUDS , INFO_TYPE=BLINK)@"/> -->
+</list>
+
+</msg>

@@ -1,0 +1,17 @@
+<msg>
+	<list
+		ROW_ID="@FLIGHT_NUM@" condition="@ISREMCONS@">
+		<attributes	
+			ID="SFPL REMINDER LIST"
+			behavior_if_empty="delete" 	
+			side="DIR:1"	
+			sort="CALLSIGN:ASC" 
+		/>		
+		<col key="col1"	 indata="@CALLSIGN@"	outdata="CALLSIGN"	 row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , DEFAULT=#fafafa)@" row_blink_state="@ALIAS_LIST(FIELD_TO_CHECK=..TEMPLATE, INFO_TYPE=BLINK)@" row_leftClick="SHOW_REMINDER_LIST(DATA={SFPL%20REMINDER%20#CALLSIGN})" row_middleClick="SHOW_TRAJECTORY" row_rightClick="EXTERNAL_ORDER(ORDER_ID=CHG , OBJECT_TYPE=CHG,  PREVIEW_NAME=previewCHG )" />
+		<col key="col2"	 indata=""	outdata="DRP"	   row_image="@ALIAS_LIST(FIELD_TO_CHECK1=..ISREM_DRP, INFO_TYPE=IMAGE)@"/>
+		<col key="col3"  indata=""	outdata="TRP"	   row_image="@ALIAS_LIST(FIELD_TO_CHECK1=..ISREM_TRP, INFO_TYPE=IMAGE)@"/>
+		<col key="col4"	 indata=""	outdata="LEV"		 row_image="@ALIAS_LIST(FIELD_TO_CHECK1=..ISREM_LEV, INFO_TYPE=IMAGE)@"/>
+		<col key="col5"	 indata=""	outdata="TRANS"		 row_image="@ALIAS_LIST(FIELD_TO_CHECK1=..ISREM_TRANS, INFO_TYPE=IMAGE)@"/>
+
+	</list>
+</msg>

@@ -1,0 +1,19 @@
+<msg>
+
+<!--  LISTE LIS MAP  -->
+<list ROW_ID="@UID@" condition="@ISAPM@">
+	<attributes ID="APM" behavior_if_empty="delete" side="SNET:0"  />
+	<col key="col1" indata="@id@" outdata="RWY ID"   />
+	<col key="col2" indata="@KEY_ID@" outdata="ADES"   />
+	<col key="col3" indata="@status@" outdata="STATUS"
+		row_fgr="@SNET_LIST(FIELD_TO_CHECK1=..status, INFO_TYPE1=COLOR)@"   
+		row_leftClick="@SNET_LIST(CALLBACK_TO_CHECK=..CALLBACK_CHANGE_STATUS)@" />
+		<!--  row_leftClick="EXTERNAL_ORDER(ORDER_ID=AAP , OBJECT_TYPE=AAP,  PREVIEW_NAME=quickAAP, DATA={#STATUS})"   /> -->
+	<col key="col4" indata="@lateralDeviationEnable@" outdata="LATERAL DEV"  col_width="110" />
+	<col key="col5" indata="@upperDeviationEnable@" outdata="ABOVE DEV"   />
+	<col key="col6" indata="@lowerDeviationEnable@" outdata="BELOW DEV"   />
+	<col key="col7" indata="" outdata="EXC" row_image="@SNET_LIST(FIELD_TO_CHECK=..EX_CRI, INFO_TYPE=IMAGE)@" row_leftClick="SHOW_CONTAINER_IN_GRP(VALUE=APM%20EXCLUSION%20CRITERIA%20@KEY_ID@%20@id@)"  />
+</list>
+
+
+</msg>

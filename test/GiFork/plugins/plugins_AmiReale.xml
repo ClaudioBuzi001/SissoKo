@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!-- Mercury for AmiReale Plugins Manifest -->
+<project name="AmiReale">
+	<plugin name="LisListPlugin" />
+	<plugin name="LisSdaPlugin"/>
+	<plugin name="LisLabelPlugin" />
+	<plugin name="LisMapPlugin" />
+	<plugin name="LisAmiLabelPlugin" />
+	<plugin name="LisXaiPlugin" />
+</project>

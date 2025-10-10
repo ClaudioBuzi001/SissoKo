@@ -1,0 +1,24 @@
+<msg>
+	<list 
+  		ROW_ID="@LOCALSFPLID@" condition="@ISCPDLCFAILEDLOGON@">
+		<attributes 
+			ID="FAILED LOGON LIST" 
+			behavior_if_empty="delete" 
+			side="DL:3"
+			sort="CALLSIGN:ASC" 
+			 
+			
+		/>
+		<col key="col1"  indata="@CALLSIGN@" outdata="CALLSIGN"  row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , DEFAULT=#fafafa)@" row_blink_state="@ALIAS_LIST(FIELD_TO_CHECK=..TEMPLATE, INFO_TYPE=BLINK)@" row_middleClick="SHOW_TRAJECTORY" row_rightClick="EXTERNAL_ORDER(ORDER_ID=CHG , OBJECT_TYPE=CHG,  PREVIEW_NAME=previewCHG )" />
+		<col key="col2"  indata="@DEP@" outdata="DEP"  />
+		<col key="col3"  indata="@DES@" outdata="DES"  />	
+		<col key="col4"  indata="@LOGON_TYPE@" outdata="LGY"  />
+		<col key="col5"  indata="@REASON@" outdata="REASON"  />
+		<col key="col6"  indata="@ICAO@" outdata="ICAO"   row_rightClick="EXTERNAL_ORDER(ORDER_ID=FFL , OBJECT_TYPE=FFL,  PREVIEW_NAME=previewFFL )" />
+		<col key="col7"  indata="@ALL_VERSION@" outdata="C-VRS" col_state="filteredVisible"  />
+		<col key="col8"  indata="@ALL_QUALIFIER@" outdata="QLF" col_state="filteredNotVisible" />
+		<col key="col9"  indata="@ALL_ADDRESS@" outdata="ADD" col_state="filteredNotVisible" />	
+		<col key="col10" indata="@CM_ADDRESS@" outdata="CM-ADD" col_state="filteredNotVisible" />	
+	
+	</list>
+</msg>

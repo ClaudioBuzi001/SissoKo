@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+	<Appenders>
+		<!--RollingFile name="RollingFile" fileName="logs/jeoviewer.log" filePattern="logs/jmg-%d{MM-dd-yyyy}.log" ignoreException="false"-->
+		<RollingFile name="RollingFile" fileName="logs/gi-fork.log" filePattern="logs/gi-fork-%i.log" ignoreException="false">
+			<PatternLayout>
+				<Pattern>%d - %5p %m %n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<SizeBasedTriggeringPolicy size="25 MB" />
+			</Policies>
+			<DefaultRolloverStrategy max="10" />
+		</RollingFile>
+		<!--File name="File" fileName="logs/jeoviewer.log">
+          <PatternLayout>
+            <Pattern>%d - %5p %m %n</Pattern>
+          </PatternLayout>
+        </File-->
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d - %5p %m %n"/>
+		</Console>
+	</Appenders>
+	<Loggers>
+		<Root level="TRACE">
+			<AppenderRef ref="Console" level="INFO"/>
+			<AppenderRef ref="RollingFile" level="INFO"/>
+		</Root>
+	</Loggers>
+</Configuration>

@@ -1,0 +1,18 @@
+<msg>
+	<list 
+		ROW_ID="@ATSUNAME@" condition="@ISATSUMON@">
+
+		<attributes 
+			ID="ATSU MONITORING LIST" 	
+			behavior_if_empty="delete"		
+			side="DL:1" 
+			sort="ATSU:ASC"
+				
+			
+		/>
+	
+		<col key="col1" indata="@ATSUNAME@"	outdata="ATSU"  />
+		<col key="col2" indata=""	outdata="STATUS"   row_image="@ATSU_LIST(FIELD_TO_CHECK1=..MONCAPINFO , INFO_TYPE=IMAGE)@" row_leftClick="@ATSU_LIST(FIELD_TO_CHECK=..CALLBACK_CHANGE_STATUS)@" /> />
+		
+	</list>
+</msg>

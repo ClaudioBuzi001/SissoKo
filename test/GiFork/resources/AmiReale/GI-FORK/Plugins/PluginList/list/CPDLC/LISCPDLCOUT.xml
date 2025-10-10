@@ -1,0 +1,11 @@
+<msg>
+
+<list ROW_ID="@CPDLC_ID@"  condition="@ISLISCPDLCOUT@">
+	<attributes ID="CPDLC OUT LIST" behavior_if_empty="delete" side="DL"  args="-time_delta=60000" />
+	<col key="col1" indata="@CALLSIGN@"  outdata="CALLSIGN" col_state="filteredVisible" row_fgr="#CECECE" row_middleClick="SHOW_TRAJECTORY" />
+	<col key="col2" indata="@timestamp@" outdata="TIME" col_state="filteredVisible" />
+	<col key="col3" indata="@message@"   outdata="MESSAGE" col_width="300" col_state="filteredVisible" />
+	<col key="col4" indata="@CPDLC_ALIAS(FIELD_TO_CHECK1=..answer, VAL_TO_CHECK=classeId)@"  outdata="RESPONSE" col_state="filteredVisible" />
+</list>
+
+</msg>

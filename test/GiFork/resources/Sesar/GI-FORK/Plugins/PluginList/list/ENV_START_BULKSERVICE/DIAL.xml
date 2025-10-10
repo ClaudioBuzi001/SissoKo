@@ -1,0 +1,20 @@
+<msg>
+	<list ROW_ID="@TIME@_@OBJECTID@_@ORDERID@" condition="true">
+		<attributes 
+			ID="DIAGNOSTIC" 
+			lat="" 
+			lon="" 
+			behavior_if_empty="visible" 
+			max_item_showed="10" 
+			side="DIAG" 
+			 
+			sort="" 
+			
+		/>
+
+		<col key="col1" indata="@CALLSIGN@"		outdata="CALLSIGN" row_blink_state="@ALIAS_LIST(FIELD_TO_CHECK=..TEMPLATE, INFO_TYPE=BLINK)@" col_state="filteredVisible" />
+		<col key="col2" indata="@ORDERRESULT@"	outdata="RESULT" col_state="filteredVisible" />
+		<col key="col3" indata="@ORDERID@"		outdata="ORDER" col_state="filteredVisible" />
+		<col key="col4" indata=""				outdata="TIME" col_state="filteredVisible" />
+	</list>
+</msg>

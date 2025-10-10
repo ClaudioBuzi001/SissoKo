@@ -1,0 +1,11 @@
+<msg>
+	<list
+		ROW_ID="@SEQ_ID@" condition="">
+		<attributes ID="STAM MESSAGE" behavior_if_empty="delete" CLOSE_BUTTON_CALLBACK= "DUMMY" side="GRP_TOP_LEFT" open_in_grp="true" visible="false"/>
+		<col key="col1"	 indata="@TIME_STAMP@"		outdata="TIME"	 	col_state="filteredVisible"/>
+		<col key="col2"	 indata="@TGT_SECTOR@"  	outdata="SECTOR" 	col_state="filteredVisible"/>
+		<col key="col2"	 indata="@TGT_FLIGHT@"  	outdata="CALLSIGN" 	col_state="filteredVisible"/>
+		<col key="col2"	 indata="@TEXT_MESSAGE@"  	outdata="MESSAGE" 	col_state="filteredVisible" col_width="750"/>
+		<col key="col3"	 indata=""					outdata="ACK"  		col_state="filteredVisible" row_image="@ALIAS_LIST(FIELD_TO_CHECK=..ACK_TCAT , INFO_TYPE=IMAGE)@" row_leftClick="@ALIAS_LIST(FIELD_TO_CHECK=..CALLBACK_ACK_TCAT)@"/>
+	</list>
+</msg>

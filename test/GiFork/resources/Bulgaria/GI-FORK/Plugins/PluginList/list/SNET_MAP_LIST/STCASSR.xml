@@ -1,0 +1,25 @@
+<msg>
+
+<!--  LISTE LIS MAP  -->
+<list ROW_ID="@UID@" condition="@ISSTCA@">
+	<attributes ID="STCA SSR FILTERING FILT LIST" behavior_if_empty="delete" sort="MAP:ASC" side="SNET:3" />
+	<col key="col1" indata="@id@" outdata="MAP" messagetype="lisMap" col_state="filteredVisible" row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW , ORDER_ID=UPDSNETSSR, OBJECT_TYPE=UPDSNETSSR,PREVIEW_NAME=previewUPDSNETSSR)"  />
+	<col key="col2" indata="@mcs1@" outdata="SSR1 " messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col3" indata="@mcs2@" outdata="SSR2 " messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col4" indata="@mcs3@" outdata="SSR3 " messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col5" indata="@mcs4@" outdata="SSR4 " messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col6" indata="@mcs5@" outdata="SSR5 " messagetype="lisMap" col_state="filteredVisible"  />	
+	<col key="col7" indata="@mcs6@" outdata="SSR6 " messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col8" indata="@mcs7@" outdata="SSR7 " messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col9" indata="@mcs8@" outdata="SSR8 " messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col10" indata="@mcs9@" outdata="SSR9 " messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col11" indata="@mcs10@" outdata="SSR10" messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col12" indata="@mcs11@" outdata="SSR11" messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col13" indata="@mcs12@" outdata="SSR12" messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col14" indata="@mcs13@" outdata="SSR13" messagetype="lisMap" col_state="filteredVisible"  />	
+	<col key="col15" indata="@mcs14@" outdata="SSR14" messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col16" indata="@mcs15@" outdata="SSR15 " messagetype="lisMap" col_state="filteredVisible"  />
+</list>
+
+
+</msg>

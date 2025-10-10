@@ -1,0 +1,29 @@
+<msg>
+	<list
+		ROW_ID="@FLIGHT_NUM@" condition="true">
+		<attributes	
+			ID="FPM WARNING"	
+			behavior_if_empty="delete"		
+			side="ALR:0" 
+			sort="CALLSIGN:ASC"
+			
+		/>
+<!-- mettendo ".." nei parametri della ServiceCall come nel'esempio seguente tale parametro verra passato al servizio senza elaborarne il recupero dalla Blackboard:
+@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , DEFAULT=#CECECE)@
+-->	 
+		<col key="col1"		indata="@CALLSIGN@"	outdata="CALLSIGN"  row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , DEFAULT=#fafafa)@" row_blink_state="@ALIAS_LIST(FIELD_TO_CHECK=..TEMPLATE, INFO_TYPE=BLINK)@" row_middleClick="SHOW_TRAJECTORY" row_rightClick="EXTERNAL_ORDER(ORDER_ID=CHG , OBJECT_TYPE=CHG,  PREVIEW_NAME=previewCHG )" />
+		<col key="col2"		indata="" 			outdata="LAT" col_state="filteredVisible"  row_image="@FPM_LIST(FIELD_TO_CHECK=..LAT_DEV_FLAG , INFO_TYPE=IMAGE)@" />
+		<col key="col3"		indata="" 			outdata="L"  col_state="filteredVisible"   row_image="@FPM_LIST(FIELD_TO_CHECK=..LONG_DEV_FLAG , INFO_TYPE=IMAGE)@" />
+		<col key="col4"		indata="" 			outdata="V"  col_state="filteredVisible"   row_image="@FPM_LIST(FIELD_TO_CHECK=..VERT_DEV_FLAG , INFO_TYPE=IMAGE)@" />
+		<col key="col5"		indata="" 			outdata="SD" col_state="filteredVisible"   row_image="@FPM_LIST(FIELD_TO_CHECK=..SPD_DEV , INFO_TYPE=IMAGE)@" /> 
+		<col key="col6"		indata="" 			outdata="GT" col_state="filteredVisible"   row_image="@FPM_LIST(FIELD_TO_CHECK=..GND_DEV , INFO_TYPE=IMAGE)@" />		 
+		<col key="col7"		indata="" 			outdata="VR" col_state="filteredVisible"   row_image="@FPM_LIST(FIELD_TO_CHECK=..VR_RATE_DEV , INFO_TYPE=IMAGE)@" />
+		<col key="col8"		indata="" 			outdata="NRV" col_state="filteredVisible"   row_image="@FPM_LIST(FIELD_TO_CHECK=..NON_RVSM_EQUIPPED_FLAG , INFO_TYPE=IMAGE)@" />
+		<!--col key="col9"		indata="" 			outdata="AH" col_state="filteredVisible"   row_image="@FPM_LIST(FIELD_TO_CHECK=..HDG_INST_CONF , INFO_TYPE=IMAGE)@" /-->
+		<col key="col9"	indata="" 			outdata="H"  col_state="filteredVisible"   row_image="@FPM_LIST(FIELD_TO_CHECK=..HLD_INST_CONF, INFO_TYPE=IMAGE)@" />
+		<col key="col10"	indata="" 			outdata="AS"  col_state="filteredVisible"   row_image="@FPM_LIST(FIELD_TO_CHECK=..ASS_SPD_INST_CONF , INFO_TYPE=IMAGE)@" />
+		<col key="col11"	indata="" 			outdata="VRCD"  col_state="filteredVisible"   row_image="@FPM_LIST(FIELD_TO_CHECK=..VR_INST_CONF , INFO_TYPE=IMAGE)@" />
+		<!--col key="col13"	indata="" 			outdata="CFL"  col_state="filteredVisible"   row_image="@FPM_LIST(FIELD_TO_CHECK=..CFL_INST_CONF , INFO_TYPE=IMAGE)@" /-->
+		
+	</list>
+</msg>

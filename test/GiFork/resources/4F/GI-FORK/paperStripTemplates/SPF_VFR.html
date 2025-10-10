@@ -1,0 +1,186 @@
+<html>
+<head>
+<style>
+
+table, td, tr{
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.firstTable {
+    width: 12cm;
+	height: 2cm;
+
+}
+.centPerCent {
+	width: 100%;
+	height: 100%
+}
+
+.bordoDestraSpesso{
+	border-right: 2px solid black
+}
+.bordoSottoSottile{
+	border-bottom: 1px solid gray
+}
+.bordoSopraSottile{
+	border-top: 1px solid gray
+}
+
+.bordoSottoTrasparente{
+	border-bottom: 0px solid gray
+}
+.altezzaRiga{
+	height: 10%;
+    width: 100%
+}
+.altezzaRigaDoppia{
+	height: 40%;
+    width: 100%
+}
+
+.larghPrimaColonnaPrimoBlocco {
+	width: 36%;
+}
+.larghPrimaColonnaPrimoBloccoA {
+	width: 19%;
+}
+.larghPrimaColonnaPrimoBloccoB {
+	width: 19%;
+}
+.larghSecondaColonnaPrimoBlocco {
+	width: 28%;
+}
+.larghColonneTerzoBlocco{
+	width: 18%;
+}
+.larghColonneTerzoBloccoHold{
+	width: 4%;
+}
+.larghColonneTerzoBloccoTime{
+	width: 13%;
+}
+.widthFirstBlock {
+	width: 28%;
+		height: 100%
+
+}
+.widthSecondBlock {
+	width: 12%;
+}
+.hieghtFirstBlock {
+	width: 88%;
+}
+
+.centratoOrizz {
+	text-align: center
+}
+.centratoVert {
+	vertical-align: text-center
+}
+.inAlto {
+	vertical-align: text-top
+}
+.inBasso {
+	vertical-align: text-bottom
+}
+.aDestra {
+	text-align: right
+}
+.aSinistra {
+	text-align: left
+}
+.bigFont{
+    font-size: 110%;
+}
+.normalFont{
+    font-size: 80%;
+}
+.bigFontBold{
+    font-size: 120%;
+    font-weight:bold;
+}
+.bigFontCallsignBold{
+    font-size: 130%;
+    font-weight:bold;
+}
+table. tr, td, p {
+	padding: 0
+}
+td{
+	font-family: monospace;
+	<!-- font-weight: 280 -->
+	font-size: 6
+}
+</style>
+</head>
+
+<body>
+<table class="firstTable">
+<tr>
+	<td class="bordoDestraSpesso widthFirstBlock">
+		<table class="centPerCent">
+			<tr class="altezzaRiga bordoSottoSottile">
+				<td class="larghPrimaColonnaPrimoBloccoA normalFont bordoDestraSpesso" colspan="2" id="ASSR">ASSR</td>
+				<td class="bordoDestraSpesso normalFont larghSecondaColonnaPrimoBlocco"></td>
+				<td class="larghPrimaColonnaPrimoBloccoA normalFont " id="ATY">ATYPE</td>
+				<td class="larghPrimaColonnaPrimoBloccoA normalFont aDestra" id="RVSM">R</td>
+			</tr>
+			<tr rowspan="2" class="altezzaRiga ">
+				<td class="centratoVert aSinistra bigFontCallsignBold" colspan="5" id="CS">TKY1865</td>
+			</tr>
+			<tr class="altezzaRiga bordoSopraSottile">
+				<td class="aSinistra normalFont inAlto " id="EQ_833_STATUS">833</td>
+				<td class="larghPrimaColonnaPrimoBloccoA normalFont bordoDestraSpesso inBasso aDestra" id="TIME">TIME</td>
+				<td class="normalFont bordoDestraSpesso" id="ADEP">ADEP</td>
+				<td class="bigFont inAlto centratoVert" rowspan="2" id="ADES">ADES</td>
+
+			</tr>
+		</table>
+	</td>
+	<td class="bordoDestraSpesso bigFontBold widthSecondBlock altezzaRiga centratoOrizz inAlto">
+		<p rowspan="3" id="PEL">370</p>
+	</td>
+	<td>
+		<table class="centPerCent">
+			<tr class=" altezzaRiga bordoSottoTrasparente">
+				<td class="normalFont larghColonneTerzoBloccoTime aSinistra bordoDestraSpesso" colspan="2" id="IFIX">IFIX</td>
+				<td class="normalFont larghColonneTerzoBloccoTime aSinistra bordoDestraSpesso" colspan="2" id="FIX1">FIX1</td>
+				<td class="normalFont larghColonneTerzoBloccoTime aSinistra bordoDestraSpesso" colspan="2" id="FIX2">FIX2</td>
+				<td class="normalFont larghColonneTerzoBloccoTime aSinistra  bordoDestraSpesso" colspan="2" id="FIX3">FIX3</td>
+				<td class="normalFont larghColonneTerzoBloccoTime aSinistra bordoDestraSpesso" colspan="2" id="OFIX">OFIX</td>
+				<td class="normalFont inAlto aDestra" rowspan="3" id="LAT_DEV">D</td>
+			</tr>
+			<tr class="altezzaRiga bordoSottoSottile">
+				<td class="normalFont aSinistra larghColonneTerzoBloccoTime " id="ETI">ETI</td>
+				<td class="normalFont aDestra larghColonneTerzoBloccoHold bordoDestraSpesso">H</td>
+				<td class="normalFont aSinistra larghColonneTerzoBloccoTime" id="ETO1">ETO1</td>
+				<td class="normalFont aDestra larghColonneTerzoBloccoHold bordoDestraSpesso " id="H1">H</td>
+				<td class="normalFont aSinistra larghColonneTerzoBloccoTime" id="ETO2">ETO2</td>
+				<td class="normalFont centratoOrizz larghColonneTerzoBloccoHold bordoDestraSpesso" id="H2">H</td>
+				<td class="normalFont aSinistra larghColonneTerzoBloccoTime " id="ETO3">ETO3</td>
+				<td class="normalFont aDestra larghColonneTerzoBloccoHold bordoDestraSpesso" id="H3">H</td>
+				<td class="normalFont aSinistra larghColonneTerzoBloccoTime" id="ETO">ETO</td>
+				<td class="normalFont aDestra larghColonneTerzoBloccoHold bordoDestraSpesso">H</td>
+			</tr>
+			<tr class="altezzaRiga bordoSottoSottile">
+				<td colspan="2" class="normalFont bordoDestraSpesso"></td>
+				<td colspan="2" class="normalFont aSinistra bordoDestraSpesso" id="PLV">PLV</td>
+				<td colspan="2" class="bordoDestraSpesso"></td>
+				<td colspan="2" class="bordoDestraSpesso"></td>
+				<td colspan="2" class="bordoDestraSpesso"></td>
+			</tr>
+			<tr class="normalFont altezzaRiga inAlto">
+				<td rowspan="2" colspan="9" id="ROUTE" >ROUTE STRING</td>
+			</tr>
+			<tr class="normalFont altezzaRiga inBasso">
+				<td rowspan="2" colspan="2" class="inBasso aDestra" id="DATE_FLIGHT">DATE</td>
+			</tr>
+			<tr class="normalFont altezzaRiga inBasso">
+				<td rowspan="2" colspan="2" class="inBasso aDestra"></td>
+			</tr>
+		</table>
+	</td>
+</tr>
+</table>
+</body>
+</html>

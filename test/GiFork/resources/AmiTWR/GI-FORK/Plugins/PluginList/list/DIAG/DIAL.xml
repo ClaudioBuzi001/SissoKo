@@ -1,0 +1,12 @@
+<msg>
+<list ROW_ID="@TIME@" condition="true">
+
+	<!-- PARAMENTRI COMPORTAMENTALI DELLA LISTA  -->
+
+	<attributes ID="DIAGNOSTIC" behavior_if_empty="delete" side="GRP" open_in_grp="true" visible="false" CLOSE_BUTTON_CALLBACK= "DUMMY" MAX_ITEM_SHOWED="10" SORT="TIME:DESC," />
+	<col key="col1"  indata="@TIME@"		outdata="TIME" />
+	<col key="col2" indata="@ORDERID@"		outdata="ORDER" />
+	<col key="col3" indata="@ORDERRESULT@"	outdata="RESULT" col_width="250" />
+	<col key="col4" indata="@CALLSIGN@"		outdata="CALLSIGN" />
+</list>
+</msg>

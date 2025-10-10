@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!-- Mercury for Malta Ground Plugins Manifest -->
+<project name="Malta">
+	<plugin name="LisListPlugin" />
+	<plugin name="LisSdaPlugin"/>
+	<plugin name="LisLabelPlugin" />
+	<plugin name="LisMapPlugin" />
+	<plugin name="LisXaiPlugin" />
+	<plugin name="LisGroundPlugin" />
+</project>

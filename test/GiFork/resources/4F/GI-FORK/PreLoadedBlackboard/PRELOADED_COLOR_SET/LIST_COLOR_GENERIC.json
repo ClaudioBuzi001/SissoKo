@@ -1,0 +1,117 @@
+{
+"TEMPLATE" :
+	{
+	"0" : { "COLOR" : "#ffff00" , "ALIAS": "PENDING" },
+	"1" : { "COLOR" : "#00ff00" , "ALIAS": "CONTROLLED" },
+	"2" : { "COLOR" : "#00ff00" , "ALIAS": "HANDOVER_EXITING" },
+	"3" : { "COLOR" : "#ff33ff" , "ALIAS": "HANDOVER_ENTERING" },
+	"4" : { "COLOR" : "#ffffff" , "ALIAS": "NEARBY" },
+	"5" : { "COLOR" : "#ff33ff" , "ALIAS": "TENTATIVE" },	
+	"6" : { "COLOR" : "#00ffff" , "ALIAS": "NOTIFIED_GEN" },
+	"7" : { "COLOR" : "#008110" , "ALIAS": "AIS" },
+	"8" : { "COLOR" : "#80ffff" , "ALIAS": "NOTIFIED_SKP" },
+	"9" : { "COLOR" : "#00bfff" , "ALIAS": "NOTIFIED_TRA" }
+	
+	},
+
+"COORDSTATE" :
+	{
+	"0" : { "COLOR" : "#ff33ff" , "ALIAS": "DEFAULT" },
+	"1" : { "COLOR" : "#ff33ff" , "ALIAS": "MODIFY" },
+	"2" : { "COLOR" : "#33ff33" , "ALIAS": "AGREED" },
+	"3" : { "COLOR" : "#f5f5dc" , "ALIAS": "REJECTED" },
+	"4" : { "COLOR" : "#a0a0a0" , "ALIAS": "INVALID" }	
+	},	
+
+"TEMPLATECPDLC" :
+	{
+	"0" : { "COLOR" : "#00ffff" , "ALIAS": "CPDLC_CYAN" },
+	"1" : { "COLOR" : "#ffff00" , "ALIAS": "CPDLC_YELLOW" },
+	"2" : { "COLOR" : "#00ff00" , "ALIAS": "CPDLC_GREEN" }
+	},
+
+	
+"ISMANASSNOTCOMPLIANT" :
+	{
+	"true"  : { "COLOR" : "#ffa500" , "ALIAS": "NotCompliant" },
+	"false" : { "COLOR" : "#fafafa" , "ALIAS": "Compliant" }
+	},
+	
+	
+"IS_DUPLICATED_RCS" :
+	{
+	"false" : { "COLOR" : "#fafafa" , "ALIAS": "WHITE"   },
+	"true"  : { "COLOR" : "#FFFF00" , "ALIAS": "YELLOW" }
+	},
+	
+"IS_DUPLICATED" :
+	{
+	"false" : { "COLOR" : "#fafafa" , "ALIAS": "WHITE"  },
+	"true"  : { "COLOR" : "#FFFF00" , "ALIAS": "YELLOW" }
+	},
+
+"APW_MAP"     : "#FFA500", 
+	
+"TCT_URGENCY_A"   	: "#FF0000" , 
+"TCT_URGENCY_B"   	: "#FF0000" , 
+"TCT_URGENCY_C"   	: "#FFFF00" , 
+"TCT_URGENCY_AB"   	: "#FFA500" , 
+"TCT_EXC"           : "#808080" ,
+"TCT_WHAT_IF_TRY" 	: "#00A6FF" ,
+
+"CPDLC_FRAME_GI_ERR" : "#FFA500",
+"CPDLC_FRAME_GI_STA" : "#FFFF00",
+"CPDLC_FRAME_AI_STA" : "#00FFFF",
+"CPDLC_FRAME_AI_ERR" : "#0000FF",
+"CPDLC_GI_ERR" 		 : "#00FF00",
+"CPDLC_GI_STA" 		 : "#FFFF00",
+"CPDLC_AI_DEF" 		 : "#00FFFF",
+"CPDLC_AI_ERR" 		 : "#FFA500",
+"CPDLC_AI_STA" 		 : "#FFFF00",
+
+"FLIGHT_RWY_LIRA"  	 : "#F5F5DC",
+"FLIGHT_RWY_LIRF"  	 : "#C39FFF",
+"WARNING"      	 	 : "#FFFF00",
+"WRN_NOT_CONFORMANCE" : "#FFA500",
+"ALLARM"    	   	 : "#FF0000",
+"SFPL_EXTRAPOLATED"  : "#FFCCFF",
+"DEFAULT"  			 : "#FFFFFF",  
+"MISMATCH"    		 : "#FFFF00",
+"TRACK_SLB_DEVIATION" : "#FFA500",
+"COAST_STATE" 		 : "#FF0000",
+"ENABLE_STATE"       : "#00FF00",
+"OPEN_STATE"  		 : "#FAFAFA",
+"STS_HEAD" 			 : "#D500FF",
+"STS_HOSP"           : "#FFCCFF",
+"STS_HAZMAT" 		 : "#CCFF66",
+"CALL_TRANSF" 		 : "#FF33FF",
+"WRN_A"				 : "#FFFFFF",
+"WRN_B"				 : "#FF33FF",
+"EMERGENCY_HJ" 		 : "#FFA500",
+"RWY_CLOSED"         : "#FFA500",
+    
+"COORD_PEL_XFL_DM" 	 : "#FF33FF" ,  
+"COORD_XFL_PEL_MD" 	 : "#FFD771" , 
+"COORD_REJECTED"  	 : "#F5F5DC" ,
+"COORD_INVALID"  	 : "#A0A0A0" ,
+"COORD_PEL_AGREED"	 : "#00CC00" ,
+"COORD_XFL_AGREED"	 : "#33FF33" ,
+"AIS_PEL_AGREED"     : "#008110" ,
+"AIS_XFL_AGREED"     : "#008110" ,
+"IAS_MODE_S"   		 : "#00FFFF" ,
+"STATUS_ON"          : "#00FF00" ,
+"STATUS_OFF"         : "#FFA500" ,
+"TTL"       	     : "#FFA500" ,
+"TTG"         		 : "#00FF00" ,
+"EXCLUSION_CRITERIA_ON"         		 : "#00FFFF" ,
+"EXCLUSION_CRITERIA_OFF"         		 : "#FFFFFF" ,
+"UNSENSITIVE_COLOR"		 		 : "#FFFFFF" ,
+
+"LPGROUP" :
+   {
+   "0" : ["#FFCCFF", "f9b1f9", "#EE82EE", "#FF69B4", "#FFC0CB", "#FF00FF", "#FF1493", "#8A2BE2", "#DB7093", "#9932CC", "#C71585", "#800080"],
+   "1" : ["#FFA500", "#D2691E", "#FF6347", "#A0522D", "#F4A460", "#FF7F50", "#DEB887", "#800000"],
+   "2" : ["#87CEEB", "#00CED1", "#4682B4", "#0000FF", "#008B8B", "#AFEEEE", "#00008B", "#00FFFF", "#5F9EA0", "#6495ED"],
+   "3" : ["f7ec30", "fadf5f", "#FFD300", "#32CD32", "#008000", "#CCCC00", "#7CFC00", "#F0E68C", "#FFF200", "#98FB98",  "#EEE8AA", "#2E8B57", "#556B2F"]
+   }  	
+}

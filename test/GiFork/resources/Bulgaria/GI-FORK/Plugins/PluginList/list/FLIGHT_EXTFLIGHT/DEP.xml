@@ -1,0 +1,39 @@
+<msg>
+
+<list ROW_ID="@FLIGHT_NUM@" condition="@ISDEP_BV4@">
+
+
+<attributes ID="DEP:@ADEP@" BEHAVIOR_IF_EMPTY="delete" GROUP="DEP" SIDE="SFL:1"  SORT="ETD:ASC"  multicolumnname="ADEP"/>
+<col key="col1"		indata="@ACK_BV4@"				outdata="*"			col_state="filteredVisible" row_fgr="@TEMPLATE_COLOR@" row_leftClick="@ALIAS_LIST(FIELD_TO_CHECK=..ACK_BV4)@" col_width="15"/>
+<col key="col2"		indata="@CALLSIGN@"				outdata="CALLSIGN"	col_state="filteredVisible" row_fgr="@TEMPLATE_COLOR@"	row_middleClick="CONTEXT_MENU(MENU_FILE=Executive.xml, TITLE=EXECUTIVE)" row_leftClick="CONTEXT_MENU(MENU_FILE=Planner.xml,TITLE=PLANNER_MENU)" row_rightClick="CONTEXT_MENU(MENU_FILE=Flight.xml,TITLE=FLIGHT_MENU)"/>
+<col key="col3" 	indata="@SFPL_STATE@"	 		outdata="FS"	  	col_state="filteredVisible" />
+<col key="col4" 	indata="@ADEP_BV4@"				outdata="ADEP"   	col_state="filteredVisible" />
+<col key="col5"	 	indata="@ADES_BV4@"				outdata="ADES"		col_state="filteredVisible" />
+<col key="col6" 	indata="@WTC_BV4@"				outdata="CAT" 		col_state="filteredVisible" />
+<col key="col7" 	indata="@ATY_BV4@"				outdata="TYPE" 		col_state="filteredVisible" />
+<col key="col8"  	indata="@REG_BV4@"				outdata="AREG"		col_state="filteredVisible" />
+<col key="col9" 	indata="@OBT_BV4@"				outdata="EOBT"   	col_state="filteredVisible" row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW ,ORDER_ID=DCR, OBJECT_TYPE=DCR,  PREVIEW_NAME=previewDCR)"/>
+<col key="col10" 	indata="@DATE_BV4@"				outdata="DOF"   	col_state="filteredVisible" />
+<col key="col11" 	indata="@CTOT_BV4@"				outdata="CTOT"    	col_state="filteredVisible" />
+<col key="col12" 	indata="@ETD@"		        	outdata="ETD"   	col_state="filteredVisible" />
+<col key="col13" 	indata="@ALIAS_LIST(FIELD_TO_CHECK=..TACSTATUS)@"    		outdata="TAC"   	col_state="filteredVisible" row_leftClick="CONTEXT_MENU(MENU_FILE=TowerMenu.xml)" />
+
+<col key="col14" 	indata="@DE_ICE_VIS@"			outdata="D-ICE"   	col_state="filteredVisible" row_leftClick="EXTERNAL_ORDER(POPUP_ORDER=D-ICE, ORDER_ID=DIG, OBJECT_TYPE=DIG, DATA={'ORDER_QUICK':'true'}, PREVIEW_NAME=quickDIG)" row_rightClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW , ORDER_ID=DIG, OBJECT_TYPE=DIG, PREVIEW_NAME=previewDIG)"/>
+
+<col key="col15" 	indata="@DEPRWY_BV4@"			outdata="RWY"   	col_state="filteredVisible" row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW ,ORDER_ID=RWADEP, OBJECT_TYPE=RWADEP,  PREVIEW_NAME=choiceRWADEP)"/>
+<col key="col16" 	indata="@SID_BV4@"				outdata="SID"   	col_state="filteredVisible" row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW ,ORDER_ID=CSI, OBJECT_TYPE=CSI,  PREVIEW_NAME=previewCSI)" />
+<col key="col17" 	indata="@FR_BV4@" 		 		outdata="FR " 		col_state="filteredVisible" />
+<col key="col18" 	indata="@CFL@"					outdata="CFL" 		col_state="filteredVisible" />
+<col key="col19" 	indata="@DEP_PKBAY@"			outdata="PBAY" 		col_state="filteredVisible"  row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW , ORDER_ID=EPKBDEP , OBJECT_TYPE=EPKBDEP , PREVIEW_NAME=previewEPKBDEP, )"/>
+<col key="col20" 	indata="@PLV@"					outdata="PLV" 		col_state="filteredVisible" />
+<col key="col21" 	indata="@PEL@"					outdata="PEL"  		col_state="filteredVisible" row_fgr="@SCL_LIST_UTILITY(FIELD_TO_CHECK=..PELCOLOR, VAL_1=COORD_IN, VAL_2=COORD_OUT, VAL_3=COORD_STATUS, VAL_4=VERT_DEV_FLAG)@" row_leftClick="@FLIGHT_PLAN_ORDER(FIELD_TO_CHECK=..COORD_STATUS_PEL, VAL_1=COORDSTATE)@"  />
+<col key="col22" 	indata="@XFL@"		         	outdata="XFL"  		col_state="filteredVisible" row_fgr="@SCL_LIST_UTILITY(FIELD_TO_CHECK=..XFLCOLOR, VAL_1=COORD_IN, VAL_2=COORD_OUT, VAL_3=COORD_STATUS, VAL_4=VERT_DEV_FLAG, VAL_5=PCF , VAL_6=XFLDRAWING_STATUS)@" row_leftClick="@FLIGHT_PLAN_ORDER(FIELD_TO_CHECK=..COORD_STATUS_XFL, VAL_1=COORDSTATE)@" />
+<col key="col23" 	indata="@FULLROUTE_BV4@"	 	outdata="ROUTE"	 	col_state="filteredVisible" col_width="230" />
+<col key="col24" 	indata="@EQ_833_STATUS_BV4@"	outdata="8.33" 		col_state="filteredVisible" />
+<col key="col25" 	indata="@RVSM_BV4@"				outdata="RVSM" 		col_state="filteredVisible" />
+<col key="col26" 	indata="@SSR_CODE_BV4@"			outdata="ASSR" 		col_state="filteredVisible" />
+<col key="col27" 	indata=""						outdata="CLR FLAG"	col_state="filteredVisible" row_image="@ALIAS_LIST(FIELD_TO_CHECK=..FDCL , INFO_TYPE=IMAGE)@" row_leftClick="@ALIAS_LIST(FIELD_TO_CHECK=..UNDO_DCL)@"/>
+</list>
+
+
+</msg>

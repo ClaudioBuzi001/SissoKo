@@ -1,0 +1,18 @@
+<msg>
+	<list 
+		ROW_ID="@ROW_ID@"  condition="@ISCPDLCOUT@">
+		<attributes 
+			ID="CPDLC OUT WINDOW" 
+			behavior_if_empty="delete" 
+			side="DL:2" 
+			sort="TIME:DESC,DIALOGUE_ID:DESC," 
+		/>
+		<col key="col1" indata="@CALLSIGN@"   outdata="CALLSIGN"  row_fgr="@CPDLC_LIST(FIELD_TO_CHECK1=..TEMPLATECPDLC, VAL_TO_CHECK=TEMPLATECPDLC, INFO_TYPE=COLOR)@" row_blink_state="@ALIAS_LIST(FIELD_TO_CHECK=..TEMPLATE, INFO_TYPE=BLINK)@"/>
+		<col key="col2" indata="@TS@"  outdata="TIME"      row_fgr="@CPDLC_LIST(FIELD_TO_CHECK1=..TEMPLATECPDLC, VAL_TO_CHECK=TEMPLATECPDLC, INFO_TYPE=COLOR)@" />
+		<col key="col3" indata="@TXT_MESSAGE@"    outdata="MESSAGE" col_width="250" row_fgr="@CPDLC_LIST(FIELD_TO_CHECK1=..TEMPLATECPDLC, VAL_TO_CHECK=TEMPLATECPDLC, INFO_TYPE=COLOR)@" />
+		<col key="col4" indata="@CPDLC_LIST(FIELD_TO_CHECK1=..STATUS_MSG, VAL_TO_CHECK=STATUS_MSG)@"   outdata="RESPONSE"   row_fgr="@CPDLC_LIST(FIELD_TO_CHECK1=..RESPONSE_COLOR, VAL_TO_CHECK=STATUS_MSG, INFO_TYPE=COLOR)@" row_image="@CPDLC_LIST(FIELD_TO_CHECK1=..STATUS_MSG, VAL_TO_CHECK=STATUS_MSG, INFO_TYPE=IMAGE)@" />
+		<col key="col5" indata=""   outdata="" row_image="@CPDLC_LIST(FIELD_TO_CHECK1=..CLOSE_ACL_DIALOGUE, VAL_TO_CHECK=STATUS_MSG, VAL_TO_CHECK2=DIALOGUES_CLASS, IMAGE_NAME=ack, INFO_TYPE=IMAGE)@" row_leftClick="@CPDLC_LIST(FIELD_TO_CHECK1=..CALLBACK_CLOSE_ACL, VAL_TO_CHECK=STATUS_MSG, VAL_TO_CHECK1=MIN, VAL_TO_CHECK2=DIALOGUES_CLASS)@" />        
+        <col key="col6" indata="@CUD_ID@"   outdata="CUD_ID"  col_state="notFilteredNotVisible"  row_automaticOrder="@CPDLC_LIST(FIELD_TO_CHECK1=..CALLBACK_CUD, VAL_TO_CHECK=CUD_ID)@" />
+        <col key="col7" indata="@DIALOGUE_ID@"   outdata="DIALOGUE_ID"  col_state="filteredNotVisible" row_leftClick="" />
+	</list>
+</msg>

@@ -1,0 +1,24 @@
+<msg>
+
+<list ROW_ID="@UID@" condition="@ISSTCA@">
+	<attributes ID="STCA" behavior_if_empty="delete" side="SNET:2" />
+	<col key="col1" indata="@KEY_ID@" outdata="STCA" />
+	<col key="col2" indata="@status@" outdata="STATUS"
+		 row_fgr="@SNET_LIST(FIELD_TO_CHECK1=..status, INFO_TYPE1=COLOR)@" />
+	<col key="col3" indata="@hBot@ @hTop@" outdata="LOW-UPPER"   />
+	<col key="col4" indata="@tlook@" outdata="LAT"   />
+	<col key="col5" indata="@ttlook@" outdata="TLAT"   />
+	<col key="col6" indata="@vsc@" outdata="VCON"   />
+    <col key="col7" indata="@psc@" outdata="PCON"   />
+	<col key="col8" indata="@vsd@" outdata="VDIV"   />
+	<col key="col9" indata="@psd@" outdata="PDIV"   />
+	<col key="col10" indata="@tcs@" outdata="TPCON"   />
+	<col key="col11" indata="@tsd@" outdata="TPDIV"   />
+	<col key="col12" indata="" row_image="info"  outdata="TIMETABLE"  row_leftClick="SHOW_CONTAINER_IN_GRP(VALUE=STCA%20TIMETABLE%20@KEY_ID@)" />
+	<col key="col13" indata="@type@" outdata="TYPE"  />
+	<col key="col14" indata="@inhibition@" outdata="INHIB"   />
+	<col key="col15" indata="PRE" outdata="PRE"  row_leftClick="SHOW_CONTAINER_IN_GRP(VALUE=STCA%20PRESELECTION%20FILTER)" />
+	<col key="col16" indata="AND" outdata="AND"  row_leftClick="SHOW_CONTAINER_IN_GRP(VALUE=STCA%20AND%20FILTER)" />
+	<col key="col17" indata="OR" outdata="OR"  row_leftClick="SHOW_CONTAINER_IN_GRP(VALUE=STCA%20OR%20FILTER)" />
+</list>
+</msg>

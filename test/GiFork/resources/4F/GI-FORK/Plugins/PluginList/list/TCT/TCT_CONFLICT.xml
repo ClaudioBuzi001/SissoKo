@@ -1,0 +1,32 @@
+<msg>
+	<list 
+		ROW_ID="@CONFLICT_NUMBER@" condition="@ISTCT@">
+		<attributes 
+			ID="TCT CONFLICT LIST" 
+			BEHAVIOR_IF_EMPTY="delete" 
+			MAX_ITEM_SHOWED="10"
+			SORT="URG:ASC,TIME:ASC," 
+			SIDE="ALR:1"
+			 
+			 
+		/>
+		<col key="col1"  indata="@CONFLICT_NUMBER@"	outdata="CONFLICT_ID"   row_leftClick="SHOW_TCT_CONFLICT(CONFLICT_ID=@CONFLICT_NUMBER@)"/>		
+		<col key="col2"  indata="@ALIAS_LIST(FIELD_TO_CHECK1=..TIME_TO_CONFLICT)@" outdata="TIME"	  row_leftClick="SHOW_TCT_CONFLICT(CONFLICT_ID=@CONFLICT_NUMBER@)"/>		
+		<col key="col3"  indata="@ALARM_TYPE@"	outdata="TYPE"	row_fgr="@ALIAS_LIST(FIELD_TO_CHECK1=..URGENCY , INFO_TYPE=COLOR)@"  row_leftClick="SHOW_TCT_CONFLICT(CONFLICT_ID=@CONFLICT_NUMBER@)" />
+		<!-- col key="col4"  indata="@URGENCY@"	         outdata="URG"	   row_leftClick="SHOW_TCT_CONFLICT(CONFLICT_ID=@CONFLICT_NUMBER@)" /-->
+		<col key="col4"  indata="@ALIAS_LIST(FIELD_TO_CHECK1=..CS_RCS_SSR_1)@" outdata="CS1"  row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , VALUE_TO_CHECK = TRACK_NUMBER1, DEFAULT=#fafafa)@" row_blink_state="@ALIAS_LIST(FIELD_TO_CHECK=..TEMPLATE, INFO_TYPE=BLINK)@" row_leftPress="HIGHLIGHT_TCT_CONFLICT(HIGHLIGHT=TRUE, TRK_ID=LBL_@TRACK_NUMBER1@)" row_leftRelease="HIGHLIGHT_TCT_CONFLICT(HIGHLIGHT=FALSE, TRK_ID=LBL_@TRACK_NUMBER1@)"/>
+		<col key="col5"  indata="@ALIAS_LIST(FIELD_TO_CHECK1=..CS_RCS_SSR_2)@" outdata="CS2"  row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , VALUE_TO_CHECK = TRACK_NUMBER2, DEFAULT=#fafafa)@" row_blink_state="@ALIAS_LIST(FIELD_TO_CHECK=..TEMPLATE, INFO_TYPE=BLINK)@" row_leftPress="HIGHLIGHT_TCT_CONFLICT(HIGHLIGHT=TRUE, TRK_ID=LBL_@TRACK_NUMBER2@)" row_leftRelease="HIGHLIGHT_TCT_CONFLICT(HIGHLIGHT=FALSE, TRK_ID=LBL_@TRACK_NUMBER2@)" />
+		<col key="col6"  indata="@ALIAS_LIST(FIELD_TO_CHECK1=..LEV1)@"	outdata="AFL1"    row_leftClick="SHOW_TCT_CONFLICT(CONFLICT_ID=@CONFLICT_NUMBER@)"/>
+		<col key="col7"  indata="@ALIAS_LIST(FIELD_TO_CHECK1=..LEV2)@"	outdata="AFL2"	  row_leftClick="SHOW_TCT_CONFLICT(CONFLICT_ID=@CONFLICT_NUMBER@)"/>
+		<col key="col8"  indata="@ALIAS_LIST(FIELD_TO_CHECK1=..ESTIMATED_MINIMUM_PLANAR_DISTANCE)@"	outdata="MDIST"	  row_leftClick="SHOW_TCT_CONFLICT(CONFLICT_ID=@CONFLICT_NUMBER@)"/>	
+		<col key="col9" indata="@ALIAS_LIST(FIELD_TO_CHECK1=..PRESENT_PLANAR_DISTANCE)@"	 outdata="DIST"   row_leftClick="SHOW_TCT_CONFLICT(CONFLICT_ID=@CONFLICT_NUMBER@)" />
+		<col key="col10" indata="@ALIAS_LIST(FIELD_TO_CHECK1=..MINIMUM_ABS_DISTANCE)@"	 outdata="MINABSDIST"   row_leftClick="SHOW_TCT_CONFLICT(CONFLICT_ID=@CONFLICT_NUMBER@)" />		
+		<col key="col11" indata="@ALIAS_LIST(FIELD_TO_CHECK1=..EST_DISTANCE_TO_SEP_LOSS_1)@" outdata="DFI1"   row_leftClick="SHOW_TCT_CONFLICT(CONFLICT_ID=@CONFLICT_NUMBER@)"/>
+        <col key="col12" indata="@ALIAS_LIST(FIELD_TO_CHECK1=..EST_DISTANCE_TO_SEP_LOSS_2)@" outdata="DFI2"   row_leftClick="SHOW_TCT_CONFLICT(CONFLICT_ID=@CONFLICT_NUMBER@)"/>
+	    <col key="col13" indata="@ALIAS_LIST(FIELD_TO_CHECK1=..COO1)@" outdata="COO1"   row_leftClick="SHOW_TCT_CONFLICT(CONFLICT_ID=@CONFLICT_NUMBER@)"/>
+        <col key="col14" indata="@ALIAS_LIST(FIELD_TO_CHECK1=..COO2)@" outdata="COO2"   row_leftClick="SHOW_TCT_CONFLICT(CONFLICT_ID=@CONFLICT_NUMBER@)"/>
+        <col key="col15" indata="@ALIAS_LIST(FIELD_TO_CHECK1=..EFX1)@" outdata="EFX1"   row_leftClick="SHOW_TCT_CONFLICT(CONFLICT_ID=@CONFLICT_NUMBER@)"/>
+        <col key="col16" indata="@ALIAS_LIST(FIELD_TO_CHECK1=..EFX2)@" outdata="EFX2"   row_leftClick="SHOW_TCT_CONFLICT(CONFLICT_ID=@CONFLICT_NUMBER@)"/>
+		
+</list>
+</msg>

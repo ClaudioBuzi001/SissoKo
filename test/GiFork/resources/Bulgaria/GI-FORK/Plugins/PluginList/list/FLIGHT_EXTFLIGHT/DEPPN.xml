@@ -1,0 +1,31 @@
+<msg>
+
+<list ROW_ID="@FLIGHT_NUM@" condition="@ISDEP_PN_BV4@">
+<attributes ID="DEP PN:@ADEP@" BEHAVIOR_IF_EMPTY="delete" GROUP="DEP PN" SIDE="SFL:1"  SORT="ETD:ASC"  multicolumnname="ADEP"/>
+
+<col key="col1"		indata="@CALLSIGN@"	        					outdata="CALLSIGN"	col_state="filteredVisible" row_fgr="@TEMPLATE_COLOR@"	row_middleClick="CONTEXT_MENU(MENU_FILE=Executive.xml, TITLE=EXECUTIVE)" row_leftClick="CONTEXT_MENU(MENU_FILE=Planner.xml,TITLE=PLANNER_MENU)" row_rightClick="CONTEXT_MENU(MENU_FILE=Flight.xml,TITLE=FLIGHT_MENU)"/>
+<col key="col2" 	indata="@SFPL_STATE@"	 						outdata="FS"	  	col_state="filteredVisible"/>
+<col key="col3" 	indata="@ADEP@"									outdata="ADEP"   	col_state="filteredVisible"/>
+<col key="col4"	 	indata="@ADES@"									outdata="ADES"		col_state="filteredVisible"/>
+<col key="col5" 	indata="@WTC@"									outdata="CAT" 		col_state="filteredVisible"/>
+<col key="col6" 	indata="@ATY@"									outdata="TYPE" 		col_state="filteredVisible"/>
+<col key="col7"  	indata="@REG@"									outdata="AREG"		col_state="filteredVisible" />
+<col key="col8" 	indata="@OBT@"									outdata="EOBT"   	col_state="filteredVisible" row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW ,ORDER_ID=DCR, OBJECT_TYPE=DCR,  PREVIEW_NAME=previewDCR)"/>
+<col key="col9" 	indata="@DATE@"									outdata="DOF"   	col_state="filteredVisible" />
+<col key="col10" 	indata="@CTOT@"									outdata="CTOT"    	col_state="filteredVisible" />
+<col key="col11" 	indata="@ETD@"		        					outdata="ETD"   	col_state="filteredVisible" />
+<col key="col12" 	indata="@ALIAS_LIST(FIELD_TO_CHECK=..TACSTATUS)@"        					outdata="TAC"   	col_state="filteredVisible" row_leftClick="CONTEXT_MENU(MENU_FILE=TowerMenu.xml)" />
+<col key="col13" 	indata="@DEPRWY@"								outdata="RWY"   	col_state="filteredVisible" row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW ,ORDER_ID=RWADEP, OBJECT_TYPE=RWADEP,  PREVIEW_NAME=choiceRWADEP)"/>
+<col key="col14" 	indata="@SID@"									outdata="SID"   	col_state="filteredVisible" row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW ,ORDER_ID=CSI, OBJECT_TYPE=CSI,  PREVIEW_NAME=previewCSI)" />
+<col key="col15" 	indata="@FR@@FTYPE@" 							outdata="FR " 		col_state="filteredVisible" choicefield="$FUSION" />
+<col key="col16" 	indata="@CFL@"									outdata="CFL" 		col_state="filteredVisible"/>
+<col key="col17" 	indata="@DEP_PKBAY@"							outdata="PBAY" 		col_state="filteredVisible"  row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW , ORDER_ID=EPKBDEP , OBJECT_TYPE=EPKBDEP , PREVIEW_NAME=previewEPKBDEP, )"/>
+<col key="col18" 	indata="@PLV@"									outdata="PLV" 		col_state="filteredVisible"/>
+<col key="col19" 	indata="@PEL@"									outdata="PEL"  		col_state="filteredVisible" row_fgr="@SCL_LIST_UTILITY(FIELD_TO_CHECK=..PELCOLOR, VAL_1=COORD_IN, VAL_2=COORD_OUT, VAL_3=COORD_STATUS, VAL_4=VERT_DEV_FLAG)@" row_leftClick="@FLIGHT_PLAN_ORDER(FIELD_TO_CHECK=..COORD_STATUS_PEL, VAL_1=COORDSTATE)@"  />
+<col key="col20" 	indata="@XFL@"		        					outdata="XFL"  		col_state="filteredVisible" row_fgr="@SCL_LIST_UTILITY(FIELD_TO_CHECK=..XFLCOLOR, VAL_1=COORD_IN, VAL_2=COORD_OUT, VAL_3=COORD_STATUS, VAL_4=VERT_DEV_FLAG, VAL_5=PCF , VAL_6=XFLDRAWING_STATUS)@" row_leftClick="@FLIGHT_PLAN_ORDER(FIELD_TO_CHECK=..COORD_STATUS_XFL, VAL_1=COORDSTATE)@" />
+<col key="col21" 	indata="@FULLROUTE@"							outdata="ROUTE"	 	col_state="filteredVisible" col_width="350" />
+<col key="col22" 	indata="@EQ_833_STATUS@ @EQ_833_PERMISSION@" 	outdata="8.33" 		col_state="filteredVisible" choicefield="$FUSION"/>
+<col key="col23" 	indata="@RVSM@"									outdata="RVSM" 		col_state="filteredVisible"  />
+<col key="col24" 	indata="@SSR_CODE@"								outdata="ASSR" 		col_state="filteredVisible"  />
+</list>
+</msg>

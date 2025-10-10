@@ -1,0 +1,21 @@
+<msg>
+
+<list ROW_ID="@FLIGHT_NUM@" condition="@ISFIRENTRY@">
+
+
+<attributes ID="FIR ENTRY LIST" LATITUDE="" LONGITUDE="" BEHAVIOR_IF_EMPTY="delete" SIDE="SFL:4"  sort="CALLSIGN:ASC" />
+
+<col key="col1"	 indata="@CALLSIGN@"							outdata="CALLSIGN"	col_state="filteredVisible"	row_fgr="@TEMPLATE_COLOR@"	row_middleClick="CONTEXT_MENU(MENU_FILE=Executive.xml, TITLE=EXECUTIVE)"	row_leftClick="CONTEXT_MENU(MENU_FILE=Planner.xml,TITLE=PLANNER_MENU)"	row_rightClick="CONTEXT_MENU(MENU_FILE=Flight.xml,TITLE=FLIGHT_MENU)"/>
+<col key="col2"  indata="@ETD@"									outdata="ETI"		col_state="filteredVisible" />
+<col key="col3"	 indata="@PEL@"									outdata="PEL"		col_state="filteredVisible" />
+<col key="col4"	 indata="@IFIXNAME@"							outdata="IFIX"		col_state="filteredVisible" />
+<col key="col5"  indata="@ADEP@"								outdata="ADEP"		col_state="filteredVisible" />
+<col key="col6"  indata="@ADES@"								outdata="ADES"		col_state="filteredVisible" />
+<col key="col7"  indata="@REG@"									outdata="REG"		col_state="filteredVisible" />
+<col key="col8"  indata="@ATY@"									outdata="TYPE"		col_state="filteredVisible" />
+<col key="col8"	 indata="@OFIXNAME@"							outdata="OFIX"		col_state="filteredVisible" />
+<col key="col10" indata="@RVSM@"								outdata="RVSM"		col_state="filteredVisible" />
+<col key="col11" indata="@EQ_833_STATUS@ @EQ_833_PERMISSION@"	outdata="EQP"		col_state="filteredVisible" choicefield="$FUSION"   />
+</list>
+
+</msg>

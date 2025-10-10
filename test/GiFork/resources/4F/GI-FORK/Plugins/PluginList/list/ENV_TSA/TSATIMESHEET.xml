@@ -1,0 +1,25 @@
+<msg>
+	<list 
+		ROW_ID="@TSA_NAME@_@TS_ID@" condition="@ISTSATIMESHEET@">
+
+		<attributes 
+			ID="TIMETABLE VIEW @TSA_NAME@" 	
+			behavior_if_empty="delete"		
+			side="GRP_TOP_LEFT" 
+			open_in_grp="true"
+			visible="false"
+			CLOSE_BUTTON_CALLBACK= "DUMMY"			
+				
+			
+		/>
+
+		<col key="col1" indata="@LOWERLEVEL@-@UPPERLEVEL@"	outdata="LEVEL BAND"   />
+		<col key="col2" indata="@PERIODSTARTDATE@-@PERIODSTARTTIME@ @PERIODENDDATE@-@PERIODENDTIME@"	outdata="PERIOD"   />
+		<col key="col3" indata="@KINDOFPERIODICITY@"	outdata="KINDOFPERIOD"   />
+		<col key="col4" indata="@DAYTIMESTART@-@DAYTIMEEND@" 	outdata="DAYTIME"   /> 
+		<col key="col5" indata="@OPSUP_LIST(FIELD_TO_CHECK1=..KINDOFPERIODICITY, VAL1=KINDOFPERIODICITY, VAL2=WEEKDAY)@"	outdata="WEEKDAY"   />
+		<col key="col6" indata="@OPSUP_LIST(FIELD_TO_CHECK1=..KINDOFPERIODICITY, VAL1=KINDOFPERIODICITY, VAL3=WEEKDAYSTART, VAL4=WEEKDAYSTARTTIME, VAL5=WEEKDAYEND, VAL6=WEEKDAYENDTIME)@"	outdata="WEEKPERIOD"    />
+		<col key="col7" indata=""	outdata="U"   row_image="EditGE"  row_leftClick="EXTERNAL_ORDER(ORDER_ID=UTS , OBJECT_TYPE=UTS,  PREVIEW_NAME=previewUTS)" />
+		<col key="col8" indata=""	outdata="D"   row_image="@OPSUP_LIST(FIELD_TO_CHECK1=..STATUS_TT, VAL_TO_CHECK1=INACTIVE, IMAGE_NAME1=BUTTON_TRASH, IMAGE_NAME2=BUTTON_ABORT, INFO_TYPE=IMAGE)@"  row_leftClick="@OPSUP_LIST(FIELD_TO_CHECK1=..CALLBACK_REMOVETIMESHEET, VAL_TO_CHECK1=STATUS)@" />						
+	</list>
+</msg>

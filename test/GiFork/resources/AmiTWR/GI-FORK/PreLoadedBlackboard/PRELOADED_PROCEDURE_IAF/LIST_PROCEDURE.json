@@ -1,0 +1,22 @@
+{
+    "PROCEDURE": [
+        {
+            "PROCEDURE_NAME": "ILS Z RWY 03L",
+            "ACRONYM": "ILS",
+            "IAF_NAME": "MEFFE",
+            "MAF_NAME": "MEFFE"
+        },
+        {
+            "PROCEDURE_NAME": "LOC Z RWY 03L",
+            "ACRONYM": "LOC",
+            "IAF_NAME": "MEFFE",
+            "MAF_NAME": "MEFFE"
+        },
+        {
+            "PROCEDURE_NAME": "VOR RWY 03L",
+            "ACRONYM": "VOR",
+            "IAF_NAME": "GRO",
+            "MAF_NAME": "GRO"
+        }
+    ]
+}

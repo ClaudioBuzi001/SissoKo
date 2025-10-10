@@ -1,0 +1,1345 @@
+{
+"CALLSIGN" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "7" ,
+    "MANDATORY": "true",
+    "ERROR_MSG" : "CALLSIGN REQUIRED"
+	},
+
+"TRAJPOINT_PN" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "5" ,
+    "MANDATORY": "true",
+    "ERROR_MSG" : "FIX REQUIRED"
+	} ,
+
+"TRAJPOINT_PN_NRCR" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "5" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "FIX REQUIRED"
+	} ,
+
+"TRAJPOINT_ETO" :
+	{
+	"SYNTAX_CHECK" : "TIME" ,
+    "LENGHT" : "4" ,
+    "MANDATORY": "true",
+    "ERROR_MSG" : "ETO REQUIRED"
+	},
+"TRAJPOINT_ETO_NRCR" :
+	{
+	"SYNTAX_CHECK" : "TIME" ,
+    "LENGHT" : "4" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "ETO REQUIRED"
+	},
+"TRAJPOINT_XLV" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "true",
+    "ERROR_MSG" : "XLV REQUIRED"
+	},
+"TRAJPOINT_XLV_NRCR" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "XLV REQUIRED"
+	},
+"IFIX" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "5" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "POINT PN REQUIRED"
+	},
+"ETD" :
+	{
+	"SYNTAX_CHECK" : "TIME" ,
+    "LENGHT" : "4" ,
+    "MANDATORY": "true",
+    "ERROR_MSG" : "ETD REQUIRED"
+	},
+"PLV" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "true",
+    "ERROR_MSG" : "RFL REQUIRED"
+	},
+"PEL" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PEL REQUIRED"
+	},
+"CFL" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "CFL REQUIRED"
+	},
+
+"PMODE" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "1" ,
+    "MANDATORY": "true",
+    "ERROR_MSG" : "PMODE REQUIRED"
+	},
+"PMODE_SSR" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "1" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PMODE REQUIRED"
+	},
+"PCODE" :
+	{
+	"SYNTAX_CHECK" : "OCTAL" ,
+    "LENGHT" : "4" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PCODE REQUIRED"
+	},
+"ATY" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "4" ,
+    "MANDATORY": "true",
+    "ERROR_MSG" : "ATY REQUIRED"
+	},
+"ADEP" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "4" ,
+    "MANDATORY": "true",
+    "ERROR_MSG" : "DEP REQUIRED"
+	},
+"ADES" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "4" ,
+    "MANDATORY": "true",
+    "ERROR_MSG" : "DES REQUIRED"
+	},
+"TRUEAIRSPEEDINKNOTS" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "true",
+    "ERROR_MSG" : "PTAS REQUIRED"
+	},
+"FULLROUTE" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC_TEXT_AREA" ,
+    "LENGHT" : "240" ,
+    "MANDATORY": "true",
+    "ERROR_MSG" : "ROUTE REQUIRED"
+	},
+
+"DEPRWY" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY REQUIRED"
+	},
+
+"SID" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "8" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "SID REQUIRED"
+	},
+
+"FIELD18STS" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "86" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "FIELD18 REQUIRED"
+	},
+"FR_FTYPE" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "2" ,
+    "MANDATORY": "true",
+    "ERROR_MSG" : "FR REQUIRED"
+	},
+"ELTI" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "4" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "EET REQUIRED"
+	},
+"SCT" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "SCT REQUIRED"
+	},
+"OBT" :
+	{
+	"SYNTAX_CHECK" : "TIME" ,
+    "LENGHT" : "4" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "EOBT REQUIRED"
+	},
+"SMODE" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "1" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "MODE REQUIRED"
+	},
+"SCODE" :
+	{
+	"SYNTAX_CHECK" : "OCTAL" ,
+    "LENGHT" : "4" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "CODE REQUIRED"
+	},
+"ICAO_COUNTRY" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "4" ,
+    "MANDATORY": "true",
+    "ERROR_MSG" : "COUNTRY REQUIRED"
+	},
+"ICAO_CODE" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "8" ,
+    "MANDATORY": "true",
+    "ERROR_MSG" : "CODE REQUIRED"
+	},
+"ICAO_COUNTRY_SFPL" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "4" ,
+    "MANDATORY": "true",
+    "ERROR_MSG" : "COUNTRY REQUIRED"
+	},
+"ICAO_CODE_SFPL" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "8" ,
+    "MANDATORY": "true",
+    "ERROR_MSG" : "CODE REQUIRED"
+	},
+"STX" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC_TEXT_AREA" ,
+    "LENGHT" : "16" ,
+    "MANDATORY": "true",
+    "ERROR_MSG" : "TEXT REQUIRED"
+	},
+"FREE_TEXT" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "8" ,
+    "MANDATORY": "true",
+    "ERROR_MSG" : "TEXT REQUIRED"
+	},
+"NMODE" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "1" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "NMODE REQUIRED"
+	},
+"NCODE" :
+	{
+	"SYNTAX_CHECK" : "OCTAL" ,
+    "LENGHT" : "4" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "NCODE REQUIRED"
+	},
+
+"ICAOEQUIP_RCN_EQUIP" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "64" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RCN REQUIRED"
+	},
+
+"ICAOEQUIP_SSR_EQUIP" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "22" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "SSR REQUIRED"
+	},
+"ICAOEQUIP_PBN_EQUIP" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "16" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PNB REQUIRED"
+	},
+"ICAOEQUIP_STS_EQUIP" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "86" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "STS REQUIRED"
+	},
+
+"ICAOEQUIP_COM_EQUIP" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "50" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "COM REQUIRED"
+	},
+"ICAOEQUIP_NAV_EQUIP" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "50" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "NAV REQUIRED"
+	},
+"ICAOEQUIP_DAT_EQUIP" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "50" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "DAT REQUIRED"
+	},
+"REG" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "8" ,
+    "MANDATORY": "true",
+    "ERROR_MSG" : "REG REQUIRED"
+	},
+"PHD" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "HDG REQUIRED"
+	},
+"PAS" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "ASP REQUIRED"
+	},
+"PRT" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "ARC REQUIRED"
+	},
+"PSFL" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "SFL REQUIRED"
+	},
+"PFL" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "CFL REQUIRED"
+	},
+"EPKB" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "4" ,
+    "MANDATORY": "true",
+    "ERROR_MSG" : "PARKING BAY REQUIRED"
+	},
+"ETL" :
+	{
+	"SYNTAX_CHECK" : "TIME" ,
+    "LENGHT" : "4" ,
+    "MANDATORY": "true",
+    "ERROR_MSG" : "ETL REQUIRED"
+	},
+"LS" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "true",
+    "ERROR_MSG" : "ENV REQUIRED"
+	},
+"NODE" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "true",
+    "ERROR_MSG" : "NODE REQUIRED"
+	},
+"LC" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "true",
+    "ERROR_MSG" : "LC REQUIRED"
+	},
+"SUITE" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "SUITE REQUIRED"
+	},
+"SEC" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "true",
+    "ERROR_MSG" : "SECTOR REQUIRED"
+	},
+"ACT_FUN" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "true",
+    "ERROR_MSG" : "FUN REQUIRED"
+	},
+"CF" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "5" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "FIX REQUIRED"
+	},
+"OLDI_CRC" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "1" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "CRC REQUIRED"
+	},
+"OLDI_EST" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "1" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "EST REQUIRED"
+	},
+"OLDI_ETO" :
+	{
+	"SYNTAX_CHECK" : "TIME" ,
+    "LENGHT" : "4" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "ETO REQUIRED"
+	},
+"NUM_AC" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "2" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "NUM REQUIRED"
+	},
+"SFPL_TYPE" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "4" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "TYPE REQUIRED"
+	},
+"FLIGHTID1" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "7" ,
+    "MANDATORY": "true",
+    "ERROR_MSG" : "CALLSIGN1 REQUIRED"
+	},
+"FLIGHTID2" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "7" ,
+    "MANDATORY": "true",
+    "ERROR_MSG" : "CALLSIGN2 REQUIRED"
+	},
+"USER" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC_NO_UPPER" ,
+    "LENGHT" : "30" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "USER REQUIRED"
+	},
+"PASSWORD" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC_NO_UPPER" ,
+    "LENGHT" : "30" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PWD REQUIRED"
+ 	},
+ "PWD_TEXT" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC_NO_UPPER" ,
+    "LENGHT" : "30" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PWD REQUIRED"
+ 	},
+ "QNH_INT" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "4" ,
+    "MANDATORY": "true",
+    "ERROR_MSG" : "QNH REQUIRED"
+	},
+ "QNH_DEC" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "2" ,
+    "MANDATORY": "true",
+    "ERROR_MSG" : "QNH REQUIRED"
+	},
+"RWY_NAME_1" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY REQUIRED"
+	},
+"RWY_NAME_2" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY REQUIRED"
+	},
+"RWY_NAME_3" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY REQUIRED"
+	},
+"RWY_NAME_4" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY REQUIRED"
+	},
+"RWY_NAME_5" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY REQUIRED"
+	},
+"RWY_NAME_6" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY REQUIRED"
+	},
+"RWY_NAME_7" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY REQUIRED"
+	},
+"RWY_NAME_8" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY REQUIRED"
+	},
+"RWY_NAME_9" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY REQUIRED"
+	},
+"RWY_NAME_10" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY REQUIRED"
+	},
+"RWY_ALTNAME_1" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY ALTNAME REQUIRED"
+	},
+"RWY_ALTNAME_2" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY ALTNAME REQUIRED"
+	},
+"RWY_ALTNAME_3" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY ALTNAME REQUIRED"
+	},
+"RWY_ALTNAME_4" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY ALTNAME REQUIRED"
+	},
+"RWY_ALTNAME_5" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY ALTNAME REQUIRED"
+	},
+"RWY_ALTNAME_6" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY ALTNAME REQUIRED"
+	},
+"RWY_ALTNAME_7" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY ALTNAME REQUIRED"
+	},
+"RWY_ALTNAME_8" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY ALTNAME REQUIRED"
+	},
+"RWY_ALTNAME_9" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY ALTNAME REQUIRED"
+	},
+"RWY_ALTNAME_10" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY ALTNAME REQUIRED"
+	},
+"RWY_LANDRATE_1" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY LANDRATE REQUIRED"
+	},
+"RWY_LANDRATE_2" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY LANDRATE REQUIRED"
+	},
+"RWY_LANDRATE_3" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY LANDRATE REQUIRED"
+	},
+"RWY_LANDRATE_4" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY LANDRATE REQUIRED"
+	},
+"RWY_LANDRATE_5" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY LANDRATE REQUIRED"
+	},
+"RWY_LANDRATE_6" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY LANDRATE REQUIRED"
+	},
+"RWY_LANDRATE_7" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY LANDRATE REQUIRED"
+	},
+"RWY_LANDRATE_8" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY LANDRATE REQUIRED"
+	},
+"RWY_LANDRATE_9" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY LANDRATE REQUIRED"
+	},
+"RWY_LANDRATE_10" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY LANDRATE REQUIRED"
+	},
+"RWY_RATE_DEP_1" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY DEPRATE REQUIRED"
+	},
+"RWY_RATE_DEP_2" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY DEPRATE REQUIRED"
+	},
+"RWY_RATE_DEP_3" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY DEPRATE REQUIRED"
+	},
+"RWY_RATE_DEP_4" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY DEPRATE REQUIRED"
+	},
+"RWY_RATE_DEP_5" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY DEPRATE REQUIRED"
+	},
+"RWY_RATE_DEP_6" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY DEPRATE REQUIRED"
+	},
+"RWY_RATE_DEP_7" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY DEPRATE REQUIRED"
+	},
+"RWY_RATE_DEP_8" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY DEPRATE REQUIRED"
+	},
+"RWY_RATE_DEP_9" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY DEPRATE REQUIRED"
+	},
+"RWY_RATE_DEP_10" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "RWY DEPRATE REQUIRED"
+	},
+"RWY_CLOSURETIME_1" :
+	{
+	"SYNTAX_CHECK" : "DATETIME" ,
+    "LENGHT" : "12" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "CLOSE TIME REQUIRED"
+	},
+"RWY_CLOSURETIME_2" :
+	{
+	"SYNTAX_CHECK" : "DATETIME" ,
+    "LENGHT" : "12" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "CLOSE TIME REQUIRED"
+	},
+"RWY_CLOSURETIME_3" :
+	{
+	"SYNTAX_CHECK" : "DATETIME" ,
+    "LENGHT" : "12" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "CLOSE TIME REQUIRED"
+	},
+"RWY_CLOSURETIME_4" :
+	{
+	"SYNTAX_CHECK" : "DATETIME" ,
+    "LENGHT" : "12" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "CLOSE TIME REQUIRED"
+	},
+"RWY_CLOSURETIME_5" :
+	{
+	"SYNTAX_CHECK" : "DATETIME" ,
+    "LENGHT" : "12" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "CLOSE TIME REQUIRED"
+	},
+"RWY_CLOSURETIME_6" :
+	{
+	"SYNTAX_CHECK" : "DATETIME" ,
+    "LENGHT" : "12" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "CLOSE TIME REQUIRED"
+	},
+"RWY_CLOSURETIME_7" :
+	{
+	"SYNTAX_CHECK" : "DATETIME" ,
+    "LENGHT" : "12" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "CLOSE TIME REQUIRED"
+	},
+"RWY_CLOSURETIME_8" :
+	{
+	"SYNTAX_CHECK" : "DATETIME" ,
+    "LENGHT" : "12" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "CLOSE TIME REQUIRED"
+	},
+"RWY_CLOSURETIME_9" :
+	{
+	"SYNTAX_CHECK" : "DATETIME" ,
+    "LENGHT" : "12" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "CLOSE TIME REQUIRED"
+	},
+"RWY_CLOSURETIME_10" :
+	{
+	"SYNTAX_CHECK" : "DATETIME" ,
+    "LENGHT" : "12" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "CLOSE TIME REQUIRED"
+	},
+"TAB" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "1" ,
+    "MANDATORY": "true",
+    "ERROR_MSG" : "GLOB REQUIRED"
+	},
+"PROPOSEDVALUE" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "LEV REQUIRED"
+	},
+"ARC" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "ARC REQUIRED"
+	},
+"LDVAVALUE" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "2" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "LDVAVALUE REQUIRED"
+	},
+"OLDI_XFL":
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "XFL REQUIRED"
+	},
+"OUTRRQLEVEL":
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "LEV REQUIRED"
+	},
+"INBRRQLEVEL":
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "3" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "LEV REQUIRED"
+	},
+"arp1":
+	{
+	"SYNTAX_CHECK" : "ALPHA_STAR" ,
+    "LENGHT" : "4" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY ALPHABETIC CHARACTER"
+	},
+"arp2":
+	{
+	"SYNTAX_CHECK" : "ALPHA_STAR" ,
+    "LENGHT" : "4" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY ALPHABETIC CHARACTER"
+	},
+"arp3":
+	{
+	"SYNTAX_CHECK" : "ALPHA_STAR" ,
+    "LENGHT" : "4" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY ALPHABETIC CHARACTER"
+	},
+"arp4":
+	{
+	"SYNTAX_CHECK" : "ALPHA_STAR" ,
+    "LENGHT" : "4" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY ALPHABETIC CHARACTER"
+	},
+"arp5":
+	{
+	"SYNTAX_CHECK" : "ALPHA_STAR" ,
+    "LENGHT" : "4" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY ALPHABETIC CHARACTER"
+	},
+"arp6":
+	{
+	"SYNTAX_CHECK" : "ALPHA_STAR" ,
+    "LENGHT" : "4" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY ALPHABETIC CHARACTER"
+	},
+"arp7":
+	{
+	"SYNTAX_CHECK" : "ALPHA_STAR" ,
+    "LENGHT" : "4" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY ALPHABETIC CHARACTER"
+	},
+"arp8":
+	{
+	"SYNTAX_CHECK" : "ALPHA_STAR" ,
+    "LENGHT" : "4" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY ALPHABETIC CHARACTER"
+	},
+"arp9":
+	{
+	"SYNTAX_CHECK" : "ALPHA_STAR" ,
+    "LENGHT" : "4" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY ALPHABETIC CHARACTER"
+	},
+"arp10":
+	{
+	"SYNTAX_CHECK" : "ALPHA_STAR" ,
+    "LENGHT" : "4" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY ALPHABETIC CHARACTER"
+	},
+"arp11":
+	{
+	"SYNTAX_CHECK" : "ALPHA_STAR" ,
+    "LENGHT" : "4" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY ALPHABETIC CHARACTER"
+	},
+"arp12":
+	{
+	"SYNTAX_CHECK" : "ALPHA_STAR" ,
+    "LENGHT" : "4" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY ALPHABETIC CHARACTER"
+	},
+"arp13":
+	{
+	"SYNTAX_CHECK" : "ALPHA_STAR" ,
+    "LENGHT" : "4" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY ALPHABETIC CHARACTER"
+	},
+"arp14":
+	{
+	"SYNTAX_CHECK" : "ALPHA_STAR" ,
+    "LENGHT" : "4" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY ALPHABETIC CHARACTER"
+	},
+"arp15":
+	{
+	"SYNTAX_CHECK" : "ALPHA_STAR" ,
+    "LENGHT" : "4" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY ALPHABETIC CHARACTER"
+	},
+"mcs1":
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC_STAR" ,
+    "LENGHT" : "5" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY APLHANUMERIC CHARACTER"
+	},
+"mcs2":
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC_STAR" ,
+    "LENGHT" : "5" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY APLHANUMERIC CHARACTER"
+	},
+"mcs3":
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC_STAR" ,
+    "LENGHT" : "5" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY APLHANUMERIC CHARACTER"
+	},
+"mcs4":
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC_STAR" ,
+    "LENGHT" : "5" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY APLHANUMERIC CHARACTER"
+	},
+"mcs5":
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC_STAR" ,
+    "LENGHT" : "5" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY APLHANUMERIC CHARACTER"
+	},
+"mcs6":
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC_STAR" ,
+    "LENGHT" : "5" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY APLHANUMERIC CHARACTER"
+	},
+"mcs7":
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC_STAR" ,
+    "LENGHT" : "5" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY APLHANUMERIC CHARACTER"
+	},
+"mcs8":
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC_STAR" ,
+    "LENGHT" : "5" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY APLHANUMERIC CHARACTER"
+	},
+"mcs9":
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC_STAR" ,
+    "LENGHT" : "5" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY APLHANUMERIC CHARACTER"
+	},
+"mcs10":
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC_STAR" ,
+    "LENGHT" : "5" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY APLHANUMERIC CHARACTER"
+	},
+"mcs11":
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC_STAR" ,
+    "LENGHT" : "5" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY APLHANUMERIC CHARACTER"
+	},
+"mcs12":
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC_STAR" ,
+    "LENGHT" : "5" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY APLHANUMERIC CHARACTER"
+	},
+"mcs13":
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC_STAR" ,
+    "LENGHT" : "5" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY APLHANUMERIC CHARACTER"
+	},
+"mcs14":
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC_STAR" ,
+    "LENGHT" : "5" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY APLHANUMERIC CHARACTER"
+	},
+"mcs15":
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC_STAR" ,
+    "LENGHT" : "5" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY APLHANUMERIC CHARACTER"
+	},
+"css1":
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC_STAR" ,
+    "LENGHT" : "7" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY APLHANUMERIC CHARACTER"
+	},
+"css2":
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC_STAR" ,
+    "LENGHT" : "7" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY APLHANUMERIC CHARACTER"
+	},
+"css3":
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC_STAR" ,
+    "LENGHT" : "7" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY APLHANUMERIC CHARACTER"
+	},
+"css4":
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC_STAR" ,
+    "LENGHT" : "7" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY APLHANUMERIC CHARACTER"
+	},
+"css5":
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC_STAR" ,
+    "LENGHT" : "7" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY APLHANUMERIC CHARACTER"
+	},
+"css6":
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC_STAR" ,
+    "LENGHT" : "7" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY APLHANUMERIC CHARACTER"
+	},
+"css7":
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC_STAR" ,
+    "LENGHT" : "7" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY APLHANUMERIC CHARACTER"
+	},
+"css8":
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC_STAR" ,
+    "LENGHT" : "7" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY APLHANUMERIC CHARACTER"
+	},
+"css9":
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC_STAR" ,
+    "LENGHT" : "7" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY APLHANUMERIC CHARACTER"
+	},
+"css10":
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC_STAR" ,
+    "LENGHT" : "7" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY APLHANUMERIC CHARACTER"
+	},
+"css11":
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC_STAR" ,
+    "LENGHT" : "7" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY APLHANUMERIC CHARACTER"
+	},
+"css12":
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC_STAR" ,
+    "LENGHT" : "7" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY APLHANUMERIC CHARACTER"
+	},
+"css13":
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC_STAR" ,
+    "LENGHT" : "7" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY APLHANUMERIC CHARACTER"
+	},
+"css14":
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC_STAR" ,
+    "LENGHT" : "7" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY APLHANUMERIC CHARACTER"
+	},
+"css15":
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC_STAR" ,
+    "LENGHT" : "7" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY APLHANUMERIC CHARACTER"
+	},
+"NEXT_FIR_FRQ":
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "4" ,
+    "MANDATORY": "true",
+    "ERROR_MSG" : "NEXT AUTHORITY REQUIRED"
+	},
+
+"PATH":
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "25" ,
+    "MANDATORY": "true",
+    "ERROR_MSG" : "PATH REQUIRED"
+	},
+
+"MAF":
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "5" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "MISSED APPROACH FIX REQUIRED"
+	},
+
+"FIXTIME":
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "4" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PLEASE INPUT ONLY NUMERIC CHARACTER"
+	},
+"RDR" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "2" ,
+    "MANDATORY": "true",
+    "ERROR_MSG" : "MISSING RADAR"
+	},
+"hTop" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "5" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : ""
+	},
+"dateFr_year" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "4" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : ""
+	},
+"dateFr_month" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "2" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : ""
+	},
+"dateFr_day" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "2" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : ""
+	},
+"hBot" :
+	{
+	"SYNTAX_CHECK" : "NUMERIC" ,
+    "LENGHT" : "5" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : ""
+	},
+"SVR_TEXT" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC_TEXT_AREA" ,
+    "LENGHT" : "26" ,
+    "MANDATORY": "true",
+    "ERROR_MSG" : "TEXT REQUIRED"
+	},
+"MET_CODE" :
+	{
+	"SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "4" ,
+    "MANDATORY": "true",
+    "ERROR_MSG" : "CODE REQUIRED"
+	},
+"PILOT_ID" :
+   {
+   "SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "20" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PILOT ID REQUIRED"
+   },
+"PILOT_CONTACT" :
+   {
+   "SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "20" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PILOT CONTACT REQUIRED"
+   },
+"INSTRUCTION" :
+   {
+   "SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "30" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "INSTRUCTION REQUIRED"
+   },
+"PAYLOAD" :
+   {
+   "SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "30" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PAYLOAD REQUIRED"
+   },
+"PROCEDURE" :
+   {
+   "SYNTAX_CHECK" : "ALPHA_NUMERIC" ,
+    "LENGHT" : "50" ,
+    "MANDATORY": "false",
+    "ERROR_MSG" : "PROCEDURE REQUIRED"
+   }
+}

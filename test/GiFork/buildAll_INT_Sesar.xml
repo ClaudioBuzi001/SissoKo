@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<project name="GI-FORK Build" default="build" basedir=".">
+        <property environment="env"/>
+	<property name="project.home" value="." />
+	<property name="dist.home" value="${project.home}/dist" />
+	<property name="plugins.folder" value="plugins" />
+	<target name="build">
+		<subant target="build">
+
+                        <filelist dir="../WpCommon/build" files="buildINT.xml"/>
+                        <filelist dir="../WpCommon/cdmwInterface/scripts/pcd" files="buildINT.xml"/>
+			
+			<filelist dir="../infrastructure" files="buildINT.xml" />
+			 <filelist dir="../jedm" files="buildINT.xml" />
+			 <filelist dir="../GiForkCommonLib" files="buildINT.xml" />
+			<!-- GI-FORK -->
+			<filelist dir="." files="buildINT.xml" />
+
+			<!-- PluginXAI_4F -->
+			<filelist dir="../PluginXAI_4F" files="buildINT.xml" />
+			
+			<!-- PluginList_4F -->
+			<filelist dir="../PluginList_4F" files="buildINT.xml" />
+
+			<!-- PluginLabel_4F -->
+			<filelist dir="../PluginLabel_4F" files="buildINT.xml" />
+
+			<!-- PluginSDA_4F -->
+			<filelist dir="../PluginSDA_4F" files="buildINT.xml" />
+	
+			<!-- PluginSesar -->
+                        <filelist dir="../PluginSesar_4F" files="buildINT.xml" />	
+
+		</subant>
+	</target>
+
+	<target name="clean">
+		<subant target="clean">
+
+                        <filelist dir="../WpCommon/build" files="buildINT.xml" />
+
+                        <filelist dir="../WpCommon/cdmwInterface/scripts/pcd" files="buildINT.xml" />
+
+			<filelist dir="../infrastructure" files="buildINT.xml" />
+			 <filelist dir="../jedm" files="buildINT.xml" />
+			<filelist dir="." files="buildINT.xml" />
+			
+			<!-- PluginXAI_4F -->
+			<filelist dir="../PluginXAI_4F" files="buildINT.xml" />
+
+			<!-- PluginList_4F -->
+			<filelist dir="../PluginList_4F" files="buildINT.xml" />
+
+			<!-- PluginLabel_4F -->
+			<filelist dir="../PluginLabel_4F" files="buildINT.xml" />
+
+			<!-- PluginSDA_4F -->
+			<filelist dir="../PluginSDA_4F" files="buildINT.xml" />
+			
+			<!-- PluginSesar -->
+                        <filelist dir="../PluginSesar_4F" files="buildINT.xml" />
+		</subant>
+	</target>
+
+</project>

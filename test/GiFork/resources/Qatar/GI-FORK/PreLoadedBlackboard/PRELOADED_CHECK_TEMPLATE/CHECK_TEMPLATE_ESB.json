@@ -1,0 +1,42 @@
+{	
+"ESB":
+[
+
+	{"RULE":"1",   "COLOR" : "#FFFFFF",  "TEMPLATE":"DEP",      "CHECK_FIELD":{"ISPENDING":"false", "ISDEP_SECT":"true","TEMPLATE":"1","FLC":"2"}},
+	{"RULE":"2",   "COLOR" : "#FFFFFF",  "TEMPLATE":"DEP",      "CHECK_FIELD":{"ISPENDING":"false", "ISDEP_SECT":"true","TEMPLATE":"2","FLC":"2"}},
+	{"RULE":"3",   "COLOR" : "#FFFFFF",  "TEMPLATE":"DEP",      "CHECK_FIELD":{"ISPENDING":"false", "ISDEP_SECT":"true","TEMPLATE":"4","FLC":"2"}},
+	{"RULE":"4",   "COLOR" : "#FFFFFF",  "TEMPLATE":"DEP",      "CHECK_FIELD":{"ISPENDING":"false", "ISDEP_SECT":"true","TEMPLATE":"6","FLC":"2"}},
+	{"RULE":"5",   "COLOR" : "#FFFFFF",  "TEMPLATE":"DEP",      "CHECK_FIELD":{"ISPENDING":"false", "ISDEP_SECT":"true","TEMPLATE":"7","FLC":"2"}},
+	
+	{"RULE":"6",   "COLOR" : "#FFFFFF",  "TEMPLATE":"DEP",      "CHECK_FIELD":{"ISPENDING":"false", "ISDEP_SECT":"true","TEMPLATE":"1","FLC":"3"}},
+	{"RULE":"7",   "COLOR" : "#FFFFFF",  "TEMPLATE":"DEP",      "CHECK_FIELD":{"ISPENDING":"false", "ISDEP_SECT":"true","TEMPLATE":"2","FLC":"3"}},
+	{"RULE":"8",   "COLOR" : "#FFFFFF",  "TEMPLATE":"DEP",      "CHECK_FIELD":{"ISPENDING":"false", "ISDEP_SECT":"true","TEMPLATE":"4","FLC":"3"}},
+	{"RULE":"9",   "COLOR" : "#FFFFFF",  "TEMPLATE":"DEP",      "CHECK_FIELD":{"ISPENDING":"false", "ISDEP_SECT":"true","TEMPLATE":"6","FLC":"3"}},
+	{"RULE":"10",  "COLOR" : "#FFFFFF",  "TEMPLATE":"DEP",      "CHECK_FIELD":{"ISPENDING":"false", "ISDEP_SECT":"true","TEMPLATE":"7","FLC":"3"}},
+	
+	{"RULE":"11",  "COLOR" : "#FFFFFF",  "TEMPLATE":"DEP_LOC",  "CHECK_FIELD":{"ISPENDING":"false", "ISDEP_SECT":"true","TEMPLATE":"1","FLC":"4"}},
+	{"RULE":"12",  "COLOR" : "#FFFFFF",  "TEMPLATE":"DEP_LOC",  "CHECK_FIELD":{"ISPENDING":"false", "ISDEP_SECT":"true","TEMPLATE":"2","FLC":"4"}},
+	{"RULE":"13",  "COLOR" : "#FFFFFF",  "TEMPLATE":"DEP_LOC",  "CHECK_FIELD":{"ISPENDING":"false", "ISDEP_SECT":"true","TEMPLATE":"4","FLC":"4"}},
+	{"RULE":"14",  "COLOR" : "#FFFFFF",  "TEMPLATE":"DEP_LOC",  "CHECK_FIELD":{"ISPENDING":"false", "ISDEP_SECT":"true","TEMPLATE":"6","FLC":"4"}},
+	{"RULE":"15",  "COLOR" : "#FFFFFF",  "TEMPLATE":"DEP_LOC",  "CHECK_FIELD":{"ISPENDING":"false", "ISDEP_SECT":"true","TEMPLATE":"7","FLC":"4"}},
+	
+	{"RULE":"16",  "COLOR" : "#FFFFFF",  "TEMPLATE":"ARR",      "CHECK_FIELD":{"ISPENDING":"false", "ISARR_SECT":"true","TEMPLATE":"1","FLC":"1"}},
+	{"RULE":"17",  "COLOR" : "#FFFFFF",  "TEMPLATE":"ARR",      "CHECK_FIELD":{"ISPENDING":"false", "ISARR_SECT":"true","TEMPLATE":"2","FLC":"1"}},
+	{"RULE":"18",  "COLOR" : "#FFFFFF",  "TEMPLATE":"ARR",      "CHECK_FIELD":{"ISPENDING":"false", "ISARR_SECT":"true","TEMPLATE":"4","FLC":"1"}},
+	{"RULE":"19",  "COLOR" : "#FFFFFF",  "TEMPLATE":"ARR",      "CHECK_FIELD":{"ISPENDING":"false", "ISARR_SECT":"true","TEMPLATE":"6","FLC":"1"}},
+	{"RULE":"20",  "COLOR" : "#FFFFFF",  "TEMPLATE":"ARR",      "CHECK_FIELD":{"ISPENDING":"false", "ISARR_SECT":"true","TEMPLATE":"7","FLC":"1"}},
+	
+	{"RULE":"21",  "COLOR" : "#FFFFFF",  "TEMPLATE":"ARR",      "CHECK_FIELD":{"ISPENDING":"false", "ISARR_SECT":"true","TEMPLATE":"1","FLC":"3"}},
+	{"RULE":"22",  "COLOR" : "#FFFFFF",  "TEMPLATE":"ARR",      "CHECK_FIELD":{"ISPENDING":"false", "ISARR_SECT":"true","TEMPLATE":"2","FLC":"3"}},
+	{"RULE":"23",  "COLOR" : "#FFFFFF",  "TEMPLATE":"ARR",      "CHECK_FIELD":{"ISPENDING":"false", "ISARR_SECT":"true","TEMPLATE":"4","FLC":"3"}},
+	{"RULE":"24",  "COLOR" : "#FFFFFF",  "TEMPLATE":"ARR",      "CHECK_FIELD":{"ISPENDING":"false", "ISARR_SECT":"true","TEMPLATE":"6","FLC":"3"}},
+	{"RULE":"25",  "COLOR" : "#FFFFFF",  "TEMPLATE":"ARR",      "CHECK_FIELD":{"ISPENDING":"false", "ISARR_SECT":"true","TEMPLATE":"7","FLC":"3"}},
+	
+	{"RULE":"26",  "COLOR" : "#FFFFFF",  "TEMPLATE":"ARR_LOC",  "CHECK_FIELD":{"ISPENDING":"false", "ISARR_SECT":"true","TEMPLATE":"1","FLC":"4"}},
+	{"RULE":"27",  "COLOR" : "#FFFFFF",  "TEMPLATE":"ARR_LOC",  "CHECK_FIELD":{"ISPENDING":"false", "ISARR_SECT":"true","TEMPLATE":"2","FLC":"4"}},
+	{"RULE":"28",  "COLOR" : "#FFFFFF",  "TEMPLATE":"ARR_LOC",  "CHECK_FIELD":{"ISPENDING":"false", "ISARR_SECT":"true","TEMPLATE":"4","FLC":"4"}},
+	{"RULE":"29",  "COLOR" : "#FFFFFF",  "TEMPLATE":"ARR_LOC",  "CHECK_FIELD":{"ISPENDING":"false", "ISARR_SECT":"true","TEMPLATE":"6","FLC":"4"}},
+	{"RULE":"30",  "COLOR" : "#FFFFFF",  "TEMPLATE":"ARR_LOC",  "CHECK_FIELD":{"ISPENDING":"false", "ISARR_SECT":"true","TEMPLATE":"7","FLC":"4"}}
+]
+}
+

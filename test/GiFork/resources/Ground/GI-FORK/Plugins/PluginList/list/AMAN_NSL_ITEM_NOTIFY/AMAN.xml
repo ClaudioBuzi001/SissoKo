@@ -1,0 +1,25 @@
+<msg>
+<!--  LISTA CASL Combined Arrival Sequence List  -->
+<!--  Per ora prende i dati solo da aman -->
+
+<!--
+<list ROW_ID="AMAN_@AIRP@_@RWY@_@SQN@_@CALLSIGN@_@FLIGHT_NUM@" condition="@ISAMAN@">
+-->
+<list ROW_ID="@FLIGHT_NUM@" condition="">
+
+	<attributes ID="AMAN:@AIRP@:@RWY@" behavior_if_empty="delete" side="AMAN" swap="true" list_type="OPAQUE" args="-dynamic_list=AMANTYPE" />
+
+	<col key="col1"		indata="@SQN@"			outdata="SEQ.NUM"	messagetype="aman" row_fgr="#CECECE" colordef="-fgr1=#CECECE" row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW , ORDER_ID=ANM, OBJECT_TYPE=ANM, PREVIEW_NAME=choiceANM)" 	row_rightClick="CONTEXT_MENU(MENU_FILE=SeqIDContextMenu.xml)" />
+	<col key="col2"		indata="@CALLSIGN@"		outdata="CALLSIGN"	messagetype="aman" row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , DEFAULT=#CECECE)@"/>
+	<col key="col3"		indata="@IAF_FIX@"		outdata="IAF"		messagetype="aman" row_fgr="#CECECE" colordef="-fgr2=#CECECE"/>
+	<col key="col4"		indata="@IAF_ETO_LBL@"	outdata="ETO"		messagetype="aman"/>
+	<col key="col5"		indata="@IAF_STO_LBL@"	outdata="CTO"		messagetype="aman" order="$Alias"/>
+	<col key="col6"		indata="@ASI_CONF@"		outdata="C"			messagetype="aman"/>
+	<col key="col7"		indata="@SEP@"			outdata="SEP"		messagetype="aman"/>
+	<col key="col8"		indata="@ETA_MIN@"		outdata="MIN"		messagetype="aman"/>
+	<col key="col9"		indata="@ETA_MAX@"		outdata="MAX"		messagetype="aman"/>
+	<col key="col10"	indata="@ADVIS@"		outdata="ADVISORY"	messagetype="aman"/>
+	<col key="col11"	indata="@TTL_TTG@"		outdata="TTL_TTG"	messagetype="aman"/>
+</list>
+
+</msg>

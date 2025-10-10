@@ -1,0 +1,17 @@
+<msg>
+
+<!--  LISTA TCT CONSULTATION   -->
+<list ROW_ID="@UID@" condition="@ISTCTVOLUMES@">
+	<attributes ID="TCT CONSULTATION LIST" behavior_if_empty="delete" side="OPSUP"  />
+	<col key="col1" indata="@tct_volume_lolev@-@tct_volume_uplev@" outdata="LEVELS"   />
+	<col key="col2" indata="@tct_volume_status@" outdata="TCT"  row_fgr="@SNET_LIST(FIELD_TO_CHECK1=..tct_volume_status, INFO_TYPE=COLOR)@" row_leftClick="EXTERNAL_ORDER(ORDER_ID=ATV, OBJECT_TYPE=ATV, DATA={#TCT},  PREVIEW_NAME=quickATV)"  />
+	<col key="col3" indata="@ttt_volume_status@" outdata="TTT"  row_fgr="@SNET_LIST(FIELD_TO_CHECK1=..ttt_volume_status, INFO_TYPE=COLOR)@" row_leftClick="EXTERNAL_ORDER(ORDER_ID=ATV, OBJECT_TYPE=ATV, DATA={#TTT},  PREVIEW_NAME=quickATV)"  />
+	<col key="col4" indata="@tsv_volume_status@" outdata="TSV"  row_fgr="@SNET_LIST(FIELD_TO_CHECK1=..tsv_volume_status, INFO_TYPE=COLOR)@" row_leftClick="EXTERNAL_ORDER(ORDER_ID=ATV, OBJECT_TYPE=ATV, DATA={#TSV},  PREVIEW_NAME=quickATV)"  />
+	<col key="col5" indata="@tts_volume_status@" outdata="TTS"  row_fgr="@SNET_LIST(FIELD_TO_CHECK1=..tts_volume_status, INFO_TYPE=COLOR)@" row_leftClick="EXTERNAL_ORDER(ORDER_ID=ATV, OBJECT_TYPE=ATV, DATA={#TTS},  PREVIEW_NAME=quickATV)"  />
+	<col key="col6" indata="" outdata="EXC" row_image="@SNET_LIST(FIELD_TO_CHECK=..EX_CRI, INFO_TYPE=IMAGE)@" row_leftClick="SHOW_CONTAINER_IN_GRP(VALUE=TCT%20EXCLUSION%20CRITERIA%20@UID@)"  />
+	<col key="col7" indata="@ALIAS_LIST(FIELD_TO_CHECK1=..tct_volume_tlookHeadTime)@" outdata="TLOOKAheadTime" />
+	<col key="col8" indata="@KEY_ID@" outdata="VOLUME"   />	
+</list>
+
+
+</msg>

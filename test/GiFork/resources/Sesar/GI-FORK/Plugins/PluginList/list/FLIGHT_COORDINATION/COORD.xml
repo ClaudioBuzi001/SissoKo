@@ -1,0 +1,22 @@
+<msg>
+
+	<list 
+        ROW_ID="@PARENT_FLIGHT@_@COORDTYPE@" condition="@ISCOORD@">
+		<attributes 
+			ID="COORDINATION LIST" 
+			behavior_if_empty="delete" 
+			side="COO" 
+			sort="TIME:ASC" 
+		/>
+
+		<col key="col1" indata="@CALLSIGN@"		outdata="CALLSIGN"	   row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , DEFAULT=#fafafa)@" row_blink_state="@ALIAS_LIST(FIELD_TO_CHECK=..TEMPLATE, INFO_TYPE=BLINK)@" row_middleClick="SHOW_TRAJECTORY" />
+		<col key="col2" indata="@TIME@"			outdata="TIME"		  col_state="filteredVisible"  />
+		<col key="col3" indata="@ALIAS_LIST(FIELD_TO_CHECK1=..COORDTYPE)@"	outdata="TYPE"  col_state="filteredVisible"  />
+		<col key="col4" indata="@ALIAS_LIST(FIELD_TO_CHECK1=..ALT_MYPHYSCT, FIELD_TO_CHECK2=..ALT_PHYSCT)@"	 outdata="FROM"	col_state="filteredVisible"  />
+		<col key="col5" indata="@ALIAS_LIST(FIELD_TO_CHECK1=..ALT_PHYSCT, FIELD_TO_CHECK2=..ALT_MYPHYSCT)@" outdata="TO"	col_state="filteredVisible"  />	
+		<col key="col6" indata="@COORDDATA@"	outdata="DATA"  col_width="150"  col_state="filteredVisible" row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..COORDSTATE , VAL_TO_CHECK=ISCOUT, DEFAULT=#fafafa)@" row_leftClick="@ALIAS_LIST(FIELD_TO_CHECK1=..CALLBACK_ORDER_IN)@" row_rightClick="@ALIAS_LIST(FIELD_TO_CHECK1=..CALLBACK_ORDER_OUT)@" />	
+		<col key="col7" indata="@ALIAS_LIST(FIELD_TO_CHECK1=..COORDSTATE)@"	outdata="STATE"	col_state="filteredVisible"  row_leftClick="@ALIAS_LIST(FIELD_TO_CHECK1=..CALLBACK_REJECT)@" />
+	
+	</list>
+	
+</msg>

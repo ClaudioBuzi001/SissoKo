@@ -1,0 +1,27 @@
+<msg>
+	<list 
+		ROW_ID="@FLIGHT_NUM@" condition="@ISLND@">
+		<attributes
+			ID="LANDING LIST:@ADES@"
+			LATITUDE="42.04"
+			LONGITUDE="12.52"
+			behavior_if_empty="delete"
+			group="LANDING LIST:"
+			side="LND"
+			sort="ETL/ATA:ASC"
+		/>
+		
+		<col key="col1"	indata="@CALLSIGN@"	outdata="CALLSIGN"	 row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , DEFAULT=#fafafa)@" row_blink_state="@ALIAS_LIST(FIELD_TO_CHECK=..TEMPLATE, INFO_TYPE=BLINK)@"	row_middleClick="SHOW_TRAJECTORY" row_rightClick="EXTERNAL_ORDER(ORDER_ID=CHG , OBJECT_TYPE=CHG,  PREVIEW_NAME=previewCHG )"/>
+		<col key="col2"	indata="@SSR_CODE@"	outdata="SSR"	col_width="60" col_state="filteredVisible" row_fgr="FFFFFF" />
+		<col key="col3"	indata="@ADES@"	outdata="DES"	col_width="50" col_state="filteredNotVisible"  />
+		<col key="col4"	indata="@ATA?ATA;ETL@"	outdata="ETL/ATA"	col_width="90"  />
+		<col key="col5"	indata="@IAF@"	outdata="IAF"	col_width="50" />
+		<col key="col6"	indata="@EAT@"	outdata="ETO"	col_width="85" />
+		<col key="col7"	indata="@ARWY@"	outdata="RWY" col_width="50" row_fgr="@ALIAS_LIST(FIELD_TO_CHECK1=..ARRIVAL, INFO_TYPE=COLOR)@" />
+		<col key="col8"	indata="@ATY@"	outdata="TYPE"	  col_width="60"/>
+		<col key="col9"	indata="@WTC@"	outdata="WTC"	 col_width="50"/>
+		<col key="col10"	indata="@ARR_PKBAY@"	outdata="PB"	col_width="45"  />
+		<col key="col11"	indata="@STAR@"	outdata="STAR"	 col_width="60" />
+	
+	</list>
+</msg>

@@ -1,0 +1,17 @@
+<msg>
+	<list
+		ROW_ID="@FLIGHT_NUM@" condition="@ISIOAT@">
+
+		<attributes	ID="iOAT FLIGHT DIRECTORY LIST" lat=""	lon="" behavior_if_empty="delete" behavior_if_full="delete"	side="SFL"	 sort="CALLSIGN:ASC"/>
+		<col key="col1"	 indata="@CALLSIGN@"	outdata="CALLSIGN"	 row_fgr="@TEMPLATE_COLOR@" row_middleClick="CONTEXT_MENU(MENU_FILE=Executive.xml, TITLE=EXECUTIVE)" row_leftClick="CONTEXT_MENU(MENU_FILE=Planner.xml,TITLE=PLANNER_MENU)" row_rightClick="CONTEXT_MENU(MENU_FILE=Flight.xml,TITLE=FLIGHT_MENU)"/>
+		<col key="col2"	 indata="@FR@@FTYPE@"	outdata="FR"     choicefield="$FUSION"	row_fgr="@FR_COLOR_IOAT@" />
+		<col key="col3"	 indata="@SSR_CODE@"	outdata="ASSR"/>
+		<col key="col4"  indata="@ADEP@"		outdata="ADEP"   col_state="filteredVisible" />
+		<col key="col5"	 indata="@ADES@"		outdata="ADES"	 col_state="filteredVisible" />
+		<col key="col6"	 indata="@ATY@"			outdata="TYPE"	 col_state="filteredVisible" />
+		<col key="col7"	 indata="@SFPL_STATE@"	outdata="FS"	 col_state="filteredVisible" />
+		<col key="col8"	 indata="@FIELD18STS@"	outdata="STS"	 col_state="filteredVisible" />
+		<col key="col9"	 indata="@EUR@"	        outdata="EUR"	 col_state="filteredVisible" />
+		<col key="col10" indata="@FULLROUTE@"	outdata="ROUTE"	 col_state="filteredVisible" col_width="350" row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW ,ORDER_ID=NRCR, OBJECT_TYPE=NRCR,  PREVIEW_NAME=previewNRCR)"/>
+	</list>
+</msg>

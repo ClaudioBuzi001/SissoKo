@@ -1,0 +1,30 @@
+<msg>
+	<list
+		ROW_ID="@FLIGHT_NUM@" condition="@ISFLDI@">
+<!--
+		<attributes	ID="FLIGHT DIRECTORY LIST"	lat=""	lon=""	behavior_if_empty="delete"	behavior_if_full="visible"	side="SFL:0"		sort="CALLSIGN:ASC"		/>
+-->
+		<attributes	ID="FLIGHT DIRECTORY LIST" lat=""	lon="" behavior_if_empty="delete" behavior_if_full="delete"	side="SFL"	 sort="CALLSIGN:ASC"/>
+<!-- mettendo ".." nei parametri della ServiceCall come nel'esempio seguente tale parametro verra passato al servizio senza elaborarne il recupero dalla Blackboard:
+     @LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , DEFAULT=#CECECE)@
+-->
+<!--  	ATTENZIONE PER L'INVOCAZIONE SERVIZIO LOST_FGR_COLOR  IL PARAMETRO :
+		FILED_TO_CHECK DEVE AVERE I ".." COME PREFISSO PER FARLO CAPIRE 
+		CORRETTAMENTE AL PARSER DEL SRIVIZIO STESSO-->	 
+		<col key="col1"	 indata="@CALLSIGN@"	outdata="CALLSIGN"	 row_fgr="@TEMPLATE_COLOR@" row_middleClick="CONTEXT_MENU(MENU_FILE=Executive.xml, TITLE=EXECUTIVE)" row_leftClick="CONTEXT_MENU(MENU_FILE=Planner.xml,TITLE=PLANNER_MENU)" row_rightClick="CONTEXT_MENU(MENU_FILE=Flight.xml,TITLE=FLIGHT_MENU)"/>
+		<col key="col2"	 indata="@ALIAS_LIST(FIELD_TO_CHECK=..SCT)@" outdata="SCT" row_middleClick="SHOW_TRAJECTORY"  />
+		<col key="col3"	 indata="@SSR_CODE@"	outdata="ASSR"/>
+		<col key="col4"	 indata="@FR@ @FTYPE@"						 outdata="FR"  choicefield="$FUSION"	 />
+		<col key="col5"  indata="@ADEP@"		outdata="ADEP"   col_state="filteredNotVisible" />
+		<col key="col6"	 indata="@ADES@"		outdata="ADES"	col_state="filteredNotVisible" />
+		<col key="col7"	 indata="@ATY@"			outdata="TYPE"	col_state="filteredNotVisible" />
+		<col key="col8"	 indata="@DLE@"			outdata="DL"	col_state="filteredNotVisible" />
+		<col key="col9"	 indata="@SFPL_STATE@"	outdata="FS"	col_state="filteredVisible"	   />
+		<col key="col10" indata="@ALIAS_LIST(FIELD_TO_CHECK=..MSE)@" outdata="ELIG" col_state="filteredVisible" />  
+		<!--<col key="col6"		indata="@GAT_OAT@"							 outdata="G/O"		 />
+		<col key="col7"		indata="@MDS@"								 outdata="MDS"	col_state="filteredVisible"	 />
+		<col key="col9"		indata="@EQ_833_STATUS@ @EQ_833_PERMISSION@" outdata="8.33"	col_state="filteredNotVisible"	choicefield="$FUSION"	 />
+		<col key="col10"	indata="@RVSM@"						   		 outdata="RVSM"	col_state="filteredNotVisible"	 />
+		<col key="col12"	indata="@NSSR_CODE@"						 outdata="NSSR"	col_state="filteredNotVisible"	 /-->
+	</list>
+</msg>

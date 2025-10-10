@@ -1,0 +1,25 @@
+<msg>
+	<list
+		ROW_ID="@FLIGHT_NUM@" condition="true">
+		<attributes	
+			ID="COAST LIST" 
+         BEHAVIOR_IF_EMPTY="hide" 
+			side="GRP_TOP_LEFT" 
+			open_in_grp="true"	
+			visible="true"			
+			sort="CALLSIGN:ASC"
+			CLOSE_BUTTON_CALLBACK="INHIBIT"	
+		/>
+<!-- mettendo ".." nei parametri della ServiceCall come nel'esempio seguente tale parametro verra passato al servizio senza elaborarne il recupero dalla Blackboard:
+@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , DEFAULT=#CECECE)@  row_blink_state="@ALIAS_LIST(FIELD_TO_CHECK1=..SFPL_STATE, INFO_TYPE=BLINK)@"
+-->
+		<col key="col2" indata="@CALLSIGN@" outdata="CALLSIGN"  row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , DEFAULT=#fafafa)@" row_blink_state="@ALIAS_LIST(FIELD_TO_CHECK=..SFPL_STATE, INFO_TYPE=BLINK)@"  row_middleClick="SHOW_TRAJECTORY" />
+		<col key="col2"	indata="@LOST_MODE_3A@" outdata="SSR" col_state="filteredVisible"   /> 
+		<col key="col3"	indata="@LATITUDE@" outdata="LATITUDE" col_state="filteredVisible"   /> 
+		<col key="col4"	indata="@LONGITUDE@" outdata="LONGITUDE" col_state="filteredVisible"   /> 		
+		<col key="col5"	indata="@LOST_LEV@"     outdata="LVL"     />
+		<col key="col5" indata="@XFL@"		outdata="XFL" col_state="filteredVisible"  />
+		<col key="col6" indata="@ETO@"		outdata="ETO" col_state="filteredVisible"  />
+		<col key="col5"	indata="@LOST_TIME@"     outdata="TIME"  col_state="filteredVisible"   />
+	</list>
+</msg>

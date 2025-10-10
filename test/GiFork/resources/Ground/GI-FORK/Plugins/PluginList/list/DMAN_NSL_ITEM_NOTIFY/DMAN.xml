@@ -1,0 +1,25 @@
+<msg>
+<!--  LISTA CASL Combined Arrival Sequence List  -->
+<!--  Per ora prende i dati solo da dman  -->
+
+
+<list ROW_ID="@FLIGHT_NUM@" condition="">
+
+	<attributes ID="DMAN:@AIRP@:@RWY@" behavior_if_empty="delete" side="LIST" swap="true" list_type="OPAQUE" args="-dynamic_list=DMANTYPE" />
+
+	<col key="col1"		indata="@DSQN_2CHR@" outdata="SN"	messagetype="dman" row_fgr="#CECECE" colordef="-fgr1=#CECECE" row_leftClick="EXTERNAL_ORDER(ORDER_ID=DFM_FTTOT, OBJECT_TYPE=DFM_FTTOT,  HOST=127.0.0.1:9011,  PREVIEW_NAME=quickDFM_FTTOT)" />
+	<col key="col2"		indata="@CALLSIGN@"	 outdata="CALLSIGN"	messagetype="dman" row_leftClick="EXTERNAL_ORDER(ORDER_ID=DFM_FTSAT, OBJECT_TYPE=DFM_FTSAT,  HOST=127.0.0.1:9011,  PREVIEW_NAME=quickDFM_FTSAT)"/>
+	<col key="col3"		indata="@AC@"		outdata="A/C"	messagetype="dman"/>
+	<col key="col4"		indata="@ETOBT@"	outdata="E/TOBT" messagetype="dman" colordef="-fgr3=#CECECE" />
+	<col key="col5"		indata="@TSAT@"	outdata="TSAT" messagetype="dman" row_leftClick="EXTERNAL_ORDER(ORDER_ID=DFM_MTSAT, OBJECT_TYPE=DFM_MTSAT,  HOST=127.0.0.1:9011,  PREVIEW_NAME=previewDFM_MTSAT)"/>
+	<col key="col6"		indata="@PKB@"	outdata="PKB"  messagetype="dman"/>
+	<col key="col7"		indata="@TXTIME@" outdata="TXTIME"	messagetype="dman"/>
+	<col key="col8"		indata="@RWY@"	  outdata="RWY"	messagetype="dman"/>
+	<col key="col9"		indata="@TTOT@"		outdata="TTOT"	messagetype="dman"/>
+	<col key="col10"	indata="@CTOT@"		outdata="CTOT"	messagetype="dman" colordef="-fgr2=#CECECE"/>
+
+</list>
+
+</msg>
+
+

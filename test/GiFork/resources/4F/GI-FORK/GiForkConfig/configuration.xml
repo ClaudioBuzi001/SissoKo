@@ -1,0 +1,46 @@
+<msg>
+
+	<!-- CONFIGURAZIONE DEI LOG -->
+	<service type="CONFIGURATION">
+
+		<p key="SYSTEM_CENTER_LAT" data="42.016666" />
+		<p key="SYSTEM_CENTER_LONG" data="12.55" />
+		<p key="SYSTEM_CENTER_HEIGHT" data="48" />
+
+		<p key="EXT_COF_DID" data="3" />
+		<p key="EXT_FF_DID" data="23" />
+		<p key="INT_FF_DID" data="22" />
+
+
+		<p key="COFLIGH_HOST_NAME" data="eatms42" />
+		<p key="COFLIGH_DAEMON_PORT" data="21806" />
+
+		<p key="QNH_START_TYPE" data="SECTOR" />
+
+		<!-- unit test params -->
+		<p key="IS_UNIT_TEST" data="false" />
+		<p key="IS_AMAN_TEST" data="false" />
+		<p key="IS_OK_ORDER_RESULT" data="false" />
+		<p key="IS_PERFORMANCE_TEST" data="false" />
+      <p key="IS_PROTO_TEST" data="false" />
+      <!-- unit test params -->
+		
+		<p key="MAXARP" data="0" />
+		<p key="STATISTICS_BB_TIME" data="0" />
+		
+
+		<!-- CONFIGURAZIONE PORTA DEL SERVER MULTI CLIENT PER LA RICEZIONE DEI JSONOBJECT DAGLI XAI-DECODER -->
+		
+		<p key="JV_ADDR" data="127.0.0.1" />
+		<p key="COMM_MODE" data="JIP" />
+		<p key="RMI_ENDPOINT" data="ALTERNATIVE" />
+		
+		<p key="CORA_SERVER_RMI_ADDRESS"	data="192.168.30.70" />
+		<p key="CORA_SERVER_RMI_PORT"		data="1099" />
+		<p key="DAY_REC_NUMBER" data="1" />
+		<p key="DELTA_SNAPSHOT_MINUTE" data="30" />
+		
+	</service>
+
+
+</msg>

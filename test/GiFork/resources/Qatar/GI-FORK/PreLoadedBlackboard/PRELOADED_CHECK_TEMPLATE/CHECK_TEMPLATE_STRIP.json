@@ -1,0 +1,12 @@
+{      
+"STRIP":
+[
+       {"RULE":"1",  "LAYOUT" : "IFR_ARR", "FAMILY" : "TWR", "CHECK_FIELD":{"FR":{"FROM" : "*", "TO": "I"}, "ISARR": {"FROM" : "*", "TO": "true"}}},
+       
+       {"RULE":"2",  "LAYOUT" : "IFR_DEP", "FAMILY" : "TWR", "CHECK_FIELD":{"FR":{"FROM" : "*", "TO": "I"}, "ISDEP": {"FROM" : "*", "TO": "true"}}},
+       
+       {"RULE":"3",  "LAYOUT" : "VFR_ARR", "FAMILY" : "TWR", "CHECK_FIELD":{"FR":{"FROM" : "*", "TO": "V"}, "ISARR": {"FROM" : "*", "TO": "true"}}},
+     
+       {"RULE":"4",  "LAYOUT" : "VFR_DEP", "FAMILY" : "TWR", "CHECK_FIELD":{"FR":{"FROM" : "*", "TO": "V"}, "ISDEP": {"FROM" : "*", "TO": "true"}}}
+]
+}

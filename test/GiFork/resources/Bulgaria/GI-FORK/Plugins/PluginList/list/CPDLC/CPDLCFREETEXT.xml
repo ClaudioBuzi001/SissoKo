@@ -1,0 +1,21 @@
+<msg>
+	<list 
+		ROW_ID="@CPDLC_ROW_ID@" condition="@ISCPDLCFREE@">
+		<attributes 
+			ID="CPDLC FREETEXT @CALLSIGN@" 
+			behavior_if_empty="delete" 
+			side="DL:3" 
+			 
+			
+			sort="TIME:DESC," 
+            CLOSE_BUTTON_CALLBACK="REMOVE_FREETEXT_CONTAINER( VALUE=CPDLC%20FREETEXT%20@CALLSIGN@, ROW_ID=@ROW_ID@ ) "			
+			args=""
+		/>
+		<col key="col1" indata="@CALLSIGN@"    outdata="CALLSIGN"  row_fgr="@CPDLC_LIST(FIELD_TO_CHECK1=..TEMPLATECPDLC, VAL_TO_CHECK=TEMPLATECPDLC, INFO_TYPE=COLOR)@" />
+		<col key="col2" indata="@TS@"          outdata="TIME"     col_state="filteredVisible" row_fgr="@CPDLC_LIST(FIELD_TO_CHECK1=..TEMPLATECPDLC, VAL_TO_CHECK=TEMPLATECPDLC, INFO_TYPE=COLOR)@" />
+		<col key="col3" indata="@TXT_MESSAGE@" outdata="MESSAGE" col_width="250" col_state="filteredVisible" row_fgr="@CPDLC_LIST(FIELD_TO_CHECK1=..TEMPLATECPDLC, VAL_TO_CHECK=TEMPLATECPDLC, INFO_TYPE=COLOR)@" row_rightClick="@CPDLC_LIST(FIELD_TO_CHECK1=..CALLBACK_ACK, VAL_TO_CHECK=MIN)@" />
+		<col key="col4" indata="@CPDLC_LIST(FIELD_TO_CHECK1=..STATUS_MSG_FREE, VAL_TO_CHECK=STATUS_MSG_FREE)@"   outdata="RESPONSE"  col_state="filteredVisible" row_fgr="@CPDLC_LIST(FIELD_TO_CHECK1=..RESPONSE_COLOR, VAL_TO_CHECK=STATUS_MSG_FREE, INFO_TYPE=COLOR)@" row_image="@CPDLC_LIST(FIELD_TO_CHECK1=..STATUS_MSG_FREE, VAL_TO_CHECK=STATUS_MSG_FREE, INFO_TYPE=IMAGE)@" />
+	</list>
+</msg>
+
+

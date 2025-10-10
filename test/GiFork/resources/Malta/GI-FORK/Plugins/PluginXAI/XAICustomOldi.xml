@@ -1,0 +1,991 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<customOldiConfig>
+    <configuration>
+        <oldiStateList>
+        <oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="RTI" codeType="OLDI" unitType="REC" desc="0000" mesIn="0000"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="RTI" codeType="OLDI" unitType="REC" desc="0001" mesIn="0001"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="SBY" codeType="OLDI" unitType="REC" desc="0002" mesIn="0002"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="RTI" codeType="OLDI" unitType="REC" desc="0003" mesIn="0003"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="WHITE" mesOut="ACP" codeType="OLDI" unitType="REC" desc="0004" mesIn="0004"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="WHITE" mesOut="RJC" codeType="OLDI" unitType="REC" desc="0005" mesIn="0005"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="SBY" codeType="OLDI" unitType="REC" desc="0006" mesIn="0006"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="GREEN" mesOut="TIP" codeType="OLDI" unitType="REC" desc="0007" mesIn="0007"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="ACP" codeType="OLDI" unitType="REC" desc="0008" mesIn="0008"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="RJC" codeType="OLDI" unitType="REC" desc="0010" mesIn="0010"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="WHITE" mesOut="ACP" codeType="OLDI" unitType="REC" desc="0012" mesIn="0012"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="ACP" codeType="OLDI" unitType="REC" desc="0013" mesIn="0013"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="SCO" codeType="OLDI" unitType="REC" desc="0028" mesIn="0028"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="SCO" codeType="OLDI" unitType="REC" desc="0029" mesIn="0029"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="WHITE" mesOut="SCO" codeType="OLDI" unitType="REC" desc="0030" mesIn="0030"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="SCO" codeType="OLDI" unitType="REC" desc="0031" mesIn="0031"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="SCK" codeType="OLDI" unitType="REC" desc="0032" mesIn="0032"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="SCK" codeType="OLDI" unitType="REC" desc="0033" mesIn="0033"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="WHITE" mesOut="SCK" codeType="OLDI" unitType="REC" desc="0034" mesIn="0034"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="SCK" codeType="OLDI" unitType="REC" desc="0035" mesIn="0035"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="WHITE" mesOut="RJC" codeType="OLDI" unitType="REC" desc="0038" mesIn="0038"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="RJC" codeType="OLDI" unitType="REC" desc="0039" mesIn="0039"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="ACP" codeType="OLDI" unitType="REC" desc="ALFL" mesIn="ALFL"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RJC" codeType="OLDI" unitType="REC" desc="ALJL" mesIn="ALJL"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="SBY" codeType="OLDI" unitType="REC" desc="ALLL" mesIn="ALLL"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="CDN" codeType="OLDI" unitType="REC" desc="ALLN" mesIn="ALLN"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="SBY" codeType="OLDI" unitType="REC" desc="AMLO" mesIn="AMLO"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RJC" codeType="OLDI" unitType="REC" desc="ANJO" mesIn="ANJO"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RJC" codeType="OLDI" unitType="REC" desc="ANLO" mesIn="ANLO"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="WHITE" mesOut="ACP" codeType="OLDI" unitType="REC" desc="AOFO" mesIn="AOFO"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="WHITE" mesOut="ACP" codeType="OLDI" unitType="REC" desc="AOLO" mesIn="AOLO"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="CDN" codeType="OLDI" unitType="REC" desc="AOLR" mesIn="AOLR"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="WHITE" mesOut="ACT" codeType="OLDI" unitType="REC" desc="AONA" mesIn="AONA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="ACP" codeType="OLDI" unitType="REC" desc="ASFR" mesIn="ASFR"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="RJC" codeType="OLDI" unitType="REC" desc="ASJR" mesIn="ASJR"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="CDN" codeType="OLDI" unitType="REC" desc="ASLR" mesIn="ASLR"/>
+
+<oldiState warn="" xflpelColor="GREEN" mesOutColor="WHITE" mesOut="ACT" codeType="OLDI" unitType="REC" desc="ASNA" mesIn="ASNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="WHITE" mesOut="ABI" codeType="OLDI" unitType="REC" desc="BONA" mesIn="BONA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="SDM" codeType="OLDI" unitType="REC" desc="DLNA" mesIn="DLNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="WHITE" mesOut="SDM" codeType="OLDI" unitType="REC" desc="DONA" mesIn="DONA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="GREEN" mesOut="SDM" codeType="OLDI" unitType="REC" desc="DONN" mesIn="DONN"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="SDM" codeType="OLDI" unitType="REC" desc="DRNA" mesIn="DRNA"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="ACP" codeType="OLDI" unitType="REC" desc="GLFL" mesIn="GLFL"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RJC" codeType="OLDI" unitType="REC" desc="GLJL" mesIn="GLJL"/>
+
+<oldiState warn="" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="SBY" codeType="OLDI" unitType="REC" desc="GLLL" mesIn="GLLL"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="CDN" codeType="OLDI" unitType="REC" desc="GLLN" mesIn="GLLN"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="SBY" codeType="OLDI" unitType="REC" desc="GMLO" mesIn="GMLO"/>
+
+<oldiState warn="RJC" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="RJC" codeType="OLDI" unitType="REC" desc="GNJO" mesIn="GNJO"/>
+
+<oldiState warn="RJC" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RJC" codeType="OLDI" unitType="REC" desc="GNLO" mesIn="GNLO"/>
+
+<oldiState warn="" xflpelColor="WHITE" mesOutColor="WHITE" mesOut="ACP" codeType="OLDI" unitType="REC" desc="GOFO" mesIn="GOFO"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="WHITE" mesOut="ACP" codeType="OLDI" unitType="REC" desc="GOLO" mesIn="GOLO"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="CDN" codeType="OLDI" unitType="REC" desc="GOLR" mesIn="GOLR"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="ACP" codeType="OLDI" unitType="REC" desc="GSFR" mesIn="GSFR"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="RJC" codeType="OLDI" unitType="REC" desc="GSJR" mesIn="GSJR"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="CDN" codeType="OLDI" unitType="REC" desc="GSLR" mesIn="GSLR"/>
+
+<oldiState warn="" xflpelColor="GREEN" mesOutColor="GREEN" mesOut="RRV" codeType="OLDI" unitType="REC" desc="GSNA" mesIn="GSNA"/>
+
+<oldiState warn="ACP" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="ACP" codeType="OLDI" unitType="REC" desc="HOFL" mesIn="HOFL"/>
+
+<oldiState warn="" xflpelColor="WHITE" mesOutColor="WHITE" mesOut="ACP" codeType="OLDI" unitType="REC" desc="HOFO" mesIn="HOFO"/>
+
+<oldiState warn="ACP" xflpelColor="NONE" mesOutColor="CYAN" mesOut="ACP" codeType="OLDI" unitType="REC" desc="HOFR" mesIn="HOFR"/>
+
+<oldiState warn="HOP" xflpelColor="NONE" mesOutColor="GREEN" mesOut="HOP" codeType="OLDI" unitType="REC" desc="HONN" mesIn="HONN"/>
+
+<oldiState warn="HOP" xflpelColor="NONE" mesOutColor="NONE" mesOut="HOP" codeType="OLDI" unitType="REC" desc="HONO" mesIn="HONO"/>
+
+<oldiState warn="ROF" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="ROF" codeType="OLDI" unitType="REC" desc="HOWL" mesIn="HOWL"/>
+
+<oldiState warn="ROF" xflpelColor="NONE" mesOutColor="WHITE" mesOut="ROF" codeType="OLDI" unitType="REC" desc="HOWO" mesIn="HOWO"/>
+
+<oldiState warn="ROF" xflpelColor="NONE" mesOutColor="CYAN" mesOut="ROF" codeType="OLDI" unitType="REC" desc="HOWR" mesIn="HOWR"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut=" " codeType="OLDI" unitType="REC" desc="NONA" mesIn="NONA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="COD" codeType="OLDI" unitType="REC" desc="OLNA" mesIn="OLNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="WHITE" mesOut="COD" codeType="OLDI" unitType="REC" desc="OONA" mesIn="OONA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="COD" codeType="OLDI" unitType="REC" desc="ORNA" mesIn="ORNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="WHITE" mesOut="PAC" codeType="OLDI" unitType="REC" desc="PONA" mesIn="PONA"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="ACP" codeType="OLDI" unitType="REC" desc="QLFL" mesIn="QLFL"/>
+
+<oldiState warn="RJC" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RJC" codeType="OLDI" unitType="REC" desc="QLJL" mesIn="QLJL"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="SBY" codeType="OLDI" unitType="REC" desc="QLLL" mesIn="QLLL"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="CDN" codeType="OLDI" unitType="REC" desc="QLLN" mesIn="QLLN"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="SBY" codeType="OLDI" unitType="REC" desc="QMLO" mesIn="QMLO"/>
+
+<oldiState warn="" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RJC" codeType="OLDI" unitType="REC" desc="QNJO" mesIn="QNJO"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RJC" codeType="OLDI" unitType="REC" desc="QNLO" mesIn="QNLO"/>
+
+<oldiState warn="" xflpelColor="WHITE" mesOutColor="WHITE" mesOut="ACP" codeType="OLDI" unitType="REC" desc="QOFO" mesIn="QOFO"/>
+
+<oldiState warn="" xflpelColor="WHITE" mesOutColor="WHITE" mesOut="ACP" codeType="OLDI" unitType="REC" desc="QOLO" mesIn="QOLO"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="CDN" codeType="OLDI" unitType="REC" desc="QOLR" mesIn="QOLR"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="ACP" codeType="OLDI" unitType="REC" desc="QSFR" mesIn="QSFR"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="RJC" codeType="OLDI" unitType="REC" desc="QSJR" mesIn="QSJR"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="CDN" codeType="OLDI" unitType="REC" desc="QSLR" mesIn="QSLR"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="WHITE" mesOut="SBY" codeType="OLDI" unitType="REC" desc="QSNA" mesIn="QSNA"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="ACP" codeType="OLDI" unitType="REC" desc="RLFL" mesIn="RLFL"/>
+
+<oldiState warn="RJC" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RJC" codeType="OLDI" unitType="REC" desc="RLJL" mesIn="RLJL"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="SBY" codeType="OLDI" unitType="REC" desc="RLLL" mesIn="RLLL"/>
+
+<oldiState warn="RJC" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="CDN" codeType="OLDI" unitType="REC" desc="RLLN" mesIn="RLLN"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="SBY" codeType="OLDI" unitType="REC" desc="RMLO" mesIn="RMLO"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RJC" codeType="OLDI" unitType="REC" desc="RNJO" mesIn="RNJO"/>
+
+<oldiState warn="RJC" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RJC" codeType="OLDI" unitType="REC" desc="RNLO" mesIn="RNLO"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="WHITE" mesOut="ACP" codeType="OLDI" unitType="REC" desc="ROFO" mesIn="ROFO"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="WHITE" mesOut="ACP" codeType="OLDI" unitType="REC" desc="ROLO" mesIn="ROLO"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="CDN" codeType="OLDI" unitType="REC" desc="ROLR" mesIn="ROLR"/>
+
+<oldiState warn="" xflpelColor="WHITE" mesOutColor="WHITE" mesOut="REV" codeType="OLDI" unitType="REC" desc="RONA" mesIn="RONA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="ACP" codeType="OLDI" unitType="REC" desc="RSFR" mesIn="RSFR"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="RJC" codeType="OLDI" unitType="REC" desc="RSJR" mesIn="RSJR"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="CDN" codeType="OLDI" unitType="REC" desc="RSLR" mesIn="RSLR"/>
+
+<oldiState warn="" xflpelColor="GREEN" mesOutColor="GREEN" mesOut="REV" codeType="OLDI" unitType="REC" desc="RSNA" mesIn="RSNA"/>
+
+<oldiState warn="COF" xflpelColor="NONE" mesOutColor="GREEN" mesOut="COF" codeType="OLDI" unitType="REC" desc="TONN" mesIn="TONN"/>
+
+<oldiState warn="COF" xflpelColor="NONE" mesOutColor="WHITE" mesOut="COF" codeType="OLDI" unitType="REC" desc="TOSA" mesIn="TOSA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="GREEN" mesOut="TIM" codeType="OLDI" unitType="REC" desc="UONN" mesIn="UONN"/>
+
+<oldiState warn="ROF" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="ROF" codeType="OLDI" unitType="REC" desc="WLNA" mesIn="WLNA"/>
+
+<oldiState warn="ROF" xflpelColor="NONE" mesOutColor="WHITE" mesOut="ROF" codeType="OLDI" unitType="REC" desc="WONA" mesIn="WONA"/>
+
+<oldiState warn="ROF" xflpelColor="NONE" mesOutColor="CYAN" mesOut="ROF" codeType="OLDI" unitType="REC" desc="WRNA" mesIn="WRNA"/>
+
+<!-- OLDI TRANSFERRING -->
+
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="TIP" codeType="OLDI" unitType="TRA" desc="0014" mesIn="0014"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="TIP" codeType="OLDI" unitType="TRA" desc="0015" mesIn="0015"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="SBY" codeType="OLDI" unitType="TRA" desc="0016" mesIn="0016"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="TIP" codeType="OLDI" unitType="TRA" desc="0017" mesIn="0017"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="WHITE" mesOut="ACP" codeType="OLDI" unitType="TRA" desc="0018" mesIn="0018"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="RJC" codeType="OLDI" unitType="TRA" desc="0019" mesIn="0019"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="TIP" codeType="OLDI" unitType="TRA" desc="0020" mesIn="0020"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="GREEN" mesOut="RTI" codeType="OLDI" unitType="TRA" desc="0021" mesIn="0021"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="ACP" codeType="OLDI" unitType="TRA" desc="0022" mesIn="0022"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="RJC" codeType="OLDI" unitType="TRA" desc="0024" mesIn="0024"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="WHITE" mesOut="ACP" codeType="OLDI" unitType="TRA" desc="0026" mesIn="0026"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="ACP" codeType="OLDI" unitType="TRA" desc="0027" mesIn="0027"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="WHITE" mesOut="SCO" codeType="OLDI" unitType="TRA" desc="0036" mesIn="0036"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="WHITE" mesOut="SCK" codeType="OLDI" unitType="TRA" desc="0037" mesIn="0037"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="RJC" codeType="OLDI" unitType="TRA" desc="0040" mesIn="0040"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="RJC" codeType="OLDI" unitType="TRA" desc="0041" mesIn="0041"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="ACP" codeType="OLDI" unitType="TRA" desc="AGFR" mesIn="AGFR"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="RJC" codeType="OLDI" unitType="TRA" desc="AGJR" mesIn="AGJR"/>
+
+<oldiState warn="PCO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="ACP" codeType="OLDI" unitType="TRA" desc="ALFL" mesIn="ALFL"/>
+
+<oldiState warn="PCO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RJC" codeType="OLDI" unitType="TRA" desc="ALJL" mesIn="ALJL"/>
+
+<oldiState warn="PCO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="ACT" codeType="OLDI" unitType="TRA" desc="ALNA" mesIn="ALNA"/>
+
+<oldiState warn="" xflpelColor="GREEN" mesOutColor="GREEN" mesOut="CDN" codeType="OLDI" unitType="TRA" desc="AMNW" mesIn="AMNW"/>
+
+<oldiState warn="PCO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="ACT" codeType="OLDI" unitType="TRA" desc="ANNA" mesIn="ANNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="ACP" codeType="OLDI" unitType="TRA" desc="AONA" mesIn="AONA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="WHITE" mesOut="ACT" codeType="OLDI" unitType="TRA" desc="AONO" mesIn="AONO"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="ACT" codeType="OLDI" unitType="TRA" desc="ARNA" mesIn="ARNA"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="SBY" codeType="OLDI" unitType="TRA" desc="ASNA" mesIn="ASNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="ABI" codeType="OLDI" unitType="TRA" desc="BLNA" mesIn="BLNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="ABI" codeType="OLDI" unitType="TRA" desc="BNNA" mesIn="BNNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="WHITE" mesOut="ABI" codeType="OLDI" unitType="TRA" desc="BONA" mesIn="BONA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="ABI" codeType="OLDI" unitType="TRA" desc="BRNA" mesIn="BRNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="WHITE" mesOut="PCO" codeType="OLDI" unitType="TRA" desc="CCNA" mesIn="CCNA"/>
+
+<oldiState warn="PCO" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="PCO" codeType="OLDI" unitType="TRA" desc="CPNA" mesIn="CPNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="SMD" codeType="OLDI" unitType="TRA" desc="DLNA" mesIn="DLNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="SMD" codeType="OLDI" unitType="TRA" desc="DONA" mesIn="DONA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="SMD" codeType="OLDI" unitType="TRA" desc="DRNA" mesIn="DRNA"/>
+
+<oldiState warn="PCO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="ACP" codeType="OLDI" unitType="TRA" desc="FNNA" mesIn="FNNA"/>
+
+<oldiState warn="PCO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RRV" codeType="OLDI" unitType="TRA" desc="GLNA" mesIn="GLNA"/>
+
+<oldiState warn="PCO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RRV" codeType="OLDI" unitType="TRA" desc="GLNL" mesIn="GLNL"/>
+
+<oldiState warn="" xflpelColor="GREEN" mesOutColor="GREEN" mesOut="CDN" codeType="OLDI" unitType="TRA" desc="GMNW" mesIn="GMNW"/>
+
+<oldiState warn="PCO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RRV" codeType="OLDI" unitType="TRA" desc="GNNA" mesIn="GNNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="ACP" codeType="OLDI" unitType="TRA" desc="GOFO" mesIn="GOFO"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="WHITE" mesOut="RRV" codeType="OLDI" unitType="TRA" desc="GONA" mesIn="GONA"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="RRV" codeType="OLDI" unitType="TRA" desc="GRNA" mesIn="GRNA"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="SBY" codeType="OLDI" unitType="TRA" desc="GSNA" mesIn="GSNA"/>
+
+<oldiState warn="HOP" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="HOP" codeType="OLDI" unitType="TRA" desc="HLNA" mesIn="HLNA"/>
+
+<oldiState warn="HOP" xflpelColor="NONE" mesOutColor="WHITE" mesOut="HOP" codeType="OLDI" unitType="TRA" desc="HONA" mesIn="HONA"/>
+
+<oldiState warn="HOP" xflpelColor="NONE" mesOutColor="CYAN" mesOut="HOP" codeType="OLDI" unitType="TRA" desc="HRNA" mesIn="HRNA"/>
+
+<oldiState warn="HOP" xflpelColor="NONE" mesOutColor="WHITE" mesOut="HOP" codeType="OLDI" unitType="TRA" desc="HUNA" mesIn="HUNA"/>
+
+<oldiState warn="ROF" xflpelColor="NONE" mesOutColor="GREEN" mesOut="ROF" codeType="OLDI" unitType="TRA" desc="HYNA" mesIn="HYNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="WHITE" mesOut="ACP" codeType="OLDI" unitType="TRA" desc="HZNA" mesIn="HZNA"/>
+
+<oldiState warn="PCO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RJC" codeType="OLDI" unitType="TRA" desc="JNNA" mesIn="JNNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut=" " codeType="OLDI" unitType="TRA" desc="NONA" mesIn="NONA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="PAC" codeType="OLDI" unitType="TRA" desc="OLNA" mesIn="OLNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="WHITE" mesOut="COD" codeType="OLDI" unitType="TRA" desc="OONA" mesIn="OONA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="COD" codeType="OLDI" unitType="TRA" desc="OQNA" mesIn="OQNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="PAC" codeType="OLDI" unitType="TRA" desc="ORNA" mesIn="ORNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="PAC" codeType="OLDI" unitType="TRA" desc="OWNA" mesIn="OWNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="PAC" codeType="OLDI" unitType="TRA" desc="PLNA" mesIn="PLNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="PAC" codeType="OLDI" unitType="TRA" desc="PNNA" mesIn="PNNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="WHITE" mesOut="PAC" codeType="OLDI" unitType="TRA" desc="PONA" mesIn="PONA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="PAC" codeType="OLDI" unitType="TRA" desc="PRNA" mesIn="PRNA"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="ACP" codeType="OLDI" unitType="TRA" desc="QGFR" mesIn="QGFR"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="RJC" codeType="OLDI" unitType="TRA" desc="QGJR" mesIn="QGJR"/>
+
+<oldiState warn="PCO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="ACP" codeType="OLDI" unitType="TRA" desc="QLFL" mesIn="QLFL"/>
+
+<oldiState warn="PCO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RJC" codeType="OLDI" unitType="TRA" desc="QLJL" mesIn="QLJL"/>
+
+<oldiState warn="PCO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RAP" codeType="OLDI" unitType="TRA" desc="QLNA" mesIn="QLNA"/>
+
+<oldiState warn="PCO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RAP" codeType="OLDI" unitType="TRA" desc="QLNL" mesIn="QLNL"/>
+
+<oldiState warn="" xflpelColor="GREEN" mesOutColor="GREEN" mesOut="CDN" codeType="OLDI" unitType="TRA" desc="QMNW" mesIn="QMNW"/>
+
+<oldiState warn="PCO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RJC" codeType="OLDI" unitType="TRA" desc="QNJO" mesIn="QNJO"/>
+
+<oldiState warn="PCO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RAP" codeType="OLDI" unitType="TRA" desc="QNNA" mesIn="QNNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="WHITE" mesOut="ACP" codeType="OLDI" unitType="TRA" desc="QOFO" mesIn="QOFO"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="WHITE" mesOut="RAP" codeType="OLDI" unitType="TRA" desc="QONA" mesIn="QONA"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="RAP" codeType="OLDI" unitType="TRA" desc="QRNA" mesIn="QRNA"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="SBY" codeType="OLDI" unitType="TRA" desc="QSNA" mesIn="QSNA"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="ACP" codeType="OLDI" unitType="TRA" desc="RGFR" mesIn="RGFR"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="RJC" codeType="OLDI" unitType="TRA" desc="RGJR" mesIn="RGJR"/>
+
+<oldiState warn="PCO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="ACP" codeType="OLDI" unitType="TRA" desc="RLFL" mesIn="RLFL"/>
+
+<oldiState warn="PCO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RJC" codeType="OLDI" unitType="TRA" desc="RLJL" mesIn="RLJL"/>
+
+<oldiState warn="PCO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="REV" codeType="OLDI" unitType="TRA" desc="RLNA" mesIn="RLNA"/>
+
+<oldiState warn="" xflpelColor="GREEN" mesOutColor="GREEN" mesOut="CDN" codeType="OLDI" unitType="TRA" desc="RMNW" mesIn="RMNW"/>
+
+<oldiState warn="PCO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RJC" codeType="OLDI" unitType="TRA" desc="RNJO" mesIn="RNJO"/>
+
+<oldiState warn="PCO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="REV" codeType="OLDI" unitType="TRA" desc="RNNA" mesIn="RNNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="ACP" codeType="OLDI" unitType="TRA" desc="ROFO" mesIn="ROFO"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="WHITE" mesOut="ACP" codeType="OLDI" unitType="TRA" desc="RONA" mesIn="RONA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="WHITE" mesOut="REV" codeType="OLDI" unitType="TRA" desc="RONO" mesIn="RONO"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="REV" codeType="OLDI" unitType="TRA" desc="RRNA" mesIn="RRNA"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="SBY" codeType="OLDI" unitType="TRA" desc="RSNA" mesIn="RSNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="WHITE" mesOut="MAS" codeType="OLDI" unitType="TRA" desc="SONA" mesIn="SONA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="WHITE" mesOut="MAS" codeType="OLDI" unitType="TRA" desc="TFNA" mesIn="TFNA"/>
+
+<oldiState warn="COF" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="COF" codeType="OLDI" unitType="TRA" desc="TLNA" mesIn="TLNA"/>
+
+<oldiState warn="COF" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="COF" codeType="OLDI" unitType="TRA" desc="TLSA" mesIn="TLSA"/>
+
+<oldiState warn="COF" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="COF" codeType="OLDI" unitType="TRA" desc="TNNA" mesIn="TNNA"/>
+
+<oldiState warn="COF" xflpelColor="NONE" mesOutColor="WHITE" mesOut="COF" codeType="OLDI" unitType="TRA" desc="TONA" mesIn="TONA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="WHITE" mesOut="COF" codeType="OLDI" unitType="TRA" desc="TOSA" mesIn="TOSA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="COF" codeType="OLDI" unitType="TRA" desc="TRNA" mesIn="TRNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="TIM" codeType="OLDI" unitType="TRA" desc="ULNA" mesIn="ULNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="WHITE" mesOut="TIM" codeType="OLDI" unitType="TRA" desc="UONA" mesIn="UONA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="TIM" codeType="OLDI" unitType="TRA" desc="URNA" mesIn="URNA"/>
+
+<oldiState warn="ROF" xflpelColor="NONE" mesOutColor="GREEN" mesOut="ROF" codeType="OLDI" unitType="TRA" desc="WONA" mesIn="WONA"/>
+
+<!-- AIDC RECEIVING -->
+
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="RTI" codeType="AIDC" unitType="REC" desc="0000" mesIn="0000"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="RTI" codeType="AIDC" unitType="REC" desc="0001" mesIn="0001"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="SBY" codeType="AIDC" unitType="REC" desc="0002" mesIn="0002"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="RTI" codeType="AIDC" unitType="REC" desc="0003" mesIn="0003"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="ACP" codeType="AIDC" unitType="REC" desc="0004" mesIn="0004"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="RJC" codeType="AIDC" unitType="REC" desc="0005" mesIn="0005"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="SBY" codeType="AIDC" unitType="REC" desc="0006" mesIn="0006"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="GREEN" mesOut="TIP" codeType="AIDC" unitType="REC" desc="0007" mesIn="0007"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="ACP" codeType="AIDC" unitType="REC" desc="0008" mesIn="0008"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="RJC" codeType="AIDC" unitType="REC" desc="0010" mesIn="0010"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="ACP" codeType="AIDC" unitType="REC" desc="0012" mesIn="0012"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="ACP" codeType="AIDC" unitType="REC" desc="0013" mesIn="0013"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="SCO" codeType="AIDC" unitType="REC" desc="0028" mesIn="0028"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="SCO" codeType="AIDC" unitType="REC" desc="0029" mesIn="0029"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="SCO" codeType="AIDC" unitType="REC" desc="0030" mesIn="0030"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="SCO" codeType="AIDC" unitType="REC" desc="0031" mesIn="0031"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="SCK" codeType="AIDC" unitType="REC" desc="0032" mesIn="0032"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="SCK" codeType="AIDC" unitType="REC" desc="0033" mesIn="0033"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="SCK" codeType="AIDC" unitType="REC" desc="0034" mesIn="0034"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="SCK" codeType="AIDC" unitType="REC" desc="0035" mesIn="0035"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="RJC" codeType="AIDC" unitType="REC" desc="0038" mesIn="0038"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="RJC" codeType="AIDC" unitType="REC" desc="0039" mesIn="0039"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="LRM" codeType="AIDC" unitType="REC" desc="AKFO" mesIn="AKFO"/>
+
+<oldiState warn="" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="ACP" codeType="AIDC" unitType="REC" desc="ALFL" mesIn="ALFL"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RJC" codeType="AIDC" unitType="REC" desc="ALJL" mesIn="ALJL"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="SBY" codeType="AIDC" unitType="REC" desc="ALLL" mesIn="ALLL"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="CDN" codeType="AIDC" unitType="REC" desc="ALLN" mesIn="ALLN"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="SBY" codeType="AIDC" unitType="REC" desc="AMLO" mesIn="AMLO"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RJC" codeType="AIDC" unitType="REC" desc="ANJO" mesIn="ANJO"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RJC" codeType="AIDC" unitType="REC" desc="ANLO" mesIn="ANLO"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="ACP" codeType="AIDC" unitType="REC" desc="AOFO" mesIn="AOFO"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="ACP" codeType="AIDC" unitType="REC" desc="AOLO" mesIn="AOLO"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="CDN" codeType="AIDC" unitType="REC" desc="AOLR" mesIn="AOLR"/>
+
+<oldiState warn="" xflpelColor="GREEN" mesOutColor="NONE" mesOut="EST" codeType="AIDC" unitType="REC" desc="AONA" mesIn="AONA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="ACP" codeType="AIDC" unitType="REC" desc="ASFR" mesIn="ASFR"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="RJC" codeType="AIDC" unitType="REC" desc="ASJR" mesIn="ASJR"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="CDN" codeType="AIDC" unitType="REC" desc="ASLR" mesIn="ASLR"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="EST" codeType="AIDC" unitType="REC" desc="ASNA" mesIn="ASNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="WHITE" mesOut="ABI" codeType="AIDC" unitType="REC" desc="BONA" mesIn="BONA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="SDM" codeType="AIDC" unitType="REC" desc="DLNA" mesIn="DLNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="SDM" codeType="AIDC" unitType="REC" desc="DONA" mesIn="DONA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="GREEN" mesOut="SDM" codeType="AIDC" unitType="REC" desc="DONN" mesIn="DONN"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="SDM" codeType="AIDC" unitType="REC" desc="DRNA" mesIn="DRNA"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="LRM" codeType="AIDC" unitType="REC" desc="GKFO" mesIn="GKFO"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="LRM" codeType="AIDC" unitType="REC" desc="GKJO" mesIn="GKJO"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="LRM" codeType="AIDC" unitType="REC" desc="GKLO" mesIn="GKLO"/>
+
+<oldiState warn="" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="ACP" codeType="AIDC" unitType="REC" desc="GLFL" mesIn="GLFL"/>
+
+<oldiState warn="" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="REJ" codeType="AIDC" unitType="REC" desc="GLJL" mesIn="GLJL"/>
+
+<oldiState warn="" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="CDN" codeType="AIDC" unitType="REC" desc="GLLL" mesIn="GLLL"/>
+
+<oldiState warn="" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="CDN" codeType="AIDC" unitType="REC" desc="GLLN" mesIn="GLLN"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="NONE" mesOut="CDN" codeType="AIDC" unitType="REC" desc="GMLO" mesIn="GMLO"/>
+
+<oldiState warn="" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="REJ" codeType="AIDC" unitType="REC" desc="GNJO" mesIn="GNJO"/>
+
+<oldiState warn="" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="REJ" codeType="AIDC" unitType="REC" desc="GNLO" mesIn="GNLO"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="ACP" codeType="AIDC" unitType="REC" desc="GOFO" mesIn="GOFO"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="CDN" codeType="AIDC" unitType="REC" desc="GOLO" mesIn="GOLO"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="CDN" codeType="AIDC" unitType="REC" desc="GOLR" mesIn="GOLR"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="NONE" mesOut="ACP" codeType="AIDC" unitType="REC" desc="GSFR" mesIn="GSFR"/>
+
+<oldiState warn="" xflpelColor="ORANGE" mesOutColor="CYAN" mesOut="REJ" codeType="AIDC" unitType="REC" desc="GSJR" mesIn="GSJR"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="NONE" mesOut="CDN" codeType="AIDC" unitType="REC" desc="GSLO" mesIn="GSLO"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="CDN" codeType="AIDC" unitType="REC" desc="GSLR" mesIn="GSLR"/>
+
+<oldiState warn="" xflpelColor="GREEN" mesOutColor="NONE" mesOut="CDN" codeType="AIDC" unitType="REC" desc="GSNA" mesIn="GSNA"/>
+
+<oldiState warn="ACP" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="ACP" codeType="AIDC" unitType="REC" desc="HOFL" mesIn="HOFL"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="ACP" codeType="AIDC" unitType="REC" desc="HOFO" mesIn="HOFO"/>
+
+<oldiState warn="ACP" xflpelColor="NONE" mesOutColor="CYAN" mesOut="ACP" codeType="AIDC" unitType="REC" desc="HOFR" mesIn="HOFR"/>
+
+<oldiState warn="HOP" xflpelColor="NONE" mesOutColor="GREEN" mesOut="HOP" codeType="AIDC" unitType="REC" desc="HONN" mesIn="HONN"/>
+
+<oldiState warn="HOP" xflpelColor="NONE" mesOutColor="NONE" mesOut="HOP" codeType="AIDC" unitType="REC" desc="HONO" mesIn="HONO"/>
+
+<oldiState warn="ROF" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="ROF" codeType="AIDC" unitType="REC" desc="HOWL" mesIn="HOWL"/>
+
+<oldiState warn="ROF" xflpelColor="NONE" mesOutColor="NONE" mesOut="ROF" codeType="AIDC" unitType="REC" desc="HOWO" mesIn="HOWO"/>
+
+<oldiState warn="ROF" xflpelColor="NONE" mesOutColor="CYAN" mesOut="ROF" codeType="AIDC" unitType="REC" desc="HOWR" mesIn="HOWR"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="COD" codeType="AIDC" unitType="REC" desc="OLNA" mesIn="OLNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="COD" codeType="AIDC" unitType="REC" desc="OONA" mesIn="OONA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="COD" codeType="AIDC" unitType="REC" desc="ORNA" mesIn="ORNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="GREEN" mesOut="PAC" codeType="AIDC" unitType="REC" desc="PONA" mesIn="PONA"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="LRM" codeType="AIDC" unitType="REC" desc="QKFO" mesIn="QKFO"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="LRM" codeType="AIDC" unitType="REC" desc="QKLO" mesIn="QKLO"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="ACP" codeType="AIDC" unitType="REC" desc="QLFL" mesIn="QLFL"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RJC" codeType="AIDC" unitType="REC" desc="QLJL" mesIn="QLJL"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="CDN" codeType="AIDC" unitType="REC" desc="QLLL" mesIn="QLLL"/>
+
+<oldiState warn="" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="CDN" codeType="AIDC" unitType="REC" desc="QLLN" mesIn="QLLN"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="NONE" mesOut="CDN" codeType="AIDC" unitType="REC" desc="QMLO" mesIn="QMLO"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RJC" codeType="AIDC" unitType="REC" desc="QNJO" mesIn="QNJO"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RJC" codeType="AIDC" unitType="REC" desc="QNLO" mesIn="QNLO"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="ACP" codeType="AIDC" unitType="REC" desc="QOFO" mesIn="QOFO"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="ACP" codeType="AIDC" unitType="REC" desc="QOLO" mesIn="QOLO"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="CDN" codeType="AIDC" unitType="REC" desc="QOLR" mesIn="QOLR"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="NONE" mesOut="ACP" codeType="AIDC" unitType="REC" desc="QSFR" mesIn="QSFR"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="RJC" codeType="AIDC" unitType="REC" desc="QSJR" mesIn="QSJR"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="CDN" codeType="AIDC" unitType="REC" desc="QSLR" mesIn="QSLR"/>
+
+<oldiState warn="" xflpelColor="GREEN" mesOutColor="NONE" mesOut="CPL" codeType="AIDC" unitType="REC" desc="QSNA" mesIn="QSNA"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="ACP" codeType="AIDC" unitType="REC" desc="RLFL" mesIn="RLFL"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RJC" codeType="AIDC" unitType="REC" desc="RLJL" mesIn="RLJL"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="SBY" codeType="AIDC" unitType="REC" desc="RLLL" mesIn="RLLL"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="CDN" codeType="AIDC" unitType="REC" desc="RLLN" mesIn="RLLN"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="SBY" codeType="AIDC" unitType="REC" desc="RMLO" mesIn="RMLO"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RJC" codeType="AIDC" unitType="REC" desc="RNJO" mesIn="RNJO"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RJC" codeType="AIDC" unitType="REC" desc="RNLO" mesIn="RNLO"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="ACP" codeType="AIDC" unitType="REC" desc="ROFO" mesIn="ROFO"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="ACP" codeType="AIDC" unitType="REC" desc="ROLO" mesIn="ROLO"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="CDN" codeType="AIDC" unitType="REC" desc="ROLR" mesIn="ROLR"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="REV" codeType="AIDC" unitType="REC" desc="RONA" mesIn="RONA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="ACP" codeType="AIDC" unitType="REC" desc="RSFR" mesIn="RSFR"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="RJC" codeType="AIDC" unitType="REC" desc="RSJR" mesIn="RSJR"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="CDN" codeType="AIDC" unitType="REC" desc="RSLR" mesIn="RSLR"/>
+
+<oldiState warn="" xflpelColor="GREEN" mesOutColor="GREEN" mesOut="REV" codeType="AIDC" unitType="REC" desc="RSNA" mesIn="RSNA"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="LRM" codeType="AIDC" unitType="REC" desc="TKSO" mesIn="TKSO"/>
+
+<oldiState warn="TOC" xflpelColor="GREEN" mesOutColor="GREEN" mesOut="TOC" codeType="AIDC" unitType="REC" desc="TONN" mesIn="TONN"/>
+
+<oldiState warn="COF" xflpelColor="NONE" mesOutColor="WHITE" mesOut="COF" codeType="AIDC" unitType="REC" desc="TOSA" mesIn="TOSA"/>
+
+<oldiState warn="" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="AOC" codeType="AIDC" unitType="REC" desc="TOSL" mesIn="TOSL"/>
+
+<oldiState warn="AOC" xflpelColor="GREEN" mesOutColor="WHITE" mesOut="" codeType="AIDC" unitType="REC" desc="TOSO" mesIn="TOSO"/>
+
+<oldiState warn="AOC" xflpelColor="GREEN" mesOutColor="GREEN" mesOut="AOC" codeType="AIDC" unitType="REC" desc="TOSR" mesIn="TOSR"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="GREEN" mesOut="TIM" codeType="AIDC" unitType="REC" desc="UONN" mesIn="UONN"/>
+
+<oldiState warn="ROF" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="ROF" codeType="AIDC" unitType="REC" desc="WLNA" mesIn="WLNA"/>
+
+<oldiState warn="ROF" xflpelColor="NONE" mesOutColor="NONE" mesOut="ROF" codeType="AIDC" unitType="REC" desc="WONA" mesIn="WONA"/>
+
+<oldiState warn="ROF" xflpelColor="NONE" mesOutColor="CYAN" mesOut="ROF" codeType="AIDC" unitType="REC" desc="WRNA" mesIn="WRNA"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="LRM" codeType="AIDC" unitType="REC" desc="XKFO" mesIn="XKFO"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="LRM" codeType="AIDC" unitType="REC" desc="XKJO" mesIn="XKJO"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="LRM" codeType="AIDC" unitType="REC" desc="XKLO" mesIn="XKLO"/>
+
+<oldiState warn="PHO" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="ACP" codeType="AIDC" unitType="REC" desc="XLFL" mesIn="XLFL"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="REJ" codeType="AIDC" unitType="REC" desc="XLJL" mesIn="XLJL"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="CDN" codeType="AIDC" unitType="REC" desc="XLLL" mesIn="XLLL"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="ACP" codeType="AIDC" unitType="REC" desc="XLLN" mesIn="XLLN"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="REJ" codeType="AIDC" unitType="REC" desc="XNJO" mesIn="XNJO"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="REJ" codeType="AIDC" unitType="REC" desc="XNLO" mesIn="XNLO"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="ACP" codeType="AIDC" unitType="REC" desc="XOFO" mesIn="XOFO"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="ACP" codeType="AIDC" unitType="REC" desc="XOLO" mesIn="XOLO"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="ACP" codeType="AIDC" unitType="REC" desc="XSFR" mesIn="XSFR"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="REJ" codeType="AIDC" unitType="REC" desc="XSJR" mesIn="XSJR"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="CDN" codeType="AIDC" unitType="REC" desc="XSLO" mesIn="XSLO"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="CDN" codeType="AIDC" unitType="REC" desc="XSLR" mesIn="XSLR"/>
+
+<oldiState warn="" xflpelColor="GREEN" mesOutColor="GREEN" mesOut="CDN" codeType="AIDC" unitType="REC" desc="XSNA" mesIn="XSNA"/>
+
+<!-- AIDC TRANSFERRING -->
+
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="TIP" codeType="AIDC" unitType="TRA" desc="0014" mesIn="0014"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="TIP" codeType="AIDC" unitType="TRA" desc="0015" mesIn="0015"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="SBY" codeType="AIDC" unitType="TRA" desc="0016" mesIn="0016"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="TIP" codeType="AIDC" unitType="TRA" desc="0017" mesIn="0017"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="ACP" codeType="AIDC" unitType="TRA" desc="0018" mesIn="0018"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="RJC" codeType="AIDC" unitType="TRA" desc="0019" mesIn="0019"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="TIP" codeType="AIDC" unitType="TRA" desc="0020" mesIn="0020"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="GREEN" mesOut="RTI" codeType="AIDC" unitType="TRA" desc="0021" mesIn="0021"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="ACP" codeType="AIDC" unitType="TRA" desc="0022" mesIn="0022"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="RJC" codeType="AIDC" unitType="TRA" desc="0024" mesIn="0024"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="ACP" codeType="AIDC" unitType="TRA" desc="0026" mesIn="0026"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="ACP" codeType="AIDC" unitType="TRA" desc="0027" mesIn="0027"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="SCO" codeType="AIDC" unitType="TRA" desc="0036" mesIn="0036"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="SCK" codeType="AIDC" unitType="TRA" desc="0037" mesIn="0037"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="RJC" codeType="AIDC" unitType="TRA" desc="0040" mesIn="0040"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="RJC" codeType="AIDC" unitType="TRA" desc="0041" mesIn="0041"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="ACP" codeType="AIDC" unitType="TRA" desc="AGFR" mesIn="AGFR"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="RJC" codeType="AIDC" unitType="TRA" desc="AGJR" mesIn="AGJR"/>
+
+<oldiState warn="" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="ACP" codeType="AIDC" unitType="TRA" desc="ALFL" mesIn="ALFL"/>
+
+<oldiState warn="" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RJC" codeType="AIDC" unitType="TRA" desc="ALJL" mesIn="ALJL"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="EST" codeType="AIDC" unitType="TRA" desc="ALNA" mesIn="ALNA"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="EST" codeType="AIDC" unitType="TRA" desc="ALNL" mesIn="ALNL"/>
+
+<oldiState warn="" xflpelColor="GREEN" mesOutColor="GREEN" mesOut="CDN" codeType="AIDC" unitType="TRA" desc="AMNW" mesIn="AMNW"/>
+
+<oldiState warn="" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="ACT" codeType="AIDC" unitType="TRA" desc="ANNA" mesIn="ANNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="EST" codeType="AIDC" unitType="TRA" desc="AONA" mesIn="AONA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="ACT" codeType="AIDC" unitType="TRA" desc="AONO" mesIn="AONO"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="EST" codeType="AIDC" unitType="TRA" desc="ARNA" mesIn="ARNA"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="NONE" mesOut="EST" codeType="AIDC" unitType="TRA" desc="ASNA" mesIn="ASNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="GREEN" mesOut="LRM" codeType="AIDC" unitType="TRA" desc="BKNA" mesIn="BKNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="ABI" codeType="AIDC" unitType="TRA" desc="BLNA" mesIn="BLNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="ABI" codeType="AIDC" unitType="TRA" desc="BNNA" mesIn="BNNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="WHITE" mesOut="ABI" codeType="AIDC" unitType="TRA" desc="BONA" mesIn="BONA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="GREEN" mesOut="ABI" codeType="AIDC" unitType="TRA" desc="BRNA" mesIn="BRNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="PCO" codeType="AIDC" unitType="TRA" desc="CCNA" mesIn="CCNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="PCO" codeType="AIDC" unitType="TRA" desc="CPNA" mesIn="CPNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="SMD" codeType="AIDC" unitType="TRA" desc="DLNA" mesIn="DLNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="SMD" codeType="AIDC" unitType="TRA" desc="DONA" mesIn="DONA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="SMD" codeType="AIDC" unitType="TRA" desc="DRNA" mesIn="DRNA"/>
+
+<oldiState warn="" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="ACP" codeType="AIDC" unitType="TRA" desc="FNNA" mesIn="FNNA"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="ACP" codeType="AIDC" unitType="TRA" desc="GGFR" mesIn="GGFR"/>
+
+<oldiState warn="PHO" xflpelColor="NONE" mesOutColor="CYAN" mesOut="REJ" codeType="AIDC" unitType="TRA" desc="GGJR" mesIn="GGJR"/>
+
+<oldiState warn="" xflpelColor="ORANGE" mesOutColor="GREEN" mesOut="LRM" codeType="AIDC" unitType="TRA" desc="GKFO" mesIn="GKFO"/>
+
+<oldiState warn="" xflpelColor="ORANGE" mesOutColor="GREEN" mesOut="LRM" codeType="AIDC" unitType="TRA" desc="GKJO" mesIn="GKJO"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="GREEN" mesOut="LRM" codeType="AIDC" unitType="TRA" desc="GKNA" mesIn="GKNA"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="CDN" codeType="AIDC" unitType="TRA" desc="GLFL" mesIn="GLFL"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="REJ" codeType="AIDC" unitType="TRA" desc="GLJL" mesIn="GLJL"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="CDN" codeType="AIDC" unitType="TRA" desc="GLNA" mesIn="GLNA"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="CDN" codeType="AIDC" unitType="TRA" desc="GLNL" mesIn="GLNL"/>
+
+<oldiState warn="" xflpelColor="GREEN" mesOutColor="GREEN" mesOut="CDN" codeType="AIDC" unitType="TRA" desc="GMNW" mesIn="GMNW"/>
+
+<oldiState warn="PHO" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="REJ" codeType="AIDC" unitType="TRA" desc="GNJO" mesIn="GNJO"/>
+
+<oldiState warn="" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RRV" codeType="AIDC" unitType="TRA" desc="GNNA" mesIn="GNNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="REJ" codeType="AIDC" unitType="TRA" desc="GNNJ" mesIn="GNNJ"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="ACP" codeType="AIDC" unitType="TRA" desc="GOFO" mesIn="GOFO"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="CDN" codeType="AIDC" unitType="TRA" desc="GONA" mesIn="GONA"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="CDN" codeType="AIDC" unitType="TRA" desc="GRNA" mesIn="GRNA"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="NONE" mesOut="CDN" codeType="AIDC" unitType="TRA" desc="GSNA" mesIn="GSNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="HOP" codeType="AIDC" unitType="TRA" desc="HLNA" mesIn="HLNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="HOP" codeType="AIDC" unitType="TRA" desc="HONA" mesIn="HONA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="HOP" codeType="AIDC" unitType="TRA" desc="HRNA" mesIn="HRNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="HOP" codeType="AIDC" unitType="TRA" desc="HUNA" mesIn="HUNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="GREEN" mesOut="ROF" codeType="AIDC" unitType="TRA" desc="HYNA" mesIn="HYNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="ACP" codeType="AIDC" unitType="TRA" desc="HZNA" mesIn="HZNA"/>
+
+<oldiState warn="" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RJC" codeType="AIDC" unitType="TRA" desc="JNNA" mesIn="JNNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="GREEN" mesOut="LRM" codeType="AIDC" unitType="TRA" desc="NKNA" mesIn="NKNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="PAC" codeType="AIDC" unitType="TRA" desc="OLNA" mesIn="OLNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="COD" codeType="AIDC" unitType="TRA" desc="OONA" mesIn="OONA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="COD" codeType="AIDC" unitType="TRA" desc="OQNA" mesIn="OQNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="PAC" codeType="AIDC" unitType="TRA" desc="ORNA" mesIn="ORNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="PAC" codeType="AIDC" unitType="TRA" desc="OWNA" mesIn="OWNA"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="GREEN" mesOut="LRM" codeType="AIDC" unitType="TRA" desc="PKNA" mesIn="PKNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="PAC" codeType="AIDC" unitType="TRA" desc="PLNA" mesIn="PLNA"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="PAC" codeType="AIDC" unitType="TRA" desc="PLNL" mesIn="PLNL"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="PAC" codeType="AIDC" unitType="TRA" desc="PNNA" mesIn="PNNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="PAC" codeType="AIDC" unitType="TRA" desc="PONA" mesIn="PONA"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="PAC" codeType="AIDC" unitType="TRA" desc="PRNA" mesIn="PRNA"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="NONE" mesOut="PAC" codeType="AIDC" unitType="TRA" desc="PSNA" mesIn="PSNA"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="ACP" codeType="AIDC" unitType="TRA" desc="QGFR" mesIn="QGFR"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="CDN" codeType="AIDC" unitType="TRA" desc="QGGR" mesIn="QGGR"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="RJC" codeType="AIDC" unitType="TRA" desc="QGJR" mesIn="QGJR"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="GREEN" mesOut="LRM" codeType="AIDC" unitType="TRA" desc="QKFO" mesIn="QKFO"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="GREEN" mesOut="LRM" codeType="AIDC" unitType="TRA" desc="QKGO" mesIn="QKGO"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="GREEN" mesOut="LRM" codeType="AIDC" unitType="TRA" desc="QKNA" mesIn="QKNA"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="CDN" codeType="AIDC" unitType="TRA" desc="QLFL" mesIn="QLFL"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="CDN" codeType="AIDC" unitType="TRA" desc="QLGL" mesIn="QLGL"/>
+
+<oldiState warn="" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RJC" codeType="AIDC" unitType="TRA" desc="QLJL" mesIn="QLJL"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="CPL" codeType="AIDC" unitType="TRA" desc="QLNA" mesIn="QLNA"/>
+
+<oldiState warn="PHO" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="CPL" codeType="AIDC" unitType="TRA" desc="QLNL" mesIn="QLNL"/>
+
+<oldiState warn="" xflpelColor="GREEN" mesOutColor="GREEN" mesOut="CDN" codeType="AIDC" unitType="TRA" desc="QMNW" mesIn="QMNW"/>
+
+<oldiState warn="" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RJC" codeType="AIDC" unitType="TRA" desc="QNJO" mesIn="QNJO"/>
+
+<oldiState warn="" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RAP" codeType="AIDC" unitType="TRA" desc="QNNA" mesIn="QNNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="ACP" codeType="AIDC" unitType="TRA" desc="QOFO" mesIn="QOFO"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="NONE" mesOut="CDN" codeType="AIDC" unitType="TRA" desc="QOGO" mesIn="QOGO"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="ACP" codeType="AIDC" unitType="TRA" desc="QONA" mesIn="QONA"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="CPL" codeType="AIDC" unitType="TRA" desc="QRNA" mesIn="QRNA"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="NONE" mesOut="CPL" codeType="AIDC" unitType="TRA" desc="QSNA" mesIn="QSNA"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="ACP" codeType="AIDC" unitType="TRA" desc="RGFR" mesIn="RGFR"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="RJC" codeType="AIDC" unitType="TRA" desc="RGJR" mesIn="RGJR"/>
+
+<oldiState warn="" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="ACP" codeType="AIDC" unitType="TRA" desc="RLFL" mesIn="RLFL"/>
+
+<oldiState warn="" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RJC" codeType="AIDC" unitType="TRA" desc="RLJL" mesIn="RLJL"/>
+
+<oldiState warn="" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="REV" codeType="AIDC" unitType="TRA" desc="RLNA" mesIn="RLNA"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="CDN" codeType="AIDC" unitType="TRA" desc="RMNW" mesIn="RMNW"/>
+
+<oldiState warn="" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="RJC" codeType="AIDC" unitType="TRA" desc="RNJO" mesIn="RNJO"/>
+
+<oldiState warn="" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="REV" codeType="AIDC" unitType="TRA" desc="RNNA" mesIn="RNNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="ACP" codeType="AIDC" unitType="TRA" desc="ROFO" mesIn="ROFO"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="ACP" codeType="AIDC" unitType="TRA" desc="RONA" mesIn="RONA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="REV" codeType="AIDC" unitType="TRA" desc="RONO" mesIn="RONO"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="REV" codeType="AIDC" unitType="TRA" desc="RRNA" mesIn="RRNA"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="SBY" codeType="AIDC" unitType="TRA" desc="RSNA" mesIn="RSNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="MAS" codeType="AIDC" unitType="TRA" desc="SO0A" mesIn="SO0A"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="MAS" codeType="AIDC" unitType="TRA" desc="SONA" mesIn="SONA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="GREEN" mesOut="AOC" codeType="AIDC" unitType="TRA" desc="TFNA" mesIn="TFNA"/>
+
+<oldiState warn="TOC" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="LRM" codeType="AIDC" unitType="TRA" desc="TKNA" mesIn="TKNA"/>
+
+<oldiState warn="TOC" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="TOC" codeType="AIDC" unitType="TRA" desc="TLNA" mesIn="TLNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="COF" codeType="AIDC" unitType="TRA" desc="TLSA" mesIn="TLSA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="COF" codeType="AIDC" unitType="TRA" desc="TNNA" mesIn="TNNA"/>
+
+<oldiState warn="TOC" xflpelColor="NONE" mesOutColor="WHITE" mesOut="TOC" codeType="AIDC" unitType="TRA" desc="TONA" mesIn="TONA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="COF" codeType="AIDC" unitType="TRA" desc="TOSA" mesIn="TOSA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="TOC" codeType="AIDC" unitType="TRA" desc="TRNA" mesIn="TRNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="TIM" codeType="AIDC" unitType="TRA" desc="ULNA" mesIn="ULNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="TIM" codeType="AIDC" unitType="TRA" desc="UONA" mesIn="UONA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="TIM" codeType="AIDC" unitType="TRA" desc="URNA" mesIn="URNA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="GREEN" mesOut="ROF" codeType="AIDC" unitType="TRA" desc="WONA" mesIn="WONA"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="ACP" codeType="AIDC" unitType="TRA" desc="XGFR" mesIn="XGFR"/>
+
+<oldiState warn="" xflpelColor="ORANGE" mesOutColor="CYAN" mesOut="REJ" codeType="AIDC" unitType="TRA" desc="XGJR" mesIn="XGJR"/>
+
+<oldiState warn="" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="ACP" codeType="AIDC" unitType="TRA" desc="XLFL" mesIn="XLFL"/>
+
+<oldiState warn="" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="REJ" codeType="AIDC" unitType="TRA" desc="XLJL" mesIn="XLJL"/>
+
+<oldiState warn="" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="CDN" codeType="AIDC" unitType="TRA" desc="XLNA" mesIn="XLNA"/>
+
+<oldiState warn="" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="CDN" codeType="AIDC" unitType="TRA" desc="XLNL" mesIn="XLNL"/>
+
+<oldiState warn="" xflpelColor="GREEN" mesOutColor="GREEN" mesOut="CDN" codeType="AIDC" unitType="TRA" desc="XMNW" mesIn="XMNW"/>
+
+<oldiState warn="" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="REJ" codeType="AIDC" unitType="TRA" desc="XNJO" mesIn="XNJO"/>
+
+<oldiState warn="" xflpelColor="ORANGE" mesOutColor="ORANGE" mesOut="REJ" codeType="AIDC" unitType="TRA" desc="XNNJ" mesIn="XNNJ"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="ACP" codeType="AIDC" unitType="TRA" desc="XOFO" mesIn="XOFO"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="ACP" codeType="AIDC" unitType="TRA" desc="XONA" mesIn="XONA"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="CYAN" mesOut="CDN" codeType="AIDC" unitType="TRA" desc="XRNA" mesIn="XRNA"/>
+
+<oldiState warn="" xflpelColor="CYAN" mesOutColor="NONE" mesOut="CDN" codeType="AIDC" unitType="TRA" desc="XSNA" mesIn="XSNA"/>
+
+<!-- MIL RECEIVING -->
+
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="" codeType="MIL" unitType="REC" desc="0031" mesIn="0031"/>
+
+<!-- MIL TRANSFERRING -->
+
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="XIN" codeType="MIL" unitType="TRA" desc="0001" mesIn="0001"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="XIN" codeType="MIL" unitType="TRA" desc="0002" mesIn="0002"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="XIN" codeType="MIL" unitType="TRA" desc="0003" mesIn="0003"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="XIN" codeType="MIL" unitType="TRA" desc="0004" mesIn="0004"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="XIN" codeType="MIL" unitType="TRA" desc="0005" mesIn="0005"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="SBY" codeType="MIL" unitType="TRA" desc="0006" mesIn="0006"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="XRQ" codeType="MIL" unitType="TRA" desc="0007" mesIn="0007"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="NONE" mesOut="XRQ" codeType="MIL" unitType="TRA" desc="0008" mesIn="0008"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="RJC" codeType="MIL" unitType="TRA" desc="0009" mesIn="0009"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="GREEN" mesOut="XAP" codeType="MIL" unitType="TRA" desc="0010" mesIn="0010"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="ACP" codeType="MIL" unitType="TRA" desc="0011" mesIn="0011"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="CYAN" mesOut="RJC" codeType="MIL" unitType="TRA" desc="0012" mesIn="0012"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="ORANGE" mesOut="XRQ" codeType="MIL" unitType="TRA" desc="0017" mesIn="0017"/>
+
+<oldiState warn="" xflpelColor="NONE" mesOutColor="WHITE" mesOut="ROF" codeType="OLDI" unitType="TRA" desc="HYNA" mesIn="HYNA"/>
+
+<oldiState warn="COF" xflpelColor="NONE" mesOutColor="WHITE" mesOut="COF" codeType="OLDI" unitType="TRA" desc="TONA" mesIn="TONA"/>
+	        </oldiStateList>
+    </configuration>
+</customOldiConfig>

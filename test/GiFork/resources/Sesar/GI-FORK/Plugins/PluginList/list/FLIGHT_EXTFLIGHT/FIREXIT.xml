@@ -1,0 +1,27 @@
+<msg>
+	<list 
+		ROW_ID="@FLIGHT_NUM@" condition="@ISFIREXITLIST@">
+
+		<attributes 
+			ID="OUTBOUND LIST" 
+			behavior_if_empty="delete" 
+			side="DIR:0" 
+			sort="CALLSIGN:ASC" 
+			
+		/>
+		<!-- PC: ToDo: vedi color con alternativo per campo XFL -->	
+		<col key="col1"	indata="@CALLSIGN@"	outdata="CALLSIGN"	 row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , DEFAULT=#fafafa)@" row_blink_state="@ALIAS_LIST(FIELD_TO_CHECK=..TEMPLATE, INFO_TYPE=BLINK)@"	row_middleClick="SHOW_TRAJECTORY" row_rightClick="EXTERNAL_ORDER(ORDER_ID=CHG , OBJECT_TYPE=CHG,  PREVIEW_NAME=previewCHG )" />		
+		<col key="col2" indata="@STS@"      outdata="STS" 	col_width="50"  col_state="filteredVisible"  />		
+		<col key="col3" indata="@ADEP@"		outdata="DEP"   col_width="50"  col_state="filteredVisible"  />
+		<col key="col4" indata="@ADES@"		outdata="DES" 	col_width="50"	col_state="filteredVisible"  />
+		<col key="col5" indata="@OFIX@"		outdata="OFIX" 	col_width="55"	col_state="filteredVisible"  />
+		<col key="col6" indata="@ETO@"		outdata="ETO" 	col_width="50"	col_state="filteredVisible"  />
+		<col key="col7" indata="@ALIAS_LIST(FIELD_TO_CHECK1=..COO)@"	outdata="COO" col_width="50"	col_state="filteredVisible"  />
+		<col key="col8" indata="@SSR_CODE@"	outdata="SSR" 	col_width="50"	col_state="filteredVisible"  />
+		<col key="col9" indata="@ATY@"		outdata="TYPE" 	col_width="55"	col_state="filteredVisible"  />
+		<col key="col10" indata="@SFPL_STATE@"	outdata="FS" 	col_width="50"	col_state="filteredVisible"  />
+		<col key="col11" indata="@ALIAS_LIST(FIELD_TO_CHECK1=..SEG_STATE)@"	outdata="SEG" col_width="50"	col_state="filteredVisible"  />
+		<col key="col12" indata="@SURV@"		outdata="SURV" 	col_width="55"	col_state="filteredVisible"  />
+		<col key="col13" indata="@FR@ @FTYPE@"  outdata="FR" 	col_width="50"	col_state="filteredVisible"  />	
+	</list>
+</msg>

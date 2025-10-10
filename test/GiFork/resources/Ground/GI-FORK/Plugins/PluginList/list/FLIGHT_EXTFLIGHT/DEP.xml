@@ -1,0 +1,21 @@
+<msg>
+  <list ROW_ID="@FLIGHT_NUM@" condition="@ISDEP@">
+    <attributes ID="DEP:@ADEP@" BEHAVIOR_IF_EMPTY="delete" GROUP="DEP" SIDE="SFL:2"  SORT="ETD:ASC"  multicolumnname="ADEP"/>
+	<col key="col1" indata="@TACSTATUS@" outdata="TCS"/>
+	<col key="col2" indata="@CALLSIGN@" outdata="CALLSIGN"	 row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , DEFAULT=#fafafa)@"	row_middleClick="CONTEXT_MENU(MENU_FILE=Executive.xml, TITLE=EXECUTIVE)" row_leftClick="CONTEXT_MENU(MENU_FILE=Planner.xml,TITLE=PLANNER_MENU)" row_rightClick="CONTEXT_MENU(MENU_FILE=Flight.xml,TITLE=FLIGHT_MENU)"/>
+	<col key="col3" indata="@ATY@ " outdata="TYPE" col_state="filteredVisible"  />
+	<col key="col4" indata="@WTC@" outdata="WTC" col_state="filteredVisible"  />
+	<col key="col5" indata="@ADES@" outdata="ADES" col_state="filteredVisible"  />
+	<col key="col6" indata="@OBT@" outdata="EOBT"  col_state="filteredNotVisible" row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW ,ORDER_ID=DCR, OBJECT_TYPE=DCR,  PREVIEW_NAME=previewDCR)" />
+	<col key="col7" indata="@ETD@" outdata="ETD"   />
+	<!--col key="col5" indata="@CTOT@" outdata="CTOT" col_state="filteredVisible"  row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW ,ORDER_ID=CTOT, OBJECT_TYPE=CTOT,  PREVIEW_NAME=previewCTOT)" /-->
+	<col key="col9" indata="@TOBT@" outdata="TOBT" col_state="filteredVisible"/>
+	<col key="col10"	indata="@DEP_PKBAY@" outdata="PKB" col_state="filteredVisible"  row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW ,ORDER_ID=EPKBDEP, OBJECT_TYPE=EPKBDEP,  PREVIEW_NAME=previewEPKBDEP)" />
+	<col key="col11" indata="@DEPRWY@" outdata="RWY"   />
+	<col key="col12" indata="@TAXI_TIME@" outdata="TAXI TIME"	col_state="filteredVisible"  row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW ,ORDER_ID=EPKBDEP, OBJECT_TYPE=EPKBDEP,  PREVIEW_NAME=previewEPKBDEP)" />
+	<col key="col13" indata="@RP_ROUTE@" outdata="GND Route" row_leftClick="SHOW_GROUND_TRAJECTORY" col_state="filteredVisible"/>
+	<col key="col14" indata="@SID@" outdata="SID"   row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW ,ORDER_ID=CSI, OBJECT_TYPE=CSI,  PREVIEW_NAME=previewCSI)" />
+	<col key="col15" indata="@ROUTE@" outdata="ROUTE" col_state="filteredVisible"/>
+	<col key="col16" indata="@NEXTORDER@" outdata="NXT Order" col_state="filteredVisible" order="$Alias"/>
+  </list>
+</msg>

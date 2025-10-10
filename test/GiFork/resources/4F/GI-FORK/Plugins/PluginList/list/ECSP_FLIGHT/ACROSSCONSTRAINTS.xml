@@ -1,0 +1,14 @@
+<msg>
+    <list 
+        ROW_ID="@FLIGHT_NUM@_@IDX@" condition="@EISCONSTRAINTS@">
+        <attributes 
+            ID="ACROSS CONSTRAINTS @CALLSIGN@" 
+            BEHAVIOR_IF_EMPTY="delete"  
+            side="DIR:1" 
+            sort="POINT:ASC" 
+        />  
+        <col key="col1" indata="@CNAME@"	outdata="POINT" />
+        <col key="col2" indata="@CTYPE@"	outdata="TYPE" />
+        <col key="col3" indata="@CVALUE@"	outdata="VALUE" />
+    </list>
+</msg>

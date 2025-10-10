@@ -1,0 +1,17 @@
+<msg>
+
+<list ROW_ID="@UID@" condition="@ISSTCACONF@">
+	<attributes ID="STCA CONFIGURATION" behavior_if_empty="delete" side="SNET:2" />
+	<col key="col1" indata="@rvsm_appr_sep_conv@" outdata="RVSM CONV" />
+	<col key="col2" indata="@rvsm_appr_sep_div@" outdata="RVSM DIV" />
+	<!--col key="col3" indata="@sep_enroute_super_conv@" outdata="J-J ENROUTE"   />
+	<col key="col4" indata="@sep_tma_super_vs_super_conv@" outdata="J-J TMA"   />
+	<col key="col5" indata="@sep_tma_super_vs_heavy_conv@" outdata="J-H"   />
+	<col key="col6" indata="@sep_tma_super_vs_medium_conv@" outdata="J-M"   />
+	<col key="col7" indata="@sep_tma_super_vs_light_conv@" outdata="J-L"   /-->
+	<col key="col3" indata="@safe_cross_hor_sep@" outdata="SAFE CROSS HZ"   />
+	<col key="col4" indata="@safe_cross_angle@" outdata="SAFE CROSS ANGLE"   />
+	<col key="col5" indata="@mcs1@ @mcs2@ @mcs3@ @mcs4@ @mcs5@ @mcs6@ @mcs7@ @mcs8@ @mcs9@ @mcs10@ @mcs11@ @mcs12@ @mcs13@ @mcs14@ @mcs15@" outdata="FORMATION EXC" row_image="@SNET_LIST(FIELD_TO_CHECK=..EX_CRI, INFO_TYPE=IMAGE)@" row_leftClick="EXTERNAL_ORDER(ORDER_ID=SFE, OBJECT_TYPE=SFE, PREVIEW_NAME=previewSFE)"/>
+	<col key="col6" indata="@hand_trajectory@" outdata="HANDLE FPL TRJ"   />
+</list>
+</msg>

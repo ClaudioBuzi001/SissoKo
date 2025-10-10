@@ -1,0 +1,19 @@
+<msg>
+
+<!--  LISTE LIS MAP  -->
+<list ROW_ID="@UID@" condition="@ISSTCA@">
+	<attributes ID="STCA AND FILTERING FILT LIST" behavior_if_empty="delete" sort="MAP:ASC" side="SNET:2" />
+	<col key="col1" indata="@id@" outdata="MAP" messagetype="lisMap" col_state="filteredVisible" />
+	<col key="col2" indata="@pdvAsf@" outdata="PEN" messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col3" indata="@vfrAsf@" outdata="VFR" messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col4" indata="@ifrAsf@" outdata="IFR" messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col5" indata="@milAsf@" outdata="MIL" messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col6" indata="@supAsf@" outdata="SUP" messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col7" indata="@gatAsf@" outdata="GAT" messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col8" indata="@oatAsf@" outdata="OAT" messagetype="lisMap" col_state="filteredVisible"  />
+
+        
+</list>
+
+
+</msg>

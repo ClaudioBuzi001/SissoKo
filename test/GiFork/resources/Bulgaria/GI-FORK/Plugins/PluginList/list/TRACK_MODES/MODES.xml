@@ -1,0 +1,25 @@
+<msg>
+	<list
+		ROW_ID="@FLIGHT_NUM@" condition="true">
+		<attributes	ID="MODE S LIST"	lat=""	lon=""	sort="SSR:ASC" behavior_if_empty="delete"	behavior_if_full="visible"	side="SFL:1" />
+<!-- mettendo ".." nei parametri della ServiceCall come nel'esempio seguente tale parametro verra passato al servizio senza elaborarne il recupero dalla Blackboard:
+@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , DEFAULT=#CECECE)@
+-->
+<!--  	ATTENZIONE PER L'INVOCAZIONE SERVIZIO LOST_FGR_COLOR  IL PARAMETRO :
+		 FILED_TO_CHECK DEVE AVERE I ".." COME PREFISSO PER FARLO CAPIRE 
+		 CORRETTAMENTE AL PARSER DEL SRIVIZIO STESSO-->	 
+		<col key="col1"		indata="@SSR_CODE@"	  outdata="SSR  "	   	row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..IS_DUPLICATED , DEFAULT=#fafafa)@" />
+		<col key="col2"		indata="@RCS@"        outdata="RCS     "	row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..IS_DUPLICATED_RCS , DEFAULT=#fafafa)@" /> 
+		<col key="col3"		indata="@ICAO@"       outdata="ICAO    "   	col_state="filteredVisible"   />
+		<col key="col4"		indata="@BPS@"    	  outdata="BPS     "   	col_state="filteredVisible"  row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..BPS_BV4 , DEFAULT=#ffffff)@" />
+		<col key="col5"		indata="@SAL@"        outdata="SAL"        	col_state="filteredVisible"      />
+		<col key="col6"		indata="@IAS@"        outdata="IAS"        	col_state="filteredVisible"      />
+		<col key="col7"		indata="@MGN@"        outdata="MHDG"       	col_state="filteredVisible"      />
+		<col key="col8"		indata="@VR@"         outdata="V-RATE"     	col_state="filteredVisible"      />
+		<col key="col9"		indata="@MACH_SPEED@" outdata="MACH"       	col_state="filteredVisible"      />
+		<col key="col10"	indata="@COM_CAP@"    outdata="CC"         	col_state="filteredVisible"      />
+		<col key="col11"	indata="@TRUE_ANGLE@" outdata="T-ANGLE"    	col_state="filteredVisible"      />
+		<col key="col12"	indata="@ROLL_ANGLE@" outdata="R-ANGLE"    	col_state="filteredVisible"      />
+		<col key="col13"	indata="@ANGLE_RATE@" outdata="T-A-RATE"   	col_state="filteredVisible"      />
+	</list>
+</msg>

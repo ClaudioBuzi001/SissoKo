@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- Mercury for C2 Plugins Manifest -->
+<project name="C2">
+   <plugin name="LisXaiPlugin" />
+   <plugin name="LisLabelPlugin" />
+   <plugin name="LisListPlugin" />
+   <plugin name="LisMapPlugin" />
+   <plugin name="LisSdaPlugin">
+   		<plugin name="LisC2Plugin" />
+   </plugin>
+</project>

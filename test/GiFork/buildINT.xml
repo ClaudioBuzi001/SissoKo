@@ -1,0 +1,143 @@
+<project name="GI-FORK" basedir="." default="build">
+
+	<property environment="env" />
+	<property name="src.dir" value="src" />
+	<property name="build.dir" value="bin" />
+	<property name="jar.dir" value="." />
+	<property name="classes.dir" value="${build.dir}/" />
+	<property name="deploy.dir" value="dist" />
+	<property name="main-class" value="application4F.GiForkMain_4F" />
+	<property name="javaFx.lib" value="${env.PATH_TO_FX}"/>
+	<path id="GiForkMain.classpath">
+ 		<fileset dir="${env.CDMW_HOME}/lib/java">
+           		<include name="*.jar" />
+		</fileset>
+		<pathelement location="${env.WP_XAI_HOME}/lib/java/WpCommon.jar"/>
+		<pathelement location="${env.WP_XAI_HOME}/lib/java/libProcessWpCommon.jar"/>
+		<pathelement location="${env.COTS_HOME}/lib/log4j-core/2.24.3/log4j-core-2.24.3.jar"/>
+		<pathelement location="${env.COTS_HOME}/lib/log4j-api/2.24.3/log4j-api-2.24.3.jar"/>
+		<pathelement location="${env.COTS_HOME}/lib/json-simple/1.1.1/json-simple-1.1.1.jar"/>
+		<pathelement location="${env.COTS_HOME}/lib/jdom2/2.0.6/jdom-2.0.6.jar"/>
+		<pathelement location="${env.COTS_HOME}/lib/fxmisc/richtextfx-fat-0.10.6.b.jar"/>
+		<pathelement location="${env.COTS_HOME}/lib/jackson/jackson-core-2.13.0-rc1.jar"/>
+		<pathelement location="${env.COTS_HOME}/lib/jackson/jackson-databind-2.12.4.jar"/>
+		<pathelement location="${env.COTS_HOME}/lib/leonardo/ATL/E000ATLJ0.jar"/>
+		<pathelement location="${env.COTS_HOME}/lib/junixsocket/2.5.1/mappedbus-0.5.1.jar"/>
+		<pathelement location="${env.COTS_HOME}/lib/junixsocket/2.5.1/junixsocket-native-common-2.5.1.jar"/>
+		<pathelement location="${env.COTS_HOME}/lib/junixsocket/2.5.1/junixsocket-common-2.5.1.jar"/>
+		<pathelement location="${env.COTS_HOME}/lib/junixsocket/2.5.1/junixsocket-native-custom-2.5.1-default.jar"/>
+		<pathelement location="${env.COTS_HOME}/lib/junixsocket/2.5.1/junixsocket-server-2.5.1.jar"/>	
+		<pathelement location="${env.COTS_HOME}/lib/vividsolutions/jts-1.13.jar"/>
+		<pathelement location="${env.COTS_HOME}/lib/google/2.1/Gson.jar"/>
+		<pathelement location="${env.COTS_HOME}/lib/commons-codec/1.14/commons-codec-1.14.jar"/>
+		<pathelement location="${env.OSPL_HOME}/jar/dcpscj.jar"/>
+		<pathelement location="${env.COMW_TECH_HOME}/lib/java/libComwProxy.jar"/>
+		<pathelement location="${env.COMW_TECH_HOME}/lib/java/libComwDcpsinst.jar"/>
+		<pathelement location="${env.COMW_TECH_HOME}/lib/java/libComwCommonTech.jar"/>
+		<pathelement location="${env.SYSTEM_HOME}/lib/java/dcpsSystem.jar"/>
+		<pathelement location="${env.SYSTEM_HOME}/lib/java/IoDataFactory.jar"/>
+		<pathelement location="${env.SYSTEM_HOME}/lib/java/system.jar"/>
+	    <pathelement location="${env.PERFOLOGGER_HOME}/lib/java/libPerfoLogger.jar"/>
+ 		<pathelement location="${env.WP_XAI_HOME}/lib/java/infrastructure.jar" />
+		<pathelement location="${env.WP_XAI_HOME}/lib/java/jedm.jar" />
+		<pathelement location="${env.WP_XAI_HOME}/lib/java/GiForkCommonLib.jar" />
+		<fileset dir="${env.AS_SUBSYSTEM_HOME}/lib/java">
+		   <include name="*.jar" />
+		</fileset>
+		<fileset dir="${env.AMAD_SUBSYSTEM_HOME}/lib/java">
+		   <include name="*.jar" />
+		</fileset>
+		<fileset dir="${env.EDM_SUBSYSTEM_HOME}/lib/java">
+		   <include name="*.jar" />
+		</fileset>
+		<fileset dir="${env.WP_SUBSYSTEM_HOME}/lib/java">
+		   <include name="*.jar" />
+		</fileset>
+		<fileset dir="${env.ECSP_SUBSYSTEM_HOME}/lib/java">
+		   <include name="*.jar" />
+		</fileset>
+	    	<fileset dir="${env.RPD_SUBSYSTEM_HOME}/lib/java">
+	    	    <include name="*.jar" />
+	    	 </fileset>
+		 <fileset dir="${env.TECHSUP_TSC_HOME}/lib/java">
+		   <include name="*.jar" />
+		</fileset>
+		 <fileset dir="${env.COMMON_DCPS_HOME}/lib/java">
+		   <include name="*.jar" />
+		</fileset>
+		 <fileset dir="${env.EDM_EDA_HOME}/lib/java">
+		   <include name="*.jar" />
+		</fileset>
+		 <fileset dir="${env.COMW_ENV_HOME}/lib/java">
+		   <include name="*.jar" />
+		</fileset>
+		 <fileset dir="${env.IODATAXML_HOME}/lib/java">
+		   <include name="*.jar" />
+		</fileset>
+		<fileset dir="${env.JACORB_HOME}/lib/endorsed">
+		    <include name="*.jar" />
+		</fileset>
+		<fileset dir="${javaFx.lib}">
+				      <include name="*.jar"/>
+				</fileset>
+	        <pathelement location="${env.COTS_HOME}/lib/json-20201115.jar"/>
+		<pathelement location="${env.COTS_HOME}/lib/gson/2.8.0/gson.2.8.0.jar"/>	
+	</path>
+
+	<path id="jar.dir">
+		<fileset dir="${classes.dir}" includes="**/*.class" />
+	</path>
+
+	<target name="clean">
+		<delete dir="${build.dir}" />
+		<delete dir="${deploy.dir}" />
+	</target>
+
+	<target name="compile.javac">
+		<mkdir dir="${classes.dir}" />
+		<javac encoding="UTF-8" includeantruntime="false" debug="true" srcdir="${src.dir}" destdir="${classes.dir}" classpathref="GiForkMain.classpath" />
+	</target>
+
+	<target name="jar" depends="compile.javac">
+
+		<copy todir="${build.dir}">
+			<fileset dir="${src.dir}">
+				<exclude name="**/*.launch" />
+				<exclude name="**/*.xtend" />
+				<exclude name="**/*.java" />
+			</fileset>
+		</copy>
+		<mkdir dir="${jar.dir}" />
+		<jar destfile="${jar.dir}/${ant.project.name}.jar">
+			<manifest>
+				<attribute name="Main-Class" value="${main-class}" />
+			</manifest>
+
+			<fileset dir="${classes.dir}" includes="**/*.class, **/*.ttf">
+			</fileset>
+
+		</jar>
+	</target>
+
+	<target name="clean-build" depends="clean, jar" />
+
+	<target name="build" depends="clean-build,deploy" />
+
+
+	<target name="deploy" depends="compile.javac">
+		<echo message="Deploy GI-FORK" />
+		<mkdir dir="${deploy.dir}" />
+		<copy todir="${deploy.dir}">
+			<fileset dir="." includes="GI-FORK.jar" />
+		</copy>
+		<copy todir="${env.WP_XAI_HOME}/lib/java">
+			<fileset dir="." includes="GI-FORK.jar" />
+		</copy>
+		<delete>
+			<fileset dir="." includes="GI-FORK.jar">
+			</fileset>
+		</delete>
+
+	</target>
+
+</project>

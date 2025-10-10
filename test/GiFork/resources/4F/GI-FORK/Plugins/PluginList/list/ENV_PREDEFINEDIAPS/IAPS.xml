@@ -1,0 +1,17 @@
+<msg>
+	<list 
+		ROW_ID="@AERODROME@_@RWY@_@IAP@" condition="true">
+	
+		<attributes 
+			ID="IAP CONSULTATION LIST" 	
+			behavior_if_empty="delete"		
+			side="LND" 
+		/>
+		
+		<col key="col1" indata="@IAP@"		    outdata="IAP" col_width="80"  />	
+		<col key="col2" indata="@AERODROME@"    outdata="AERODROME"  col_width="110" />	
+		<col key="col3" indata="@RWY@"	        outdata="RWY" col_width="50"  row_fgr="@ALIAS_LIST(FIELD_TO_CHECK1=..IAPS, INFO_TYPE=COLOR)@" />
+		<col key="col4" indata="@IAF@"		    outdata="IAF" col_width="70"  />
+		
+	</list>
+</msg>

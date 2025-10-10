@@ -1,0 +1,184 @@
+{
+"TEMPLATE" :
+	{
+	"0" : { "COLOR" : "#fafafa" , "ALIAS": "PENDING" },
+	"1" : { "COLOR" : "#009900" , "ALIAS": "AIS" },
+	"2" : { "COLOR" : "#00ff00" , "ALIAS": "CONTROLLED" },
+	"3" : { "COLOR" : "#ffffff" , "ALIAS": "NEARBY" },
+	"4" : { "COLOR" : "#00B0F0" , "ALIAS": "HANDOVER_EXITING" },
+	"5" : { "COLOR" : "#009900" , "ALIAS": "NOTIFIED" },
+	"6" : { "COLOR" : "#FF33CC" , "ALIAS": "HANDOVER_ENTERING" },
+	"7" : { "COLOR" : "#ff00ff" , "ALIAS": "TENTATIVE" }
+	},
+"CXUDS" :
+	{
+	"0"  : { "COLOR" : "#fafafa" , "ALIAS": "WHITE" },
+	"1"  : { "COLOR" : "#fafafa" , "ALIAS": "WHITE" },
+	"2"  : { "COLOR" : "#fafafa" , "ALIAS": "WHITE" },
+	
+	"3"  : { "COLOR" : "#fafafa" , "ALIAS": "WHITE"  },
+	"4"  : { "COLOR" : "#FFFF00" , "ALIAS": "YELLOW" },
+	"6"  : { "COLOR" : "#FFA500" , "ALIAS": "ORANGE" },
+	"7"  : { "COLOR" : "#FFA500" , "ALIAS": "ORANGE" },
+	"8"  : { "COLOR" : "#FFA500" , "ALIAS": "ORANGE" },
+	"9"  : { "COLOR" : "#FF0000" , "ALIAS": "ORANGE" },
+	"13" : { "COLOR" : "#fafafa" , "ALIAS": "WHITE"  },
+	"16" : { "COLOR" : "#FFA500" , "ALIAS": "ORANGE" },
+	"18" : { "COLOR" : "#FFFF00" , "ALIAS": "YELLOW" },
+	"19" : { "COLOR" : "#FFFF00" , "ALIAS": "YELLOW" },
+	"20" : { "COLOR" : "#FFA500" , "ALIAS": "ORANGE" },
+	"21" : { "COLOR" : "#fafafa" , "ALIAS": "WHITE"  }
+	},
+"RMUDS" :
+	{
+	"0"  : { "COLOR" : "#fafafa" , "ALIAS": "WHITE" },
+	"1"  : { "COLOR" : "#fafafa" , "ALIAS": "WHITE" },
+	"2"  : { "COLOR" : "#fafafa" , "ALIAS": "WHITE" },
+	
+	"3"  : { "COLOR" : "#fafafa" , "ALIAS": "WHITE"  },
+	"4"  : { "COLOR" : "#FFFF00" , "ALIAS": "YELLOW" },
+	"6"  : { "COLOR" : "#FFA500" , "ALIAS": "ORANGE" },
+	"7"  : { "COLOR" : "#FFA500" , "ALIAS": "ORANGE" },
+	"8"  : { "COLOR" : "#FFA500" , "ALIAS": "ORANGE" },
+	"9"  : { "COLOR" : "#FF0000" , "ALIAS": "ORANGE" },
+	"13" : { "COLOR" : "#fafafa" , "ALIAS": "WHITE"  },
+	"16" : { "COLOR" : "#FFA500" , "ALIAS": "ORANGE" },
+	"18" : { "COLOR" : "#FFFF00" , "ALIAS": "YELLOW" },
+	"19" : { "COLOR" : "#FFFF00" , "ALIAS": "YELLOW" },
+	"20" : { "COLOR" : "#FFA500" , "ALIAS": "ORANGE" },
+	"21" : { "COLOR" : "#fafafa" , "ALIAS": "WHITE"  }
+	},
+"RMDDS":
+	{
+	"0"  : { "COLOR" : "#fafafa" , "ALIAS": "WHITE" },
+	"1"  : { "COLOR" : "#fafafa" , "ALIAS": "WHITE" },
+	"2"  : { "COLOR" : "#fafafa" , "ALIAS": "WHITE" },
+	"3"  : { "COLOR" : "#fafafa" , "ALIAS": "WHITE" },
+	"13" : { "COLOR" : "#00FF00" , "ALIAS": "WHITE" }
+	},
+"CMUDS":
+	{
+	"0"  : { "COLOR" : "#fafafa" , "ALIAS": "WHITE" },
+	"1"  : { "COLOR" : "#fafafa" , "ALIAS": "WHITE" },
+	"2"  : { "COLOR" : "#fafafa" , "ALIAS": "WHITE" },
+	
+	"3"  : { "COLOR" : "#fafafa" , "ALIAS": "WHITE"  },
+	"4"  : { "COLOR" : "#FFFF00" , "ALIAS": "YELLOW" },
+	"6"  : { "COLOR" : "#FFA500" , "ALIAS": "ORANGE" },
+	"7"  : { "COLOR" : "#FFA500" , "ALIAS": "ORANGE" },
+	"8"  : { "COLOR" : "#FFA500" , "ALIAS": "ORANGE" },
+	"9"  : { "COLOR" : "#FF0000" , "ALIAS": "ORANGE" },
+	"13" : { "COLOR" : "#fafafa" , "ALIAS": "WHITE"  },
+	"16" : { "COLOR" : "#FFA500" , "ALIAS": "ORANGE" },
+	"18" : { "COLOR" : "#FFFF00" , "ALIAS": "YELLOW" },
+	"19" : { "COLOR" : "#FFFF00" , "ALIAS": "YELLOW" },
+	"20" : { "COLOR" : "#FFA500" , "ALIAS": "ORANGE" },
+	"21" : { "COLOR" : "#fafafa" , "ALIAS": "WHITE"  }
+	},
+"TCUDS":
+	{
+	"0"  : { "COLOR" : "#fafafa" , "ALIAS": "WHITE" },
+	"1"  : { "COLOR" : "#fafafa" , "ALIAS": "WHITE" },
+	"2"  : { "COLOR" : "#fafafa" , "ALIAS": "WHITE" },
+	
+	"3"  : { "COLOR" : "#fafafa" , "ALIAS": "WHITE"  },
+	"4"  : { "COLOR" : "#FFFF00" , "ALIAS": "YELLOW" },
+	"6"  : { "COLOR" : "#FFA500" , "ALIAS": "ORANGE" },
+	"7"  : { "COLOR" : "#FFA500" , "ALIAS": "ORANGE" },
+	"8"  : { "COLOR" : "#FFA500" , "ALIAS": "ORANGE" },
+	"9"  : { "COLOR" : "#FF0000" , "ALIAS": "ORANGE" },
+	"13" : { "COLOR" : "#fafafa" , "ALIAS": "WHITE"  },
+	"16" : { "COLOR" : "#FFA500" , "ALIAS": "ORANGE" },
+	"18" : { "COLOR" : "#FFFF00" , "ALIAS": "YELLOW" },
+	"19" : { "COLOR" : "#FFFF00" , "ALIAS": "YELLOW" },
+	"20" : { "COLOR" : "#FFA500" , "ALIAS": "ORANGE" },
+	"21" : { "COLOR" : "#fafafa" , "ALIAS": "WHITE"  }
+	},
+"VCUDS":
+	{
+	"0"  : { "COLOR" : "#fafafa" , "ALIAS": "WHITE" },
+	"1"  : { "COLOR" : "#fafafa" , "ALIAS": "WHITE" },
+	"2"  : { "COLOR" : "#fafafa" , "ALIAS": "WHITE" },
+	
+	"3"  : { "COLOR" : "#fafafa" , "ALIAS": "WHITE"  },
+	"4"  : { "COLOR" : "#FFFF00" , "ALIAS": "YELLOW" },
+	"6"  : { "COLOR" : "#FFA500" , "ALIAS": "ORANGE" },
+	"7"  : { "COLOR" : "#FFA500" , "ALIAS": "ORANGE" },
+	"8"  : { "COLOR" : "#FFA500" , "ALIAS": "ORANGE" },
+	"9"  : { "COLOR" : "#FF0000" , "ALIAS": "ORANGE" },
+	"13" : { "COLOR" : "#fafafa" , "ALIAS": "WHITE"  },
+	"16" : { "COLOR" : "#FFA500" , "ALIAS": "ORANGE" },
+	"18" : { "COLOR" : "#FFFF00" , "ALIAS": "YELLOW" },
+	"19" : { "COLOR" : "#FFFF00" , "ALIAS": "YELLOW" },
+	"20" : { "COLOR" : "#FFA500" , "ALIAS": "ORANGE" },
+	"21" : { "COLOR" : "#fafafa" , "ALIAS": "WHITE"  }
+	},
+"VCDDS":
+	{
+	"0"  : { "COLOR" : "#fafafa" , "ALIAS": "WHITE" },
+	"1"  : { "COLOR" : "#fafafa" , "ALIAS": "WHITE" },
+	"2"  : { "COLOR" : "#fafafa" , "ALIAS": "WHITE" },
+	"3"  : { "COLOR" : "#fafafa" , "ALIAS": "WHITE" },
+	"13" : { "COLOR" : "#00FF00" , "ALIAS": "WHITE" }
+	},
+"SCUDS":
+	{
+	"0"  : { "COLOR" : "#fafafa" , "ALIAS": "WHITE" },
+	"1"  : { "COLOR" : "#fafafa" , "ALIAS": "WHITE" },
+	"2"  : { "COLOR" : "#fafafa" , "ALIAS": "WHITE" },
+	
+	"3"  : { "COLOR" : "#fafafa" , "ALIAS": "WHITE"  },
+	"4"  : { "COLOR" : "#FFFF00" , "ALIAS": "YELLOW" },
+	"6"  : { "COLOR" : "#FFA500" , "ALIAS": "ORANGE" },
+	"7"  : { "COLOR" : "#FFA500" , "ALIAS": "ORANGE" },
+	"8"  : { "COLOR" : "#FFA500" , "ALIAS": "ORANGE" },
+	"9"  : { "COLOR" : "#FF0000" , "ALIAS": "ORANGE" },
+	"13" : { "COLOR" : "#fafafa" , "ALIAS": "WHITE"  },
+	"16" : { "COLOR" : "#FFA500" , "ALIAS": "ORANGE" },
+	"18" : { "COLOR" : "#FFFF00" , "ALIAS": "YELLOW" },
+	"19" : { "COLOR" : "#FFFF00" , "ALIAS": "YELLOW" },
+	"20" : { "COLOR" : "#FFA500" , "ALIAS": "ORANGE" },
+	"21" : { "COLOR" : "#fafafa" , "ALIAS": "WHITE"  }
+	},
+"SCDDS":
+	{
+	"0"  : { "COLOR" : "#fafafa" , "ALIAS": "WHITE" },
+	"1"  : { "COLOR" : "#fafafa" , "ALIAS": "WHITE" },
+	"2"  : { "COLOR" : "#fafafa" , "ALIAS": "WHITE" },
+	"3"  : { "COLOR" : "#fafafa" , "ALIAS": "WHITE" },
+	"13" : { "COLOR" : "#00FF00" , "ALIAS": "WHITE" }
+	},
+"ISMANASSNOTCOMPLIANT" :
+	{
+	"true"  : { "COLOR" : "#ffa500" , "ALIAS": "NotCompliant" },
+	"false" : { "COLOR" : "#fafafa" , "ALIAS": "Compliant" }
+	},
+
+"IS_DUPLICATED_RCS" :
+	{
+	"false" : { "COLOR" : "#fafafa" , "ALIAS": "WHITE" },
+	"true"  : { "COLOR" : "#fafafa" , "ALIAS": "WHITE" }
+	},
+"IS_DUPLICATED" :
+	{
+	"false" : { "COLOR" : "#fafafa" , "ALIAS": "WHITE" },
+	"true"  : { "COLOR" : "#fafafa" , "ALIAS": "WHITE" }
+	},
+"IS_DUPLICATED_OVERSYMBOL" :
+    {
+    "false" : { "COLOR" : "#fafafa" , "ALIAS": "WHITE"   },
+    "true"  : { "COLOR" : "#FFA500" , "ALIAS": "ORANGE" }
+    },
+"SNET_ALARM" :
+    {
+    "STCA" :  "C" ,
+    "MSAW" :  "A" ,
+    "DAIW" :  "D" ,
+    "APAM" :  "P" 
+    },
+ "IS_TERMINATE_COLOR" :
+	{
+		"true"  : { "COLOR" : "#0000FF" , "ALIAS": "BLUE" }
+	}
+
+}

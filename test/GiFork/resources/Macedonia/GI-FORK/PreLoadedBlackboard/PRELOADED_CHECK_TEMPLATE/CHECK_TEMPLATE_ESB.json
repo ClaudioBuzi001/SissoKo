@@ -1,0 +1,36 @@
+{	
+"ESB":
+[
+	{"RULE":"1",  "COLOR" : "#FFFFFF",  "TEMPLATE":"ARR",	 "CHECK_FIELD":{"IS_AIRP_RESP":"true","ISARR":"true","FCK":"N","TEMPLATE":"1"}},
+	{"RULE":"2",  "COLOR" : "#FFFFFF",  "TEMPLATE":"ARR",	 "CHECK_FIELD":{"IS_AIRP_RESP":"true","ISARR":"true","FCK":"N","TEMPLATE":"3"}},
+	{"RULE":"3",  "COLOR" : "#FFFFFF",  "TEMPLATE":"ARR",	 "CHECK_FIELD":{"IS_AIRP_RESP":"true","ISARR":"true","FCK":"N","TEMPLATE":"5"}},
+	
+	{"RULE":"4",  "COLOR" : "#FFFFFF",  "TEMPLATE":"CTRARR", "CHECK_FIELD":{"IS_AIRP_RESP":"true","ISARR":"true", "ISLIVE":"true", "FCK":"N", "TEMPLATE":"2", "ISTERMINATED":"false"}},
+	{"RULE":"5",  "COLOR" : "#FFFFFF",  "TEMPLATE":"CTRARR", "CHECK_FIELD":{"IS_AIRP_RESP":"true","ISARR":"true", "ISLIVE":"true", "FCK":"N", "TEMPLATE":"4", "ISTERMINATED":"false"}},
+	{"RULE":"6",  "COLOR" : "#FFFFFF",  "TEMPLATE":"CTRARR", "CHECK_FIELD":{"IS_AIRP_RESP":"true","ISARR":"true", "ISLIVE":"true", "FCK":"N", "TEMPLATE":"6", "ISTERMINATED":"false"}},
+	{"RULE":"7",  "COLOR" : "#FFFFFF",  "TEMPLATE":"CTRARR", "CHECK_FIELD":{"IS_AIRP_RESP":"true","ISARR":"true", "ISLIVE":"true", "FCK":"N", "TEMPLATE":"7", "ISTERMINATED":"false"}},
+	
+	{"RULE":"8",  "COLOR" : "#FFFFFF",  "TEMPLATE":"CTRDEP", "CHECK_FIELD":{"IS_AIRP_RESP":"true","ISDEP":"true", "ISLIVE":"true", "TEMPLATE":"2"}},
+	{"RULE":"9",  "COLOR" : "#FFFFFF",  "TEMPLATE":"CTRDEP", "CHECK_FIELD":{"IS_AIRP_RESP":"true","ISDEP":"true", "ISLIVE":"true", "TEMPLATE":"4"}},
+	{"RULE":"10", "COLOR" : "#FFFFFF",  "TEMPLATE":"CTRDEP", "CHECK_FIELD":{"IS_AIRP_RESP":"true","ISDEP":"true", "ISLIVE":"true", "TEMPLATE":"7"}},
+	
+	{"RULE":"11", "COLOR" : "#FFFFFF",  "TEMPLATE":"DEP",    "CHECK_FIELD":{"IS_AIRP_RESP":"true","ISPENDING":"true", "ISDEP":"true"}},
+	{"RULE":"12", "COLOR" : "#FFFFFF",  "TEMPLATE":"ACT",    "CHECK_FIELD":{"IS_AIRP_RESP":"true","ISACTIVE":"true", "ISDEP":"true", "TACSTATUS":"N"}},
+	{"RULE":"13", "COLOR" : "#FFFFFF",  "TEMPLATE":"ACT",    "CHECK_FIELD":{"IS_AIRP_RESP":"true","ISACTIVE":"true", "ISDEP":"true", "TACSTATUS":"ST"}},
+	{"RULE":"14", "COLOR" : "#FFFFFF",  "TEMPLATE":"ACT",    "CHECK_FIELD":{"IS_AIRP_RESP":"true","ISACTIVE":"true", "ISDEP":"true", "TACSTATUS":"PB"}},
+	{"RULE":"15", "COLOR" : "#FFFFFF",  "TEMPLATE":"TAXI",   "CHECK_FIELD":{"IS_AIRP_RESP":"true","ISDEP":"true", "ISLIVE":"false", "TACSTATUS":"TX"}},
+	{"RULE":"16", "COLOR" : "#FFFFFF",  "TEMPLATE":"RWYDEP", "CHECK_FIELD":{"IS_AIRP_RESP":"true","ISDEP":"true", "ISLIVE":"false", "TACSTATUS":"LN"}},
+	{"RULE":"17", "COLOR" : "#FFFFFF",  "TEMPLATE":"RWYARR", "CHECK_FIELD":{"IS_AIRP_RESP":"true","ISARR":"true", "ISLIVE":"true",   "FCK":"Y" , "TEMPLATE":"2"}},
+	{"RULE":"18", "COLOR" : "#FFFFFF",  "TEMPLATE":"RWYARR", "CHECK_FIELD":{"IS_AIRP_RESP":"true","ISARR":"true", "ISLIVE":"false",  "FCK":"Y" , "TEMPLATE":"2", "ISTERMINATED":"true"}},
+	
+	
+	{"RULE":"19", "COLOR" : "#FFFFFF",  "TEMPLATE":"CTR",     "CHECK_FIELD":{"SCT":"4", "ISLIVE":"true",  "TEMPLATE":"2"}},
+	{"RULE":"20", "COLOR" : "#FFFFFF",  "TEMPLATE":"CTR",     "CHECK_FIELD":{"SCT":"4", "ISLIVE":"false", "TEMPLATE":"2"}},
+	{"RULE":"21", "COLOR" : "#FFFFFF",  "TEMPLATE":"CTR",     "CHECK_FIELD":{"SCT":"4", "ISLIVE":"true",  "TEMPLATE":"4"}},
+	{"RULE":"22", "COLOR" : "#FFFFFF",  "TEMPLATE":"CTR",     "CHECK_FIELD":{"SCT":"4", "ISLIVE":"false", "TEMPLATE":"4"}},
+	{"RULE":"23", "COLOR" : "#FFFFFF",  "TEMPLATE":"CTR",     "CHECK_FIELD":{"SCT":"4", "ISLIVE":"true",  "TEMPLATE":"6"}},
+	{"RULE":"24", "COLOR" : "#FFFFFF",  "TEMPLATE":"CTR",     "CHECK_FIELD":{"SCT":"4", "ISLIVE":"false", "TEMPLATE":"6"}},
+	{"RULE":"25", "COLOR" : "#FFFFFF",  "TEMPLATE":"CTR",     "CHECK_FIELD":{"SCT":"4", "ISLIVE":"true",  "TEMPLATE":"7"}},
+	{"RULE":"26", "COLOR" : "#FFFFFF",  "TEMPLATE":"CTR",     "CHECK_FIELD":{"TEMPLATE":"6", "FLC":"0"}}
+]
+}	

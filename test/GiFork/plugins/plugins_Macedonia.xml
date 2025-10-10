@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!-- Mercury for Macedonia Plugins Manifest -->
+<project name="Macedonia">
+	<plugin name="LisListPlugin" />
+	<plugin name="LisSdaPlugin"/>
+	<plugin name="LisLabelPlugin" />
+	<plugin name="LisMapPlugin" />
+	<plugin name="LisXaiPlugin" />
+</project>

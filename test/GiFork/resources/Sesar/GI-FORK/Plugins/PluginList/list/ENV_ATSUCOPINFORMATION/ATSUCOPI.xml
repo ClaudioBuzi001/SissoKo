@@ -1,0 +1,24 @@
+<msg>
+	<list ROW_ID="@ADJATSU@_@ADJCONF@_@ADJRESP@" condition="@ISATSUCOPI@">
+
+	<attributes 
+		ID="ADJACENT ATSUs CONFIGURATION LIST" 	
+		behavior_if_empty="delete"		
+		side="DL:0" 
+		sort="ATSU:ASC"
+		
+	/>
+
+	<col key="col1"  indata="@ADJATSU@"		outdata="ATSU" col_state="filteredVisible" />
+	<col key="col2"  indata="@ADJCONF@"		outdata="CONF" col_state="filteredVisible" />
+	<col key="col3"  indata="@DATALINKEQ@"	outdata="FirCap" col_state="filteredVisible" row_leftClick="EXTERNAL_ORDER(POPUP_ORDER=ENABLE%20FIR%20CAP, POPUP_CONDITION=FIRCAPisENABLEDthenDISABLE%20FIR%20CAP, ORDER_ID=ADJCAP, OBJECT_TYPE=ADJCAP, DATA={#ATSU, #FirCap},  PREVIEW_NAME=quickADJCAP)" />
+	<col key="col4"  indata="@ADJRESP@"	   	outdata="RSector" col_state="filteredVisible" />
+	<col key="col5"  indata="@LOWERLEVEL@"	outdata="MinLev" col_state="filteredVisible" />
+	<col key="col6"  indata="@UPPERLEVEL@"	outdata="MaxLev" col_state="filteredVisible" />
+	<col key="col7"  indata="@OPSUP_LIST(FIELD_TO_CHECK1=..FREQUENCY)@"	outdata="FREQ" col_state="filteredVisible" row_leftClick="EXTERNAL_ORDER(ORDER_ID=ADJMF, OBJECT_TYPE=ADJMF, DATA={#ATSU, #RSector, #FREQ_ORIG},  PREVIEW_NAME=previewADJMF)" row_rightClick="EXTERNAL_ORDER(POPUP_ORDER=REVERT%20FREQ, ORDER_ID=ADJRF, OBJECT_TYPE=ADJRF, DATA={#ATSU, #RSector, #FREQ_ORIG}, PREVIEW_NAME=quickADJRF)" />
+	<col key="col8"  indata="@CPDLCFSEN@"	outdata="RSectorCFS" col_state="filteredVisible" row_leftClick="EXTERNAL_ORDER(POPUP_ORDER=ENABLE%20CFS, POPUP_CONDITION=RSECTORCFSisENABLEDthenDISABLE%20CFS, ORDER_ID=ADJCFS, OBJECT_TYPE=ADJCFS, DATA={#ATSU, #RSector, #RSectorCFS},  PREVIEW_NAME=quickADJCFS)" />
+	<col key="col9"  indata="@POINTS@"	    outdata="COP" col_state="filteredVisible"  />
+	<col key="col10" indata="@FACILITY@"	outdata="NAME" col_state="filteredNotVisible"  />	
+	<col key="col11" indata="@FREQUENCY@"	outdata="FREQ_ORIG" col_state="notFilteredNotVisible"  />
+	</list>
+</msg>

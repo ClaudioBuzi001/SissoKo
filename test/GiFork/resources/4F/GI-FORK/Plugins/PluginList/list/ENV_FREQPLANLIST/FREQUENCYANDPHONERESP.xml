@@ -1,0 +1,21 @@
+<msg>
+       <list 
+             ROW_ID="@PARTITION_NAME@_@RESP@" condition="@ISFREQANDPHONERESP@">
+
+             <attributes 
+                    ID="@PLAN_NAME@"    
+                    behavior_if_empty="delete"        
+                    side="GRP" 
+                    open_in_grp="true"
+                    visible="false"
+                    CLOSE_BUTTON_CALLBACK= "DUMMY"
+                      
+                    
+             />
+
+             <col key="col1" indata="@RESP@"  outdata="RESP"   row_rightClick="@OPSUP_LIST(FIELD_TO_CHECK1=..CALLBACK_MODIFYFREQPH, VAL_TO_CHECK1=ISCURRENT)@"/>
+             <col key="col2" indata="@FREQ@"  outdata="FREQUENCY"   />
+             <col key="col3" indata="@OPSUP_LIST(FIELD_TO_CHECK1=..CALLBACK_GETPHONE, VAL_TO_CHECK1=PARTITION_NAME, VAL_TO_CHECK2=RESP)@" outdata="PHONE"   />
+       
+       </list>
+</msg>

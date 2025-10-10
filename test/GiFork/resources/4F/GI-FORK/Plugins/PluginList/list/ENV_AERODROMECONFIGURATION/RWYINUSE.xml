@@ -1,0 +1,30 @@
+<msg>
+	<list 
+		ROW_ID="@AERODROME@_@RWY@" condition="@ISRWYINUSE@">
+	
+		<attributes 
+			ID="RWY IN USE @AERODROME@" 	
+			behavior_if_empty="delete"		
+			side="GRP" 
+			open_in_grp="true"
+			visible="true" 
+			CLOSE_BUTTON_CALLBACK= "SHOW_RWY_IN_USE(VALUE=@AERODROME@,SHOW=FALSE)"
+				
+			
+		/>
+	
+		<col key="col1" indata="@RWY@"		outdata="RWY"   row_fgr="@OPSUP_LIST(FIELD_TO_CHECK1=..CLOSURE, VAL_TO_CHECK1=RWY, INFO_TYPE=COLOR)@" row_leftClick="EXTERNAL_ORDER(ORDER_ID=MOI , OBJECT_TYPE=MOI,  PREVIEW_NAME=previewMOI )" row_rightClick="CONTEXT_MENU(MENU_FILE=rwyClosedContextMenu.xml)" />
+		<col key="col2" indata="@OPSUP_LIST(FIELD_TO_CHECK1=..AVAIL, VAL_TO_CHECK1=AVAIL, INFO_TYPE=VALUE)@" outdata="STATUS"   row_fgr="@OPSUP_LIST(FIELD_TO_CHECK1=..AVAIL, VAL_TO_CHECK1=AVAIL, INFO_TYPE=COLOR)@" row_leftClick="CONTEXT_MENU(MENU_FILE=rwyStatusContextMenu.xml)"  />
+		<col key="col3" indata="@MODE@"		outdata="USAGE"   row_leftClick="CONTEXT_MENU(MENU_FILE=rwyModeContextMenu.xml)" />
+		<col key="col4" indata="@DEPRATE@"	outdata="DEP RATE"   row_leftClick="EXTERNAL_ORDER(ORDER_ID=MRR , OBJECT_TYPE=MRR,  PREVIEW_NAME=previewMRR )"/>
+		<col key="col5" indata="@ARRRATE@"	outdata="ARR RATE"   row_leftClick="EXTERNAL_ORDER(ORDER_ID=MRR , OBJECT_TYPE=MRR,  PREVIEW_NAME=previewMRR )"/>
+		<col key="col6" indata="@COMBRATE@"	outdata="COMB RATE"   row_leftClick="EXTERNAL_ORDER(ORDER_ID=MRR , OBJECT_TYPE=MRR,  PREVIEW_NAME=previewMRR )"/>					
+		<col key="col7" indata=""			outdata="DEF RATE"   row_image="UNDO" row_leftClick="EXTERNAL_ORDER(POPUP_ORDER=Revert%20Rate, ORDER_ID=RDR , OBJECT_TYPE=RDR,  PREVIEW_NAME=quickRDR )" col_sortable="false" col_width="80" />	
+	    <col key="col8" indata=""			outdata="GPW"   row_image="info" row_leftClick="SHOW_GLIDE_PATH(VALUE=@AERODROME@_@RWY@)" col_sortable="false" />		
+		<col key="col9" indata="@OPSUP_LIST(FIELD_TO_CHECK1=..RWY_MAPP, VAL_TO_CHECK1=RWY_MAPP, INFO_TYPE=VALUE)@"  outdata="MAPP"  row_fgr="@OPSUP_LIST(FIELD_TO_CHECK1=..ISDEFAULT, VAL_TO_CHECK1=RWY_MAPP_ISDEF, INFO_TYPE=COLOR)@" />
+        <col key="col10" indata="@RWY_MAPP_ISDEF@"  outdata="ISDEFAULT" col_state="notFilteredNotVisible" /> 		        
+        <col key="col11" indata="@OPSUP_LIST(FIELD_TO_CHECK1=..CLOSURE, VAL_TO_CHECK1=RWY, INFO_TYPE=VALUE)@"  outdata="CLOSE" col_state="notFilteredNotVisible" />    
+        <col key="col12" indata="@AVAIL@"  outdata="AVAIL" col_state="notFilteredNotVisible" />    
+	
+	</list>
+</msg>

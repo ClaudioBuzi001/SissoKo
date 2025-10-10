@@ -1,0 +1,29 @@
+{	
+"ESB":
+[
+	{"RULE":"1",  "COLOR":"#FFFFFF", "TEMPLATE":"ARR_TWR",      "CHECK_FIELD":{"ISARR":"true","ISPENDING":"true"},                "CHECK_FIELD_OTHER":[{"BB_TYPE":"ENV_OWN","CHECK_FIELD":{"FAMILY":"0"}}]},
+	{"RULE":"2",  "COLOR":"#FFFFFF", "TEMPLATE":"DEP_TWR",      "CHECK_FIELD":{"ISDEP":"true","ISPENDING":"true"},                "CHECK_FIELD_OTHER":[{"BB_TYPE":"ENV_OWN","CHECK_FIELD":{"FAMILY":"0"}}]},
+	
+	{"RULE":"3",  "COLOR":"#FFFFFF", "TEMPLATE":"ACT_TWR",      "CHECK_FIELD":{"ISARR":"true","ISPENDING":"false","TEMPLATE":"0"},"CHECK_FIELD_OTHER":[{"BB_TYPE":"ENV_OWN","CHECK_FIELD":{"FAMILY":"0"}}]},
+	{"RULE":"4",  "COLOR":"#FFFFFF", "TEMPLATE":"ACT_TWR",	    "CHECK_FIELD":{"ISARR":"true","ISPENDING":"false","TEMPLATE":"1"},"CHECK_FIELD_OTHER":[{"BB_TYPE":"ENV_OWN","CHECK_FIELD":{"FAMILY":"0"}}]},
+	{"RULE":"5",  "COLOR":"#FFFFFF", "TEMPLATE":"ACT_TWR",	    "CHECK_FIELD":{"ISARR":"true","ISPENDING":"false","TEMPLATE":"3"},"CHECK_FIELD_OTHER":[{"BB_TYPE":"ENV_OWN","CHECK_FIELD":{"FAMILY":"0"}}]},
+	{"RULE":"6",  "COLOR":"#FFFFFF", "TEMPLATE":"ACT_TWR",	    "CHECK_FIELD":{"ISARR":"true","ISPENDING":"false","TEMPLATE":"4"},"CHECK_FIELD_OTHER":[{"BB_TYPE":"ENV_OWN","CHECK_FIELD":{"FAMILY":"0"}}]},
+	{"RULE":"7",  "COLOR":"#FFFFFF", "TEMPLATE":"ACT_TWR",	    "CHECK_FIELD":{"ISARR":"true","ISPENDING":"false","TEMPLATE":"5"},"CHECK_FIELD_OTHER":[{"BB_TYPE":"ENV_OWN","CHECK_FIELD":{"FAMILY":"0"}}]},
+	
+	{"RULE":"8",  "COLOR":"#FFFFFF", "TEMPLATE":"CTR_DEP_TWR",  "CHECK_FIELD":{"ISDEP":"true","ISPENDING":"false"},               "CHECK_FIELD_OTHER":[{"BB_TYPE":"ENV_OWN","CHECK_FIELD":{"FAMILY":"0"}}]},
+	{"RULE":"9",  "COLOR":"#FFFFFF", "TEMPLATE":"CTR_OVR_TWR",  "CHECK_FIELD":{"FLC":"0"},                                        "CHECK_FIELD_OTHER":[{"BB_TYPE":"ENV_OWN","CHECK_FIELD":{"FAMILY":"0"}}]},
+	{"RULE":"10", "COLOR":"#FFFFFF", "TEMPLATE":"CTR_ARR_TWR",  "CHECK_FIELD":{"ISARR":"true","ISPENDING":"false","TEMPLATE":"2"},"CHECK_FIELD_OTHER":[{"BB_TYPE":"ENV_OWN","CHECK_FIELD":{"FAMILY":"0"}}]},
+	{"RULE":"11", "COLOR":"#FFFFFF", "TEMPLATE":"CTR_ARR_TWR",  "CHECK_FIELD":{"ISARR":"true","ISPENDING":"false","TEMPLATE":"6"},"CHECK_FIELD_OTHER":[{"BB_TYPE":"ENV_OWN","CHECK_FIELD":{"FAMILY":"0"}}]},
+	{"RULE":"12", "COLOR":"#FFFFFF", "TEMPLATE":"CTR_ARR_TWR",  "CHECK_FIELD":{"ISARR":"true","ISPENDING":"false","TEMPLATE":"7"},"CHECK_FIELD_OTHER":[{"BB_TYPE":"ENV_OWN","CHECK_FIELD":{"FAMILY":"0"}}]},
+
+
+
+	
+	{"RULE":"13", "COLOR":"#FFFFFF", "TEMPLATE":"ARR_APP_WMGK", "CHECK_FIELD":{"ISARR":"true","ADES":"WMGK"},                     "CHECK_FIELD_OTHER":[{"BB_TYPE":"ENV_OWN","CHECK_FIELD":{"FAMILY":"1"}}]},
+    {"RULE":"15", "COLOR":"#FFFFFF", "TEMPLATE":"ARR_APP",	    "CHECK_FIELD":{"ISARR":"true"},                                   "CHECK_FIELD_OTHER":[{"BB_TYPE":"ENV_OWN","CHECK_FIELD":{"FAMILY":"1"}}]},
+	{"RULE":"14", "COLOR":"#FFFFFF", "TEMPLATE":"DEP_APP_WMGK", "CHECK_FIELD":{"ISDEP":"true","ADEP":"WMGK"},                     "CHECK_FIELD_OTHER":[{"BB_TYPE":"ENV_OWN","CHECK_FIELD":{"FAMILY":"1"}}]},
+    {"RULE":"14", "COLOR":"#FFFFFF", "TEMPLATE":"DEP_APP",      "CHECK_FIELD":{"ISDEP":"true"},                                   "CHECK_FIELD_OTHER":[{"BB_TYPE":"ENV_OWN","CHECK_FIELD":{"FAMILY":"1"}}]},
+	{"RULE":"21", "COLOR":"#FFFFFF", "TEMPLATE":"OVR_APP",      "CHECK_FIELD":{"FLC":"0"      ,"ISPENDING":"false"},              "CHECK_FIELD_OTHER":[{"BB_TYPE":"ENV_OWN","CHECK_FIELD":{"FAMILY":"1"}}]}
+	
+]
+}

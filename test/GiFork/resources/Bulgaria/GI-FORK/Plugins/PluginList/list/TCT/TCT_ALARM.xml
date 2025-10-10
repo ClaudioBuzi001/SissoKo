@@ -1,0 +1,28 @@
+<msg>
+	<list 
+		ROW_ID="@CONFLICT_NUMBER@" condition="true">
+		<attributes 
+			ID="TCT LIST" 
+			BEHAVIOR_IF_EMPTY="hide" 
+			SIDE="CONFL:1"
+			ADD_BUTTON_CALLBACK="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW, ORDER_ID=TFT, OBJECT_TYPE=TFT, PREVIEW_NAME=previewTFT, )"
+		/>
+		<col key="col1"  indata="@CONFLICT_NUMBER@"	outdata="C ID" col_state="filteredNotVisible"  row_leftClick="SHOW_TCT_CONFLICT(CONFLICT_ID=@CONFLICT_NUMBER@)"  />		
+		<col key="col2"  indata="@TCT_LIST(FIELD_TO_CHECK=..TIME_TO_CONFLICT)@"	outdata="TIME"	  row_leftClick="SHOW_TCT_CONFLICT(CONFLICT_ID=@CONFLICT_NUMBER@)" />		
+		<col key="col3"  indata="@ALARM_TYPE@"		outdata="TYPE"		 row_leftClick="SHOW_TCT_CONFLICT(CONFLICT_ID=@CONFLICT_NUMBER@)" />
+		<col key="col4"  indata="@TCT_LIST(FIELD_TO_CHECK=..CS_WTC1)@" outdata="CS/WTC 1"  row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , VALUE_TO_CHECK = TRACK_NUMBER1, DEFAULT=#fafafa)@" row_leftPress="HIGHLIGHT_TCT_CONFLICT(TRK_ID=LBL_@TRACK_NUMBER1@, HIGHLIGHT=TRUE)" row_leftRelease="HIGHLIGHT_TCT_CONFLICT(TRK_ID=LBL_@TRACK_NUMBER1@, HIGHLIGHT=FALSE)" />
+		<col key="col5"  indata="@TCT_LIST(FIELD_TO_CHECK=..CS_WTC2)@" outdata="CS/WTC 2"  row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , VALUE_TO_CHECK = TRACK_NUMBER2, DEFAULT=#fafafa)@" row_leftPress="HIGHLIGHT_TCT_CONFLICT(TRK_ID=LBL_@TRACK_NUMBER2@, HIGHLIGHT=TRUE)" row_leftRelease="HIGHLIGHT_TCT_CONFLICT(TRK_ID=LBL_@TRACK_NUMBER2@, HIGHLIGHT=FALSE)"/>
+		<col key="col6"  indata="@TCT_LIST(FIELD_TO_CHECK=..ESTIMATED_MINIMUM_PLANAR_DISTANCE)@"	outdata="MDIST"	  row_leftClick="SHOW_TCT_CONFLICT(CONFLICT_ID=@CONFLICT_NUMBER@)"/>	
+		<col key="col7"  indata="@TCT_LIST(FIELD_TO_CHECK=..CONFLICT_TIME)@"	outdata="TFI"	   row_leftClick="SHOW_TCT_CONFLICT(CONFLICT_ID=@CONFLICT_NUMBER@)"/>
+		<col key="col8"  indata="@TCT_LIST(FIELD_TO_CHECK=..CLOSEST_APPROACH_TIME)@"	outdata="TMD"	  row_leftClick="SHOW_TCT_CONFLICT(CONFLICT_ID=@CONFLICT_NUMBER@)"/>
+		<col key="col9"  indata="@TCT_LIST(FIELD_TO_CHECK=..PRESENT_PLANAR_DISTANCE)@"	outdata="DIST"	  row_leftClick="SHOW_TCT_CONFLICT(CONFLICT_ID=@CONFLICT_NUMBER@)" />
+		<col key="col10" indata="@TRACK<TRACK_NUMBER1>.LEV@"	outdata="AFL1"    row_leftClick="SHOW_TCT_CONFLICT(CONFLICT_ID=@CONFLICT_NUMBER@)" />
+		<col key="col11" indata="@TRACK<TRACK_NUMBER2>.LEV@"	outdata="AFL2"	  row_leftClick="SHOW_TCT_CONFLICT(CONFLICT_ID=@CONFLICT_NUMBER@)" />	
+        <col key="col12"  indata="@TCT_LIST(FIELD_TO_CHECK=..EST_DISTANCE_TO_SEP_LOSS_1)@" outdata="DFI1"   row_leftClick="SHOW_TCT_CONFLICT(CONFLICT_ID=@CONFLICT_NUMBER@)" />
+        <col key="col13"  indata="@TCT_LIST(FIELD_TO_CHECK=..EST_DISTANCE_TO_SEP_LOSS_2)@" outdata="DFI2"   row_leftClick="SHOW_TCT_CONFLICT(CONFLICT_ID=@CONFLICT_NUMBER@)" />
+        <col key="col14"  indata="@TCT_LIST(FIELD_TO_CHECK=..TIME_TO_CLOSEST_APPROACH)@"	outdata="TtoMD"	  row_leftClick="SHOW_TCT_CONFLICT(CONFLICT_ID=@CONFLICT_NUMBER@)" />
+	    <col key="col15"  indata="@TCT_LIST(FIELD_TO_CHECK=..D_TO_MD1)@"	outdata="DtoMD1"	  row_leftClick="SHOW_TCT_CONFLICT(CONFLICT_ID=@CONFLICT_NUMBER@)" />
+	    <col key="col16"  indata="@TCT_LIST(FIELD_TO_CHECK=..D_TO_MD2)@"	outdata="DtoMD2"	  row_leftClick="SHOW_TCT_CONFLICT(CONFLICT_ID=@CONFLICT_NUMBER@)" />
+	
+</list>
+</msg>

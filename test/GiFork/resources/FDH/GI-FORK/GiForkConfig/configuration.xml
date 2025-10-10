@@ -1,0 +1,53 @@
+<msg>
+
+	<!-- CONFIGURAZIONE DEI LOG -->
+	<service type="CONFIGURATION">
+
+		<p key="OENAME" data="OFDO1" />
+		<p key="SOCKET_ADDR" data="233.0.0.1" />
+		<p key="SOCKET_ALIVE_PORT" data="23555" />
+
+		<p key="SOCKET_ALIVE_TIMEOUT" data="0" />
+		<p key="ABORT_TIMEOUT" data="5" />
+		
+		
+		<p key="PRIMARY_NAME" data="fdohmictrl1" />
+		<p key="PRIMARY_PORT" data="8888" />
+		
+		<p key="BACKUP_NAME" data="fdohmictrl2" />
+		<p key="BACKUP_PORT" data="8888" />
+
+		<p key="REFRESH_TIME" data="60" />
+		<p key="DATA_PORT" data="23556" />
+		<p key="STATUS_PORT" data="23558" />
+		<p key="WARNING_PORT" data="23557" />
+		
+		
+		<p key="ORDER_START_CMD" data="./runFDX_OrderController.sh" />
+		<p key="ORDER_ABORT_CMD" data="./stopFDX_OrderController.sh" />
+		
+		<p key="DATA_START_CMD" data="./runFDX_DataController.sh" />
+		<p key="DATA_ABORT_CMD" data="./stopFDX_DataController.sh" />
+		
+		<p key="VIEWER_START_CMD" data="./fdohmistart.sh" />
+		<p key="VIEWER_ABORT_CMD" data="./fdohmistop.sh" />
+		
+		<p key="RUNNING_DIR" data="." />
+		
+		
+		<!-- unit test params -->
+		<p key="IS_UNIT_TEST" data="false" />
+		<p key="IS_OK_ORDER_RESULT" data="false" />
+		<p key="IS_PERFORMANCE_TEST" data="false" />
+
+		<!-- CONFIGURAZIONE PORTA DEL SERVER MULTI CLIENT PER LA RICEZIONE DEI JSONOBJECT DAGLI XAI-DECODER -->
+		
+		<p key="JV_ADDR" data="127.0.0.1" />
+		<p key="COMM_MODE" data="JIP" />
+		<p key="RMI_ENDPOINT" data="ALTERNATIVE" />
+		
+
+	</service>
+
+
+</msg>

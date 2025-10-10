@@ -1,0 +1,18 @@
+<msg>
+
+<list ROW_ID="@FLIGHT_NUM@_@COORDTYPE@" condition="@ISCOUT@">
+
+<attributes ID="COORDOUT" LATITUDE="" LONGITUDE="" BEHAVIOR_IF_EMPTY="delete" ide="GRP_CENTER_RIGHT" open_in_grp="true" visible="true"  SORT="TIME:ASC"  />
+
+<col key="col1" messagetype="coordflight" indata="@CALLSIGN@"				outdata="CALLSIGN"			col_state="filteredVisible" row_middleClick="SHOW_TRAJECTORY" />
+<col key="col2" messagetype="coordflight" indata="@TIME@"					outdata="TIME"				col_state="filteredVisible" />
+<col key="col3" messagetype="coordflight" indata="@COORDTYPE@"				outdata="COORD TYPE"		col_state="filteredVisible" />
+<col key="col4" messagetype="coordflight" indata="@PROPOSEDVALUE@"			outdata="COORD DATA"		col_state="filteredVisible" row_fgr="@COORD_LIST(FIELD_TO_CHECK1=..COORDOUTDATA, VAL_1=COORD_IN, VAL_2=COORD_OUT, VAL_3=COORD_STATUS, INFO_TYPE=COLOR , DEFAULT=00FFFF)@" row_leftClick="@COORD_LIST(FIELD_TO_CHECK1=..COORDTYPE , FIELD_TO_CHECK2=..COORDSTATE , INFO_TYPE=CALLBCK)@"/>
+<col key="col5" messagetype="coordflight" indata="@COORDSTATE@"				outdata="COORD STATE"		row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..COORDTIMER , DEFAULT=#fafafa)@" col_state="filteredVisible" />
+<col key="col6" messagetype="coordflight" indata="@PARTNER_SECTOR_NAME@"	outdata="COORD SECTOR"	col_state="filteredVisible" />
+</list>
+
+
+
+
+</msg>

@@ -1,0 +1,18 @@
+<msg>
+
+<list ROW_ID="@UID@" condition="@ISMSAW@">
+	<attributes ID="MSAW" behavior_if_empty="delete" side="SNET:1"/>
+	<col key="col1" indata="@KEY_ID@" outdata="MSAW"  />
+	<col key="col2" indata="@status@" outdata="STATUS"
+		 row_fgr="@SNET_LIST(FIELD_TO_CHECK1=..status, INFO_TYPE1=COLOR)@" />
+	<col key="col3" indata="@SNET_LIST(FIELD_TO_CHECK1=..inhibition)@" outdata="MSAFE" col_width="100" />
+	<col key="col4" indata="@inhibition@" outdata="INHIB"   />
+	<col key="col6" indata="@tlook@" outdata="LAT "   />
+	<col key="col6" indata="@ttlook@" outdata="T LAT"   />
+	<col key="col7" indata="@SNET_LIST(FIELD_TO_CHECK1=..inhibition, VAL1=hMin)@" outdata="LOWER INHIB" col_width="110"  />
+	<col key="col8" indata="@SNET_LIST(FIELD_TO_CHECK1=..inhibition, VAL2=hMax)@" outdata="UPPER INHIB" col_width="110"  />
+	<col key="col9" indata="" outdata="EXC" row_image="@SNET_LIST(FIELD_TO_CHECK=..EX_CRI, INFO_TYPE=IMAGE)@" row_leftClick="SHOW_CONTAINER_IN_GRP(VALUE=MSAW%20EXCLUSION%20CRITERIA%20@KEY_ID@)"  />
+</list>
+
+
+</msg>

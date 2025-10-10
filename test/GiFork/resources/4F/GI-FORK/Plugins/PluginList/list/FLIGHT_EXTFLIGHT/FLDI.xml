@@ -1,0 +1,31 @@
+<msg>
+	<list
+		ROW_ID="@FLIGHT_NUM@" condition="@ISFLDI@">
+		<attributes	
+			ID="FLIGHT DIRECTORY LIST"
+			behavior_if_empty="delete" 
+			behavior_if_full="visible"	
+			side="DIR:1"	
+			sort="CALLSIGN:ASC" 
+			
+		/>		
+		<col key="col1"	indata="@CALLSIGN@"	outdata="CALLSIGN"	 row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , DEFAULT=#fafafa)@" row_blink_state="@ALIAS_LIST(FIELD_TO_CHECK=..TEMPLATE, INFO_TYPE=BLINK)@"	row_middleClick="SHOW_TRAJECTORY" row_rightClick="EXTERNAL_ORDER(ORDER_ID=CHG , OBJECT_TYPE=CHG,  PREVIEW_NAME=previewCHG )" />
+		<col key="col2" indata="@ADEP@"	outdata="DEP"			col_width="60"     />
+		<col key="col3"	indata="@ADES@"	outdata="DES"			col_width="60"  />
+		<col key="col4"	indata="@STS@"	outdata="STS"			col_width="50" col_state="filteredVisible"	 />
+		<col key="col5"	indata="@SCT@"	outdata="SCT"			col_width="50"	 />
+		<col key="col6"	indata="@SSR_CODE@"	outdata="ASSR"		col_width="60"	 />
+		<col key="col7"	indata="@DLE@"	outdata="DL"	        col_width="50"	 />		
+		<col key="col8"	indata="@FR@ @FTYPE@"	outdata="FR"	col_width="50"	 />
+		<col key="col9"	indata="@GAT_OAT@"	outdata="G/O"	    col_width="50"	 />		
+		<col key="col10"	indata="@SFPL_STATE@"	outdata="FS" col_width="90" col_state="filteredVisible"	 />
+		<col key="col11"	indata="@RVSM@"	outdata="RVSM"	col_width="60" col_state="filteredVisible"	 />
+		<col key="col12"	indata="@EQ_833_STATUS@ @EQ_833_PERMISSION@" outdata="8.33"	col_width="55" col_state="filteredVisible"	 />
+		<col key="col13"	indata="@ATY@"	outdata="TYPE"	col_width="60" col_state="filteredVisible"	 />
+		<col key="col14"	indata="@MDS@"	outdata="MDS"	col_width="50" col_state="filteredVisible"	 />
+		<col key="col15"	indata=""	outdata="DIP"	col_width="50" col_state="filteredVisible"	 />
+		<col key="col16"	indata=""	outdata="ELIG"	col_width="60" col_state="filteredNotVisible"	 row_image="@ALIAS_LIST(FIELD_TO_CHECK1=..ELIG_MODES, INFO_TYPE=IMAGE)@" row_leftClick="EXTERNAL_ORDER(POPUP_ORDER=Revert%20ModeS, ORDER_ID=RMS , OBJECT_TYPE=RMS,  PREVIEW_NAME=quickRMS )" />
+		<col key="col17"	indata=""	outdata="INCERFA"	col_width="90" col_state="filteredNotVisible"	 row_image="@ALIAS_LIST(FIELD_TO_CHECK1=..INCERFA_ID , INFO_TYPE=IMAGE)@" row_leftClick="@ALIAS_LIST(FIELD_TO_CHECK1=..CALLBACK_INCERFA_RESET)@" />		
+	
+	</list>
+</msg>

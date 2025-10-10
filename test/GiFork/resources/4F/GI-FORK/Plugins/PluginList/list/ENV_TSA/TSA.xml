@@ -1,0 +1,30 @@
+<msg>
+   <list 
+      ROW_ID="@TSA_NAME@" condition="@ISTSA@">
+
+      <attributes 
+         ID="SA/APW LIST"   
+         behavior_if_empty="delete"    
+         side="SNET:1" 
+         visible="true"
+      />
+
+      <col key="col1" indata="@TSA_NAME@"  outdata="SA/APW"   row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..SHAPE , CHECK_COLOR=#FFA500, DEFAULT=#fafafa)@" row_leftClick="EXTERNAL_ORDER(ORDER_ID=MYT , OBJECT_TYPE=MYT,  PREVIEW_NAME=previewMYT)" row_rightClick="@OPSUP_LIST(FIELD_TO_CHECK1=..CALLBACK_DELETEAPWONLINE)@" />
+      <col key="col2" indata="@STATUS@"    outdata="STATUS"  col_width="100"  
+      		row_fgr="@OPSUP_LIST(FIELD_TO_CHECK1=..STATUS, INFO_TYPE1=COLOR)@"   />
+      <col key="col3" indata=""            outdata="LOCK"   col_width="60" row_image="@OPSUP_LIST(FIELD_TO_CHECK1=..LOCKINDICATOR, INFO_TYPE=IMAGE)@" row_leftClick="@OPSUP_LIST(FIELD_TO_CHECK1=..CALLBACK_LOCKINDICATOR)@" />
+      <col key="col4" indata=""            outdata="EDIT"   col_width="70" row_image="ADD" row_leftClick="EXTERNAL_ORDER(ORDER_ID=CTS , OBJECT_TYPE=CTS,  PREVIEW_NAME=previewCTS)" />
+      <col key="col5" indata="@COMMENT@"   outdata="COMMENTS" col_width="90" col_state="filteredVisible"  row_leftClick="EXTERNAL_ORDER(ORDER_ID=ATC , OBJECT_TYPE=ATC,  PREVIEW_NAME=previewATC)" />   
+      <col key="col6" indata="@LOWERLEVEL@-@UPPERLEVEL@" outdata="LEVEL" col_width="70" />
+      <col key="col7" indata=""            outdata="MAP" col_width="50"  row_image="@OPSUP_LIST(FIELD_TO_CHECK1=..STATUS_TSA, VAL_TO_CHECK1=INACTIVE, IMAGE_NAME1=TSAMap, IMAGE_NAME2=TSAMapAct, INFO_TYPE=IMAGE)@" row_leftClick="@OPSUP_LIST(FIELD_TO_CHECK1=..CALLBACK_TSAMAP)@" />
+      <col key="col8" indata=""            outdata="TT"  col_width="50" row_image="@OPSUP_LIST(FIELD_TO_CHECK1=..TIMETABLE, VAL_TO_CHECK1=notempty, IMAGE_NAME=info, INFO_TYPE=IMAGE)@"  row_leftClick="SHOW_CONTAINER_IN_GRP(VALUE=TIMETABLE%20VIEW%20@TSA_NAME@)" />
+      <col key="col9" indata="@APW_ENABLED@" outdata="APW" col_width="50" 
+      		row_fgr="@OPSUP_LIST(FIELD_TO_CHECK1=..APW_ENABLED, INFO_TYPE1=COLOR)@"
+      		row_leftClick="@OPSUP_LIST(CALLBACK_TO_CHECK=..CALLBACK_CHANGE_APW)@" />
+      		<!--  row_leftClick="EXTERNAL_ORDER(ORDER_ID=EAP , OBJECT_TYPE=EAP,  PREVIEW_NAME=quickEAP, DATA={#APW})"  /> -->
+      <col key="col10" indata="@LAT@"         outdata="LAT " col_width="55" />
+      <col key="col11" indata="@TLAT@"    outdata="TLAT" col_width="55" />
+      <col key="col12" indata=""            outdata="EXC" col_width="50" row_image="@SNET_LIST(FIELD_TO_CHECK=..EX_CRI, INFO_TYPE=IMAGE)@" row_leftClick="SHOW_CONTAINER_IN_GRP(VALUE=APW%20EXCLUSION%20CRITERIA%20@TSA_NAME@)"  />
+      
+   </list>
+</msg>

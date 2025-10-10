@@ -1,0 +1,17 @@
+<msg>
+
+<!--  LISTE LIS  CPDLC  -->
+<!--  LIS CPDLCIN e CPDLCOUT -->
+<list ROW_ID="@CPDLC_ROW_ID@" condition="@ISLISCPDLCIN@">
+	<attributes ID="CPDLC IN LIST" behavior_if_empty="delete" side="DL"  args="-time_delta=60000" />
+	<col key="col1" indata="@CALLSIGN@"   outdata="CALLSIGN" col_state="filteredVisible" row_fgr="#CECECE" row_middleClick="SHOW_TRAJECTORY" automatic=""/>
+	<col key="col2" indata="@timestamp@"  outdata="TIME"  col_state="filteredVisible" />
+	<col key="col3" indata="@message@"    outdata="MESSAGE" col_width="250" col_state="filteredVisible" />
+	<col key="col4" indata="@ALIAS_LIST(FIELD_TO_CHECK=..response)@" outdata="SBY"  col_state="filteredVisible" row_fgr="@CPDLC_ALIAS(FIELD_TO_CHECK1=..response, VAL_TO_CHECK=classeId, DEFAULT=#FFFFFF, INFO_TYPE=COLOR)@" row_leftClick="EXTERNAL_ORDER(ORDER_ID=SBY, OBJECT_TYPE=SBY,PREVIEW_NAME=quickSBY, DATA={'ISLIST':'true', 'CPDLC_ID' :'@CPDLC_ID@'})" />
+	<col key="col4" indata="@ALIAS_LIST(FIELD_TO_CHECK=..response)@" outdata="UNA"  col_state="filteredVisible" row_fgr="@CPDLC_ALIAS(FIELD_TO_CHECK1=..response, VAL_TO_CHECK=classeId, DEFAULT=#FFFFFF, INFO_TYPE=COLOR)@" row_leftClick="EXTERNAL_ORDER(ORDER_ID=UNA, OBJECT_TYPE=UNA,PREVIEW_NAME=quickUNA, DATA={'ISLIST':'true', 'CPDLC_ID' :'@CPDLC_ID@'})" />
+	<col key="col4" indata="@ALIAS_LIST(FIELD_TO_CHECK=..response)@" outdata="WLC"  col_state="filteredVisible" row_fgr="@CPDLC_ALIAS(FIELD_TO_CHECK1=..response, VAL_TO_CHECK=classeId, DEFAULT=#FFFFFF, INFO_TYPE=COLOR)@" row_leftClick="@CPDLC_ALIAS(FIELD_TO_CHECK1=..CALLBACK_WLC, VAL_TO_CHECK=classeId)@" />
+</list>
+
+</msg>
+
+

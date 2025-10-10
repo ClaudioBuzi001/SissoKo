@@ -1,0 +1,23 @@
+<msg>
+	<list 
+		ROW_ID="@PARTITION_NAME@_@PLAN_NAME@" condition="@ISFREQANDPHONEPLAN@">
+
+		<attributes 
+			ID="FREQUENCY AND PHONE PLAN LIST" 	
+			lat=""	
+			lon=""	
+			behavior_if_empty="delete"		
+			side="OPSUP" 
+			visible="true"
+				
+			
+		/>
+
+		<col key="col1" indata="@PARTITION_NAME@"	outdata="PARTITION NAME"   />
+		<col key="col2" indata="@PLAN_NAME@"	 	outdata="PLAN NAME"  row_fgr="@OPSUP_LIST(FIELD_TO_CHECK1=..ISCURRENT, VAL_TO_CHECK1=ISCURRENT, INFO_TYPE=COLOR)@"  row_leftClick="@OPSUP_LIST(FIELD_TO_CHECK1=..CALLBACK_MODIFYPLAN, VAL_TO_CHECK1=ISCURRENT)@" />
+		<col key="col3" indata=""	outdata="ISUPDATE"   row_image="@OPSUP_LIST(FIELD_TO_CHECK1=..ISUPDATE, VAL_TO_CHECK1=ISUPDATE, INFO_TYPE=IMAGE)@" row_leftClick="@OPSUP_LIST(FIELD_TO_CHECK1=..CALLBACK_REVERTDEFAULTPLAN, VAL_TO_CHECK1=ISCURRENT, VAL_TO_CHECK2=ISDEFAULT)@" />
+		<col key="col4" indata="" 	outdata="ISDEFAULT"   row_image="@OPSUP_LIST(FIELD_TO_CHECK1=..ISDEFAULT, VAL_TO_CHECK1=ISDEFAULT, INFO_TYPE=IMAGE)@" /> 
+		<col key="col5" indata=""	outdata="INFO" header=""  row_image="info"  row_leftClick="SHOW_CONTAINER_IN_GRP(VALUE=@PLAN_NAME@)" />
+	
+	</list>
+</msg>

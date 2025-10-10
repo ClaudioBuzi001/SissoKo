@@ -1,0 +1,22 @@
+<msg>
+	<list 
+		ROW_ID="@ROW_ID@" condition="@ISCPDLCIN@">
+		<attributes 
+			ID="CPDLC IN WINDOW" 
+			behavior_if_empty="delete" 
+			side="DL:2" 
+            sort="TIME:DESC,DIALOGUE_ID:DESC,"		
+		/>
+		<col key="col1" indata="@CALLSIGN@"   outdata="CALLSIGN"  row_fgr="@CPDLC_LIST(FIELD_TO_CHECK1=..TEMPLATECPDLC, VAL_TO_CHECK=TEMPLATECPDLC, INFO_TYPE=COLOR)@" row_blink_state="@ALIAS_LIST(FIELD_TO_CHECK=..TEMPLATE, INFO_TYPE=BLINK)@"/>
+		<col key="col2" indata="@TS@"  outdata="TIME"      row_fgr="@CPDLC_LIST(FIELD_TO_CHECK1=..TEMPLATECPDLC, VAL_TO_CHECK=TEMPLATECPDLC, INFO_TYPE=COLOR)@" />
+		<col key="col3" indata="@TXT_MESSAGE@"  outdata="MESSAGE" col_width="250"  row_fgr="@CPDLC_LIST(FIELD_TO_CHECK1=..TEMPLATECPDLC, VAL_TO_CHECK=TEMPLATECPDLC, INFO_TYPE=COLOR)@" />
+		<col key="col4" indata="@CPDLC_LIST(FIELD_TO_CHECK1=..STATUS_SBY, VAL_TO_CHECK1=STATUS_SBY)@"  outdata="SBY"   row_fgr="@CPDLC_LIST(FIELD_TO_CHECK1=..STATUS_COLOR, FIELD_TO_CHECK2=..STATUS_SBY, VAL_TO_CHECK=STATUS_SBY, INFO_TYPE=COLOR)@" row_image="@CPDLC_LIST(FIELD_TO_CHECK1=..STATUS_SBY, VAL_TO_CHECK1=STATUS_SBY, INFO_TYPE=IMAGE)@" row_leftClick="@CPDLC_LIST(FIELD_TO_CHECK1=..CALLBACK_SBY, VAL_TO_CHECK1=STATUS_SBY, VAL_TO_CHECK=MIN)@" />
+		<col key="col5" indata="@CPDLC_LIST(FIELD_TO_CHECK1=..STATUS_UNA, VAL_TO_CHECK1=STATUS_UNA)@"  outdata="UNA"   row_fgr="@CPDLC_LIST(FIELD_TO_CHECK1=..STATUS_COLOR, FIELD_TO_CHECK2=..STATUS_UNA, VAL_TO_CHECK=STATUS_UNA, INFO_TYPE=COLOR)@" row_image="" row_leftClick="@CPDLC_LIST(FIELD_TO_CHECK1=..CALLBACK_UNA, VAL_TO_CHECK1=STATUS_UNA, VAL_TO_CHECK=MIN)@" />
+		<col key="col6" indata="@CPDLC_LIST(FIELD_TO_CHECK1=..STATUS_WLC, VAL_TO_CHECK1=STATUS_WLC, VAL_TO_CHECK2=DIALOGUE_STATUS)@"  outdata="WLC"   row_fgr="@CPDLC_LIST(FIELD_TO_CHECK1=..STATUS_COLOR, FIELD_TO_CHECK2=..STATUS_WLC, VAL_TO_CHECK=STATUS_WLC, INFO_TYPE=COLOR)@" row_image="" row_leftClick="@CPDLC_LIST(FIELD_TO_CHECK1=..CALLBACK_WLC, VAL_TO_CHECK1=DIALOGUES_CLASS, VAL_TO_CHECK2=STATUS_UNA)@" />
+		<col key="col7" indata="@CUD_ID@"   outdata="CUD_ID"  col_state="notFilteredNotVisible" row_leftClick=""  row_automaticOrder="@CPDLC_LIST(FIELD_TO_CHECK1=..CALLBACK_CUD, VAL_TO_CHECK=CUD_ID)@"  />
+		<col key="col8" indata="@DIALOGUE_ID@"   outdata="DIALOGUE_ID"  col_state="filteredNotVisible" row_leftClick="" />		
+	</list>
+
+</msg>
+
+

@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<project name="GiFork Build" default="dist" basedir=".">
+   <property name="project.home" value="." />
+   <!--<property name="dist.home" value="${project.home}/dist" />-->
+   <property name="plugins.folder" value="plugins" />
+
+   <target name="dist">
+      <subant target="dist">
+
+         <!-- INFRASTRUCTURE -->
+         <filelist dir="../../Commons/infrastructure" files="build.xml" />       	
+         
+         <!-- EXCHANGE DATA MODEL -->
+         <filelist dir="../../Commons/jedm" files="build.xml" />
+         
+         <!-- GIFork Common -->
+         <filelist dir="../../Commons/GiForkCommonLib" files="build.xml" />
+
+         <!-- Gi-FORK -->
+         <filelist dir="." files="build4F.xml" />         
+ 
+         <!-- 4FXaiPlugin -->
+         <filelist dir="../4FXaiPlugin" files="build.xml" />
+         
+         <!-- 4FSdaPlugin -->
+         <filelist dir="../4FSdaPlugin" files="build.xml" />
+
+         <!-- 4FLabelPlugin -->
+         <filelist dir="../4FLabelPlugin" files="build.xml" />
+
+         <!-- 4FListPlugin -->
+         <filelist dir="../4FListPlugin" files="build.xml" />
+      	
+      </subant>
+   </target>
+
+   <target name="clean">
+      <subant target="clean">
+         <!-- INFRASTRUCTURE -->
+         <filelist dir="../../Commons/infrastructure" files="build.xml" />     	
+      	      	
+         <!-- EXCHANGE DATA MODEL -->
+         <filelist dir="../../Commons/jedm" files="build.xml" />
+         
+         <!-- GIFork Common -->
+         <filelist dir="../../Commons/GiForkCommonLib" files="build.xml" />      	
+
+         <!-- Gi-FORK -->
+         <filelist dir="." files="build4F.xml" />
+ 
+         <!-- 4FXaiPlugin -->
+         <filelist dir="../4FXaiPlugin" files="build.xml" />
+
+         <!-- 4FSdaPlugin -->
+         <filelist dir="../4FSdaPlugin" files="build.xml" />
+
+         <!-- 4FLabelPlugin -->
+         <filelist dir="../4FLabelPlugin" files="build.xml" />
+
+         <!-- 4FListPlugin -->
+         <filelist dir="../4FListPlugin" files="build.xml" />
+                 
+      </subant>
+   </target>
+
+</project>
+
+

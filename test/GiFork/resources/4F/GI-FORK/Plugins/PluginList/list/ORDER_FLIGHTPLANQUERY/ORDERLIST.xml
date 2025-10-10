@@ -1,0 +1,20 @@
+<msg>
+	<list 
+		ROW_ID="@ROWID@" condition="@ISORDER@">
+
+		<attributes 
+			ID="ORDER LIST @CS@" 	
+			behavior_if_empty="delete"
+			visible="true"		
+			CLOSE_BUTTON_CALLBACK= "DUMMY()"
+			side="GRP_TOP_LEFT" 
+			open_in_grp="true" 
+				
+			sort="ORDERTIME:ASC"
+			
+		/>
+
+		<col key="col1" indata="@ORDERNAME@"	 outdata="ORDERNAME"   />
+		<col key="col2" indata="@ORDERTIME@"	 outdata="TIMESTAMP"   />
+	</list>
+</msg>

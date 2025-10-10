@@ -1,0 +1,15 @@
+<msg>
+	<list
+		ROW_ID="@DBS_ID@" condition="false">
+		<attributes	ID="@PREFIX@ DBS LIST : @RWY_KEY@" sort="" behavior_if_empty="delete"	behavior_if_full="visible"	side="CONFL:1" />
+<!-- mettendo ".." nei parametri della ServiceCall come nel'esempio seguente tale parametro verra passato al servizio senza elaborarne il recupero dalla Blackboard:
+@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , DEFAULT=#CECECE)@
+-->
+		<col key="col1"	indata="@LEADER@"	outdata="LEADER"	col_state="filteredVisible"	row_fgr="@LEADER_TEMPLATE_COLOR@"/>
+		<col key="col2"	indata="@RQ_SEP@"	outdata="RQ SEP"	col_state="filteredVisible"	row_fgr="@DBS_COLOR@"/>
+		<col key="col3"	indata="@FOLLOWER@"	outdata="FOLLOWER"  col_state="filteredVisible"	row_fgr="@FOLLOWER_TEMPLATE_COLOR@"/>
+		<col key="col4"	indata="@DBS_RN_DIST@" 	outdata="RN DIST"	col_state="filteredVisible"	/>	
+		<col key="col5"	indata="@DBS_DTL@" 		outdata="DTL/G"		col_state="filteredVisible"	row_fgr="@DBS_COLOR@"/>	
+	
+	</list>
+</msg>

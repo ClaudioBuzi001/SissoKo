@@ -1,0 +1,21 @@
+<msg>
+	<list
+		ROW_ID="@FLIGHT_NUM@" condition="@IS_RPAS@">
+		<attributes	ID="RPAS LIST"	lat=""	lon=""	behavior_if_empty="delete"	behavior_if_full="visible"	side="SFL:1"	sort="CALLSIGN:ASC"	/>
+
+		<col key="col1"	 indata="@CALLSIGN@"       outdata="CALLSIGN"		col_state="filteredVisible" row_fgr="@TEMPLATE_COLOR@"	/>
+		<col key="col2"	 indata="@FLIGHT_NUM@"     outdata="REG_NUM"	    col_state="filteredVisible" row_fgr="#FFFFFF" />
+		<col key="col3"  indata="@SSR_CODE@"       outdata="CODE"	        col_state="filteredVisible" row_fgr="#FFFFFF" />
+		<col key="col4"  indata="@RPAS_STATUS@"    outdata="STATUS"	    	col_state="filteredVisible" row_fgr="#FFFFFF" />
+		<col key="col5"  indata="@PILOTID@"        outdata="PILOT_ID"	    col_state="filteredVisible" row_fgr="#FFFFFF" />
+		<col key="col6"  indata="@PILOTCONTACT@"   outdata="PILOT_CONTACT"	col_state="filteredVisible" row_fgr="#FFFFFF" />
+		<col key="col7"  indata="@CLEARANCE@"      outdata="CLEARANCE"	    col_state="filteredVisible" row_fgr="#FFFFFF" row_leftClick="" />
+		<col key="col8"  indata="@PAYLOAD@"        outdata="PAYLOAD"	    col_state="filteredVisible" row_fgr="#FFFFFF" />
+		<col key="col9"  indata="@SATNUM@"         outdata="SAT_NUM"	    col_state="filteredVisible" row_fgr="#FFFFFF" />
+		<col key="col10" indata="@ROUTE@"          outdata="ROUTE"	        col_state="filteredVisible" row_fgr="#FFFFFF" row_middleClick="SHOW_TRAJECTORY" />
+		<col key="col11" indata="@DESTINATION@"    outdata="DESTINATION"	col_state="filteredVisible" row_fgr="#FFFFFF" />
+		<col key="col12" indata="@EMERGENCY_RPAS@" outdata="EMERGENCY"	    col_state="filteredVisible" row_fgr="#FF0000"/>
+		<col key="col13" indata="@PROCEDURE@"      outdata="PROCEDURE"	    col_state="filteredVisible" row_fgr="#FFFFFF" />
+		<col key="col14" indata="@RPAS_CODE@"      outdata="MISSION"	    col_state="filteredVisible" row_fgr="#FFFFFF" />
+	</list>
+</msg>

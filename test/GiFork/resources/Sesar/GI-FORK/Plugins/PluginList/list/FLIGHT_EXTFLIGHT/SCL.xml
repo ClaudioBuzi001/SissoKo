@@ -1,0 +1,23 @@
+<msg>
+	<list
+		ROW_ID="@FLIGHT_NUM@" condition="@ISSCL@">
+		<attributes	
+			ID="SECTOR LIST"
+			behavior_if_empty="delete" 
+			behavior_if_full="visible"	
+			side="DIR:1"	
+			sort="CALLSIGN:ASC" 
+			
+		/>		
+		<col key="col1"	indata="@CALLSIGN@"	outdata="CALLSIGN"	 row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , DEFAULT=#fafafa)@" row_blink_state="@ALIAS_LIST(FIELD_TO_CHECK=..TEMPLATE, INFO_TYPE=BLINK)@"	row_middleClick="SHOW_TRAJECTORY" row_rightClick="EXTERNAL_ORDER(ORDER_ID=CHG , OBJECT_TYPE=CHG,  PREVIEW_NAME=previewCHG )" />
+		<col key="col2"	indata="@SCT@"		outdata="SCT"	col_width="50"	 />	
+		<col key="col3"	indata="@SSR_CODE@"	outdata="ASSR"	col_width="55"	 />			
+		<col key="col4" indata="@ADEP@"		outdata="DEP"	col_width="50"	 />
+		<col key="col5"	indata="@ADES@"		outdata="DES"	col_width="50"	 />
+		<col key="col6" indata="@ALIAS_LIST(FIELD_TO_CHECK1=..CFL)@" outdata="CFL" col_width="50"  />
+		<col key="col7" indata="@ALIAS_LIST(FIELD_TO_CHECK1=..RFL)@" outdata="RFL" col_width="55" />
+		<col key="col8" indata="@ATY@"	outdata="TYPE"	col_width="55" col_state="filteredVisible"	 />	
+		<col key="col9" indata="@TRUEAIRSPEEDINKNOTS@"	outdata="TAS" col_width="50" col_state="filteredVisible" />
+	
+	</list>
+</msg>

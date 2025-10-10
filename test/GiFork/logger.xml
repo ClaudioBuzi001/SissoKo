@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+	<Appenders>
+		<RollingFile name="RollingFile" fileName="logs/gi-fork.log" filePattern="logs/gi-fork-%i.log" ignoreExceptions="false">
+			<PatternLayout>
+				<Pattern>%d - %5p %m %n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<SizeBasedTriggeringPolicy size="250 MB" />
+			</Policies>
+			<DefaultRolloverStrategy max="10" />
+		</RollingFile>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d - %5p %m %n"/>
+		</Console>
+	</Appenders>
+	<Loggers>
+		<Root level="ERROR">
+			<AppenderRef ref="Console" level="ERROR"/>
+			<AppenderRef ref="RollingFile" level="ERROR"/>
+		</Root>
+	</Loggers>
+</Configuration>

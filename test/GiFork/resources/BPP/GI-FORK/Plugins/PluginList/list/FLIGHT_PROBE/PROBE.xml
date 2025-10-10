@@ -1,0 +1,13 @@
+<msg>
+	<list
+		ROW_ID="@PROBE_ID@" condition="@IS_PROBE@">
+		<attributes	ID="PROBE GROUP" behavior_if_empty="delete" behavior_if_full="delete"	open_in_grp="true" side="GRP_CENTER_LEFT" visible="true" CLOSE_BUTTON_CALLBACK="INHIBIT" ADD_BUTTON_CALLBACK="PROBE(ACTION=ACT)" IMAGE_ADD_CALLBACK="BUTTON_CONFIRM" ADD_SECOND_BUTTON_CALLBACK="PROBE(ACTION=DEL)" IMAGE_ADD_SECOND_CALLBACK="BUTTON_TRASH" />
+		
+		<col key="col1"	 indata="@CALLSIGN@"	outdata="CALLSIGN"	 row_fgr="@TEMPLATE_COLOR@" />
+		<col key="col2"	 indata="@PROBE_LIST(FIELD_TO_CHECK=..ORDER_NAME)@" outdata="ORDER"   />
+		<col key="col3"	 indata="@ORDER_VALUE@"	outdata="VALUE"      row_fgr="@PROBE_LIST(FIELD_TO_CHECK=..COLOR_CONFLICT , DEFAULT=#fafafa)@" />
+		<col key="col4"	 indata=""	    outdata="ACT"  row_leftClick="@PROBE_LIST(FIELD_TO_CHECK=..ACT)@" row_image="BUTTON_CONFIRM" />
+		<col key="col5"  indata=""		outdata="DEL"  row_leftClick="@PROBE_LIST(FIELD_TO_CHECK=..DEL)@" row_image="BUTTON_TRASH"  row_rightClick="CONTEXT_MENU(MENU_FILE=PROBE_GROUP_MENU.xml)" />
+		<col key="col6"	 indata=""		outdata="EDIT" row_leftClick="@PROBE_LIST(FIELD_TO_CHECK=..EDIT)@" row_image="EditGE" />
+	</list>
+</msg>

@@ -1,0 +1,24 @@
+<msg>
+	<list
+		ROW_ID="@WIF_PARENT_FLIGHT_NUM@" condition="@ISWHATIFFLIGHT@">
+		<attributes	
+			ID="Flight WhatIf List"	
+			behavior_if_empty="delete"		
+			side="GRP_TOP_LEFT" 
+			open_in_grp="true" 
+			visible="true"
+			sort="CALLSIGN:ASC"
+			
+		/>
+<!-- mettendo ".." nei parametri della ServiceCall come nel'esempio seguente tale parametro verra passato al servizio senza elaborarne il recupero dalla Blackboard:
+@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , DEFAULT=#CECECE)@
+-->	 
+		<col key="col1"		indata="@CALLSIGN@"    outdata="Callsign"  row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , DEFAULT=#fafafa)@" row_blink_state="@ALIAS_LIST(FIELD_TO_CHECK=..TEMPLATE, INFO_TYPE=BLINK)@" row_middleClick="SHOW_TRAJECTORY" />
+		<col key="col2"		indata="" outdata="State"    row_image="@ALIAS_LIST(FIELD_TO_CHECK1=WIF_VALID, INFO_TYPE=IMAGE)@" /> 
+		<col key="col3"		indata="@SCT@"     		outdata="SFPL Resp"  col_state="filteredVisible"   />
+		<col key="col4"		indata=""     outdata="Delete" col_state="filteredVisible"   row_image="BUTTON_TRASH" row_leftClick="EXTERNAL_ORDER(ORDER_ID=DAL, OBJECT_TYPE=DAL,  PREVIEW_NAME=quickDAL)" />		
+    	<col key="col5"		indata="@ACT@"     outdata="Actualize" col_state="filteredVisible"   row_image="BUTTON_CONFIRM" row_leftClick="EXTERNAL_ORDER(ORDER_ID=AAS, OBJECT_TYPE=AAS,  PREVIEW_NAME=quickAAS)" />		
+		<!--col key="col6"		indata="" outdata="Show" col_state="filteredVisible"   row_Image="Center" row_leftClick="SHOW_TRACK" /-->
+	
+	</list>
+</msg>

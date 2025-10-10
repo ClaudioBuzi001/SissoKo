@@ -1,0 +1,44 @@
+{	
+"0":
+[
+	{"RULE":"0",  "COLOR" : "#00B050", "TEMPLATE":"UNCORRELATE",          "CHECK_FIELD":{"TEMPLATE":"0", "ISPENDING":"true", "FDM_SECTOR":"CURRENT"}},
+	{"RULE":"1",  "COLOR" : "#000000", "TEMPLATE":"UNCORRELATE",          "CHECK_FIELD":{"TEMPLATE":"0"}}
+],
+
+"1":
+[
+	{"RULE":"0",  "COLOR" : "#00B050", "TEMPLATE":"AIS",                  "CHECK_FIELD":{"TEMPLATE":"1", "FDM_SECTOR":"CURRENT"}},
+	{"RULE":"1",  "COLOR" : "#000000", "TEMPLATE":"AIS", 		          "CHECK_FIELD":{"TEMPLATE":"1"}}
+],
+
+"2":
+[
+	{"RULE":"0",  "COLOR" : "#00B050", "TEMPLATE":"CONTROLLED",           "CHECK_FIELD":{"TEMPLATE":"2"}}
+],
+
+"3":
+[
+	{"RULE":"0",  "COLOR" : "#000000", "TEMPLATE":"NEARBY",               "CHECK_FIELD":{"TEMPLATE":"3"}}
+],
+
+"4":
+[
+	{"RULE":"0",  "COLOR" : "#00B0F0", "TEMPLATE":"HANDOVER_EXITING",     "CHECK_FIELD":{"TEMPLATE":"4"}}
+],
+
+"5":
+[
+	{"RULE":"0",  "COLOR" : "#000000", "TEMPLATE":"NOTIFIED",             "CHECK_FIELD":{"TEMPLATE":"5"}}
+],
+
+"6":
+[
+	{"RULE":"0",  "COLOR" : "#FF33CC", "TEMPLATE":"HANDOVER_ENTERING",    "CHECK_FIELD":{"TEMPLATE":"6"}}
+],
+
+"7":
+[
+	
+	{"RULE":"0",  "COLOR" : "#000000", "TEMPLATE":"TENTATIVE",            "CHECK_FIELD":{"TEMPLATE":"7"}}
+]
+}

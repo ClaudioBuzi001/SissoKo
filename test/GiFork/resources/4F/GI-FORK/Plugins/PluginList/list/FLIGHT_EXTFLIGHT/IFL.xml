@@ -1,0 +1,34 @@
+<msg>
+	<list
+		ROW_ID="@FLIGHT_NUM@" condition="@ISIFL@">
+		
+		<attributes	
+			ID="PASSIVE FLIGHT LIST" 
+			behavior_if_empty="delete" 
+			side="DIR:1"	
+			sort="CALLSIGN:ASC" 
+			 
+		/>	
+		
+		<!-- PC: ToDo: vedi color CONTROLLED per campo callsign quando FSTATE è DONE;
+		               vedi color con alternativo per campo PEL -->
+		<col key="col1"		indata="@CALLSIGN@"	outdata="CALLSIGN"	 row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , DEFAULT=#fafafa)@" row_blink_state="@ALIAS_LIST(FIELD_TO_CHECK=..TEMPLATE, INFO_TYPE=BLINK)@"	row_middleClick="SHOW_TRAJECTORY" row_rightClick="EXTERNAL_ORDER(ORDER_ID=CHG , OBJECT_TYPE=CHG,  PREVIEW_NAME=previewCHG )"/>
+		<col key="col2"		indata="@IFIXETO@"	outdata="ETO"		 />
+		<col key="col3"		indata="@OBT@"	outdata="EOBT"		 />
+		<col key="col4"		indata="@DATE_FLIGHT@"	outdata="EOBD"		 />
+		<col key="col5"		indata="@ADEP@"	outdata="DEP"		 />
+		<col key="col6"		indata="@ADES@"	outdata="DES"		 />	
+		<col key="col7"		indata="@IFIX@"	outdata="IFIX"		 />
+		<col key="col8"		indata="@SSR_CODE@"	outdata="SSR"	col_state="filteredVisible"	 />
+		<col key="col9"		indata="@ATY@"	outdata="TYPE"	col_state="filteredVisible"	 />			
+		<col key="col10"	indata="@ALIAS_LIST(FIELD_TO_CHECK1=..PEL)@"	outdata="PEL"	col_state="filteredVisible"	row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , DEFAULT=#fafafa)@" /> 	
+		<col key="col11"	indata="@PLV@"	outdata="PLV"	col_state="filteredVisible"	 />
+		<col key="col12"	indata="@ROUTE@"	outdata="ROUTE"	col_state="filteredVisible"	 />
+		<col key="col13"	indata="@RVSM@"	outdata="RVSM"	col_state="filteredVisible"	 />
+		<col key="col14"	indata="@EQ_833_STATUS@ @EQ_833_PERMISSION@" outdata="8.33"	col_state="filteredVisible"	 />
+		<col key="col15"	indata="@DLE@"	outdata="DL"	col_state="filteredVisible"	 />
+		<col key="col16"	indata="@STS@"	outdata="STS"	col_state="filteredVisible"	 />
+		<col key="col17"	indata="@ALIAS_LIST(FIELD_TO_CHECK1=..A)@"	outdata="A"	col_state="filteredVisible"	 />
+		
+	</list>
+</msg>

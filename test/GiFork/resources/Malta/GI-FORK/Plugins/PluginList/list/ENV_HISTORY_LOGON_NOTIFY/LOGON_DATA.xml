@@ -1,0 +1,29 @@
+<msg>
+
+<!--  LISTE LIS  ENV  -->
+
+<!--  QUESTA LISTA A PRENDE I DATI DAL MESSAGGIO DI ENV_HISTORY_LOGON_NOTIFY
+	  A CODICE DEL PLGUIN LIST VIENE FATTA UNA GESTIONE SPECIFICA PER TALE MESSAGGIO PER ESTRARRE
+	  I DATI DELLE RIGHE DAGLI ELEMENTI DELL'ARRAY DEL MESSAGGIO
+	  per ora row_id creato ENV_LOGON_@callsign@ verificare
+-->
+
+
+<list ROW_ID="@reason@_@callsign@" condition="">
+
+	<attributes ID="FAILED LOGON LIST" BEHAVIOR_IF_EMPTY="delete" CLOSE_BUTTON_CALLBACK= "DUMMY"  side="GRP_CENTER_RIGHT" open_in_grp="true" visible="true"/>
+	<col key="col1"  indata="@callsign@" outdata="CALLSIGN" col_state="filteredVisible"       row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW ,ORDER_ID=LFP , OBJECT_TYPE=LFP ,  PREVIEW_NAME=previewLFP)"/>
+	<col key="col2"  indata="@dep@" outdata="DEP" col_state="filteredVisible"  />
+	<col key="col3"  indata="@des@" outdata="DES" col_state="filteredVisible"  />
+	<col key="col4"  indata="@logonTypeStr@" outdata="LGY" col_state="filteredVisible"  />
+	<col key="col5"  indata="@reasonStr@" outdata="REASON" col_state="filteredVisible"  />
+	<col key="col6"  indata="@adsu@" outdata="ICAO" col_state="filteredVisible"  />
+	<col key="col7"  indata="@eobtHHMM@" outdata="EOBT" col_state="filteredVisible"  />
+	<col key="col8"  indata="@cpdlcVersion@" outdata="C VRS" col_state="filteredVisible"  />
+	<col key="col9"  indata="@cpdlcQualifier@" outdata="QLF" col_state="filteredVisible"  />
+	<col key="col10" indata="@cpdlcAddress@" outdata="ADD" col_state="filteredVisible"  />
+	<col key="col11" indata="@cmAddress@" outdata="CM ADD" col_state="filteredVisible"  />
+			
+</list>
+
+</msg>

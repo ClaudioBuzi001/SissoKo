@@ -1,0 +1,25 @@
+<msg>
+
+<list ROW_ID="@FLIGHT_NUM@" condition="@ISACT@">
+	<attributes ID="ACTIVE LIST" lat="" lon="" behavior_if_empty="delete" behavior_if_full="visible" side="SFL"  sort="CALLSIGN:ASC" />
+	<col key="col1" indata="@CALLSIGN@" outdata="CALLSIGN" col_state="filteredVisible" row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE_ARR , DEFAULT=#fafafa)@"/>
+	<col key="col2" indata="@FLIGHT_EXTFLIGHT<FLIGHT_NUM>.ATY@" outdata="TYPE" col_state="filteredVisible"/>
+	<col key="col3" indata="@FLIGHT_EXTFLIGHT<FLIGHT_NUM>.SSR_CODE@" outdata="ASSR" col_state="filteredVisible"/>
+	<col key="col4" indata="@FLIGHT_EXTFLIGHT<FLIGHT_NUM>.ADES@" outdata="DES" col_state="filteredVisible"/>
+	<col key="col5" indata="@TSAT@" outdata="TSAT" col_state="filteredVisible"/>
+	<col key="col6" indata="@CTOT@" outdata="CTOT" col_state="filteredVisible"/>
+	<col key="col7" indata="@TOBT@" outdata="TOBT" col_state="filteredVisible"/>
+	<col key="col8" indata="@FLIGHT_EXTFLIGHT<FLIGHT_NUM>.ETD@" outdata="ETD" col_state="filteredVisible"/>
+	<col key="col9" indata="@SID@" outdata="SID" col_state="filteredVisible"/>
+	<col key="col10" indata="@RWY@" outdata="RWY" col_state="filteredVisible"/>
+	<col key="col11" indata="@DEP_PKBAY?DEP_PKBAY;ARR_PKBAY@" choicefield="DEP_PKBAY" condition0="$ISPRES" outdata="PKB" col_state="filteredVisible"/>
+	<col key="col12" indata="@NEXTORDER@" outdata="NEXTORDER" col_state="filteredVisible" order="$Alias"/>
+	<col key="col13" indata="@FLIGHT_EXTFLIGHT<FLIGHT_NUM>.DLE@" outdata="DLE" col_state="filteredVisible"/>
+	<col key="col14" indata="@UNDO@" outdata="UNDO" col_state="filteredVisible" image="UNDO" order="$Alias"/>
+	<col key="col15" indata="@HLDP@" outdata="HP" col_state="filteredVisible"/>
+	<col key="col16" indata="@RP_ROUTE@" outdata="GROUND ROUTE" col_state="filteredVisible" row_middleClick="SHOW_GROUND_TRAJECTORY"/>
+	<col key="col17" indata="@FLIGHT_EXTFLIGHT<FLIGHT_NUM>.OBT@" outdata="EOBT" col_state="filteredVisible"/>
+</list>
+
+
+</msg>

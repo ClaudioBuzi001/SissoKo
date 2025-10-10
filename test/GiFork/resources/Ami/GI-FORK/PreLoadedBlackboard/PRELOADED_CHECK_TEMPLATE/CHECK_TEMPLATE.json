@@ -1,0 +1,114 @@
+{	
+
+"0":
+[
+	{"RULE":"1",  "COLOR" : "#969696", "TEMPLATE":"UNCORRELATE", "CHECK_FIELD":{"TEMPLATE":"0"}}
+],
+
+"1":
+[
+	{"RULE":"1",  "COLOR" : "#009900", "TEMPLATE":"AIS",        "CHECK_FIELD":{"FLC":"0"}},
+	{"RULE":"2",  "COLOR" : "#009900", "TEMPLATE":"AIS_ARR",    "CHECK_FIELD":{"FLC":"1"}},
+	{"RULE":"3",  "COLOR" : "#009900", "TEMPLATE":"AIS_ARR",    "CHECK_FIELD":{"FLC":"3","ISLIVE":"true"}},
+	{"RULE":"4",  "COLOR" : "#009900", "TEMPLATE":"AIS_ARR",    "CHECK_FIELD":{"FLC":"3","ISTERMINATED":"true"}},
+	{"RULE":"5",  "COLOR" : "#009900", "TEMPLATE":"AIS_ARR",    "CHECK_FIELD":{"FLC":"4","ISLIVE":"true"}},
+	{"RULE":"6",  "COLOR" : "#009900", "TEMPLATE":"AIS_ARR",    "CHECK_FIELD":{"FLC":"4","ISTERMINATED":"true"}},
+    {"RULE":"7",  "COLOR" : "#009900", "TEMPLATE":"AIS_DEP",    "CHECK_FIELD":{"FLC":"2"}},
+	{"RULE":"8",  "COLOR" : "#009900", "TEMPLATE":"AIS_DEP",    "CHECK_FIELD":{"FLC":"3","ISPENDING":"true"}},
+	{"RULE":"9",  "COLOR" : "#009900", "TEMPLATE":"AIS_DEP",    "CHECK_FIELD":{"FLC":"3","ISACTIVE":"true"}},
+	{"RULE":"10", "COLOR" : "#009900", "TEMPLATE":"AIS_DEP",    "CHECK_FIELD":{"FLC":"4","ISPENDING":"true"}},
+	{"RULE":"11", "COLOR" : "#009900", "TEMPLATE":"AIS_DEP",    "CHECK_FIELD":{"FLC":"4","ISACTIVE":"true"}}
+],
+
+"2":
+[
+	{"RULE":"1",  "COLOR" : "#00ff00", "TEMPLATE":"CONTROLLED",    "CHECK_FIELD":{"FLC":"0"}},
+	{"RULE":"2",  "COLOR" : "#00ff00", "TEMPLATE":"CONTROLLED_ARR","CHECK_FIELD":{"FLC":"1"}},
+	{"RULE":"3",  "COLOR" : "#00ff00", "TEMPLATE":"CONTROLLED_ARR","CHECK_FIELD":{"FLC":"3","ISLIVE":"true"}},
+	{"RULE":"4",  "COLOR" : "#00ff00", "TEMPLATE":"CONTROLLED_ARR","CHECK_FIELD":{"FLC":"3","ISTERMINATED":"true"}},
+	{"RULE":"5",  "COLOR" : "#00ff00", "TEMPLATE":"CONTROLLED_ARR","CHECK_FIELD":{"FLC":"4","ISLIVE":"true"}},
+	{"RULE":"6",  "COLOR" : "#00ff00", "TEMPLATE":"CONTROLLED_ARR","CHECK_FIELD":{"FLC":"4","ISTERMINATED":"true"}},
+    {"RULE":"7",  "COLOR" : "#00ff00", "TEMPLATE":"CONTROLLED_DEP","CHECK_FIELD":{"FLC":"2"}},
+	{"RULE":"8",  "COLOR" : "#00ff00", "TEMPLATE":"CONTROLLED_DEP","CHECK_FIELD":{"FLC":"3","ISPENDING":"true"}},
+	{"RULE":"9",  "COLOR" : "#00ff00", "TEMPLATE":"CONTROLLED_DEP","CHECK_FIELD":{"FLC":"3","ISACTIVE":"true"}},
+	{"RULE":"10", "COLOR" : "#00ff00", "TEMPLATE":"CONTROLLED_DEP","CHECK_FIELD":{"FLC":"4","ISPENDING":"true"}},
+	{"RULE":"11", "COLOR" : "#00ff00", "TEMPLATE":"CONTROLLED_DEP","CHECK_FIELD":{"FLC":"4","ISACTIVE":"true"}}
+],
+
+"3":
+[
+	{"RULE":"1",  "COLOR" : "#ffffff", "TEMPLATE":"NEARBY",        "CHECK_FIELD":{"FLC":"0"}},
+	{"RULE":"2",  "COLOR" : "#ffffff", "TEMPLATE":"NEARBY_ARR",    "CHECK_FIELD":{"FLC":"1"}},
+	{"RULE":"3",  "COLOR" : "#ffffff", "TEMPLATE":"NEARBY_ARR",    "CHECK_FIELD":{"FLC":"3","ISLIVE":"true"}},
+	{"RULE":"4",  "COLOR" : "#ffffff", "TEMPLATE":"NEARBY_ARR",    "CHECK_FIELD":{"FLC":"3","ISTERMINATED":"true"}},
+	{"RULE":"5",  "COLOR" : "#ffffff", "TEMPLATE":"NEARBY_ARR",    "CHECK_FIELD":{"FLC":"4","ISLIVE":"true"}},
+	{"RULE":"6",  "COLOR" : "#ffffff", "TEMPLATE":"NEARBY_ARR",    "CHECK_FIELD":{"FLC":"4","ISTERMINATED":"true"}},
+    {"RULE":"7",  "COLOR" : "#ffffff", "TEMPLATE":"NEARBY_DEP",    "CHECK_FIELD":{"FLC":"2"}},
+	{"RULE":"8",  "COLOR" : "#ffffff", "TEMPLATE":"NEARBY_DEP",    "CHECK_FIELD":{"FLC":"3","ISPENDING":"true"}},
+	{"RULE":"9",  "COLOR" : "#ffffff", "TEMPLATE":"NEARBY_DEP",    "CHECK_FIELD":{"FLC":"3","ISACTIVE":"true"}},
+	{"RULE":"10", "COLOR" : "#ffffff", "TEMPLATE":"NEARBY_DEP",    "CHECK_FIELD":{"FLC":"4","ISPENDING":"true"}},
+	{"RULE":"11", "COLOR" : "#ffffff", "TEMPLATE":"NEARBY_DEP",    "CHECK_FIELD":{"FLC":"4","ISACTIVE":"true"}}
+],
+
+"4":
+[
+	{"RULE":"1",  "COLOR" : "#00ff00", "TEMPLATE":"HANDOVER_EXITING",        "CHECK_FIELD":{"FLC":"0"}},
+	{"RULE":"2",  "COLOR" : "#00ff00", "TEMPLATE":"HANDOVER_EXITING_ARR",    "CHECK_FIELD":{"FLC":"1"}},
+	{"RULE":"3",  "COLOR" : "#00ff00", "TEMPLATE":"HANDOVER_EXITING_ARR",    "CHECK_FIELD":{"FLC":"3","ISLIVE":"true"}},
+	{"RULE":"4",  "COLOR" : "#00ff00", "TEMPLATE":"HANDOVER_EXITING_ARR",    "CHECK_FIELD":{"FLC":"3","ISTERMINATED":"true"}},
+	{"RULE":"5",  "COLOR" : "#00ff00", "TEMPLATE":"HANDOVER_EXITING_ARR",    "CHECK_FIELD":{"FLC":"4","ISLIVE":"true"}},
+	{"RULE":"6",  "COLOR" : "#00ff00", "TEMPLATE":"HANDOVER_EXITING_ARR",    "CHECK_FIELD":{"FLC":"4","ISTERMINATED":"true"}},
+    {"RULE":"7",  "COLOR" : "#00ff00", "TEMPLATE":"HANDOVER_EXITING_DEP",    "CHECK_FIELD":{"FLC":"2"}},
+	{"RULE":"8",  "COLOR" : "#00ff00", "TEMPLATE":"HANDOVER_EXITING_DEP",    "CHECK_FIELD":{"FLC":"3","ISPENDING":"true"}},
+	{"RULE":"9",  "COLOR" : "#00ff00", "TEMPLATE":"HANDOVER_EXITING_DEP",    "CHECK_FIELD":{"FLC":"3","ISACTIVE":"true"}},
+	{"RULE":"10", "COLOR" : "#00ff00", "TEMPLATE":"HANDOVER_EXITING_DEP",    "CHECK_FIELD":{"FLC":"4","ISPENDING":"true"}},
+	{"RULE":"11", "COLOR" : "#00ff00", "TEMPLATE":"HANDOVER_EXITING_DEP",    "CHECK_FIELD":{"FLC":"4","ISACTIVE":"true"}}
+],
+"5":
+[
+	{"RULE":"1",  "COLOR" : "#ffffff", "TEMPLATE":"NEARBY",        "CHECK_FIELD":{"FLC":"0"}},
+	{"RULE":"2",  "COLOR" : "#ffffff", "TEMPLATE":"NEARBY_ARR",    "CHECK_FIELD":{"FLC":"1"}},
+	{"RULE":"3",  "COLOR" : "#ffffff", "TEMPLATE":"NEARBY_ARR",    "CHECK_FIELD":{"FLC":"3","ISLIVE":"true"}},
+	{"RULE":"4",  "COLOR" : "#ffffff", "TEMPLATE":"NEARBY_ARR",    "CHECK_FIELD":{"FLC":"3","ISTERMINATED":"true"}},
+	{"RULE":"5",  "COLOR" : "#ffffff", "TEMPLATE":"NEARBY_ARR",    "CHECK_FIELD":{"FLC":"4","ISLIVE":"true"}},
+	{"RULE":"6",  "COLOR" : "#ffffff", "TEMPLATE":"NEARBY_ARR",    "CHECK_FIELD":{"FLC":"4","ISTERMINATED":"true"}},
+    {"RULE":"7",  "COLOR" : "#ffffff", "TEMPLATE":"NEARBY_DEP",    "CHECK_FIELD":{"FLC":"2"}},
+	{"RULE":"8",  "COLOR" : "#ffffff", "TEMPLATE":"NEARBY_DEP",    "CHECK_FIELD":{"FLC":"3","ISPENDING":"true"}},
+	{"RULE":"9",  "COLOR" : "#ffffff", "TEMPLATE":"NEARBY_DEP",    "CHECK_FIELD":{"FLC":"3","ISACTIVE":"true"}},
+	{"RULE":"10", "COLOR" : "#ffffff", "TEMPLATE":"NEARBY_DEP",    "CHECK_FIELD":{"FLC":"4","ISPENDING":"true"}},
+	{"RULE":"11", "COLOR" : "#ffffff", "TEMPLATE":"NEARBY_DEP",    "CHECK_FIELD":{"FLC":"4","ISACTIVE":"true"}}
+],
+"6":
+[
+	{"RULE":"0",  "COLOR" : "#ff33ff", "TEMPLATE":"HANDOVER_ENTERING",        "CHECK_FIELD":{"FLC":"0","ISLIVE":"false"}},
+	{"RULE":"1",  "COLOR" : "#ff33ff", "TEMPLATE":"HANDOVER_ENTERING",        "CHECK_FIELD":{"FLC":"0","ISLIVE":"true"}},
+	{"RULE":"2",  "COLOR" : "#ff33ff", "TEMPLATE":"HANDOVER_ENTERING_ARR",    "CHECK_FIELD":{"FLC":"1"}},
+	{"RULE":"3",  "COLOR" : "#ff33ff", "TEMPLATE":"HANDOVER_ENTERING_ARR",    "CHECK_FIELD":{"FLC":"3","ISLIVE":"true"}},
+	{"RULE":"4",  "COLOR" : "#ff33ff", "TEMPLATE":"HANDOVER_ENTERING_ARR",    "CHECK_FIELD":{"FLC":"3","ISTERMINATED":"true"}},
+	{"RULE":"5",  "COLOR" : "#ff33ff", "TEMPLATE":"HANDOVER_ENTERING_ARR",    "CHECK_FIELD":{"FLC":"4","ISLIVE":"true"}},
+	{"RULE":"6",  "COLOR" : "#ff33ff", "TEMPLATE":"HANDOVER_ENTERING_ARR",    "CHECK_FIELD":{"FLC":"4","ISTERMINATED":"true"}},
+    {"RULE":"7",  "COLOR" : "#ff33ff", "TEMPLATE":"HANDOVER_ENTERING_DEP",    "CHECK_FIELD":{"FLC":"2"}},
+	{"RULE":"8",  "COLOR" : "#ff33ff", "TEMPLATE":"HANDOVER_ENTERING_DEP",    "CHECK_FIELD":{"FLC":"3","ISPENDING":"true"}},
+	{"RULE":"9",  "COLOR" : "#ff33ff", "TEMPLATE":"HANDOVER_ENTERING_DEP",    "CHECK_FIELD":{"FLC":"3","ISACTIVE":"true"}},
+	{"RULE":"10", "COLOR" : "#ff33ff", "TEMPLATE":"HANDOVER_ENTERING_DEP",    "CHECK_FIELD":{"FLC":"4","ISPENDING":"true"}},
+	{"RULE":"11", "COLOR" : "#ff33ff", "TEMPLATE":"HANDOVER_ENTERING_DEP",    "CHECK_FIELD":{"FLC":"4","ISACTIVE":"true"}}
+],
+"7":
+[
+	
+	{"RULE":"0",  "COLOR" : "#ff00ff", "TEMPLATE":"TENTATIVE",        "CHECK_FIELD":{"FLC":"0","ISLIVE":"false"}},
+	{"RULE":"1",  "COLOR" : "#ff00ff", "TEMPLATE":"TENTATIVE",        "CHECK_FIELD":{"FLC":"0","ISLIVE":"true"}},
+	{"RULE":"2",  "COLOR" : "#ff00ff", "TEMPLATE":"TENTATIVE_ARR",    "CHECK_FIELD":{"FLC":"1"}},
+	{"RULE":"3",  "COLOR" : "#ff00ff", "TEMPLATE":"TENTATIVE_ARR",    "CHECK_FIELD":{"FLC":"3","ISLIVE":"true"}},
+	{"RULE":"4",  "COLOR" : "#ff00ff", "TEMPLATE":"TENTATIVE_ARR",    "CHECK_FIELD":{"FLC":"3","ISTERMINATED":"true"}},
+	{"RULE":"5",  "COLOR" : "#ff00ff", "TEMPLATE":"TENTATIVE_ARR",    "CHECK_FIELD":{"FLC":"4","ISLIVE":"true"}},
+	{"RULE":"6",  "COLOR" : "#ff00ff", "TEMPLATE":"TENTATIVE_ARR",    "CHECK_FIELD":{"FLC":"4","ISTERMINATED":"true"}},
+    {"RULE":"7",  "COLOR" : "#ff00ff", "TEMPLATE":"TENTATIVE_DEP",    "CHECK_FIELD":{"FLC":"2"}},
+	{"RULE":"8",  "COLOR" : "#ff00ff", "TEMPLATE":"TENTATIVE_DEP",    "CHECK_FIELD":{"FLC":"3","ISPENDING":"true"}},
+	{"RULE":"9",  "COLOR" : "#ff00ff", "TEMPLATE":"TENTATIVE_DEP",    "CHECK_FIELD":{"FLC":"3","ISACTIVE":"true"}},
+	{"RULE":"10", "COLOR" : "#ff00ff", "TEMPLATE":"TENTATIVE_DEP",    "CHECK_FIELD":{"FLC":"4","ISPENDING":"true"}},
+	{"RULE":"11", "COLOR" : "#ff00ff", "TEMPLATE":"TENTATIVE_DEP",    "CHECK_FIELD":{"FLC":"4","ISACTIVE":"true"}},
+	{"RULE":"12", "COLOR" : "#ff00ff", "TEMPLATE":"TENTATIVE",        "CHECK_FIELD":{"FLC":"0","ISTERMINATED":"true"}}
+]
+}
+

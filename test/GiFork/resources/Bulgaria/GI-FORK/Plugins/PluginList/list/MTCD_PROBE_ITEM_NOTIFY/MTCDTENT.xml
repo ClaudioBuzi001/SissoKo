@@ -1,0 +1,18 @@
+<msg>
+
+<list ROW_ID="MTCD_@CONFLICT_ID@" condition="true">
+	<attributes ID="MTCD TENTATIVE LIST" behavior_if_empty="delete" max_item_showed="10" side="CONFL:1" />
+
+
+	<col key="col1" messagetype="mtcd"		indata="@CONFLICT_ID@"															outdata="CONF_ID"			col_state="filteredVisible" 	row_leftClick="" order="$Alias"  />
+	<col key="col2" messagetype="mtcd"		indata="@CONFLICT_OR_RISK@"														outdata="TYPE"				col_state="filteredVisible" row_fgr="#CECECE"/>
+	<col key="col3" messagetype="mtcd"		indata="@FLIGHT_TO_FLIGHT_CONFLICT_OBJECT_NAME_1@"								outdata="CS1"			col_state="filteredVisible" row_fgr="#CECECE" 	row_leftClick="" order="$Alias" />
+	<!--<col key="col4" messagetype="flight1"	indata="@FLIGHT_EXTFLIGHT< BB_CALLSIGN_FLIGHT< FLIGHT_TO_FLIGHT_CONFLICT_OBJECT_NAME_1 >.FLIGHT_NUM >.ATY@" outdata="ATY1" col_state="filteredVisible"  />-->
+	<col key="col4" messagetype="mtcd"		indata="@FLIGHT_TO_FLIGHT_CONFLICT_OBJECT_NAME_2@"								outdata="CS2/AREA"			col_state="filteredVisible" row_fgr="#CECECE" 	row_leftClick="" order="$Alias"/>
+	<!--<col key="col6" messagetype="flight2"	indata="@FLIGHT_EXTFLIGHT< BB_CALLSIGN_FLIGHT<FLIGHT_TO_FLIGHT_CONFLICT_OBJECT_NAME_2 >.FLIGHT_NUM >.ATY@" outdata="ATY2" col_state="filteredVisible"  />-->
+	<col key="col5" messagetype="mtcd"	indata="@TFI_HOURS@:@TFI_MINUTES@"	outdata="TFI"	col_state="filteredVisible" row_fgr="#CECECE" />
+	<col key="col6" messagetype="mtcd"	indata="@TMD_DISTANCE@"	outdata="MDST"	col_state="filteredVisible" row_fgr="#CECECE" />
+	<col key="col7" messagetype="mtcd"		indata="@TMD_HOURS@:@TMD_MINUTES@"												outdata="TMD"				col_state="filteredVisible" row_fgr="#CECECE"/>
+</list>
+
+</msg>

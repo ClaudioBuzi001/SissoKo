@@ -1,0 +1,18 @@
+<msg>
+
+<list ROW_ID="@VID@">
+	<attributes ID="VEHICLE LIST" behavior_if_empty="iconize" max_item_showed="15" side="SFL" swap="true" list_type="OPAQUE"/>
+	<col key="col1" indata="@VID@" outdata="VID" col_state="filteredVisible" row_rightClick="CONTEXT_MENU(MENU_FILE=VehicleContextMenu.xml)"/>
+	<col key="col2" indata="@VEHICLE_TYPE@" outdata="Type" col_state="filteredVisible"/>
+	<col key="col3" indata="@LOGON_TYPE@" outdata="Logon" col_width="80" col_state="filteredVisible"/>
+	<col key="col4" indata="@ICAO_DESCR@" outdata="ICAO" col_state="filteredVisible"/>
+	<col key="col5" indata="@MID@" outdata="Mission" col_state="filteredVisible"/>
+	<col key="col6" indata="@DEP@" outdata="DEP" col_state="filteredVisible"/>
+	<col key="col7" indata="@DES@" outdata="DES" col_state="filteredVisible"/>
+	<col key="col8" indata="@ATYPE@" outdata="AC Type" col_state="filteredVisible"/>
+	<col key="col9" indata="@GND_ROUTE@" outdata="Route" col_width="150" col_state="filteredVisible" row_fgr="#CECECE"/>
+	<col key="col10" indata="@UMDS_STR@" outdata="Umds" col_width="120" col_state="filteredVisible"/>
+	<col key="col11" indata="@DMDS_STR@" outdata="Dmds" col_width="120" col_state="filteredVisible"/>
+	<col key="col12" indata="@CCS@" outdata="CCS" col_state="filteredVisible"/>
+</list>
+</msg>

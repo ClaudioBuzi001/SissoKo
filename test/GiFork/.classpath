@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/jedm"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/infrastructure"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/GiForkCommonLib"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="libs/4F/AS_SUBSYSTEM_IoDataFactory.jar"/>
+	<classpathentry kind="lib" path="libs/4F/AS_SUBSYSTEM.jar"/>
+	<classpathentry kind="lib" path="libs/4F/avalon-framework.jar"/>
+	<classpathentry kind="lib" path="libs/4F/dcpsAS_SUBSYSTEM.jar"/>
+	<classpathentry kind="lib" path="libs/4F/dcpscj.jar"/>
+	<classpathentry kind="lib" path="libs/4F/dcpsEDM_SUBSYSTEM.jar"/>
+	<classpathentry kind="lib" path="libs/4F/dcpsTECHSUP_SUBSYSTEM.jar"/>
+	<classpathentry kind="lib" path="libs/4F/dcpsWP_SUBSYSTEM.jar"/>
+	<classpathentry kind="lib" path="libs/4F/E000ATLJ0.jar"/>
+	<classpathentry kind="lib" path="libs/4F/EDM_SUBSYSTEM_IoDataFactory.jar"/>
+	<classpathentry kind="lib" path="libs/4F/EDM_SUBSYSTEM.jar"/>
+	<classpathentry kind="lib" path="libs/4F/IoDataFactory.jar"/>
+	<classpathentry kind="lib" path="libs/4F/jacorb.jar"/>
+	<classpathentry kind="lib" path="libs/4F/jacorb-omgapi.jar"/>
+	<classpathentry kind="lib" path="libs/4F/jacorb-services.jar"/>
+	<classpathentry kind="lib" path="libs/4F/jdom.jar"/>
+	<classpathentry kind="lib" path="libs/4F/json-simple.jar"/>
+	<classpathentry kind="lib" path="libs/4F/libcdmwconfandplug.jar"/>
+	<classpathentry kind="lib" path="libs/4F/libcdmwfaulttolerance.jar"/>
+	<classpathentry kind="lib" path="libs/4F/libcdmwfoundation.jar"/>
+	<classpathentry kind="lib" path="libs/4F/libcdmwsystemmngt.jar"/>
+	<classpathentry kind="lib" path="libs/4F/libcdmwtime.jar"/>
+	<classpathentry kind="lib" path="libs/4F/libComwCommonTech.jar"/>
+	<classpathentry kind="lib" path="libs/4F/libComwDcpsinst.jar"/>
+	<classpathentry kind="lib" path="libs/4F/libComwEnvBasicAoData.jar"/>
+	<classpathentry kind="lib" path="libs/4F/libComwEnvProxiesSwal2.jar"/>
+	<classpathentry kind="lib" path="libs/4F/libComwEnvProxiesSwal3.jar"/>
+	<classpathentry kind="lib" path="libs/4F/libComwProxy.jar"/>
+	<classpathentry kind="lib" path="libs/4F/libEDM_EDA.jar"/>
+	<classpathentry kind="lib" path="libs/4F/libPerfoLogger.jar"/>
+	<classpathentry kind="lib" path="libs/4F/libTECHSUP_TSC.jar"/>
+	<classpathentry kind="lib" path="libs/4F/RPD_SUBSYSTEM_IoDataFactory.jar"/>
+	<classpathentry kind="lib" path="libs/4F/RPD_SUBSYSTEM.jar"/>
+	<classpathentry kind="lib" path="libs/4F/slf4j-api.jar"/>
+	<classpathentry kind="lib" path="libs/4F/slf4j-jdk.jar"/>
+	<classpathentry kind="lib" path="libs/4F/system.jar"/>
+	<classpathentry kind="lib" path="libs/4F/WP_SUBSYSTEM_IoDataFactory.jar"/>
+	<classpathentry kind="lib" path="libs/4F/WP_SUBSYSTEM.jar"/>
+	<classpathentry kind="lib" path="libs/Lis/commons-io-2.5.jar"/>
+	<classpathentry kind="lib" path="libs/Lis/E000ATLJ0.jar"/>
+	<classpathentry kind="lib" path="libs/Lis/jakarta.xml.bind-api-3.0.0.jar"/>
+	<classpathentry kind="lib" path="libs/Lis/javaproj-1.0.6.jar"/>
+	<classpathentry kind="lib" path="libs/Lis/protobuf-java-2.6.1.jar"/>
+	<classpathentry kind="lib" path="libs/Lis/protobuf-java-format-1.4.jar"/>
+	<classpathentry kind="lib" path="libs/Lis/usi.jar"/>
+	<classpathentry kind="lib" path="libs/json-20201115.jar" sourcepath="src"/>
+	<classpathentry kind="lib" path="libs/WpCommon.jar"/>
+	<classpathentry kind="lib" path="libs/richtextfx-fat-0.10.6.b.jar"/>
+	<classpathentry kind="lib" path="libs/jackson-core-2.13.0-rc1.jar"/>
+	<classpathentry kind="lib" path="libs/jackson-databind-2.12.4.jar"/>
+	<classpathentry kind="var" path="PATH_TO_FX/javafx.base.jar" sourcepath="/PATH_TO_FX_SOURCES"/>
+	<classpathentry kind="var" path="PATH_TO_FX/javafx.controls.jar" sourcepath="/PATH_TO_FX_SOURCES"/>
+	<classpathentry kind="var" path="PATH_TO_FX/javafx.fxml.jar"/>
+	<classpathentry kind="var" path="PATH_TO_FX/javafx.graphics.jar" sourcepath="/PATH_TO_FX_SOURCES"/>
+	<classpathentry kind="var" path="PATH_TO_FX/javafx.media.jar"/>
+	<classpathentry kind="var" path="PATH_TO_FX/javafx.swing.jar"/>
+	<classpathentry kind="var" path="PATH_TO_FX/javafx.web.jar"/>
+	<classpathentry kind="var" path="PATH_TO_FX/javafx-swt.jar"/>
+	<classpathentry kind="lib" path="libs/mappedbus-0.5.1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="lib" path="libs/4F/dcpsECSP_SUBSYSTEM.jar"/>
+	<classpathentry kind="lib" path="libs/4F/ECSP_SUBSYSTEM_IoDataFactory.jar"/>
+	<classpathentry kind="lib" path="libs/4F/ECSP_SUBSYSTEM.jar"/>
+	<classpathentry kind="lib" path="libs/Gson.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

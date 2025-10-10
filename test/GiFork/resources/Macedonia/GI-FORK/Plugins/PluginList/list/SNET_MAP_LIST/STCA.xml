@@ -1,0 +1,22 @@
+<msg>
+
+<list ROW_ID="@UID@" condition="@ISSTCA@">
+	<attributes ID="STCA LIST" behavior_if_empty="delete" side="SNET:2" sort="MAP:ASC" />
+	<col key="col1" indata="@id@" outdata="MAP" messagetype="lisMap" col_state="filteredVisible" row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW , ORDER_ID=UPDSTCA, OBJECT_TYPE=UPDSTCA,PREVIEW_NAME=previewUPDSTCA)" />
+	<col key="col2" indata="@status@" outdata="STATUS" messagetype="lisMap" col_state="filteredVisible" row_leftClick="EXTERNAL_ORDER(ORDER_ID=DBCS, OBJECT_TYPE=DBCS,PREVIEW_NAME=quickDBCS)"  />
+	<col key="col3" indata="@hBot@" outdata="FT LOW" messagetype="lisMap" col_state="filteredVisible" />
+	<col key="col4" indata="@hTop@" outdata="FT UPP" messagetype="lisMap" col_state="filteredVisible" />
+	<col key="col5" indata="@dateFr@" outdata="ACTIVATION" messagetype="lisMap" col_state="filteredVisible" />
+	<col key="col6" indata="@dateTo@" outdata="DEACTIVATION" messagetype="lisMap" col_state="filteredVisible" />
+	<col key="col7" indata="@tlook@" outdata="LAT" messagetype="lisMap" col_state="filteredVisible" />
+	<col key="col8" indata="@vsc@" outdata="VCON" messagetype="lisMap" col_state="filteredVisible" />
+	<col key="col9" indata="@vsd@" outdata="VDIV" messagetype="lisMap" col_state="filteredVisible" />
+	<col key="col10" indata="@psc@" outdata="PCON" messagetype="lisMap" col_state="filteredVisible" />
+	<col key="col11" indata="@psd@" outdata="PDIV" messagetype="lisMap" col_state="filteredVisible" />
+	<col key="col12" indata="@rsc@" outdata="RCON" messagetype="lisMap" col_state="filteredVisible" />
+	<col key="col13" indata="@rsd@" outdata="RDIV" messagetype="lisMap" col_state="filteredVisible" />
+	<col key="col14" indata="@type@" outdata="TYPE      " messagetype="lisMap" col_state="filteredVisible"/>
+</list>
+
+
+</msg>

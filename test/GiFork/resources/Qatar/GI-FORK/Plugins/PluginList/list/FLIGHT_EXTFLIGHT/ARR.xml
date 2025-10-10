@@ -1,0 +1,22 @@
+<msg>
+
+<!-- CONFIGURATA LIST PER SETTORE SE AIRPORT CONTROLLATO-->
+
+<list ROW_ID="@FLIGHT_NUM@" condition="@ISARR_SECT@">
+<attributes ID="ARR:@ADES@"
+	BEHAVIOR_IF_EMPTY="delete"
+	GROUP="ARR" SIDE="SFL:2" SWAP="true" SORT="" LIST_TYPE="OPAQUE"
+	multicolumnname="ADES" />
+<col key="col1"	indata="@CALLSIGN@"	outdata="CALLSIGN"	row_fgr="@TEMPLATE_COLOR?TEMPLATE_COLOR;#FFFFFF@"	row_middleClick="CONTEXT_MENU(MENU_FILE=Tower_MENU.xml, TITLE=TOWER_MENU)" row_leftClick="CONTEXT_MENU(MENU_FILE=Ground_MENU.xml,TITLE=GROUND_MENU)" row_rightClick="CONTEXT_MENU(MENU_FILE=Flight_MENU.xml,TITLE=FLIGHT_MENU)"/>
+<col key="col2"	indata="@ETL@"			outdata="ETL/ATL"	col_state="filteredVisible"  row_leftClick="" />
+<col key="col3"	indata="@ATY@"			outdata="TYPE"		col_state="filteredVisible" />
+<col key="col4"	indata="@ARR_PKBAY@"	outdata="PKB"		col_state="filteredVisible"  row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW ,ORDER_ID=EPKBARR, OBJECT_TYPE=EPKBARR, HOST_NAME=BCV, PREVIEW_NAME=previewEPKBARR)" />
+<col key="col5"	indata="@ARWY@"			outdata="RWY"		col_state="filteredVisible"  row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW ,ORDER_ID=RWADES, OBJECT_TYPE=RWADES, HOST_NAME=BCV, PREVIEW_NAME=choiceRWADES)"/>
+<col key="col6"	indata="@STAR@"			outdata="STAR   "	col_state="filteredVisible"  row_leftClick="" />
+
+<col key="col7" indata="@ADEP@"			outdata="ADEP"      col_state="filteredNotVisible"  />
+<col key="col8"	indata="@SSR_CODE@"		outdata="ASSR"		col_state="filteredNotVisible"  />
+<col key="col9"	indata="@REG@"		    outdata="REG     "	col_state="filteredNotVisible"	/>
+</list>
+
+</msg>

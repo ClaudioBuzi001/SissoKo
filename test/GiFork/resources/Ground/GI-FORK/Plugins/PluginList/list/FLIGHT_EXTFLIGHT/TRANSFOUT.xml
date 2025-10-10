@@ -1,0 +1,15 @@
+<msg>
+
+<list ROW_ID="@FLIGHT_NUM@" condition="@ISTRANSFOUT@">
+	<attributes ID="TRANSF-OUT LIST" lat="" lon="" behavior_if_empty="delete" behavior_if_full="visible" side="SFL" swap="true" sort="CALLSIGN:ASC" list_type="OPAQUE"/>
+	<col key="col1" indata="@CALLSIGN@" outdata="CALLSIGN" col_state="filteredVisible" row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE_ARR , DEFAULT=#fafafa)@"/>
+	<col key="col2" indata="@DEP_PKBAY?DEP_PKBAY;ARR_PKBAY@" choicefield="DEP_PKBAY" condition0="$ISPRES" outdata="PKB" col_state="filteredVisible"/>
+	
+	<col key="col4" indata="@RWY@" outdata="RWY" col_state="filteredVisible"/>
+	<col key="col5" indata="@RP_ROUTE@" outdata="GROUND_ROUTE" col_state="filteredVisible"/>
+	<col key="col6" indata="@NEXTORDER@" outdata="NEXTORDER" col_state="filteredVisible" order="$Alias"/>
+	
+</list>
+
+
+</msg>

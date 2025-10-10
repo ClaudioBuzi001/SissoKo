@@ -1,0 +1,19 @@
+<msg>
+	<list 
+		ROW_ID="@RESPN@" condition="@ISATSUSECL@">
+
+		<attributes 
+			ID="ATSU SECTOR LEVEL LIST" 	
+			behavior_if_empty="delete"		
+			side="DL:0"
+			sort="Sct:ASC" 
+				
+			
+		/>
+
+		<col key="col1" indata="@RESPN@"	outdata="Sct"   row_leftClick="EXTERNAL_ORDER(ORDER_ID=CAR , OBJECT_TYPE=CAR,  PREVIEW_NAME=previewCAR )"/>
+		<col key="col2" indata="@RESP_CPDLC_LOWER_LEVEL@"	outdata="LowLev"   />
+		<col key="col3" indata="@RESP_CPDLC_UPPER_LEVEL@"	outdata="UpLev"  />
+	
+	</list>
+</msg>

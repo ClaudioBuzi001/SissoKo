@@ -1,0 +1,26 @@
+<msg>
+
+<!--  LISTE LIS MAP  -->
+<list ROW_ID="@UID@" condition="@ISSTCA@">
+	<attributes ID="STCA PRESELECTION FILTERING FILT LIST" behavior_if_empty="delete" sort="MAP:ASC" side="SNET:3" />
+	<col key="col1" indata="@id@" outdata="MAP" messagetype="lisMap" col_state="filteredVisible" row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW ,ORDER_ID=UPDSTCAPRE, OBJECT_TYPE=UPDSTCAPRE,PREVIEW_NAME=previewUPDSTCAPRE)"  />
+	<col key="col2" indata="@pdvPsf@" outdata="PEN" messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col3" indata="@vfrPsf@" outdata="VFR" messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col4" indata="@ifrPsf@" outdata="IFR" messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col5" indata="@milPsf@" outdata="MIL" messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col6" indata="@supPsf@" outdata="SUP" messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col7" indata="@gatPsf@" outdata="GAT" messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col8" indata="@oatPsf@" outdata="OAT" messagetype="lisMap" col_state="filteredVisible"  />
+	
+	<col key="col9"  indata="@monPsf@" outdata="MON" messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col10" indata="@psrPsf@" outdata="PSR" messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col11" indata="@macPsf@" outdata="MAC" messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col12" indata="@rxhPsf@" outdata="RXH" messagetype="lisMap" col_state="filteredVisible"  />
+	<col key="col13" indata="@losPsf@" outdata="LOS" messagetype="lisMap" col_state="filteredVisible"  />
+    <col key="col14" indata="@rahPsf@" outdata="RAH" messagetype="lisMap" col_state="filteredVisible"  />
+    <col key="col15" indata="@holPsf@" outdata="HOL" messagetype="lisMap" col_state="filteredVisible"  />
+        
+</list>
+
+
+</msg>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!-- Mercury for Qatar Plugins Manifest -->
+<project name="Qatar">
+	<plugin name="LisListPlugin" />
+	<plugin name="LisSdaPlugin"/>
+	<plugin name="LisLabelPlugin" />
+	<plugin name="LisMapPlugin" />
+	<plugin name="LisQatarLabelPlugin" />
+	<plugin name="LisXaiPlugin" />
+</project>

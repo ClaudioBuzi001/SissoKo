@@ -1,0 +1,22 @@
+<msg>
+
+<!--  Lista SIL: il titlename reale e` composto da SIL concatenato con il contenuto di IFIX -->
+<list ROW_ID="@FLIGHT_NUM@" condition="@ISSIL@">
+
+<attributes ID="SIL @IFIXNAME@" 
+LATITUDE			="@IFIX_LATITUDE@" 
+LONGITUDE			="@IFIX_LONGITUDE@"
+BEHAVIOR_IF_EMPTY="delete" GROUP="SIL" SIDE="SFL:3"  SORT="CALLSIGN:ASC" />
+
+
+<col key="col1"	indata="@IFIXNAME@"					    outdata="IFIX"		row_fgr="@SCL_LIST_UTILITY(FIELD_TO_CHECK=..IFIXCOLOR ,  VAL_1=TEMPLATE)@" row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW ,GRAPHIC_ORDER=PREVIEW , ORDER_ID=REP , OBJECT_TYPE=REP ,  PREVIEW_NAME=previewREP)" row_middleClick="SHOW_TRAJECTORY"  />
+<col key="col2" indata="@ETOIFIXID@"		outdata="ETO"		col_state="filteredVisible"  />
+<col key="col3"    indata="@PEL@"						outdata="PEL"		col_state="filteredVisible" row_fgr="@SCL_LIST_UTILITY(FIELD_TO_CHECK=..PELCOLOR, VAL_1=COORD_IN, VAL_2=COORD_OUT, VAL_3=COORD_STATUS, VAL_4=VERT_DEV_FLAG)@" row_leftClick="@FLIGHT_PLAN_ORDER(FIELD_TO_CHECK=..COORD_STATUS_PEL, VAL_1=COORDSTATE)@"  />
+<col key="col4" indata="@CALLSIGN@" outdata="CALLSIGN"	col_state="filteredVisible" row_fgr="@TEMPLATE_COLOR@"/>
+<col key="col5" indata="@ATY@"		outdata="TYPE"		col_state="filteredNotVisible"  />
+<col key="col6" indata="@RVSM@"		outdata="RVSM"		col_state="filteredNotVisible"  />
+<col key="col7" indata="@OFIXNAME@"    outdata="OFIX"      col_state="filteredVisible" row_fgr="#FFFFFF"/>
+<col key="col8" indata="@ETOOUTFIXID@" outdata="ETO OFIX"  col_state="filteredVisible" row_fgr="#FFFFFF" />
+<col key="col9" indata="@OFIXLEV@"     outdata="XFL OFIX"  col_state="filteredVisible"   row_fgr="#FFFFFF" />
+</list>
+</msg>

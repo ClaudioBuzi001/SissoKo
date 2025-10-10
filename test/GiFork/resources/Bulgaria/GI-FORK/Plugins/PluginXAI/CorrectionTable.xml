@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Entirety.xsl"?>
+<CorrectionTable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CorrectionTable.xsd">
+<QNH>
+<Range id="0">
+		<Attributes qnh_min="0" qnh_max="10" correction="0"/>
+</Range>
+<Range id="1">
+		<Attributes qnh_min="11" qnh_max="50" correction="10"/>
+</Range>
+<Range id="2">
+		<Attributes qnh_min="51" qnh_max="100" correction="20"/>
+</Range>
+<Range id="3">
+		<Attributes qnh_min="51" qnh_max="100" correction="20"/>
+</Range>
+</QNH>
+</CorrectionTable>

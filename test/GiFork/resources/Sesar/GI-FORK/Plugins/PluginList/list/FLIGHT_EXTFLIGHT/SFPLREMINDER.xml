@@ -1,0 +1,21 @@
+<msg>
+	<list
+		ROW_ID="@ROW_ID@" condition="@ISREM@">
+		<attributes	
+			ID="SFPL REMINDER @CALLSIGN@"
+			behavior_if_empty="delete" 	
+			side="DIR:1"	
+		/>		
+		<col key="col1"	 indata="@REM_TYPE@"	outdata="RTYPE"	  />
+		<col key="col2"  indata="@REM_STATUS@"	outdata="STATUS"	   />
+		<col key="col3"	 indata="@REM_DIST_ROUTEPOINT@"	outdata="DIST_ROU"	  />
+		<col key="col4"	 indata="@REM_TIME_ROUTEPOINT@"	outdata="TIME_ROU"		 />
+		<col key="col5"	 indata="@REM_LEV@"	outdata="FL"		 />
+		<col key="col6"	 indata="@REM_TRANS@"	outdata="TRANS"		 />
+		<col key="col7"	 indata="@REM_REASON@"	outdata="REASON"	col_state="filteredVisible"	 />		
+		<col key="col8"	 indata="@REM_RESP@"	outdata="RESP"	col_width="100" col_state="filteredVisible"	 />
+		<col key="col9"	 indata=""	outdata="ACK"		  row_image="@ALIAS_LIST(FIELD_TO_CHECK1=..REM_STATUS, VAL_TO_CHECK=REM_STATUS, INFO_TYPE=IMAGE)@" row_rightClick="@ALIAS_LIST(FIELD_TO_CHECK1=..CALLBACK_CHANGE_REM_STATUS, VAL_TO_CHECK=REM_STATUS, VAL_TO_CHECK1=REM_ID)@"/>		
+		<col key="col10" indata=""	outdata="DELETE" 	 row_image="BUTTON_TRASH" row_rightClick="@ALIAS_LIST(FIELD_TO_CHECK1=..CALLBACK_DELETE_REM, VAL_TO_CHECK1=REM_ID)@" />
+
+	</list>
+</msg>

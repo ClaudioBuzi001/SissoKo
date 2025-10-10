@@ -1,0 +1,17 @@
+<msg>
+
+<!--  LISTE LIS  ENV  -->
+
+<!--  QUESTA LISTA A PRENDE I DATI DAL MESSAGGIO DI ENV_RNY_IN_USE
+	  A CODICE DEL PLGUIN LIST VIENE FATTA UNA GESTIONE SPECIFICA PER TALE MESSAGGIO PER ESTRARRE
+	  I DATI DELLE RIGHE DAGLI ELEMENTI DELL'ARRAY DEL MESSAGGIO
+-->
+
+<list ROW_ID="ENV_AIRPORT_@airpName@" condition="">
+	<attributes ID="RWY LIST" behavior_if_empty="delete" CLOSE_BUTTON_CALLBACK= "DUMMY" side="GRP_TOP_LEFT" open_in_grp="true" visible="false"/>
+	<col key="col1" indata="@airpName@" outdata="AIRP" messagetype="lisEnvRwyInUse" col_state="filteredVisible"  row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW , ORDER_ID=ERY, OBJECT_TYPE=ERY,  PREVIEW_NAME=previewERY)" />
+	<col key="col2" indata="@rwy_dd@" outdata="DEP" messagetype="lisEnvRwyInUse" col_state="filteredVisible"  />
+	<col key="col3" indata="@rwy_da@" outdata="ARR" messagetype="lisEnvRwyInUse" col_state="filteredVisible"  />
+</list>
+
+</msg>

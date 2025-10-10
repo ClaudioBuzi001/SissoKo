@@ -1,0 +1,34 @@
+<msg>
+
+<!--  LISTE LIS MAP  -->
+<list ROW_ID="@UID@" condition="@ISAPWSUA@">
+	<attributes ID="APW EXCLUSION CRITERIA @KEY_ID@" behavior_if_empty="delete"		
+			side="GRP" 
+			open_in_grp="true"
+			visible="false" 
+			CLOSE_BUTTON_CALLBACK= "DUMMY"
+			 />
+	<!-->col key="col1" indata="@KEY_ID@" outdata="MAP"   /-->
+    <col key="col1" indata="@vfr@" outdata="VFR"  
+    	row_leftClick="@ALIAS_LIST(CALLBACK_TO_CHECK=..CALLBACK_CHANGE_VFR)@" />
+    	<!-- row_leftClick="EXTERNAL_ORDER(ORDER_ID=EXC, OBJECT_TYPE=EXC, DATA={'FUNCION_NAME':'APW', #VFR},  PREVIEW_NAME=quickEXC)"  /> -->
+	<col key="col2" indata="@mil@" outdata="MIL"  
+		row_leftClick="@ALIAS_LIST(CALLBACK_TO_CHECK=..CALLBACK_CHANGE_MIL)@" />
+		<!-- row_leftClick="EXTERNAL_ORDER(ORDER_ID=EXC, OBJECT_TYPE=EXC, DATA={'FUNCION_NAME':'APW', #MIL},  PREVIEW_NAME=quickEXC)" /> -->  
+	<col key="col3" indata="@pen@" outdata="PEN"  
+		row_leftClick="@ALIAS_LIST(CALLBACK_TO_CHECK=..CALLBACK_CHANGE_PEN)@" />
+		<!-- row_leftClick="EXTERNAL_ORDER(ORDER_ID=EXC, OBJECT_TYPE=EXC, DATA={'FUNCION_NAME':'APW', #PEN},  PREVIEW_NAME=quickEXC)" /> -->
+	<col key="col4" indata="@mcs@" outdata="SSR"  
+		row_fgr="@ALIAS_LIST(FIELD_TO_CHECK1=..mcs, INFO_TYPE1=COLOR)@"
+		row_leftClick="@ALIAS_LIST(CALLBACK_TO_CHECK=..CALLBACK_CHANGE_SSR)@" /> 
+		<!-- row_leftClick="EXTERNAL_ORDER(ORDER_ID=EXC, OBJECT_TYPE=EXC, DATA={'FUNCION_NAME':'APW', #SSR},  PREVIEW_NAME=quickEXC)" /> -->   
+	<col key="col5" indata="@mcs1@ @mcs2@ @mcs3@ @mcs4@ @mcs5@ @mcs6@ @mcs7@ @mcs8@ @mcs9@ @mcs10@ @mcs11@ @mcs12@ @mcs13@ @mcs14@ @mcs15@" outdata="SSRs" col_width="150"   row_leftClick="EXTERNAL_ORDER(ORDER_ID=MCS, OBJECT_TYPE=MCS, DATA={'FUNCION_NAME':'APW'},  PREVIEW_NAME=previewMCS)"    />
+	<col key="col6" indata="@css@" outdata="CALLSIGN"  
+		row_blink_state="@ALIAS_LIST(FIELD_TO_CHECK=..TEMPLATE, INFO_TYPE=BLINK)@"
+		row_fgr="@ALIAS_LIST(FIELD_TO_CHECK1=..css, INFO_TYPE1=COLOR)@"
+		row_leftClick="@ALIAS_LIST(CALLBACK_TO_CHECK=..CALLBACK_CHANGE_CALLSIGN)@" />
+		<!-- row_leftClick="EXTERNAL_ORDER(ORDER_ID=EXC, OBJECT_TYPE=EXC, DATA={'FUNCION_NAME':'APW', #CALLSIGN},  PREVIEW_NAME=quickEXC)" /> -->
+	<col key="col7" indata="@css1@ @css2@ @css3@ @css4@ @css5@ @css6@ @css7@ @css8@ @css9@ @css10@ @css11@ @css12@ @css13@ @css14@ @css15@" outdata="CALLSIGNs" col_width="150"  row_leftClick="EXTERNAL_ORDER(ORDER_ID=CSS, OBJECT_TYPE=CSS, DATA={'FUNCION_NAME':'APW'},  PREVIEW_NAME=previewCSS)"    />
+	
+</list>
+</msg>

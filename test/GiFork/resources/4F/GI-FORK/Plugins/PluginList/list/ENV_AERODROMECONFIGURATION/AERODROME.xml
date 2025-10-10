@@ -1,0 +1,21 @@
+<msg>
+	<list 
+		ROW_ID="@AERODROME@_@RWY@" condition="@ISAERODROME@">
+	
+		<attributes 
+			ID="AERODROMES LIST" 	
+			lat=""	
+			lon=""	
+			behavior_if_empty="delete"		
+			side="OPSUP" 
+			visible="true"
+				
+			
+		/>
+	
+		<col key="col1" indata="@AERODROME@" outdata="AERODROME"  />
+		<col key="col2" indata="@RWYDEP@"	 outdata="DEP"  col_width="50" />
+		<col key="col3" indata="@RWYARR@"	 outdata="ARR"  col_width="50" />
+		<col key="col4" indata="" outdata="INFO" header="" col_width="60"  row_image="@OPSUP_LIST(FIELD_TO_CHECK1=..ISMYAERODROME, VAL_TO_CHECK1=ISMYAERODROME, IMAGE_NAME=info, INFO_TYPE=IMAGE)@" row_leftClick="@OPSUP_LIST(FIELD_TO_CHECK1=..CALLBACK_SHOWRWYINUSE, VAL_TO_CHECK1=ISMYAERODROME)@" />
+	</list>
+</msg>

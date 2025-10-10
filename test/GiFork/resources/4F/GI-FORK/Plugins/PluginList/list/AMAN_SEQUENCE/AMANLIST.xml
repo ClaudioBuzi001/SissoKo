@@ -1,0 +1,18 @@
+<msg>
+    <list 
+        ROW_ID="@FLIGHT_NUM@" condition="true">
+        <attributes 
+            ID="AMAN LIST" 
+            behavior_if_empty="delete" 
+            side="DIR:1" 
+        />  
+        <col key="col1" indata="@CALLSIGN@"	outdata="CALLSIGN" />
+        <col key="col2" indata="@ARWY@"	outdata="RWY" />
+        <col key="col3" indata="@TTL@"	outdata="TTL" />
+        <col key="col4" indata="@SEQNUM@"	outdata="SEQ" />
+        <col key="col5" indata="@NEXTPOINT@"	outdata="NEXTP" />
+        <!-->col key="col6" indata="@AMAN_LATITUDE@"	outdata="LAT" />
+        <col key="col7" indata="@AMAN_LONGITUDE@"	outdata="LON" /-->
+        <col key="col6" indata="@TRACKMILES@"	outdata="MILES" />
+    </list>
+</msg>

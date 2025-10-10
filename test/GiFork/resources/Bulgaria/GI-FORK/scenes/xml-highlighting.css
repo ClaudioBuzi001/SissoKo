@@ -1,0 +1,6 @@
+.json_property { -fx-fill: blue; }
+.json_number   { -fx-fill: purple; }
+.json_value   { -fx-fill: red; }
+.json_curly   { -fx-fill: gray; }
+.json_bool   { -fx-fill: orange; }
+.json_array   { -fx-fill: green; }

@@ -1,0 +1,36 @@
+<msg>
+
+	<!-- CONFIGURAZIONE DEI LOG -->
+	<service type="CONFIGURATION">
+
+		<p key="CDB_ADDR" data="127.0.0.1" />
+		<p key="CDB_PORT" data="54333" />
+		<!-- unit test params -->
+		<p key="IS_UNIT_TEST" data="false" />
+		<!-- prototyping test -->
+		<p key="IS_PROTO_TEST" data="false" />
+		<p key="MAXARP" data="3" />
+		<!-- max history window number allowed -->
+		<p key="MAXHISTORYWINDOWS" data="3" />
+		<p key="STATISTICS_BB_TIME" data="15" />
+		<p key="WEATHER_DEL_TIMER" data="15" />
+		<p key="COMM_MODE" data="JIP" />
+		<p key="TCT_ADDR" data="224.9.1.251" />
+		<p key="TCT_PORT" data="6275" />
+		<p key="SNET_ADDR" data="224.9.1.251" />
+		<p key="SNET_PORT" data="6265" />
+		<p key="SCA_TIME_TO_RESET" data="60" />
+		<p key="SCA_PORT" data="5500" />
+		<p key="SCA_ADDR" data="224.9.166.252" />
+		<p key="SYS_CENTER_LAT" data="41.800278" />
+		<p key="SYS_CENTER_LON" data="12.238889" />
+		<p key="SYS_CENTER_HEIGHT" data="48" />
+		<p key="APPLICATION_TYPE" data="1,4,5,6,7,9,10,11,12" />
+		<p key="SERVER_TYPE" data="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,18,19,20,21,22,23,24,27,31" />
+		<p key="SURV_TYPE" data="1" />
+		<p key="FILE_REC_SIZEMB" data="100" />
+		<p key="FILE_REC_NUMBER" data="5" />
+		<p key="IS_SNET_MAP_EDITABLE" data="true" />
+		<p key="JV_ADDR" data="127.0.0.1" />
+	</service>
+</msg>

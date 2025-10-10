@@ -1,0 +1,162 @@
+<html>
+<head>
+<style>
+
+table, td, tr{
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.firstTable {
+    width: 12cm;
+	height: 2cm;
+
+}
+.centPerCent {
+	width: 100%;
+	height: 100%
+}
+
+.bordoDestraSpesso{
+	border-right: 2px solid black
+}
+.bordoSottoSottile{
+	border-bottom: 1px solid gray
+}
+.bordoSopraSottile{
+	border-top: 1px solid gray
+}
+
+.altezzaRiga{
+	height: 20%;
+    width: 100%
+}
+.altezzaRigaDoppia{
+	height: 40%;
+    width: 100%
+}
+
+.larghPrimaColonnaPrimoBlocco {
+	width: 36%;
+}
+.larghPrimaColonnaPrimoBloccoA {
+	width: 19%;
+}
+.larghPrimaColonnaPrimoBloccoB {
+	width: 19%;
+}
+.larghSecondaColonnaPrimoBlocco {
+	width: 28%;
+}
+.larghColonneTerzoBlocco{
+	width: 16%;
+}
+.widthFirstBlock {
+	width: 28%;
+		height: 100%
+
+}
+.widthSecondBlock {
+	width: 12%;
+}
+.hieghtFirstBlock {
+	width: 88%;
+}
+
+.centratoOrizz {
+	text-align: center
+}
+.centratoVert {
+	vertical-align: text-center
+}
+.inAlto {
+	vertical-align: text-top
+}
+.inBasso {
+	vertical-align: text-bottom
+}
+.aDestra {
+	text-align: right
+}
+.aSinistra {
+	text-align: left
+}
+.bigFont{
+    font-size: 130%;
+}
+.bigFontBold{
+    font-size: 150%;
+    font-weight:bold;
+}
+.bigFontCallsignBold{
+    font-size: 180%;
+    font-weight:bold;
+}
+table. tr, td, p {
+	padding: 0
+}
+td{
+	font-family: monospace;
+	font-weight: 480
+}
+</style>
+</head>
+<body>
+<table class="firstTable">
+<tr>
+	<td class="bordoDestraSpesso widthFirstBlock">
+		<table class="centPerCent">
+			<tr class="altezzaRiga bordoSottoSottile">
+				<td class="larghPrimaColonnaPrimoBloccoA bordoDestraSpesso" colspan="2"></td>
+				<td class="bordoDestraSpesso larghSecondaColonnaPrimoBlocco"></td>
+				<td class="larghPrimaColonnaPrimoBlocco"></td>
+			</tr>
+			<tr class="altezzaRiga "></tr>
+			<tr class="altezzaRiga "></tr>
+			<tr class="altezzaRiga bordoSopraSottile">
+				<td class="aSinistra inAlto "></td>
+				<td class="bordoDestraSpesso"></td>
+				<td class="bordoDestraSpesso"></td>
+				<td class="bigFont centratoVert" ></td>
+
+			</tr>
+			<tr class="altezzaRiga ">
+				<td class="aSinistra inAlto"></td>
+				<td class="bordoDestraSpesso inBasso aDestra"></td>
+				<td class="bordoDestraSpesso"></td>
+				<td></td>
+
+			</tr>
+		</table>
+	</td>
+	<td class="bordoDestraSpesso widthSecondBlock altezzaRiga centratoVert">
+		<p class="centratoOrizz bigFontBold" rowspan="3"></p>
+	</td>
+	<td>
+		<table class="centPerCent">
+			<tr class="altezzaRigaDoppia bordoSottoSottile">
+				<td class="larghColonneTerzoBlocco centratoOrizz bordoDestraSpesso"></td>
+				<td class="larghColonneTerzoBlocco centratoOrizz bordoDestraSpesso"></td>
+				<td class="larghColonneTerzoBlocco centratoOrizz bordoDestraSpesso"></td>
+				<td class="larghColonneTerzoBlocco centratoOrizz  bordoDestraSpesso"></td>
+				<td class="larghColonneTerzoBlocco centratoOrizz bordoDestraSpesso"></td>
+				<td class="larghColonneTerzoBlocco centratoOrizz bordoDestraSpesso"></td>
+			</tr>
+			<tr class="altezzaRiga bordoSottoSottile">
+				<td class="centratoOrizz bordoDestraSpesso"></td>
+				<td class="centratoOrizz bordoDestraSpesso"></td>
+				<td class="centratoOrizz bordoDestraSpesso"></td>
+				<td class="centratoOrizz bordoDestraSpesso"></td>
+				<td class="centratoOrizz bordoDestraSpesso"></td>
+				<td class="centratoOrizz bordoDestraSpesso"></td>
+			</tr>
+			<tr>
+			</tr>
+			<tr>
+			</tr>
+		</table>
+	</td>
+</tr>
+</table>
+</body>
+</html>
+

@@ -1,0 +1,23 @@
+<msg>
+<list ROW_ID="@FLIGHT_NUM@" condition="@ISVFL@">
+
+<attributes ID="VFR LIST" LATITUDE="" LONGITUDE="" BEHAVIOR_IF_EMPTY="delete" SIDE="SFL:2"  SORT="CALLSIGN:ASC" />
+
+<col key="col1" indata="@FR@ @FTYPE@"	outdata="FR" col_state="filteredVisible" choicefield="$FUSION"  />
+<col key="col2" indata="@ETD@"			outdata="ETD" col_state="filteredVisible"  />
+<col key="col3" indata="@CALLSIGN@"		outdata="CALLSIGN" col_state="filteredVisible" row_fgr="@TEMPLATE_COLOR@" row_middleClick="SHOW_TRAJECTORY"/>
+<col key="col4" indata="@ADEP@"			outdata="ADEP" col_state="filteredVisible"  />
+<col key="col5" indata="@ADES@"			outdata="ADES" col_state="filteredVisible"  />
+<col key="col6" indata="@GAT_OAT@"		outdata="G/O" col_state="filteredVisible"  />
+<col key="col7" indata="@SSR_CODE@"		outdata="SSR  " col_state="filteredVisible" row_fgr="@TEMPLATE_COLOR@"/>
+<col key="col8" indata="@ATY@"			outdata="TYPE" col_state="filteredVisible"  />
+<col key="col9" indata="@CFL@"			outdata="CFL" col_state="filteredVisible"  />
+<col key="col10" indata="@RFL@"			outdata="RFL" col_state="filteredVisible"  />
+<col key="col11" indata="@ETI@"			outdata="ETI" col_state="filteredVisible"  />
+<col key="col12" indata="@IFIX@"		outdata="IFIX" col_state="filteredVisible"  />
+<col key="col13" indata="@ETO@"			outdata="ETO" col_state="filteredVisible"  />
+<col key="col14" indata="@OFIX@"		outdata="OFIX" col_state="filteredVisible"  />
+<col key="col15" indata="@FULLROUTE@"		outdata="ROUTE" col_state="filteredVisible"  />
+</list>
+
+</msg>

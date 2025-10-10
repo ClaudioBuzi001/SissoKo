@@ -1,0 +1,9 @@
+<msg>
+	<list
+		ROW_ID="@PROBE_ID@" condition="@IS_NO_PROBE@">
+		<attributes	ID="COORD" behavior_if_empty="delete" behavior_if_full="delete"	open_in_grp="true" side="GRP_CENTER_LEFT" visible="true" CLOSE_BUTTON_CALLBACK="INHIBIT"/>
+		<col key="col1"	 indata="@CALLSIGN@"	outdata="CALLSIGN"	 row_fgr="@TEMPLATE_COLOR@" row_leftClick="CONTEXT_MENU(MENU_FILE=AcceptRejectIOAT.xml,TITLE=COORD_ROUTE)"/>
+		<col key="col2"	 indata="@ORDER_NAME@"  outdata="COORD TYPE"   row_leftClick="CONTEXT_MENU(MENU_FILE=AcceptRejectIOAT.xml,TITLE=COORD_ROUTE)"/>
+		<col key="col3"	 indata="@ORDER_VALUE@"	outdata="COORD VALUE" col_width="350" row_leftClick="CONTEXT_MENU(MENU_FILE=AcceptRejectIOAT.xml,TITLE=COORD_ROUTE)"/>
+	</list>
+</msg>

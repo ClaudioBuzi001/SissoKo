@@ -1,0 +1,30 @@
+<msg>
+	<list 
+		ROW_ID="@CONFLICT_NUMBER@" condition="true">
+		<attributes 
+			ID="ALARM LIST" 
+			BEHAVIOR_IF_EMPTY="delete" 
+			MAX_ITEM_SHOWED="10" 
+			SIDE="ALR:1"
+			 
+			 
+		/>
+		<col key="col1"  indata="@CONFLICT_NUMBER@"	outdata="CONFLICT_ID"		 />				
+		<col key="col2"  indata="@ALIAS_LIST(FIELD_TO_CHECK1=..CONFLICT_TIME)@"	outdata="TIME"		 />		
+		<col key="col3"  indata="@ALIAS_LIST(FIELD_TO_CHECK1=..ALARM_TYPE)@"		outdata="TYPE"		 />
+		<col key="col4"  indata="@ALIAS_LIST(FIELD_TO_CHECK1=..ALARM_URGENCY)@"	outdata="URG"  />		
+		<col key="col5"  indata="@ALIAS_LIST(FIELD_TO_CHECK1=..CS_SSR1)@" outdata="CS/SSR1"  row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , VALUE_TO_CHECK = STN_1, DEFAULT=#fafafa)@" row_blink_state="@ALIAS_LIST(FIELD_TO_CHECK=..TEMPLATE, INFO_TYPE=BLINK)@" row_middleClick="@SHOW_TRAJECTORY@" />
+		<col key="col6"  indata="@ALIAS_LIST(FIELD_TO_CHECK1=..CS_SSR2)@" outdata="CS/SSR2"  row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , VALUE_TO_CHECK = STN_2, DEFAULT=#fafafa)@" row_blink_state="@ALIAS_LIST(FIELD_TO_CHECK=..TEMPLATE, INFO_TYPE=BLINK)@" row_middleClick="@SHOW_TRAJECTORY@" />
+        <col key="col7"  indata="@MAP@"	outdata="AREA"	  /> <!-- FF-1579  -->		
+		<col key="col8"  indata="@ALIAS_LIST(FIELD_TO_CHECK1=..LEV1)@"	outdata="AFL1"    row_image="@ALIAS_LIST(FIELD_TO_CHECK1=..ATT1, INFO_TYPE=IMAGE)@" />
+		<col key="col9"  indata="@ALIAS_LIST(FIELD_TO_CHECK1=..LEV2)@"	outdata="AFL2"	  row_image="@ALIAS_LIST(FIELD_TO_CHECK1=..ATT2, INFO_TYPE=IMAGE)@" />
+        <col key="col10" indata="@ALIAS_LIST(FIELD_TO_CHECK1=..PRESENT_3D_DISTANCE)@" outdata="DIST"   />
+        <col key="col11" indata="@ALIAS_LIST(FIELD_TO_CHECK1=..ESTIMATED_MINIMUM_PLANAR_DISTANCE)@" outdata="MIN DIST"/>
+		<col key="col12" indata="@ALIAS_LIST(FIELD_TO_CHECK1=..SCT1)@"   outdata="SCT1" 	col_state="filteredNotVisible"  />
+		<col key="col13" indata="@ALIAS_LIST(FIELD_TO_CHECK1=..SCT2)@"   outdata="SCT2" 	col_state="filteredNotVisible"  />
+		<col key="col14" indata="@AIRPORT@" outdata="ADES"  col_state="filteredVisible"	/>
+		<col key="col15" indata="@RUNWAY@" outdata="RWY"  col_state="filteredVisible"	row_color="#CECECE" />
+		<col key="col16" indata="@PRESENT_VERT_DISTANCE@" outdata="V.DEV"  col_state="filteredVisible"	/>
+		<col key="col17" indata="@PRESENT_PLANAR_DISTANCE@" outdata="L.DEV"  col_state="filteredVisible"/>
+</list>
+</msg>

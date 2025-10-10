@@ -1,0 +1,22 @@
+<msg>
+
+<!--  LISTE LIS  ENV  -->
+
+<!--  QUESTA LISTA A PRENDE I DATI DAL MESSAGGIO DI ENV_ATSO_COP e dal messaggio ENV_MYRESPONSIBILITIES
+	  A CODICE DEL PLGUIN LIST VIENE FATTA UNA GESTIONE SPECIFICA PER TALE MESSAGGIO PER ESTRARRE
+	  I DATI DELLE RIGHE DAGLI ELEMENTI DELL'ARRAY DEL MESSAGGIO
+	  RISULTA CONFIGURATA PER ENTRAMBI I DUE DATA_TYPE  
+	  ENV_ATSO_COP e 
+	  ENV_MYRESPONSIBILITIES
+-->
+<list ROW_ID="@ATSU_NAME@_@SECTOR_ID@_@CPDLC_LOWER_LEVEL@" condition="">
+	<attributes ID="ATSU SECTOR INFORMATION LIST" behavior_if_empty="delete" side="DL"/>
+	<col key="col1" indata="@ATSU_NAME@"                                               outdata="ATSU NAME"   col_state="filteredVisible"   row_leftClick="" />
+	<col key="col2" indata="@ATSU_LIST(FIELD_TO_CHECK=..SCT, VAL_1=SECTOR_ID)@"        outdata="SCT/COP"     col_state="filteredVisible"   row_leftClick="" />
+	<col key="col3" indata="@FREQINUSE@"                                               outdata="MAIN FREQ"   col_state="filteredVisible"   row_leftClick=""/>
+	<col key="col4" indata="@FREQ833@"                                                 outdata="BCK FREQ"    col_state="filteredVisible"  />
+	<col key="col5" indata="@ATSU_LIST(FIELD_TO_CHECK=..CFS, VAL_1=LP_CPDLC_ENABLED)@" outdata="CFS"         col_state="filteredVisible"  />
+	<col key="col6" indata="@CPDLC_LOWER_LEVEL@"                                       outdata="LOW LEVEL"   col_state="filteredVisible"  />
+	<col key="col7" indata="@CPDLC_UPPER_LEVEL@"                                       outdata="UPP LEVEL"   col_state="filteredVisible"  />
+</list>
+</msg>

@@ -1,0 +1,34 @@
+<msg>
+
+<!--
+//IN BCV VENICA USATA QUESTA CONCATENZAZIONE ...PERCHE???
+<list ROW_ID="@STN1@_@STN2@" condition="@ISSNET@">
+-->
+
+<list ROW_ID="@CONFLICT_NUMBER@">
+
+<attributes ID="SNET ALARM LIST" BEHAVIOR_IF_EMPTY="noaction" SIDE="GRP_BOTTOM_CENTER" OPEN_IN_GRP="TRUE" VISIBLE="FALSE" CLOSE_BUTTON_CALLBACK="DUMMY" />
+	<col key="col1"  indata="" outdata="ACK" col_state="filteredVisible" row_fgr="#CECECE" row_image="@ALARM_LIST(FIELD_TO_CHECK=..ACK_SNET, INFO_TYPE=IMAGE)@" row_leftClick="EXTERNAL_ORDER(ORDER_ID=SAA, OBJECT_TYPE=SAA,PREVIEW_NAME=quickSAA)" />
+	<col key="col2"  indata="@CONFLICT_NUMBER@"	                            outdata="C ID" row_color="#CECECE" row_fgr="@ACK_COLOR( DEFAULT=#fafafa )@"  />
+	<col key="col3"  indata="@ALIAS_LIST(FIELD_TO_CHECK1=..CONFLICT_TIME)@"	outdata="TIME"	col_state="filteredVisible"	row_color="#CECECE" row_fgr="@ACK_COLOR( DEFAULT=#fafafa )@" />
+	<col key="col4"  indata="@ALIAS_LIST(FIELD_TO_CHECK1=..ALARM_TYPE)@"	outdata="TYPE"	col_state="filteredVisible"	row_color="#CECECE" row_fgr="@ACK_COLOR( DEFAULT=#fafafa )@" />
+	<col key="col5"  indata="@ALARM_URGENCY@"		outdata="URG"	col_state="filteredVisible"	row_color="#CECECE" row_fgr="@ACK_COLOR( DEFAULT=#fafafa )@" />
+	<col key="col6"  indata="@ALIAS_LIST(FIELD_TO_CHECK1=..CS_SSR1)@" outdata="CS/SSR 1"		col_state="filteredVisible"	row_color="#CECECE" row_middleClick="@SHOW_TRAJECTORY@" row_fgr="@ACK_COLOR( DEFAULT=#fafafa )@" />
+	<col key="col7"  indata="@ALIAS_LIST(FIELD_TO_CHECK1=..CS_SSR2)@" outdata="CS/SSR 2/AREA"	col_state="filteredVisible"	row_color="#CECECE" row_middleClick="@SHOW_TRAJECTORY@" row_fgr="@ACK_COLOR( DEFAULT=#fafafa )@" />
+	<col key="col8"  indata=""	                                      outdata="CL1"	  col_state="filteredVisible"	row_image="@ALIAS_LIST(FIELD_TO_CHECK=..ATD1, INFO_TYPE=IMAGE)@" row_fgr="@ACK_COLOR( DEFAULT=#fafafa )@" />  
+	<col key="col9"  indata="@ALIAS_LIST(FIELD_TO_CHECK1=..LEV1)@"	  outdata="FL 1"  col_state="filteredVisible"	row_color="#CECECE" row_fgr="@ACK_COLOR( DEFAULT=#fafafa )@" />
+	<col key="col10" indata=""	                                      outdata="CL2"	  col_state="filteredVisible"	row_image="@ALIAS_LIST(FIELD_TO_CHECK=..ATD2, INFO_TYPE=IMAGE)@" row_fgr="@ACK_COLOR( DEFAULT=#fafafa )@" /> 
+	<col key="col11" indata="@ALIAS_LIST(FIELD_TO_CHECK1=..LEV2)@"	  outdata="FL 2"  col_state="filteredVisible"	row_color="#CECECE" row_fgr="@ACK_COLOR( DEFAULT=#fafafa )@" />
+	<col key="col12" indata="@PRESENT_3D_DISTANCE@"  outdata="DIST"		col_state="filteredVisible"	row_color="#CECECE" row_fgr="@ACK_COLOR( DEFAULT=#fafafa )@" />
+	<col key="col13" indata="@DISTANCE_AT_CONFLICT_TIME@" outdata="MIN DIST" 	col_state="filteredVisible"	row_color="#CECECE" row_fgr="@ACK_COLOR( DEFAULT=#fafafa )@" />
+ 	<col key="col14" indata="@ALIAS_LIST(FIELD_TO_CHECK1=..SCT1)@" outdata="SCT1"  col_state="filteredVisible"	row_color="#CECECE" row_fgr="@ACK_COLOR( DEFAULT=#fafafa )@" />
+	<col key="col15" indata="@ALIAS_LIST(FIELD_TO_CHECK1=..SCT2)@" outdata="SCT2"  col_state="filteredVisible"	row_color="#CECECE" row_fgr="@ACK_COLOR( DEFAULT=#fafafa )@" />
+	<col key="col16" indata="@AIRPORT@" outdata="AIRPORT"  col_state="filteredVisible"	row_color="#CECECE" row_fgr="@ACK_COLOR( DEFAULT=#fafafa )@" />
+	<col key="col17" indata="@RUNWAY@" outdata="RWY"  col_state="filteredVisible"	row_color="#CECECE" row_fgr="@ACK_COLOR( DEFAULT=#fafafa )@" />
+	<col key="col18" indata="@PRESENT_VERT_DISTANCE@" outdata="V.DEV"  col_state="filteredVisible"	row_color="#CECECE" row_fgr="@ACK_COLOR( DEFAULT=#fafafa )@" />
+	<col key="col19" indata="@PRESENT_PLANAR_DISTANCE@" outdata="L.DEV"  col_state="filteredVisible"	row_color="#CECECE" row_fgr="@ACK_COLOR( DEFAULT=#fafafa )@" />
+	
+	
+	
+ </list>
+</msg>

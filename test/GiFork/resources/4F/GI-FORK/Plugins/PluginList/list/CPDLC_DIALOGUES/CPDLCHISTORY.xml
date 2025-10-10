@@ -1,0 +1,19 @@
+<msg>
+	<list ROW_ID="@ROW_ID@" condition="@ISCPDLCHIST@">
+		<attributes 
+			ID="CPDLC HISTORY @CALLSIGN@" 
+			behavior_if_empty="delete" 
+			side="DL:1" 
+			visible="false"
+			sort=""
+            CLOSE_BUTTON_CALLBACK="REMOVE_HISTORY_CONTAINER( VALUE=CPDLC%20HISTORY%20@CALLSIGN@, ROW_ID=@ROW_ID@ ) "           		 
+		/>
+		<col key="col1" indata="@CALLSIGN@"   outdata="CALLSIGN"  row_fgr="@CPDLC_LIST(FIELD_TO_CHECK1=..TEMPLATECPDLC, VAL_TO_CHECK=TEMPLATECPDLC, INFO_TYPE=COLOR)@" row_blink_state="@ALIAS_LIST(FIELD_TO_CHECK=..TEMPLATE, INFO_TYPE=BLINK)@"/>
+		<col key="col2" indata="@TS@"  outdata="TIME"     col_state="filteredVisible" row_fgr="@CPDLC_LIST(FIELD_TO_CHECK1=..TEMPLATECPDLC, VAL_TO_CHECK=TEMPLATECPDLC, INFO_TYPE=COLOR)@" />
+		<col key="col3" indata="@TXT_MESSAGE@"    outdata="MESSAGE" col_width="300" col_state="filteredVisible" row_fgr="@CPDLC_LIST(FIELD_TO_CHECK1=..TEMPLATECPDLC, VAL_TO_CHECK=TEMPLATECPDLC, INFO_TYPE=COLOR)@" />
+		<col key="col4" indata="@DIALOGUE_ID@"   outdata="DIALOGUE_ID"  col_state="filteredNotVisible" row_leftClick="" />		
+	</list>
+
+</msg>
+
+

@@ -1,0 +1,34 @@
+<msg>
+	<list 
+		ROW_ID="@FLIGHT_NUM@" condition="@ISFIRENTRYLIST@">
+
+		<attributes 
+			ID="INBOUND LIST" 
+			behavior_if_empty="delete" 
+			side="DIR:0" 
+			sort="CALLSIGN:ASC" 
+			
+		/>
+		<col key="col1"	indata="@CALLSIGN@"	outdata="CALLSIGN"	 row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , DEFAULT=#fafafa)@" row_blink_state="@ALIAS_LIST(FIELD_TO_CHECK=..TEMPLATE, INFO_TYPE=BLINK)@"	row_middleClick="SHOW_TRAJECTORY" row_rightClick="EXTERNAL_ORDER(ORDER_ID=CHG , OBJECT_TYPE=CHG,  PREVIEW_NAME=previewCHG )" />		
+		<col key="col2" indata="@STS@"	outdata="STS"	col_state="filteredVisible"  />
+		<col key="col3" indata="@IFIXETO@"	outdata="ETO"	col_state="filteredVisible"  />
+		<col key="col4" indata="@IFIX@"	outdata="IFIX"	col_state="filteredVisible"  />
+		<col key="col5" indata="@PLV@"	outdata="PLV"	col_state="filteredVisible"  />
+		<col key="col6" indata="@ALIAS_LIST(FIELD_TO_CHECK1=..PEL)@"	outdata="PEL"	col_state="filteredVisible"  />
+		<col key="col7" indata="@ATY@"	outdata="TYPE"	col_state="filteredVisible"  />
+		<col key="col8" indata="@ADEP@"	outdata="DEP"	col_state="filteredVisible" row_leftClick="SHOW_TRAJECTORY" />
+		<col key="col9" indata="@ADES@"	outdata="DES"	col_state="filteredVisible" />
+		<col key="col10" indata="@ROUTE@"	outdata="ROUTE"		col_state="filteredVisible" />
+		<col key="col11" indata="@SSR_CODE@"	outdata="SSR"	col_state="filteredVisible"  />
+		<col key="col12" indata="@MDS@"	outdata="MDS"	col_state="filteredVisible" />
+		<col key="col13" indata="@LOGON_FLIGHT_STATUS@"	outdata="LS"	col_state="filteredVisible" />
+		<col key="col14" indata="@RVSM@"	outdata="RVSM"	col_state="filteredVisible" />
+		<col key="col15" indata="@EQ_833_STATUS@ @EQ_833_PERMISSION@"	outdata="8.33" col_state="filteredVisible" />
+		<col key="col16" indata="@DLE@"	outdata="DL"	col_state="filteredVisible" />
+		<col key="col17" indata="@ALIAS_LIST(FIELD_TO_CHECK1=..A)@"	outdata="A"		col_state="filteredVisible" />
+		<col key="col18" indata="@BRNAV@"	outdata="RNAV"	col_state="filteredVisible" />
+		<col key="col19" indata="@GAT_OAT@"	outdata="G/O" col_state="filteredVisible"  />
+
+	</list>
+
+</msg>

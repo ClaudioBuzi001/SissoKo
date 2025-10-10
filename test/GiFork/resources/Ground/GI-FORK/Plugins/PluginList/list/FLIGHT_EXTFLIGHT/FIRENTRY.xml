@@ -1,0 +1,27 @@
+<msg>
+
+<list ROW_ID="@FLIGHT_NUM@" condition="@ISFIRENTRY@">
+
+
+<attributes ID="FIR ENTRY LIST" LATITUDE="" LONGITUDE="" BEHAVIOR_IF_EMPTY="delete" SIDE="SFL:4"  SORT="ETO:ASC" />
+
+<col key="col1" indata="@ETO@"									outdata="ETO"		col_state="filteredVisible" />
+<col key="col2" indata="@IFIX@"									outdata="IFIX"		col_state="filteredVisible" />
+<col key="col3" indata="@CALLSIGN@"								outdata="CALLSIGN"	col_state="filteredVisible" row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , DEFAULT=#CECECE)@" row_middleClick="SHOW_TRAJECTORY"/>
+<col key="col4" indata="@PLV@"									outdata="PLV"		col_state="filteredVisible" />
+<col key="col5" indata="@PEL@"									outdata="PEL"		col_state="filteredVisible" />
+<col key="col6" indata="@ATY@"									outdata="TYPE"		col_state="filteredVisible" />
+<col key="col7" indata="@ADEP@"									outdata="ADEP"		col_state="filteredVisible" row_leftClick="SHOW_TRAJECTORY" />
+<col key="col8" indata="@ADES@"									outdata="ADES"		col_state="filteredVisible" />
+<col key="col9" indata="@FULLROUTE@"							outdata="ROUTE"		col_state="filteredVisible" />
+<col key="col10" indata="@SSR_CODE@"							outdata="SSR  "		col_state="filteredVisible" row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..ISMANASSNOTCOMPLIANT , DEFAULT=#CECECE)@" colordef="-fgr1=#CECECE"/>
+<col key="col11" indata="@PSSR_CODE@"							outdata="PSSR"		col_state="filteredNotVisible" />
+<col key="col12" indata="@RVSM@"								outdata="RVSM"		col_state="filteredVisible" />
+<col key="col13" indata="@EQ_833_STATUS@ @EQ_833_PERMISSION@"	outdata="8.33"		col_state="filteredVisible" choicefield="$FUSION"   />
+<col key="col14" indata="@DLE@"									outdata="DL"		col_state="filteredVisible" />
+<col key="col15" indata="@A@"									outdata="A"			col_state="filteredVisible" />
+<col key="col16" indata="@STS@"									outdata="STS"		col_state="filteredVisible" />
+<col key="col17" indata="@BRNAV@"								outdata="RNAV"		col_state="filteredVisible" />
+</list>
+
+</msg>

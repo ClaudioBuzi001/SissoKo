@@ -1,0 +1,18 @@
+<msg>
+
+<list ROW_ID="@FLIGHT_NUM@" condition="@ISHLD@">
+
+<attributes ID="HOLDING LIST @HLDF@" LATITUDE="" LONGITUDE="" BEHAVIOR_IF_EMPTY="delete" SIDE="SFL:2"  GROUP="HLD" SORT="HLDE:ASC"  multicolumnname="FFIX"/>
+<col key="col1"  indata="@HLID@" outdata="N " col_state="filteredVisible" />
+<col key="col2"  indata="@CALLSIGN@" outdata="CALLSIGN" col_state="filteredVisible" row_fgr="@TEMPLATE_COLOR@" row_middleClick="CONTEXT_MENU(MENU_FILE=Executive.xml, TITLE=EXECUTIVE)" row_leftClick="CONTEXT_MENU(MENU_FILE=Planner.xml,TITLE=PLANNER_MENU)" row_rightClick="CONTEXT_MENU(MENU_FILE=Flight.xml,TITLE=FLIGHT_MENU)"/>
+<col key="col3"  indata="@FR@ @FTYPE@" choicefield="$FUSION" outdata="FR" col_state="filteredVisible" />
+<col key="col4"  indata="@ATY@" outdata="TYPE" col_state="filteredNotVisible" />
+<col key="col5"  indata="@SSR_CODE@" outdata="ASSR" col_state="filteredVisible" />
+<col key="col6"  indata="@ADES@" outdata="ADES" col_state="filteredNotVisible" />
+<col key="col7"  indata="@HLDF@" outdata="HLDF" col_state="filteredVisible" />
+<col key="col8"  indata="@HLDE@" outdata="HLDE" col_state="filteredVisible" />
+<col key="col9"  indata="@CFL@" outdata="CFL" col_state="filteredVisible"  row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW , ORDER_ID=ALV , OBJECT_TYPE=ALV , PREVIEW_NAME=choiceALV ,  )"/>
+<col key="col10"  indata="@TRACK<BB_FLIGHTNUM_STN<FLIGHT_NUM>.STN>.LEV@" outdata="AFL" col_state="filteredVisible" />
+</list>
+
+</msg>

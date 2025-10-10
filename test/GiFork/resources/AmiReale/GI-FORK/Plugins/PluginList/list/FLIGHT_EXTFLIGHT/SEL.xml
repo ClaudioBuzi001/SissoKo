@@ -1,0 +1,13 @@
+<msg>
+<list ROW_ID="@FLIGHT_NUM@" condition="@ISSEL@">
+	<attributes ID="SPECIAL ENTRY LIST" LATITUDE="" LONGITUDE="" BEHAVIOR_IF_EMPTY="delete" SIDE="SFL:2"  SORT="ETO:ASC" />
+	<col key="col1" indata="@CALLSIGN@" outdata="CALLSIGN" col_state="filteredVisible" row_fgr="@TEMPLATE_COLOR@" row_middleClick="SHOW_TRAJECTORY()"/>
+	<col key="col2" indata="@CSSR@" outdata="SSR   " col_state="filteredVisible" row_fgr="@TEMPLATE_COLOR@"/>
+	<col key="col3" indata="@CFL@"		outdata="CFL" col_state="filteredVisible" row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..CFL_WARNING_FLAG , DEFAULT=#CECECE)@" row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW ,ORDER_ID=ALV, OBJECT_TYPE=ALV, PREVIEW_NAME=choiceALV)" />
+<!-- 	<col key="col2" indata="@CFL@" outdata="CFL" col_state="filteredVisible"  /> -->
+	<col key="col4" indata="@ADEP@" outdata="ADEP" col_state="filteredVisible"  />
+	<col key="col5" indata="@ADES@" outdata="ADES" col_state="filteredVisible"  />
+	<col key="col6" indata="@SELTIME@" outdata="ETI/ETD/ATT" col_state="filteredVisible"  />
+	<col key="col7" indata="@FR@ @FTYPE@" outdata="FR" col_state="filteredNotVisible" choicefield="$FUSION"  />
+	</list>
+</msg>

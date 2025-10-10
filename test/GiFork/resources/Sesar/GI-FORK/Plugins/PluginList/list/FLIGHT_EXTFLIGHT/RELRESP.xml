@@ -1,0 +1,28 @@
+<msg>
+	<list
+		ROW_ID="@FLIGHT_NUM@" condition="@ISRELRESP@">
+		<attributes	
+			ID="REL RESP @RELRESPN@" 
+			behavior_if_empty="delete" 
+			group="REL RESP "	
+			side="SFL"	
+			sort="ETO:ASC" 
+		/>
+              
+		<col key="col1"	indata="@CALLSIGN@"	outdata="CALLSIGN"	 row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , DEFAULT=#fafafa)@" row_blink_state="@ALIAS_LIST(FIELD_TO_CHECK=..TEMPLATE, INFO_TYPE=BLINK)@"
+											row_middleClick="SHOW_TRAJECTORY" 
+											row_rightClick="EXTERNAL_ORDER(ORDER_ID=CHG , OBJECT_TYPE=CHG,  PREVIEW_NAME=previewCHG )"
+											 />
+		<col key="col2" indata="@OFIX?ETO;ETI@"	outdata="ETO"	col_width="50"  />
+		<col key="col3"	indata="@IFIX@"			outdata="IFIX"	col_width="60"/>
+		<col key="col4"	indata="@OFIX@"			outdata="OFIX"	col_width="60"		 />
+		<col key="col5"	indata="@PSSR_CODE@"	outdata="PSSR"	col_width="60" col_state="filteredVisible"	 />
+		<col key="col6"	indata="@SSR_CODE@"		outdata="ASSR"	col_width="60" col_state="filteredVisible"	 />
+		<col key="col7"	indata="@ADES@"			outdata="DES"	col_width="50"	  />				
+		<col key="col8"	indata="@ALIAS_LIST(FIELD_TO_CHECK1=..PEL)@"	col_width="50"	outdata="PEL"	col_state="filteredVisible"	 />
+		<col key="col9"	indata="@ALIAS_LIST(FIELD_TO_CHECK1=..COO)@"	col_width="50" 	outdata="COO"	col_state="filteredVisible"	 />		
+		<col key="col10"	indata="@PLV@"		outdata="PLV"	col_width="50" col_state="filteredVisible"	 row_leftClick="EXTERNAL_ORDER(ORDER_ID=ECL , OBJECT_TYPE=ECL,  PREVIEW_NAME=choiceECL )" />
+		<col key="col11"	indata="@ADIACENT_ATSU@"	outdata="OUT"	col_width="50"	col_state="filteredVisible"	 />
+
+	</list>
+</msg>

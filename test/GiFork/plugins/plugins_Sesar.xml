@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!-- Mercury for fourflight Plugins Manifest -->
+<project name="Sesar">
+	<plugin name="4FLabelPlugin" />
+	<plugin name="4FListPlugin" />
+	<plugin name="4FSdaPlugin" />
+	<plugin name="4FXaiPlugin" />
+	<plugin name="4FSesarPlugin" />
+</project>

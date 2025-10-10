@@ -1,0 +1,30 @@
+<msg>
+
+<list ROW_ID="@FLIGHT_NUM@" condition="@ISDEP@">
+
+
+<attributes ID="DEP:@ADEP@" BEHAVIOR_IF_EMPTY="delete" GROUP="DEP" SIDE="SFL:1"  SORT="ETD:ASC"  multicolumnname="ADEP"/>
+<col key="col1"	indata="@CALLSIGN@"	        outdata="CALLSIGN"	 row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , DEFAULT=#fafafa)@"	row_middleClick="CONTEXT_MENU(MENU_FILE=Executive.xml, TITLE=EXECUTIVE)" row_leftClick="CONTEXT_MENU(MENU_FILE=Planner.xml,TITLE=PLANNER_MENU)" row_rightClick="CONTEXT_MENU(MENU_FILE=Flight.xml,TITLE=FLIGHT_MENU)"/>
+<!-- <col key="col2" indata="@OBT@"				outdata="EOBT"   row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW ,ORDER_ID=DCR, OBJECT_TYPE=DCR, PREVIEW_NAME=previewDCR)" /> -->
+<!-- <col key="col3" indata="@CTOT@"				outdata="CTOT"   row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW ,ORDER_ID=CTOT, OBJECT_TYPE=CTOT, PREVIEW_NAME=previewCTOT)" /> -->
+<col key="col2" indata="@ETD@"		        outdata="ETD"   />
+<!-- <col key="col5" indata="@TACSTATUS@"        outdata="TAC"   row_leftClick="CONTEXT_MENU(MENU_FILE=TowerMenu.xml)" /> -->
+<col key="col3" indata="@SFPL_STATE@"		outdata="FS" col_state="filteredNotVisible" row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , DEFAULT=#CECECE)@"/>
+<col key="col4" indata="@ATY@"				outdata="TYPE" col_state="filteredVisible"  />
+<!-- <col key="col8" indata="@WTC@"				outdata="W" col_state="filteredNotVisible"  /> -->
+<col key="col5" indata="@SSR_CODE@"			outdata="ASSR" col_state="filteredVisible" row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , DEFAULT=#CECECE)@"/>
+<!-- <col key="col11" indata="@SID@"				outdata="SID    "   row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW ,ORDER_ID=CSI, OBJECT_TYPE=CSI, PREVIEW_NAME=previewCSI)" /> -->
+<col key="col6" indata="@CFL@"				outdata="CFL" col_state="filteredVisible" row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..CFL_WARNING_FLAG , DEFAULT=#CECECE)@" row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW ,ORDER_ID=ALV, OBJECT_TYPE=ALV, PREVIEW_NAME=choiceALV)" />
+<col key="col7" indata="@FR@ @FTYPE@" choicefield="$FUSION" outdata="FR " col_state="filteredNotVisible" />
+<col key="col8" indata="@RVSM@"			outdata="RVSM" col_state="filteredNotVisible"  />
+<!-- <col key="col15" indata="@DEP_PKBAY@"		outdata="PBAY" col_state="filteredVisible"  row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW , ORDER_ID=EPKBDEP , OBJECT_TYPE=EPKBDEP , PREVIEW_NAME=previewEPKBDEP)"/> -->
+<col key="col9" indata="@EQ_833_STATUS@ @EQ_833_PERMISSION@" choicefield="$FUSION" outdata="8.33" col_state="filteredNotVisible" />
+<col key="col10" indata="@ADEP@"			outdata="ADEP" col_state="filteredVisible"  />
+<col key="col11" indata="@DEPRWY@"			outdata="RWY"   row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW ,ORDER_ID=RWADEP, OBJECT_TYPE=RWADEP, PREVIEW_NAME=choiceRWADEP)"/>
+<col key="col12" indata="@ADES@"			outdata="ADES" col_state="filteredNotVisible"  />
+<!-- <col key="col13" indata="@PLV@"				outdata="PLV"   /> -->
+
+</list>
+
+
+</msg>

@@ -1,0 +1,28 @@
+<msg>
+	<list 
+		ROW_ID="@FLIGHT_NUM@" condition="@ISHLD@">
+	
+		<attributes 
+			ID="HOLDING LIST @HLDF@" 
+			behavior_if_empty="delete" 
+			side="HOL" 
+			group="HOLDING LIST"
+			sort="CFL:ASC" 
+			
+		/>
+
+		<col key="col1" indata="@FLIGHT_NUM@" outdata="FNUM" col_state="notFilteredNotVisible" />
+		<col key="col2" indata="@CALLSIGN@" outdata="CALLSIGN"  row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , DEFAULT=#fafafa)@" row_blink_state="@ALIAS_LIST(FIELD_TO_CHECK=..TEMPLATE, INFO_TYPE=BLINK)@" row_middleClick="SHOW_TRAJECTORY" row_rightClick="EXTERNAL_ORDER(ORDER_ID=CHG , OBJECT_TYPE=CHG,  PREVIEW_NAME=previewCHG )"/>
+		<col key="col3" indata="@CFL@" outdata="CFL"   />
+		<col key="col4" indata="@ALIAS_LIST(FIELD_TO_CHECK1=..SLB)@" outdata="SLB"  /> 
+		<col key="col5" indata="@ADES@" outdata="DES"  />
+		<col key="col6"	indata="@WTC@"	outdata="WTC"		 />
+		<col key="col7" indata="@ATY@" outdata="TYPE"  />
+		<col key="col8" indata="@HLDF@" outdata="HLDF"  />
+		<col key="col9" indata="@HLDE@" outdata="HLDE"  />
+		<col key="col10"	indata="@SSR_CODE@"	outdata="SSR"	 row_fgr="FFFFFF" />
+		<col key="col11"  indata="@ALIAS_LIST(FIELD_TO_CHECK1=..LEV)@" outdata="AFL" col_state="filteredNotVisible" /> 
+		<col key="col12"	indata="@FR@ @FTYPE@"	outdata="FR" col_state="filteredNotVisible"	 />
+	
+	</list>
+</msg>

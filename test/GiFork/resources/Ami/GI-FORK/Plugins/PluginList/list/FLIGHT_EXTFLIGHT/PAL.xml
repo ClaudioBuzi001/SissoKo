@@ -1,0 +1,17 @@
+<msg>
+<list ROW_ID="@FLIGHT_NUM@" condition="@ISPAL@">
+
+<attributes ID="PENDING LIST" LATITUDE="" LONGITUDE="" BEHAVIOR_IF_EMPTY="delete" SIDE="SFL:0"  SORT="ETO:ASC" />
+
+<col key="col1" indata="@CALLSIGN@"		outdata="CALLSIGN"	col_state="filteredVisible" row_fgr="@TEMPLATE_COLOR@" row_middleClick="SHOW_TRAJECTORY"/>
+<col key="col2"	indata="@ALIAS_LIST(FIELD_TO_CHECK=..SCT)@" outdata="SCT"	col_state="filteredVisible"	 />
+<col key="col3" indata="@ETD@"          outdata="ETI/ETD"	col_state="filteredVisible"  />
+<col key="col4"	indata="@FR@ @FTYPE@"	outdata="FR"	    col_state="filteredVisible"  choicefield="$FUSION" />
+<col key="col5" indata="@SSR_CODE@"		outdata="ASSR"		col_state="filteredVisible" />
+<col key="col6" indata="@ADEP@"			outdata="ADEP"		col_state="filteredNotVisible"  />
+<col key="col7" indata="@ADES@"			outdata="ADES"		col_state="filteredNotVisible"  />
+<col key="col8" indata="@IFIX@"			outdata="INFIX"		col_state="filteredVisible"  />
+<col key="col9" indata="@PEL@"			outdata="PEL"		col_state="filteredVisible"  />
+</list>
+
+</msg>

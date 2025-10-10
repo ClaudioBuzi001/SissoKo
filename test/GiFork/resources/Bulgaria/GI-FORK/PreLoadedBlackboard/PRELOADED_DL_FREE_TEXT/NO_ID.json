@@ -1,0 +1,53 @@
+{
+	"UM183_1": [
+		{
+			"MSG": "DUE TO TRAFFIC",
+			"IDENT": "1"
+		}
+	],
+	"UM183_2": [
+		{
+			"MSG": "FT DUE TO WEATHER",
+			"IDENT": "2"
+		}
+	],
+	"UM183_3": [
+		{
+			"MSG": "FT RESTRICTION",
+			"IDENT": "3"
+		}
+	],
+	"UM169_1": [
+		{
+			"MSG": "RUNWAY ALLOCATION 16R",
+			"IDENT": "1"
+		}
+	],
+	"UM169_2": [
+		{
+			"MSG": "RUNWAY ALLOCATION 16L",
+			"IDENT": "2"
+		}
+	],
+	"UM169_3": [
+		{
+			"MSG": "RUNWAY ALLOCATION 34L",
+			"IDENT": "3"
+		}
+	],
+	"UM170_1": [
+		{
+			"MSG": "URGENT",
+			"IDENT": "1"
+		}
+	],
+	"TYPE": [
+		"UM169_1",
+		"UM169_2",
+		"UM169_3",
+		"UM170_1",
+		"UM183_1",
+		"UM183_2",
+		"UM183_3"
+	]
+}

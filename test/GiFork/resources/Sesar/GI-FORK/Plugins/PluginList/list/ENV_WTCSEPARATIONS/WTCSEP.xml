@@ -1,0 +1,17 @@
+<msg>
+	<list 
+		ROW_ID="@LEADER_ID@" condition="true">
+		<attributes 
+			ID="WTC SEPARATION LIST" 
+			BEHAVIOR_IF_EMPTY="delete" 
+			MAX_ITEM_SHOWED="10" 
+			SIDE="SNET:2"
+			 		 
+		/>
+		<col key="col1"  indata="@LEADER_ID@"	outdata="LEADER"		 />				
+		<col key="col2"  indata="@SEP_SUPER@"	outdata="FOLLOWER_J"     />		
+		<col key="col3"  indata="@SEP_HEAVY@"	outdata="FOLLOWER_H"     />	
+		<col key="col4"  indata="@SEP_MEDIUM@"	outdata="FOLLOWER_M"     />
+		<col key="col5"  indata="@SEP_LIGHT@"	outdata="FOLLOWER_L"     />
+</list>
+</msg>

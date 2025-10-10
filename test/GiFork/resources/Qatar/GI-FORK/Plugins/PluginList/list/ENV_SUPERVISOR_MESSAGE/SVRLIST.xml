@@ -1,0 +1,16 @@
+<msg>
+
+<!--  LISTE LIS  ENV  -->
+
+<!--  QUESTA LISTA A PRENDE I DATI DAL MESSAGGIO DI ENV_RNY_IN_USE
+	  A CODICE DEL PLGUIN LIST VIENE FATTA UNA GESTIONE SPECIFICA PER TALE MESSAGGIO PER ESTRARRE
+	  I DATI DELLE RIGHE DAGLI ELEMENTI DELL'ARRAY DEL MESSAGGIO
+-->
+
+<list ROW_ID="@TIME@" condition="">
+	<attributes ID="SVR LIST" behavior_if_empty="delete" CLOSE_BUTTON_CALLBACK= "DUMMY" side="GRP_TOP_RIGHT" open_in_grp="true" visible="false"/>
+	<col key="col1" indata="@TIME@" outdata="TIME" col_state="filteredVisible"  />
+	<col key="col2" indata="@SVR_MESSAGE@" outdata="MESSAGE" col_state="filteredVisible"  />
+</list>
+
+</msg>

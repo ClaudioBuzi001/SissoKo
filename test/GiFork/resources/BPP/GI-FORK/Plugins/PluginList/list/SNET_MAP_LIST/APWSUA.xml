@@ -1,0 +1,34 @@
+<msg>
+
+<!--  LISTE LIS MAP  -->
+<list ROW_ID="@UID@" condition="@ISAPWSUA@">
+	<attributes ID="APW SUA LIST" behavior_if_empty="delete" sort="MAP:ASC" side="SNET:0"  ADD_BUTTON_CALLBACK="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW, ORDER_ID=CREATEAPWSUA, OBJECT_TYPE=CREATEAPWSUA, PREVIEW_NAME=previewCREATEAPWSUA, DATA={'TYPE_OPER':'C'}, )" />
+	<col key="col1" indata="@id@" outdata="MAP" messagetype="lisMap" col_state="filteredVisible" row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..SHAPE , CHECK_COLOR=#FFA500, DEFAULT=#fafafa)@" row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW, ORDER_ID=UPDAPWSUA, OBJECT_TYPE=UPDAPWSUA, PREVIEW_NAME=previewUPDAPWSUA,  )" row_rightClick="EXTERNAL_ORDER(POPUP_ORDER=REMOVAL+#MAP, ORDER_ID=MAPD, PREVIEW_NAME=quickMAPD)"/>
+	<col key="col2" indata="@type@" outdata="TYPE" col_width="150" messagetype="lisMap" col_state="filteredVisible" />
+	<col key="col3" indata="@status@" outdata="STATUS" messagetype="lisMap" col_state="filteredVisible"  row_leftClick="@ALIAS_LIST(FIELD_TO_CHECK=..status)@"/>
+	<col key="col4" indata="@statustt@" outdata="STATUS TT" messagetype="lisMap" col_state="filteredVisible"  row_leftClick="@ALIAS_LIST(FIELD_TO_CHECK=..statustt)@"/>
+	<col key="col5" indata="@hBot@" outdata="FT LOW" messagetype="lisMap" col_state="filteredVisible" />
+	<col key="col6" indata="@hTop@" outdata="FT UPP" messagetype="lisMap" col_state="filteredVisible" />
+	<col key="col7" indata="@dateFr@" outdata="ACTIVATION" messagetype="lisMap" col_state="filteredVisible" />
+	<col key="col8" indata="@dateTo@" outdata="DEACTIVATION" messagetype="lisMap" col_state="filteredVisible" />
+	<col key="col9" indata="@tlook@" outdata="LAT" messagetype="lisMap" col_state="filteredVisible" />
+	<col key="col10" indata="@pdv@" outdata="PEN" messagetype="lisMap" col_state="filteredVisible" />
+	<col key="col11" indata="@vfr@" outdata="VFR" messagetype="lisMap" col_state="filteredVisible" />
+	<col key="col12" indata="@ifr@" outdata="IFR" messagetype="lisMap" col_state="filteredVisible" />
+	<col key="col13" indata="@mil@" outdata="MIL" messagetype="lisMap" col_state="filteredVisible" />
+	<col key="col14" indata="@cro@" outdata="CRO" messagetype="lisMap" col_state="filteredVisible" />
+	<col key="col15" indata="@is833@" outdata="8.33" messagetype="lisMap" col_state="filteredVisible" />
+	<col key="col16" indata="@gat@" outdata="GAT" messagetype="lisMap" col_state="filteredVisible" />
+	<col key="col17" indata="@oat@" outdata="OAT" messagetype="lisMap" col_state="filteredVisible" />
+	<col key="col18" indata="@ALIAS_LIST(FIELD_TO_CHECK=..ISAPW)@" outdata="APW" messagetype="lisMap" col_state="filteredVisible" />
+	<col key="col19" indata="@ALIAS_LIST(FIELD_TO_CHECK=..ISSUA)@" outdata="SUA" messagetype="lisMap" col_state="filteredVisible" />
+	
+	
+	<col key="col20" indata="" outdata="CALLSIGN" messagetype="lisMap" col_state="filteredVisible" row_image="@SNET_LIST(FIELD_TO_CHECK=..CALLSIGN)@" row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW , ORDER_ID=UPDSNETCS, OBJECT_TYPE=UPDSNETCS,PREVIEW_NAME=previewUPDSNETCS)"/>
+	<col key="col21" indata="" outdata="SSR"      messagetype="lisMap" col_state="filteredVisible" row_image="@SNET_LIST(FIELD_TO_CHECK=..SSR)@" row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW , ORDER_ID=UPDSNETSSR, OBJECT_TYPE=UPDSNETSSR,PREVIEW_NAME=previewUPDSNETSSR)"/>
+	
+	
+</list>
+
+
+</msg>

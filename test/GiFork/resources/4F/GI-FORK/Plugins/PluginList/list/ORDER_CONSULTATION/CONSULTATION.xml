@@ -1,0 +1,31 @@
+<msg>
+	<list 
+		ROW_ID="@FLIGHT_NUM@" condition="@ISCONSULTATION@">
+
+		<attributes 
+			ID="CONSULTATION FLIGHT LIST" 	
+			behavior_if_empty="visible"		
+			side="GRP_TOP_LEFT" 
+			open_in_grp="true" 
+			visible="true"
+			CLOSE_BUTTON_CALLBACK= "DUMMY()"
+			sort="CALLSIGN:ASC"
+				
+			
+		/>
+
+		<col key="col1"	 indata="@CS@"	outdata="CALLSIGN"	 row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , DEFAULT=#fafafa)@" row_blink_state="@ALIAS_LIST(FIELD_TO_CHECK=..TEMPLATE, INFO_TYPE=BLINK)@" row_middleClick="SHOW_TRAJECTORY" row_rightClick="EXTERNAL_ORDER(ORDER_ID=CHG , OBJECT_TYPE=CHG,  PREVIEW_NAME=previewCHG )" />
+		<col key="col2"  indata="@FS@"	outdata="FS"   />
+		<col key="col3"  indata="@FR@"	outdata="FR"   />
+		<col key="col4"  indata="@TYPE@"  outdata="TYPE" col_state="filteredVisible" />
+		<col key="col5"  indata="@TAS@"   outdata="TAS" col_state="filteredVisible"   /> 
+		<col key="col6"  indata="@RFL@"   outdata="RFL"    />
+		<col key="col7"  indata="@DEP@"	  outdata="DEP"   />
+		<col key="col8"  indata="@DES@"	  outdata="DES"   />
+		<col key="col9"  indata="@ROUTE@" outdata="ROUTE" col_state="filteredVisible"  />
+		<col key="col10" indata="@ATA@"	  outdata="ATA" col_state="filteredVisible"  />
+		<col key="col11" indata="@ATD@"	  outdata="ATD" col_state="filteredVisible"  />
+		<col key="col12" indata="@EOBT@"  outdata="EOBT"   />
+			
+	</list>
+</msg>

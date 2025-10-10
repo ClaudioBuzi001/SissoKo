@@ -1,0 +1,24 @@
+<msg>
+
+<list ROW_ID="BRW_@KEYINDEX@" condition="">
+
+   <attributes ID="BROWSE LIST" 
+		BEHAVIOR_IF_EMPTY="delete" 
+		side="GRP_CENTER_RIGHT" 
+		CLOSE_BUTTON_CALLBACK= "REMOVE_CONTAINER(VALUE=BROWSE%20LIST)"
+		visible="true"
+	/>
+	
+	<col key="col1"	indata="@KEYSTA@"	 outdata="M"	        col_state="filteredVisible" />
+	<col key="col2"	indata="@KEYREG@"	 outdata="FR"	        col_state="filteredVisible" />			
+	<col key="col3"	indata="@KEYCS@"	 outdata="CALLSIGN"	    col_state="filteredVisible" />
+	<col key="col4"	indata="@KEYATY@"	 outdata="TYPE"	        col_state="filteredVisible" />
+	<col key="col5"	indata="@KEYTAS@"	 outdata="TAS"	        col_state="filteredVisible" />			
+	<col key="col6"	indata="@KEYDEP@"	 outdata="ADEP"	        col_state="filteredVisible" />
+	<col key="col7"	indata="@KEYROUTE@"	 outdata="ROUTE"	    col_state="filteredVisible" />
+	<col key="col8"	indata="@KEYDES@"	 outdata="ADES"	        col_state="filteredVisible" />
+	<col key="col9"	indata="@KEYPLV@"	 outdata="PLV"	        col_state="filteredVisible" />
+	
+</list>
+
+</msg>

@@ -1,0 +1,17 @@
+<msg>
+<!--  QUESTA LISTA A PRENDE I DATI DAL MESSAGGIO DI ENV_AERODROMEINFO
+	  A CODICE DEL PLGUIN LIST VIENE FATTA UNA GESTIONE SPECIFICA PER TALE MESSAGGIO PER ESTRARRE
+	  I DATI DELLE RIGHE DAGLI ELEMENTI DELL'ARRAY DEL MESSAGGIO
+-->
+<list ROW_ID="@AERODROME_NAME@" condition="">
+	<attributes ID="QNH LIST" behavior_if_empty="visible" side="GRP" open_in_grp="true" visible="false" CLOSE_BUTTON_CALLBACK="DUMMY" />
+	<col key="col1" indata=""                    outdata="ON"   col_state="filteredVisible"   row_image="@QNH_LIST(FIELD_TO_CHECK1=..ISMAIN , VAL_1=ISMAIN)@" row_leftClick="EXTERNAL_ORDER(ORDER_ID=QNV , OBJECT_TYPE=QNV ,  DATA={'ACT':'0'}, PREVIEW_NAME=quickQNV)"/>
+	<col key="col2" indata="@AERODROME_NAME@"    outdata="SITE" col_state="filteredVisible"  />
+	<!-- PROPABILMENTE per la presentazione del valore del QNH da presentare
+	bisognera' gestire tra i valori da passare anche
+	QNH_PROPOSED_INT e QNH_PROPOSED_DEC e QNH_STATE)  -->
+	<col key="col3" indata="@QNH_LIST(FIELD_TO_CHECK1=..QNH_VALUE , VAL_1=QNH_INT, VAL_2=QNH_DEC, VAL_3=QNH_INT_PROPOSED, VAL_4=QNH_DEC_PROPOSED,VAL_5=QNH_STATE)@" outdata="QNH"  col_state="filteredVisible"  row_fgr="@QNH_LIST(FIELD_TO_CHECK1=..QNH_COLOR , VAL_1=QNH_STATE)@" row_leftClick="@QNH_LIST(FIELD_TO_CHECK1=..QNH_CALLBACK , VAL_1=QNH_STATE)@"/>
+	<col key="col4" indata="@TEMPERATURE@"    outdata="TEMP" col_state="filteredVisible"  />
+</list>
+
+</msg>

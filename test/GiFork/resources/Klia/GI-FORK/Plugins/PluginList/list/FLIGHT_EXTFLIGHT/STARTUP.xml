@@ -1,0 +1,23 @@
+<msg>
+
+<list ROW_ID="@FLIGHT_NUM@" condition="@ISSTARTUP@">
+	<attributes ID="START-UP LIST" lat="" lon="" behavior_if_empty="delete" behavior_if_full="visible" side="SFL:3" swap="true" sort="CALLSIGN:ASC" list_type="OPAQUE"/>
+	<col key="col1" indata="@CALLSIGN@" outdata="CALLSIGN" col_state="filteredVisible" row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE_ARR , DEFAULT=#fafafa)@"/>
+	<col key="col2" indata="@FLIGHT_EXTFLIGHT<FLIGHT_NUM>.OBT@" outdata="EOBT" col_state="filteredNotVisible"/>
+	<col key="col3" indata="@FLIGHT_EXTFLIGHT<FLIGHT_NUM>.ETD@" outdata="ETD" col_state="filteredVisible"/>
+	<col key="col4" indata="@CTOT@" outdata="CTOT" col_state="filteredVisible"/>
+	<col key="col5" indata="@TOBT@" outdata="TOBT" col_state="filteredVisible"/>
+	<col key="col6" indata="@FLIGHT_EXTFLIGHT<FLIGHT_NUM>.ATY@" outdata="TYPE" col_state="filteredVisible"/>
+	<col key="col7" indata="@WTC@"				outdata="W" col_state="filteredVisible"  />
+	<col key="col8" indata="@DEP_PKBAY?DEP_PKBAY;ARR_PKBAY@" choicefield="DEP_PKBAY" condition0="$ISPRES" outdata="PKB" col_state="filteredVisible" row_leftClick="EXTERNAL_ORDER(GRAPHIC_ORDER=PREVIEW , ORDER_ID=EPKBDEP , OBJECT_TYPE=EPKBDEP , PREVIEW_NAME=previewEPKBDEP)"/>
+	
+	<col key="col10" indata="@DEPRWY@" outdata="RWY" col_state="filteredVisible"/>
+	<col key="col11" indata="@RP_ROUTE@" outdata="GROUND_ROUTE" col_state="filteredVisible"/>
+	<col key="col12" indata="@NEXTORDER@" outdata="NEXTORDER" col_state="filteredVisible" order="$Alias"/>	
+</list>
+
+</msg>
+
+
+
+

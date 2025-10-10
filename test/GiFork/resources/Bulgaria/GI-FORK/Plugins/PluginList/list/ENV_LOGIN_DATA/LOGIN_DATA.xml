@@ -1,0 +1,24 @@
+<msg>
+
+<!--  LISTE LIS  ENV  -->
+
+<!--  QUESTA LISTA A PRENDE I DATI DAL MESSAGGIO DI ENV_LOGIN_DATA
+	  A CODICE DEL PLGUIN LIST VIENE FATTA UNA GESTIONE SPECIFICA PER TALE MESSAGGIO PER ESTRARRE
+	  I DATI DELLE RIGHE DAGLI ELEMENTI DELL'ARRAY DEL MESSAGGIO
+-->
+
+
+<list ROW_ID="ENV_PHYS_@physConsoleName@" condition="">
+
+	<attributes ID="LOGIN DATA" behavior_if_empty="delete" side="GRP" open_in_grp="true" visible="false"  CLOSE_BUTTON_CALLBACK= "DUMMY" />
+	<col key="col1" indata="@physConsoleName@" outdata="CONSOLE" col_state="filteredVisible"  />
+	<col key="col2" indata="@userName@" outdata="USERNAME      " col_state="filteredVisible"  />
+	<col key="col3" indata="@sector@" outdata="SECTOR" col_state="filteredVisible"  />
+	<col key="col4" indata="@logStatus@" outdata="STATUS" col_state="filteredVisible"  />
+	<col key="col5" indata="@loginTime@" outdata="LOGIN      " col_state="filteredVisible"  />
+	<!--  <col key="col6" indata="@tubeTime@" outdata="TUBE" col_state="filteredVisible"  /> -->
+	<!-- col key="col6" indata="@logoutTime@" outdata="LOGOUT" col_state="filteredVisible"  /> -->
+			
+</list>
+
+</msg>

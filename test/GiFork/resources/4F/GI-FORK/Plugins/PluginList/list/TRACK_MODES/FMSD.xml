@@ -1,0 +1,30 @@
+<msg>
+	<list
+		ROW_ID="@FLIGHT_NUM@" condition="true">
+		<attributes	
+			ID="MODE S FLIGHT DIRECTORY LIST"	
+			lat=""	
+			lon=""	
+			behavior_if_empty="delete"		
+			side="DIR:2" 
+				
+			sort="ACID:ASC"
+			
+		/>
+<!-- mettendo ".." nei parametri della ServiceCall come nel'esempio seguente tale parametro verra passato al servizio senza elaborarne il recupero dalla Blackboard:
+@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , DEFAULT=#CECECE)@
+-->	 
+		<col key="col1"		indata="@RCS@"     	outdata="ACID"  row_image="@ALIAS_LIST(FIELD_TO_CHECK1=..CALLSIGN, INFO_TYPE=IMAGE)@" row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , DEFAULT=#fafafa)@" row_middleClick="SHOW_TRAJECTORY" row_rightClick="EXTERNAL_ORDER(ORDER_ID=CHG , OBJECT_TYPE=CHG,  PREVIEW_NAME=previewCHG )" />
+		<col key="col2"		indata="@ALIAS_LIST(FIELD_TO_CHECK1=..MODE_3A)@" outdata="SSR"  col_width="55"  /> 
+		<col key="col3"		indata="@LEV@"     	outdata="FL/ALT" col_width="70"  />
+		<col key="col4"		indata="@VR@"     	outdata="VR"	 col_width="50" row_image="@ALIAS_LIST(FIELD_TO_CHECK1=..VR_ATD, INFO_TYPE=IMAGE)@" />
+		<col key="col5"		indata="@ALIAS_LIST(FIELD_TO_CHECK1=..SLB)@"	outdata="SLB"  col_width="55"  />
+		<col key="col6"		indata="@HDG@"     	outdata="HDG"  col_width="55"  />		
+		<col key="col7"		indata="@IAS@"    	outdata="IAS"  col_width="55" />
+		<col key="col8"		indata="@MACH_SPEED@" outdata="MACH" col_width="55"    />
+		<col key="col9"	    indata="@GND@"      outdata="GS" col_width="40"/>
+		<col key="col10"	indata="@ALIAS_LIST(FIELD_TO_CHECK1=..CALLSIGN)@"	outdata="CALLSIGN" row_fgr="@LIST_FGR_COLOR(FIELD_TO_CHECK=..TEMPLATE , DEFAULT=#fafafa)@" />
+		<col key="col11"	indata="@ALIAS_LIST(FIELD_TO_CHECK1=..IS_DUPLICATED)@" 		outdata="DSSR"  col_width="55"   row_fgr="#ff0000" />
+		<col key="col12"	indata="@ALIAS_LIST(FIELD_TO_CHECK1=..IS_DUPLICATED_RCS)@" 	outdata="DACID" col_width="65"  row_fgr="#ff0000" />
+	</list>
+</msg>

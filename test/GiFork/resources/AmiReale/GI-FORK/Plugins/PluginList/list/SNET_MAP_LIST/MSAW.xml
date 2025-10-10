@@ -1,0 +1,21 @@
+<msg>
+
+<list ROW_ID="@UID@" condition="@ISMSAW@">
+	<attributes ID="MSAW LIST" behavior_if_empty="delete" side="SNET:1" sort="MAP:ASC"/>
+	<col key="col1" indata="@id@" outdata="MAP" messagetype="lisMap" col_state="filteredVisible" />
+	<col key="col2" indata="@status@" outdata="STATUS" messagetype="lisMap" col_state="filteredVisible" row_leftClick="EXTERNAL_ORDER(ORDER_ID=DBCS, OBJECT_TYPE=DBCS,  PREVIEW_NAME=quickDBCS)" />
+	<col key="col3" indata="@hMax@" outdata="MSAFE" messagetype="lisMap" col_state="filteredVisible" />
+	<col key="col4" indata="@dateFr@" outdata="ACTIVATION" messagetype="lisMap" col_state="filteredVisible" />
+	<col key="col5" indata="@dateTo@" outdata="DEACTIVATION" messagetype="lisMap" col_state="filteredVisible" />
+	<col key="col6" indata="@tlook@" outdata="LAT" messagetype="lisMap" col_state="filteredVisible" />
+	<col key="col7" indata="@pdv@" outdata="PEN" messagetype="lisMap" col_state="filteredVisible" />
+	<col key="col8" indata="@mil@" outdata="MIL" messagetype="lisMap" col_state="filteredVisible" />
+	<col key="col9" indata="@vfr@" outdata="VFR" messagetype="lisMap" col_state="filteredVisible" />
+	<col key="col10" indata="@ifr@" outdata="IFR" messagetype="lisMap" col_state="filteredVisible" />
+	<col key="col11" indata="@gat@" outdata="GAT" messagetype="lisMap" col_state="filteredVisible" />
+	<col key="col12" indata="@oat@" outdata="OAT" messagetype="lisMap" col_state="filteredVisible" />
+<!-- 	<col key="col13" indata="@airportId@" outdata="AIRP  " messagetype="lisMap" col_state="filteredVisible" /> -->
+</list>
+
+
+</msg>

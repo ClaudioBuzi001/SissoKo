@@ -1,0 +1,1137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conflictConfig>
+<!--
+=================================================================
+  Copyright (C) Leonardo S.p.A. all rights reserved.
+  This software is the property of Leonardo S.p.A.
+  and can not be reproduced, used to prepare Derivative Works of,
+  publicly displayed, publicly performed, sublicensed, and it
+  cannot be distributed as the Work itself and such Derivative
+  Works in Source or Object form except under a license agreement
+  granted by Leonardo S.p.A.
+================================================================= 
+-->
+	<!-- 
+		I campi utilizzati per mappare i valori del messaggio SCA da Xai 
+		sono:
+		value (ALARM_TYPE) e 
+		id (SUB_TYPE)
+		I campi status  e priority vengono letti dalla configurazione 
+		ma non sono utilizzati per ricavare le due stringhe label_string (label) e 
+		alert_string (lista). 
+		La configurazione degli allarmi viene caricata in una mappa che ha per  
+		chiave value_id (ALARM_TYPE + SUBTYPE) e come valore un oggetto alert
+		che contiene tutti gli attributi. 
+		L'informazione di status e` gestita dalla lista per la colorazione 
+		della riga (vedi SDColorList) mentre la label trasmette in chiaro
+		lo stato nel campo SCA_ALARM_STATUS utilizzato per associare il colore 
+		giallo (Warning) o rosso (Alarm) 
+	-->
+
+			<!-- RINC // Runway Incursion 2 tracks -->
+			<alert  name="RINC" 
+					value="1"
+					id="1"
+					desc="Runway Incursion 2 tracks"
+					status="0"
+					priority="1"
+					label_string="RWINC"
+					alert_string="RWY COLLISION"
+			         
+			/>
+			<alert  name="RINC" 
+					value="1"
+					id="2"
+					desc="Runway Incursion 2 tracks"
+					status="0"
+					priority="1"
+					label_string="RWINC"
+					alert_string="RWY COLLISION"
+			         
+			/>
+			<alert  name="RINC" 
+					value="1"
+					id="3"
+					desc="Runway Incursion 2 tracks"
+					status="0"
+					priority="1"
+					label_string="RWINC"
+					alert_string="RWY COLLISION"
+			         
+			/>
+			<alert  name="RINC" 
+					value="1"
+					id="4"
+					desc="Runway Incursion 2 tracks"
+					status="0"
+					priority="1"
+					label_string="RWINC"
+					alert_string="RWY COLLISION"
+			         
+			/>
+			<alert  name="RINC" 
+					value="1"
+					id="5"
+					desc="Runway Incursion 2 tracks"
+					status="0"
+					priority="1"
+					label_string="RWINC"
+					alert_string="RWY COLLISION"
+			         
+			/>
+			<alert  name="RINC" 
+					value="1"
+					id="6"
+					desc="Runway Incursion 2 tracks"
+					status="0"
+					priority="1"
+					label_string="RWINC"
+					alert_string="RWY COLLISION"
+			         
+			/>
+			<alert  name="RINC" 
+					value="1"
+					id="7"
+					desc="Runway Incursion 2 tracks"
+					status="0"
+					priority="1"
+					label_string="RWINC"
+					alert_string="RWY COLLISION"
+			         
+			/>
+			<alert  name="RINC" 
+					value="1"
+					id="8"
+					desc="Runway Incursion 2 tracks"
+					status="0"
+					priority="1"
+					label_string="RWINC"
+					alert_string="RWY COLLISION"
+			         
+			/>
+			<alert  name="RINC" 
+					value="1"
+					id="9"
+					desc="Runway Incursion 2 tracks"
+					status="0"
+					priority="1"
+					label_string="RWINC"
+					alert_string="RWY COLLISION"
+			         
+			/>
+			<alert  name="RINC" 
+					value="1"
+					id="10"
+					desc="Runway Incursion 2 tracks"
+					status="0"
+					priority="1"
+					label_string="RWINC"
+					alert_string="RWY COLLISION"
+			         
+			/>
+			<alert  name="RINC" 
+					value="1"
+					id="14"
+					desc="Runway Incursion 2 tracks"
+					status="0"
+					priority="1"
+					label_string="RWINC"
+					alert_string="RWY COLLISION"
+			         
+			/>
+			<alert  name="RINC" 
+					value="1"
+					id="15"
+					desc="Runway Incursion 2 tracks"
+					status="0"
+					priority="1"
+					label_string="RWINC"
+					alert_string="RWY COLLISION"
+			         
+			/>
+			<alert  name="RINC" 
+					value="8"
+					id="1"
+					desc="Runway Incursion 16 - ALARM"
+					status="0"
+					priority="1"
+					label_string="RWINC"
+					alert_string="RWY CONFLICT"
+			         
+			/>
+			<alert  name="RINC" 
+					value="12"
+					id="1"
+					desc="Runway Incursion 16 - WARNING"
+					status="0"
+					priority="0"
+					label_string="RWINC"
+					alert_string="RWY CONFLICT"
+			         
+			/>
+			<alert  name="RINC" 
+					value="12"
+					id="2"
+					desc="Runway Incursion 2 tracks"
+					status="0"
+					priority="1"
+					label_string="RWINC"
+					alert_string="RWY COLLISION"
+			         
+			/>
+			<alert  name="RINC" 
+					value="12"
+					id="3"
+					desc="Runway Incursion 2 tracks"
+					status="0"
+					priority="1"
+					label_string="RWINC"
+					alert_string="RWY COLLISION"
+			         
+			/>
+			<alert  name="RINC" 
+					value="12"
+					id="4"
+					desc="Runway Incursion 2 tracks"
+					status="0"
+					priority="1"
+					label_string="RWINC"
+					alert_string="RWY COLLISION"
+			         
+			/>
+			<alert  name="RINC" 
+					value="12"
+					id="5"
+					desc="Runway Incursion 2 tracks"
+					status="0"
+					priority="1"
+					label_string="RWINC"
+					alert_string="RWY COLLISION"
+			         
+			/>
+			<alert  name="RINC" 
+					value="1"
+					id="1"
+					desc="Runway Incursion 2 tracks"
+					status="1"
+					priority="1"
+					label_string="RWINC"
+					alert_string="RWY COLLISION"
+			         
+			/>
+			<alert  name="RINC" 
+					value="1"
+					id="2"
+					desc="Runway Incursion 2 tracks"
+					status="1"
+					priority="1"
+					label_string="RWINC"
+					alert_string="RWY COLLISION"
+			         
+			/>	
+			<alert  name="RINC" 
+					value="1"
+					id="3"
+					desc="Runway Incursion 2 tracks"
+					status="1"
+					priority="1"
+					label_string="RWINC"
+					alert_string="RWY COLLISION"
+			         
+			/>	
+			<alert  name="RINC" 
+					value="1"
+					id="4"
+					desc="Runway Incursion 2 tracks"
+					status="1"
+					priority="1"
+					label_string="RWINC"
+					alert_string="RWY COLLISION"
+			         
+			/>	
+			<alert  name="RINC" 
+					value="1"
+					id="5"
+					desc="Runway Incursion 2 tracks"
+					status="1"
+					priority="1"
+					label_string="RWINC"
+					alert_string="RWY COLLISION"
+			         
+			/>	
+			<alert  name="RINC" 
+					value="1"
+					id="6"
+					desc="Runway Incursion 2 tracks"
+					status="1"
+					priority="1"
+					label_string="RWINC"
+					alert_string="RWY COLLISION"
+			         
+			/>	
+			<alert  name="RINC" 
+					value="1"
+					id="7"
+					desc="Runway Incursion 2 tracks"
+					status="1"
+					priority="1"
+					label_string="RWINC"
+					alert_string="RWY COLLISION"
+			         
+			/>			
+			<alert  name="RINC" 
+					value="1"
+					id="8"
+					desc="Runway Incursion 2 tracks"
+					status="1"
+					priority="1"
+					label_string="RWINC"
+					alert_string="RWY COLLISION"
+			         
+			/>			
+			<alert  name="RINC" 
+					value="1"
+					id="9"
+					desc="Runway Incursion 2 tracks"
+					status="1"
+					priority="1"
+					label_string="RWINC"
+					alert_string="RWY COLLISION"
+			         
+			/>			
+			<alert  name="RINC" 
+					value="1"
+					id="10"
+					desc="Runway Incursion 2 tracks"
+					status="1"
+					priority="1"
+					label_string="RWINC"
+					alert_string="RWY COLLISION"
+			         
+			/>			
+			<alert  name="RINC" 
+					value="1"
+					id="11"
+					desc="Runway Incursion 2 tracks"
+					status="1"
+					priority="1"
+					label_string="RWINC"
+					alert_string="RWY COLLISION"
+			         
+			/>			
+			<alert  name="RINC" 
+					value="1"
+					id="12"
+					desc="Runway Incursion 2 tracks"
+					status="1"
+					priority="1"
+					label_string="RWINC"
+					alert_string="RWY COLLISION"
+			         
+			/>			
+			<alert  name="RINC" 
+					value="1"
+					id="13"
+					desc="Runway Incursion 2 tracks"
+					status="1"
+					priority="1"
+					label_string="RWINC"
+					alert_string="RWY COLLISION"
+			         
+			/>			
+			<alert  name="RINC" 
+					value="1"
+					id="14"
+					desc="Runway Incursion 2 tracks"
+					status="1"
+					priority="1"
+					label_string="RWINC"
+					alert_string="RWY COLLISION"
+			         
+			/>			
+			<alert  name="RINC" 
+					value="1"
+					id="15"
+					desc="Runway Incursion 2 tracks"
+					status="1"
+					priority="1"
+					label_string="RWINC"
+					alert_string="RWY COLLISION"
+			         
+			/>		
+			<alert  name="RINC" 
+					value="12"
+					id="2"
+					desc="Runway Incursion 2 tracks"
+					status="1"
+					priority="1"
+					label_string="RWINC"
+					alert_string="RWY COLLISION"
+			         
+			/>
+			<alert  name="RINC" 
+					value="12"
+					id="3"
+					desc="Runway Incursion 2 tracks"
+					status="1"
+					priority="1"
+					label_string="RWINC"
+					alert_string="RWY COLLISION"
+			         
+			/>
+			<alert  name="RINC" 
+					value="12"
+					id="4"
+					desc="Runway Incursion 2 tracks"
+					status="1"
+					priority="1"
+					label_string="RWINC"
+					alert_string="RWY COLLISION"
+			         
+			/>			
+			<!-- CRC; // Closed Runway Conflict track+area -->
+			<alert  name="CRC" 
+					value="2"
+					id="1"
+					desc="Closed Runway conflict 1 - alarm"
+					status="0"
+					priority="0"
+					label_string="CLORW"
+					alert_string="TAXI CLOSED RWY"
+			         
+			/>
+			<alert  name="CRC" 
+					value="2"
+					id="1"
+					desc="Closed Runway conflict 1 - warning"
+					status="1"
+					priority="0"
+					label_string="CLORW"
+					alert_string="TAXI CLOSED RWY"
+			         
+			/>
+			<alert  name="CRC" 
+					value="2"
+					id="2"
+					desc="Closed Runway conflict 2 - alarm"
+					status="0"
+					priority="0"
+					label_string="CLORW"
+					alert_string="LND CLOSED RWY"
+			         
+			/>
+			
+			<alert  name="CRC" 
+					value="2"
+					id="2"
+					desc="Closed Runway conflict 2 - warning"
+					status="1"
+					priority="0"
+					label_string="CLORW"
+					alert_string="LND CLOSED RWY"
+			         
+			/>
+			<alert  name="CRC" 
+					value="2"
+					id="3"
+					desc="Closed Runway conflict 3"
+					status="1"
+					priority="0"
+					label_string="CLORW"
+					alert_string="TKF CLOSED RWY"
+			         
+			/>
+			<!-- WRD // Wrong Direction track+area -->
+			<alert  name="WRD" 
+					value="2"
+					id="4"
+					desc="Wrong Direction alarm 1 (taxiing)"
+					status="1"
+					priority="0"
+					label_string="CLORW"
+					alert_string="WRONG RWY"
+			         
+			/>
+			<alert  name="WRD" 
+					value="2"
+					id="5"
+					desc="Wrong Direction Alarm 2 (Landing)"
+					status="0"
+					priority="0"
+					label_string="CLORW"
+					alert_string="WRONG RWY"
+			         
+			/>
+			<alert  name="WRD" 
+					value="2"
+					id="5"
+					desc="Wrong Direction Warning 2 (Landing)"
+					status="1"
+					priority="0"
+					label_string="CLORW"
+					alert_string="WRONG RWY"
+			         
+			/>
+			<alert  name="WRD" 
+					value="2"
+					id="6"
+					desc="Mobile not identified - alarm"
+					status="0"
+					priority="0"
+					label_string="NOTID"
+					alert_string="NOT IDENTIFIED"
+			         
+			/>
+			<alert  name="WRD" 
+					value="2"
+					id="6"
+					desc="Mobile not identified - warning"
+					status="1"
+					priority="0"
+					label_string="NOTID"
+					alert_string="NOT IDENTIFIED"
+			         
+			/>
+			<!-- RUC; // Roll-up Conflict 2 tracks -->	
+			<alert  name="RUC" 
+					value="3"
+					id="1"					
+					desc="Roll-up Conflict on runway"
+					status="1"
+					priority="0"
+					label_string="RWINC"
+					alert_string="COLLISION"
+			         
+			/>
+			<alert  name="RUC" 
+					value="3"
+					id="2"
+					desc="Roll-up Conflict on taxiway"
+					status="1"
+					priority="0"
+					label_string="CRASH"
+					alert_string="COLLISION"
+			         
+			/>
+			<alert  name="RUC" 
+					value="3"
+					id="3"
+					desc="Roll-up Conflict with a vehicle"
+					status="1"
+					priority="0"
+					label_string="CRASH"
+					alert_string="COLLISION"
+			         
+			/>
+			<!-- CROC; // Crossing Conflict 2 tracks -->	
+			<alert  name="CROC" 
+					value="3"
+					id="4"
+					desc="Crossing Conflict alarm 1"
+					status="0"
+					priority="0"
+					label_string="CROSS"
+					alert_string="CROSSING TAXI"
+			         
+			/>
+			<alert  name="CROC" 
+					value="3"
+					id="4"
+					desc="Crossing Conflict warning 1"
+					status="1"
+					priority="0"
+					label_string="CROSS"
+					alert_string="CROSSING TAXI"
+			         
+			/>
+			<!-- OPD// Opposite Direction 2 tracks -->
+			<alert  name="OPD" 
+					value="3"
+					id="5"					
+					desc="Opposite Direction alarm 1"
+					status="1"
+					priority="0"
+					label_string="RWINC"
+					alert_string="COLLISION"
+			         
+			/>
+			<alert  name="OPD" 
+					value="3"
+					id="6"					
+					desc="Opposite Direction alarm 2"
+					status="1"
+					priority="0"
+					label_string="CRASH"
+					alert_string="COLLISION"
+			         
+			/>
+			<alert  name="OPD" 
+					value="3"
+					id="7"					
+					desc="Opposite Direction alarm 3 (vehicle)"
+					status="1"
+					priority="0"
+					label_string="CRASH"
+					alert_string="COLLISION"
+			         
+			/>
+			<!-- LU/LU; // LineUp LineUp -->
+			<alert  name="LU/LU" 
+					value="4"
+					id="0"					
+					desc="CATC LineUp vs. LineUp clearances"
+					status="1"
+					priority="0"
+					label_string="LU/LU"
+					alert_string="LINEUP/LINEUP"
+			         
+			/>
+			<alert  name="LU/LU" 
+					value="4"
+					id="1"					
+					desc="CATC LineUp vs. LineUp clearances"
+					status="1"
+					priority="0"
+					label_string="LU/LU"
+					alert_string="LINEUP/LINEUP"
+			         
+			/>
+			<alert  name="LU/LU" 
+					value="4"
+					id="2"					
+					desc="CATC LineUp vs. LineUp clearances"
+					status="1"
+					priority="0"
+					label_string="LU/LU"
+					alert_string="LINEUP/LINEUP"
+			         
+			/>
+			<!-- LU/TO; // LineUp TakeOff -->
+			<alert  name="LU/TO" 
+					value="4"
+					id="3"					
+					desc="CATC LineUp vs. Takeoff clearances"
+					status="1"
+					priority="0"
+					label_string="LU/TO"
+					alert_string="LINEUP/TAKEOFF"
+			         
+			/>
+			<alert  name="LU/TO" 
+					value="4"
+					id="4"					
+					desc="CATC LineUp vs. Takeoff clearances"
+					status="1"
+					priority="0"
+					label_string="LU/TO"
+					alert_string="LINEUP/TAKEOFF"
+			         
+			/>
+			<!-- LU/LA; // LineUp Landing -->
+			<alert  name="LU/LA" 
+					value="4"
+					id="5"					
+					desc="CATC LineUp vs. Landing clearances"
+					status="1"
+					priority="0"
+					label_string="LU/LA"
+					alert_string="LINEUP/LAND"
+			         
+			/>
+			<alert  name="LU/LA" 
+					value="4"
+					id="6"					
+					desc="CATC LineUp vs. Landing clearances"
+					status="1"
+					priority="0"
+					label_string="LU/LA"
+					alert_string="LINEUP/LAND"
+			         
+			/>
+			<!-- TO/TO; // Takeoff Takeoff-->
+			<alert  name="TO/TO" 
+					value="4"
+					id="7"					
+					desc="CATC Takeoff vs. Takeoff clearances"
+					status="1"
+					priority="0"
+					label_string="TO/TO"
+					alert_string="TAKEOFF/TAKEOFF"
+			         
+			/>					
+			<alert  name="TO/TO" 
+					value="4"
+					id="8"					
+					desc="CATC Takeoff vs. Takeoff clearances"
+					status="1"
+					priority="0"
+					label_string="TO/TO"
+					alert_string="TAKEOFF/TAKEOFF"
+			         
+			/>
+			<!-- TO/LA; // Takeoff Landing-->
+			<alert  name="TO/LA" 
+					value="4"
+					id="9"					
+					desc="CATC Takeoff vs. Landing clearances"
+					status="1"
+					priority="0"
+					label_string="TO/LA"
+					alert_string="TAKEOFF/LAND"
+			         
+			/>
+			<alert  name="TO/LA" 
+					value="4"
+					id="10"					
+					desc="CATC Takeoff vs. Landing clearances"
+					status="1"
+					priority="0"
+					label_string="TO/LA"
+					alert_string="TAKEOFF/LAND"
+			         
+			/>	
+			<!-- LA/LA; // Landing Landing-->
+			<alert  name="LA/LA" 
+					value="4"
+					id="12"					
+					desc="CATC Landing vs. Landing clearances"
+					status="1"
+					priority="0"
+					label_string="LA/LA"
+					alert_string="CATC LAND/LAND"
+			         
+			/>
+			<alert  name="LA/LA" 
+					value="5"
+					id="12"					
+					desc="CATC Landing vs. landing clearances"
+					status="1"
+					priority="0"
+					label_string="LA/LA"
+					alert_string="LAND/LAND"
+			         
+			/>			        
+			<!-- LUP/CROSS; // Lineup Cross-->
+			<alert  name="LU/CR" 
+					value="4"
+					id="13"					
+					desc="CACT LineUp vs. Cross clearances"
+					status="1"
+					priority="0"
+					label_string="LU/CR"
+					alert_string="LINEUP/CROSS"
+			         
+			/>
+			<!-- CROSS/TO; // Cross takeoff-->
+			<alert  name="CR/TO"
+					value="4"
+					id="14"					
+					desc="CATC Cross vs. Takeoff clearances"
+					status="1"
+					priority="0"
+					label_string="CR/TO"
+					alert_string="CROSS/TAKEOFF"
+			         
+			/>
+			<!-- CROSS/LA; // Cross landing-->
+			<alert  name="CR/LA"
+					value="4"
+					id="11"
+					desc="CATC Cross vs. Landing clearances"
+					status="1"
+					priority="0"
+					label_string="CR/LA"
+					alert_string="CROSS/LAND"
+			         
+			/>
+            
+            <!-- May 2018 - TAKEOFF or LINEUP ON BUSY RUNWAY -->
+			<alert  name="RWBUSY"
+					value="4"
+					id="15"
+					desc="Takeoff/Lineup clearance given on a runway occupied with another aircraft"
+					status="0"
+					priority="1"
+					label_string="CA/RM"
+					alert_string="CATC/RMCA"
+			         
+			/>
+            
+            <!-- May 2018 - TAKEOFF or LINEUP ON RUNWAY OCCUPIED-->
+			<alert  name="RWBUSY"
+					value="4"
+					id="16"
+					desc="Takeoff/Lineup clearance given on a runway occupied with a vehicle"
+					status="0"
+					priority="1"
+					label_string="CA/RM"
+					alert_string="CATC/RMCA"
+			         
+			/>
+        
+            
+			<!-- SPEL; // Speed Limit track+area -->
+			<alert  name="SPEL" 
+					value="6"
+					id="0"	
+					desc="Speed Limit track+area 2 tracks"
+					status="1"
+					priority="0"
+					label_string="SPEED"
+					alert_string="HI SPEED"
+			         
+			/>
+			<!-- STBAR; // Stop bar -->
+			<alert  name="STBAR" 
+					value="6"
+					id="1"	
+					desc="Stop bar 2 tracks "
+					status="1"
+					priority="0"
+					label_string="STBAR"
+					alert_string="STOPBAR VIOLATION"
+			         
+			/>
+			<!-- RESA; // Restricted area violation -->
+			<alert  name="RESA" 
+					value="6"
+					id="2"	
+					desc="Restricted area violation 2 tracks "
+					status="0"
+					priority="0"
+					label_string="RESA"
+					alert_string="RESTRICTED AREA VIOLATION"
+			         
+			/>
+			<alert  name="RESA" 
+					value="6"
+					id="2"	
+					desc="Restricted area violation 2 tracks "
+					status="1"
+					priority="0"
+					label_string="RESA"
+					alert_string="RESTRICTED AREA VIOLATION"
+			         
+			/>
+			<alert  name="RESA" 
+					value="6"
+					id="3"	
+					desc="Restricted area violation 2 tracks "
+					status="0"
+					priority="0"
+					label_string="RESA"
+					alert_string="RESTRICTED AREA VIOLATION"
+			         
+			/>
+			<alert  name="RESA" 
+					value="6"
+					id="3"	
+					desc="Restricted area violation 2 tracks "
+					status="1"
+					priority="0"
+					label_string="RESA"
+					alert_string="RESTRICTED AREA VIOLATION"
+			         
+			/>
+			<!-- STAT; // Stationary traffic -->
+			<alert  name="STAT" 
+					value="6"
+					id="4"	
+					desc="Stationary traffic area 2 tracks "
+					status="0"
+					priority="0"
+					label_string="STAT"
+					alert_string="STATIONARY"
+			         
+			/>
+			<alert  name="STAT" 
+					value="6"
+					id="5"	
+					desc="Stationary after Takeoff "
+					status="0"
+					priority="0"
+					label_string="DELAY"
+					alert_string="TKOFF DELAY"
+			         
+			/>
+			<alert  name="STAT" 
+					value="6"
+					id="6"	
+					desc="Stationary after pushback"
+					status="0"
+					priority="0"
+					label_string="STAT"
+					alert_string="STATIONARY-PUSH"
+			         
+			/>
+			<alert  name="STAT" 
+					value="6"
+					id="7"	
+					desc="Stationary after Taxi Clearance"
+					status="0"
+					priority="0"
+					label_string="STAT"
+					alert_string="STATIONARY-TAXI"
+			         
+			/>
+			<alert  name="STAT" 
+					value="6"
+					id="8"	
+					desc="Stationary after Lineup Clearance"
+					status="0"
+					priority="0"
+					label_string="STAT"
+					alert_string="STATIONARY-LINEUP"
+			         
+			/>
+            <alert  name="STAT" 
+					value="7"
+					id="13"	
+					desc="Stationary Vehicle "
+					status="0"
+					priority="0"
+					label_string="STAT"
+					alert_string="STATIONARY VEHICLE"
+			         
+			/>
+			<!-- CLTWY;// Closed Taxiway track+area -->
+			<alert  name="CLTWY" 
+					value="6"
+					id="9"	
+					desc="Closed Taxiway"
+					status="1"
+					priority="0"
+					label_string="CLTWY"
+					alert_string="CLOSED TAXIWAY"
+			         
+			/>
+			<!-- VSTBAR; // Virtual Stop bar -->
+			<alert  name="VSTBAR" 
+					value="6"
+					id="1"	
+					desc="Virtual Stop bar 2 tracks "
+					status="0"
+					priority="0"
+					label_string="VSTBAR"
+					alert_string="VIRTUAL STOPBAR VIOLATION"
+			         
+			/>
+			<!-- NOTOF; // Takeoff without clearance -->
+			<alert  name="NOTOF" 
+					value="7"
+					id="1"	
+					desc="Takeoff without clearance 2 tracks "
+					status="1"
+					priority="0"
+					label_string="NOTKF"
+					alert_string="NO TKF CLEARANCE"
+			         
+			/>
+			<!-- NOLND; // Approach without clearance -->
+			<alert  name="NOLND" 
+					value="7"
+					id="2"	
+					desc="Landing Without Clearance"
+					status="1"
+					priority="0"
+					label_string="NOLND"
+					alert_string="NO LAND CLEARANCE"
+			         
+			/>
+			<!-- LAWRR; // Approach wrong runway -->
+			<alert  name="LAWRR" 
+					value="7"
+					id="3"	
+					desc="Approach on runway different from flight plan"
+					status="1"
+					priority="0"
+					label_string="LAWRR"
+					alert_string="WRONG RWY"
+			         
+			/>
+			<!-- INPOS; // Inconsistent Position -->
+			<alert  name="INPOS" 
+					value="7"
+					id="4"	
+					desc="Inconsistent position for landing "
+					status="0"
+					priority="0"
+					label_string="INPOS"
+					alert_string="INCONSISTENT POSITION"
+			         
+			/>
+			<!-- TXDEV; // Taxi Route deviation -->
+			<alert  name="TXDEV" 
+					value="7"
+					id="5"	
+					desc="Taxi route deviation "
+					status="0"
+					priority="0"
+					label_string="TXDEV"
+					alert_string="ROUTE DEVIATION"
+			         
+			/>
+            
+            <!-- TXDEV; // Vehicle Route deviation -->
+			<alert  name="RTDEV" 
+					value="7"
+					id="11"	
+					desc="Vehicle route deviation "
+					status="0"
+					priority="0"
+					label_string="RTDEV"
+					alert_string="ROUTE DEVIATION"
+			         
+			/>
+            
+            <!-- TXDEV; // Vehicle Hold Not Respected -->
+			<alert  name="NOHLD" 
+					value="7"
+					id="14"	
+					desc="Hold Not Respected"
+					status="1"
+					priority="0"
+					label_string="NOHLD"
+					alert_string="HOLD NOT RESPECTED"
+			         
+			/>
+            
+			<!-- NOPB; // Push without clearance -->
+			<alert  name="NOPB" 
+					value="7"
+					id="6"	
+					desc="Push-back without clearance "
+					status="0"
+					priority="0"
+					label_string="NOPB"
+					alert_string="NO PUSHBACK CLEARANCE"
+			         
+			/>
+			<!-- NOTX; // Taxi without clearance -->
+			<alert  name="NOTX" 
+					value="7"
+					id="7"	
+					desc="Taxi without clearance "
+					status="0"
+					priority="0"
+					label_string="NOTAX"
+					alert_string="NO TAXI CLEARANCE"
+			         
+			/>
+            <!-- NOTX; // Vehicle Taxi without clearance -->
+			<alert  name="NOTX" 
+					value="7"
+					id="12"	
+					desc="Vehicle no taxi"
+					status="0"
+					priority="0"
+					label_string="NOTAX"
+					alert_string="NO TAXI CLEARANCE"
+			         
+			/>
+			<!-- NOLUP; // Lineup without clearance -->
+			<alert  name="NOLUP" 
+					value="7"
+					id="8"	
+					desc="LineUp without clearance runway incursion"
+					status="0"
+					priority="0"
+					label_string="NOLUP"
+					alert_string="NO LINEUP CLEARANCE"
+			         
+			/>
+			<!-- LUWRR; // Lineup wrong runway -->
+			<alert  name="LUWRR" 
+					value="7"
+					id="9"	
+					desc="Lineup in wrong runway "
+					status="0"
+					priority="0"
+					label_string="LUWRR"
+					alert_string="LINEUP WRONG RWY"
+			         
+			/>
+			<!-- NOCON; // No contact  -->
+			<alert  name="NOCON" 
+					value="7"
+					id="10"	
+					desc="No contact warning "
+					status="0"
+					priority="0"
+					label_string="NOCON"
+					alert_string="NO CONTACT"
+			         
+			/>
+			<!-- NOCRO; // Cross without clearance -->
+			<alert  name="NOCRO" 
+					value="7"
+					id="15"	
+					desc="Crossing without clearance runway incursion"
+					status="1"
+					priority="0"
+					label_string="NOCRS"
+					alert_string="NO CROSSING CLEARANCE"
+			         
+			/>
+			<!-- public static final int ICAC = 11; // ILS Critical Area Conflict 2 track -->
+			<alert  name="ICAC" 
+					value="11"
+					id="1"	
+					desc="ILS Critical Area Conflict 2 track"
+					status="0"
+					priority="0"
+					label_string="ILSCA"
+					alert_string="ILS AREA VIOLATION"
+			         
+			/>
+			<alert  name="ICAC" 
+					value="11"
+					id="1"
+					desc="ILS Critical Area Conflict 2 track"
+					status="1"
+					priority="0"
+					label_string="ILSCA"
+					alert_string="ILS AREA VIOLATION"
+			         
+			/>
+			<alert  name="ICAC" 
+					value="11"
+					id="2"	
+					desc="ILS Critical Area Conflict 2 track"
+					status="0"
+					priority="0"
+					label_string="ILSCA"
+					alert_string="ILS AREA VIOLATION"
+			         
+			/>
+			<alert  name="ICAC" 
+					value="11"
+					id="2"
+					desc="ILS Critical Area Conflict 2 track"
+					status="1"
+					priority="0"
+					label_string="ILSCA"
+					alert_string="ILS AREA VIOLATION"
+			         
+			/>
+			<alert  name="ICAC" 
+					value="11"
+					id="3"	
+					desc="ILS Critical Area Conflict 2 track"
+					status="0"
+					priority="0"
+					label_string="ILSCA"
+					alert_string="ILS AREA VIOLATION"
+			         
+			/>
+			<alert  name="ICAC" 
+					value="11"
+					id="3"
+					desc="ILS Critical Area Conflict 2 track"
+					status="1"
+					priority="0"
+					label_string="ILSCA"
+					alert_string="ILS AREA VIOLATION"
+			         
+			/>
+</conflictConfig>
