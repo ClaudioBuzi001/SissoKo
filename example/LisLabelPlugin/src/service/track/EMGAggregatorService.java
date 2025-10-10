@@ -1,0 +1,56 @@
+/*
+ * (c) Copyright Leonardo Company S.p.A.. All rights reserved.
+ * 
+ * Any right of industrial and intellectual property on this document,
+ * and of technical Know-how herein contained, belongs to
+ * Leonardo Company S.p.A. and/or third parties.
+ * According to the law, it is forbidden to disclose, reproduce or however
+ * use this document and any data herein contained for any use without
+ * previous written authorization by Leonardo Company S.p.A.
+ * 
+ */
+package service.track;
+
+import application.pluginService.ServiceExecuter.IAggregatorService;
+import auxiliary.track.TrackOutputConstants;
+import com.fourflight.WP.ECI.edm.HeaderNode;
+import com.gifork.commons.data.IRawData;
+
+/**
+ * The Class GNDAggregatorService.
+ *
+ * @author esegato
+ * @version $Revision$
+ */
+public class EMGAggregatorService implements IAggregatorService {
+
+	/**
+	 * Gets the service name.
+	 *
+	 * @return the service name
+	 */
+	@Override
+	public String getServiceName() {
+		/** The service name. */
+		String m_serviceName = TrackOutputConstants.IS_EMG;
+		return m_serviceName;
+	}
+
+	/**
+	 * Aggregate.
+	 *
+	 * @param jsonTrack the json track
+	 * @param dataNode the data node
+	 */
+	@Override
+	public void aggregate(final IRawData jsonTrack, final HeaderNode dataNode) {
+		
+
+		final String value = jsonTrack.getSafeBoolean("IS_EMG") ? "EMG"
+				: jsonTrack.getSafeBoolean("IS_HIJ") ? "HIJ"
+						: jsonTrack.getSafeBoolean("IS_RCF") ? "RCF" : "";
+		
+		dataNode.addLine(TrackOutputConstants.EMERGENCY, value);
+
+    }
+}

@@ -1,0 +1,251 @@
+<?xml version="1.0"?>
+<!-- General purpose build script for applications.-->
+
+<project name="LisLabelPlugin" default="dist" basedir=".">
+	<description>
+       plugin personalizzazione Prodotto
+   </description>
+
+	<property environment="env" />
+
+	<!-- ================== Property Definitions ===================== -->
+
+	<property file="build.properties" />
+	<property file="${user.home}/build.properties" />
+
+	<!-- ================= File and Directory Names ==================== -->
+
+	<property name="gf.name" value="GiFork" />
+	<property name="app.name" value="LisLabelPlugin" />
+	<property name="app.version" value="" />
+	<property name="build.home" value="${basedir}/build" />
+	<property name="build.test" value="${basedir}/build/test" />
+	<property name="bin.home" value="${basedir}/bin" />
+	<property name="dist.home" value="${basedir}/dist" />
+	<property name="src.home" value="${basedir}/src" />
+	<property name="test.home" value="${basedir}/test" />
+	<property name="lib.home" value="${basedir}/../${gf.name}/libs/Lis" />
+	<property name="testRunnnerClass" value="service.RunAggregatorTestSuite" />
+	<property name="dist.plugin" value="${basedir}/../${gf.name}/plugins" />
+	<!-- Specifico la directory da dove importare classi java del progetto pricipale -->
+	<property name="shared.classes" value="${basedir}/../${gf.name}/bin/" />
+	<!--
+	<property name="exportInterface.classes" value="${basedir}/../exportInterface/bin/" />
+	<property name="infrastructure.classes" value="${basedir}/../infrastructure/bin/" />
+    -->
+	<!-- Specifico la directory da dove importare librerie esterne (jar) nel progetto -->
+	<property name="pluginEx.lib" value="../${gf.name}/libs/Lis"/>
+	<property name="internal.lib" value="../${gf.name}/libs"/>
+	<!--<property name="shared.lib" value="../libs"/>-->
+	
+	<property name="res.home" value="${basedir}/../${gf.name}" />
+
+	<!-- =============== Custom Ant Task Definitions =================== -->
+
+	<property name="compile.debug" value="true" />
+	<property name="compile.deprecation" value="false" />
+	<property name="compile.optimize" value="true" />
+
+
+	<path id="compile.classpath">
+		<pathelement location="${src.home}" />
+		<pathelement location="${shared.classes}" />
+		<fileset dir="${pluginEx.lib}">
+			<include name="*.jar" />
+		</fileset>
+		<fileset dir="${internal.lib}">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<!-- =================== JUNIT TEST ================================ -->
+	<path id="test.classpath">
+		<pathelement location="${test.home}" />
+		 <pathelement location="${build.home}/classes"/>
+	    <pathelement location="${build.test}"/>
+	    <pathelement location="${shared.classes}" />
+	    <fileset dir="${pluginEx.lib}">
+	        <include name="*.jar" />
+	    </fileset>
+	    <fileset dir="${internal.lib}">
+	        <include name="*.jar"/>
+	    </fileset>
+	    <!-- Qui aggiungi le librerie JUnit + Mockito -->
+	    <fileset dir="${internal.lib}/4F">
+	        <include name="*.jar"/>
+	    </fileset>
+	</path>
+
+	<!-- =================== All Target ================================ -->
+	<!--
+    The "all" target is a shortcut for running the "clean" target
+    followed by the "compile" target, to force a complete recompile.
+    -->
+
+	<target name="all" depends="clean,compile" description="Clean build and dist directories, then compile" />
+
+	<!-- ================== Clean Target ============================== -->
+
+	<target name="clean" description="Delete old build and dist directories">
+		<delete dir="${build.home}" />
+		<delete dir="${dist.home}" />
+		<delete dir="${bin.home}" />
+	</target>
+
+	<!-- ================== Compile Target =========================== -->
+
+	<target name="compile" depends="prepare" description="Compile Java sources">
+		<mkdir dir="${build.home}/classes" />
+		<javac encoding="UTF-8" includeantruntime="false" srcdir="${src.home}" destdir="${build.home}/classes" debug="${compile.debug}" deprecation="${compile.deprecation}" optimize="${compile.optimize}">
+			<classpath refid="compile.classpath" />
+		</javac>
+	</target>
+
+	<!-- ================== Compile JUnit Test Target =========================== -->
+	
+  	<target name="compile-tests" depends="compile" description="Compile test sources">
+  		<mkdir dir="${build.home}/test-classes" />
+		<javac encoding="UTF-8" includeantruntime="false" srcdir="${test.home}" destdir="${build.home}/test-classes" debug="${compile.debug}" deprecation="${compile.deprecation}" optimize="${compile.optimize}">
+			<classpath refid="test.classpath"/>
+	    </javac>
+	</target>
+	
+	<!-- ================== Run JUnit Test Target =========================== -->
+	
+	<!--<target name="run-tests" depends="compile,compile-tests" description="Run JUnit tests">
+	    <mkdir dir="${build.home}/test-results" />
+	    
+	    <junit printsummary="on" haltonfailure="yes" fork="true">
+	        <classpath>
+	            <pathelement path="${build.home}/classes"/>  classi principali 
+	            <pathelement path="${build.home}/test-classes"/>  classi test compilate 
+	        	<pathelement location="${shared.classes}" />
+	        	<fileset dir="${pluginEx.lib}">
+	        				<include name="*.jar" />
+	        	</fileset>
+	        		
+	        	<fileset dir="${internal.lib}">
+	        			      <include name="*.jar"/>
+	       		</fileset>
+	        	 Qui aggiungi le librerie JUnit + Mockito 
+	        	<fileset dir="${lib.home}">
+	        		<include name="mockito-junit-jupiter*.jar"/>
+	        		<include name="mockito-core-*.jar"/>
+	        		<include name="byte-buddy-*.jar"/>
+	        		<include name="objenesis-*.jar"/>
+	        		<include name="junit-*.jar"/>
+	        		<include name="*.jar"/>
+	        	</fileset>
+	        </classpath>
+
+	         Specifica la classe runner 
+	        <test name="${testRunnnerClass}"/>
+
+	        <formatter type="plain"/>
+	        <formatter type="xml"/>
+	    </junit>
+	</target>-->
+	
+	<target name="run-tests" depends="compile,compile-tests">
+	    <mkdir dir="${build.home}/test-results" />
+
+	    <java classname="org.junit.platform.console.ConsoleLauncher" fork="true" failonerror="false">
+	        <classpath>
+	            <pathelement path="${build.home}/classes"/>
+	            <pathelement path="${build.home}/test-classes"/>
+	        	<pathelement location="${shared.classes}" />
+	        	
+	        	<!-- resources -->
+	        	<pathelement location="${res.home}"/>
+	        	
+	        	<fileset dir="${pluginEx.lib}">
+					<include name="*.jar" />
+	        	</fileset>
+	        	<fileset dir="${internal.lib}">
+	        		<include name="*.jar"/>
+	        	</fileset>
+	            <fileset dir="${lib.home}">
+	                <include name="junit-platform-console-standalone-1.13.4.jar"/>
+	            	<include name="mockito-junit-jupiter*.jar"/>
+	            	<include name="mockito-core-*.jar"/>
+	                <include name="byte-buddy-*.jar"/>
+	                <include name="objenesis-*.jar"/>
+	            	<include name="*.jar"/>
+	            </fileset>
+	        </classpath>
+	    	<!-- Run your suite -->
+	    	<arg value="execute" /> <!-- REQUIRED for ConsoleLauncher CLI -->
+	    	<arg value="--select-class=service.AggregatorServiceTestSuite"/>
+
+	    	<!-- Enable JUnit XML report output -->
+	    	<arg value="--reports-dir=${build.home}/test-results"/>
+
+	    	<!-- Optional: make console output readable -->
+	    	<arg value="--details=summary"/>
+	    	<arg value="--disable-banner"/>
+	    	<arg value="--disable-ansi-colors"/>
+	    </java>
+		
+		<echo message="JUnit XML reports written to: ${build.home}/test-results" />
+	</target>
+	
+	<!-- =================== Dist Target ================================ -->
+		
+	<target name="dist" depends="clean,compile" description="Create binary distribution">
+		<basename property="basedir.name" file="." />
+
+		<mkdir dir="${dist.home}/lib" />
+		<jar jarfile="${dist.home}/lib/${app.name}${app.version}.jar" basedir="${build.home}/classes" excludes="**/*.bak" />
+
+		<copy todir="${dist.home}/lib">
+			<fileset dir="${build.home}/lib" excludes="**/*.bak" />
+		</copy>
+
+		<!-- Distribuisce il plugin nella cartella dei plugin del progetto principale -->
+		<copy todir="${dist.plugin}">
+			<fileset file="${dist.home}/lib/${app.name}${app.version}.jar" />
+			<globmapper from="${app.name}${app.version}.jar" to="${app.name}.jar" />
+		</copy>
+	</target>
+
+	<!-- ================== Javadoc Target ============================ -->
+
+	<target name="javadoc" depends="compile" description="Create Javadoc API documentation">
+
+		<mkdir dir="${dist.home}/docs/api" />
+		<javadoc sourcepath="${src.home}" destdir="${dist.home}/docs/api" packagenames="*" additionalparam="-Xdoclint:none">
+			<classpath refid="compile.classpath" />
+		</javadoc>
+
+	</target>
+
+	<!-- ================== Prepare Target ============================= -->
+
+	<target name="prepare">
+		<tstamp />
+		<mkdir dir="${build.home}" />
+		<mkdir dir="${build.home}/classes" />
+		<mkdir dir="${build.home}/lib" />
+		
+	</target>
+
+	<!-- ================== RmBak Target ============================= -->
+
+	<target name="rmbak" description="Delete *.bak files everywhere">
+
+		<delete>
+			<fileset dir="${src.home}" includes="**/*.bak" />
+		</delete>
+
+	</target>
+
+	<!-- ================== RmLog Target ============================= -->
+
+	<target name="rmlog" description="Delete *.log files from build directory">
+
+		<delete>
+			<fileset dir="${build.home}" includes="**/*.log*" />
+		</delete>
+
+	</target>
+</project>

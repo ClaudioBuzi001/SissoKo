@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="JUnit Vintage" tests="0" skipped="0" failures="0" errors="0" time="0.002" hostname="NRMLPT-33HJTL3" timestamp="2025-10-09T17:04:40">
+<properties>
+<property name="file.encoding" value="UTF-8"/>
+<property name="file.separator" value="\"/>
+<property name="java.class.path" value="C:\Projects\mercury\GiFork2.0\LisLabelPlugin\build\classes;C:\Projects\mercury\GiFork2.0\LisLabelPlugin\build\test-classes;C:\Projects\mercury\GiFork2.0\GiFork\bin;C:\Projects\mercury\GiFork2.0\GiFork;C:\Projects\mercury\GiFork2.0\GiFork\libs\Lis\E000ATLJ0.jar;C:\Projects\mercury\GiFork2.0\GiFork\libs\Lis\byte-buddy-1.15.11.jar;C:\Projects\mercury\GiFork2.0\GiFork\libs\Lis\byte-buddy-agent-1.15.11.jar;C:\Projects\mercury\GiFork2.0\GiFork\libs\Lis\commons-io-2.5.jar;C:\Projects\mercury\GiFork2.0\GiFork\libs\Lis\jakarta.xml.bind-api-3.0.0.jar;C:\Projects\mercury\GiFork2.0\GiFork\libs\Lis\javaproj-1.0.6.jar;C:\Projects\mercury\GiFork2.0\GiFork\libs\Lis\javax.activation-1.2.0.jar;C:\Projects\mercury\GiFork2.0\GiFork\libs\Lis\jaxb-api.jar;C:\Projects\mercury\GiFork2.0\GiFork\libs\Lis\jaxb-core.jar;C:\Projects\mercury\GiFork2.0\GiFork\libs\Lis\jaxb-impl.jar;C:\Projects\mercury\GiFork2.0\GiFork\libs\Lis\jaxb-xjc.jar;C:\Projects\mercury\GiFork2.0\GiFork\libs\Lis\jaxp-ri-1.4.5.jar;C:\Projects\mercury\GiFork2.0\GiFork\libs\Lis\junit-platform-console-standalone-1.13.4.jar;C:\Projects\mercury\GiFork2.0\GiFork\libs\Lis\mockito-core-5.14.1.jar;C:\Projects\mercury\GiFork2.0\GiFork\libs\Lis\mockito-junit-jupiter-5.14.1.jar;C:\Projects\mercury\GiFork2.0\GiFork\libs\Lis\objenesis-3.3.jar;C:\Projects\mercury\GiFork2.0\GiFork\libs\Lis\pcap4j-core-1.8.2.jar;C:\Projects\mercury\GiFork2.0\GiFork\libs\Lis\protobuf-java-2.6.1.jar;C:\Projects\mercury\GiFork2.0\GiFork\libs\Lis\protobuf-java-format-1.4.jar;C:\Projects\mercury\GiFork2.0\GiFork\libs\Lis\usi.jar;C:\Projects\mercury\GiFork2.0\GiFork\libs\GiForkCommonLib.jar;C:\Projects\mercury\GiFork2.0\GiFork\libs\Gson.jar;C:\Projects\mercury\GiFork2.0\GiFork\libs\WpCommon.jar;C:\Projects\mercury\GiFork2.0\GiFork\libs\infrastructure.jar;C:\Projects\mercury\GiFork2.0\GiFork\libs\jackson-core-2.13.0-rc1.jar;C:\Projects\mercury\GiFork2.0\GiFork\libs\jackson-databind-2.12.4.jar;C:\Projects\mercury\GiFork2.0\GiFork\libs\jedm.jar;C:\Projects\mercury\GiFork2.0\GiFork\libs\json-20201115.jar;C:\Projects\mercury\GiFork2.0\GiFork\libs\jts-1.11.jar;C:\Projects\mercury\GiFork2.0\GiFork\libs\libProcessWpCommon.jar;C:\Projects\mercury\GiFork2.0\GiFork\libs\log4j-1.2-api-2.24.3.jar;C:\Projects\mercury\GiFork2.0\GiFork\libs\log4j-api-2.24.3.jar;C:\Projects\mercury\GiFork2.0\GiFork\libs\log4j-core-2.24.3.jar;C:\Projects\mercury\GiFork2.0\GiFork\libs\mappedbus-0.5.1.jar;C:\Projects\mercury\GiFork2.0\GiFork\libs\richtextfx-fat-0.10.6.b.jar"/>
+<property name="java.class.version" value="65.0"/>
+<property name="java.home" value="C:\Users\cbuzi\Documents\Dipenzende Progetto\jdk-21.0.7"/>
+<property name="java.io.tmpdir" value="C:\Users\cbuzi\AppData\Local\Temp\"/>
+<property name="java.library.path" value="C:\Users\cbuzi\Documents\Dipenzende Progetto\jdk-21.0.7\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/cbuzi/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_23.0.2.v20250131-0604/jre/bin/server;C:/Users/cbuzi/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_23.0.2.v20250131-0604/jre/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;%JAVA_HOME%\bin;%PATH_TO_FX%;C:\Users\cbuzi\AppData\Local\Microsoft\WindowsApps;C:\Windows;;."/>
+<property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+<property name="java.runtime.version" value="21.0.7+8-LTS-245"/>
+<property name="java.specification.name" value="Java Platform API Specification"/>
+<property name="java.specification.vendor" value="Oracle Corporation"/>
+<property name="java.specification.version" value="21"/>
+<property name="java.vendor" value="Oracle Corporation"/>
+<property name="java.vendor.url" value="https://java.oracle.com/"/>
+<property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+<property name="java.version" value="21.0.7"/>
+<property name="java.version.date" value="2025-04-15"/>
+<property name="java.vm.compressedOopsMode" value="Zero based"/>
+<property name="java.vm.info" value="mixed mode, sharing"/>
+<property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+<property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+<property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+<property name="java.vm.specification.version" value="21"/>
+<property name="java.vm.vendor" value="Oracle Corporation"/>
+<property name="java.vm.version" value="21.0.7+8-LTS-245"/>
+<property name="jdk.debug" value="release"/>
+<property name="junit.docs.version" value="1.13.4"/>
+<property name="line.separator" value="&#13;&#10;"/>
+<property name="native.encoding" value="Cp1252"/>
+<property name="os.arch" value="amd64"/>
+<property name="os.name" value="Windows 10"/>
+<property name="os.version" value="10.0"/>
+<property name="path.separator" value=";"/>
+<property name="stderr.encoding" value="Cp1252"/>
+<property name="stdout.encoding" value="Cp1252"/>
+<property name="sun.arch.data.model" value="64"/>
+<property name="sun.boot.library.path" value="C:\Users\cbuzi\Documents\Dipenzende Progetto\jdk-21.0.7\bin"/>
+<property name="sun.cpu.endian" value="little"/>
+<property name="sun.cpu.isalist" value="amd64"/>
+<property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+<property name="sun.java.command" value="org.junit.platform.console.ConsoleLauncher execute --select-class=service.AggregatorServiceTestSuite --reports-dir=C:\Projects\mercury\GiFork2.0\LisLabelPlugin/build/test-results --details=summary --disable-banner --disable-ansi-colors"/>
+<property name="sun.java.launcher" value="SUN_STANDARD"/>
+<property name="sun.jnu.encoding" value="Cp1252"/>
+<property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+<property name="sun.os.patch.level" value=""/>
+<property name="user.country" value="IT"/>
+<property name="user.dir" value="C:\Projects\mercury\GiFork2.0\LisLabelPlugin"/>
+<property name="user.home" value="C:\Users\cbuzi"/>
+<property name="user.language" value="it"/>
+<property name="user.name" value="cbuzi"/>
+<property name="user.script" value=""/>
+<property name="user.timezone" value="Europe/Rome"/>
+<property name="user.variant" value=""/>
+</properties>
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]
+display-name: JUnit Vintage
+]]></system-out>
+</testsuite>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/GiFork2.0"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/infrastructure"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/jedm"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/GiForkCommonLib"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/GiFork2.0/libs/json-20201115.jar" sourcepath="/GiFork2.0/src"/>
+	<classpathentry kind="lib" path="/GiFork2.0/libs/Gson.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="lib" path="C:/Projects/mercury/GiFork2.0/GiFork/libs/Lis/byte-buddy-1.14.15.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/mercury/GiFork2.0/GiFork/libs/Lis/mockito-core-5.14.1.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/mercury/GiFork2.0/GiFork/libs/Lis/mockito-junit-jupiter-5.14.1.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/mercury/GiFork2.0/GiFork/libs/Lis/objenesis-3.3.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
