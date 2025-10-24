@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<!-- General purpose build script for applications.-->
+
+<project name="LisListPlugin" default="dist" basedir=".">
+	<description>
+       plugin personalizzazione Prodotto
+   </description>
+
+	<property environment="env" />
+	
+	<!-- ================== Property Definitions ===================== -->
+
+	<property file="build.properties" />
+	<property file="${user.home}/build.properties" />
+
+	<!-- ================= File and Directory Names ==================== -->
+
+	<property name="gf.name" value="GiFork" />
+	<property name="app.name" value="LisListPlugin" />
+	<property name="app.version" value="" />
+	<property name="build.home" value="${basedir}/build" />
+	<property name="bin.home" value="${basedir}/bin" />
+	<property name="dist.home" value="${basedir}/dist" />
+	<property name="src.home" value="${basedir}/src" />
+	<property name="dist.plugin" value="${basedir}/../${gf.name}/plugins" />
+	<!-- Specifico la directory da dove importare classi java del progetto pricipale -->
+	<property name="shared.classes" value="${basedir}/../${gf.name}/bin/" />
+	<!--
+	<property name="exportInterface.classes" value="${basedir}/../exportInterface/bin/" />
+	<property name="infrastructure.classes" value="${basedir}/../infrastructure/bin/" />
+    -->
+	<!-- Specifico la directory da dove importare librerie esterne (jar) nel progetto -->
+	
+	<property name="internal.lib" value="../${gf.name}/libs"/>
+	<property name="gf.dist" value="../${gf.name}/distLis"/>
+	<!--<property name="shared.lib" value="../libs"/>-->
+
+	<!-- =============== Custom Ant Task Definitions =================== -->
+
+	<property name="compile.debug" value="true" />
+	<property name="compile.deprecation" value="false" />
+	<property name="compile.optimize" value="true" />
+
+
+	<path id="compile.classpath">
+		<pathelement location="${src.home}" />
+		<pathelement location="${shared.classes}" />
+		 <fileset dir="${internal.lib}">
+		      <include name="*.jar"/>
+		 </fileset>	
+		<fileset dir="${gf.dist}">
+		      <include name="*.jar"/>
+		 </fileset>
+	</path>
+
+	<!-- =================== All Target ================================ -->
+	<!--
+    The "all" target is a shortcut for running the "clean" target
+    followed by the "compile" target, to force a complete recompile.
+    -->
+
+	<target name="all" depends="clean,compile" description="Clean build and dist directories, then compile" />
+
+	<!-- ================== Clean Target ============================== -->
+
+	<target name="clean" description="Delete old build and dist directories">
+		<delete dir="${build.home}" />
+		<delete dir="${dist.home}" />
+		<delete dir="${bin.home}" />
+	</target>
+
+	<!-- ================== Compile Target =========================== -->
+
+	<target name="compile" depends="prepare" description="Compile Java sources">
+		<mkdir dir="${build.home}/classes" />
+		<javac encoding="UTF-8" includeantruntime="false" srcdir="${src.home}" destdir="${build.home}/classes" debug="${compile.debug}" deprecation="${compile.deprecation}" optimize="${compile.optimize}">
+			<classpath refid="compile.classpath" />
+		</javac>
+	</target>
+
+	<!-- =================== Dist Target ================================ -->
+		
+	<target name="dist" depends="clean,compile" description="Create binary distribution">
+		<basename property="basedir.name" file="." />
+
+		<mkdir dir="${dist.home}/lib" />
+		<jar jarfile="${dist.home}/lib/${app.name}${app.version}.jar" basedir="${build.home}/classes" excludes="**/*.bak" />
+
+		<copy todir="${dist.home}/lib">
+			<fileset dir="${build.home}/lib" excludes="**/*.bak" />
+		</copy>
+
+		<!-- Distribuisce il plugin nella cartella dei plugin del progetto principale -->
+		<copy todir="${dist.plugin}">
+			<fileset file="${dist.home}/lib/${app.name}${app.version}.jar" />
+			<globmapper from="${app.name}${app.version}.jar" to="${app.name}.jar" />
+		</copy>
+	</target>
+
+	<!-- ================== Javadoc Target ============================ -->
+
+	<target name="javadoc" depends="compile" description="Create Javadoc API documentation">
+
+		<mkdir dir="${dist.home}/docs/api" />
+		<javadoc sourcepath="${src.home}" destdir="${dist.home}/docs/api" packagenames="*" additionalparam="-Xdoclint:none">
+			<classpath refid="compile.classpath" />
+		</javadoc>
+
+	</target>
+
+	<!-- ================== Prepare Target ============================= -->
+
+	<target name="prepare">
+		<tstamp />
+		<mkdir dir="${build.home}" />
+		<mkdir dir="${build.home}/classes" />
+		<mkdir dir="${build.home}/lib" />
+		
+	</target>
+
+	<!-- ================== RmBak Target ============================= -->
+
+	<target name="rmbak" description="Delete *.bak files everywhere">
+
+		<delete>
+			<fileset dir="${src.home}" includes="**/*.bak" />
+		</delete>
+
+	</target>
+
+	<!-- ================== RmLog Target ============================= -->
+
+	<target name="rmlog" description="Delete *.log files from build directory">
+
+		<delete>
+			<fileset dir="${build.home}" includes="**/*.log*" />
+		</delete>
+
+	</target>
+</project>
