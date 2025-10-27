@@ -11,11 +11,14 @@
 classDiagram
     class PizzeriaService
     PizzeriaService : -repository : PizzeriaRepository
+    PizzeriaService : -geocodingClient : GeocodingClient
     PizzeriaService : +findAll() : List<Pizzeria>
     PizzeriaService : +findById(String id) : Pizzeria
     PizzeriaService : +create(Pizzeria pizzeria) : Pizzeria
     PizzeriaService : +update(String id, Pizzeria update) : Pizzeria
     PizzeriaService : +delete(String id) : void
+    PizzeriaService : -applyGeocodingIfMissing(Pizzeria target) : void
+    PizzeriaService --> GeocodingClient
     PizzeriaService --> Pizzeria
     PizzeriaService --> PizzeriaNotFoundException
     PizzeriaService --> PizzeriaRepository
@@ -28,6 +31,7 @@ classDiagram
 - `+ create(`Pizzeria pizzeria`) : Pizzeria`
 - `+ update(`String id`, `Pizzeria update`) : Pizzeria`
 - `+ delete(`String id`) : void`
+- `- applyGeocodingIfMissing(`Pizzeria target`) : void`
 
 
 ---

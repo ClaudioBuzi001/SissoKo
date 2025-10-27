@@ -27,10 +27,16 @@ Servizi esposti:
 
 Per fermare tutto: `docker compose down` (aggiungi `-v` per rimuovere i dati Mongo).
 
+## Geocoding automatico
+Il backend usa Nominatim (OpenStreetMap) per completare latitudine/longitudine quando non fornite:
+- Abilita/disabilita con `GEOCODING_ENABLED` (default `true`).
+- Personalizza lo user-agent con `GEOCODING_USER_AGENT` per rispettare le policy del provider.
+
 ## Documentazione
 La documentazione è generata automaticamente via `node scripts/generate-docs.js`.
 
 ### Backend (classi)
+- [GeocodingClient](docs/backend/classes/GeocodingClient.md)
 - [Pizzeria](docs/backend/classes/Pizzeria.md)
 - [PizzeriaController](docs/backend/classes/PizzeriaController.md)
 - [PizzeriaDataInitializer](docs/backend/classes/PizzeriaDataInitializer.md)
@@ -58,4 +64,3 @@ La documentazione è generata automaticamente via `node scripts/generate-docs.js
 - Watcher continuo: `node scripts/generate-docs.js --watch`
 
 In modalità watch, il generatore osserva backend e frontend e rigenera i file quando vengono creati o modificati i sorgenti. I file in `docs/` sono idempotenti e non vanno modificati a mano: personalizza il contenuto aggiornando i sorgenti oppure il generatore.
-
