@@ -1,0 +1,10 @@
+# Backend build outputs
+backend/pizzeria-service/target/
+
+# Angular dependencies and builds
+frontend/pizzeria-app/node_modules/
+frontend/pizzeria-app/dist/
+
+# IDE settings
+.idea/
+.vscode/
