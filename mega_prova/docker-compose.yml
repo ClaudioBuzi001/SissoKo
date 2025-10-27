@@ -1,7 +1,6 @@
 services:
   mongo:
     image: mongo:7
-    container_name: pizzeria-mongo
     restart: unless-stopped
     ports:
       - "27017:27017"
@@ -9,6 +8,25 @@ services:
       MONGO_INITDB_DATABASE: pizzeria
     volumes:
       - mongo_data:/data/db
+  api:
+    build:
+      context: ./backend/pizzeria-service
+    restart: unless-stopped
+    depends_on:
+      - mongo
+    environment:
+      SPRING_DATA_MONGODB_URI: mongodb://mongo:27017/pizzeria
+      SPRING_DATA_MONGODB_DATABASE: pizzeria
+    ports:
+      - "8080:8080"
+  web:
+    build:
+      context: ./frontend/pizzeria-app
+    restart: unless-stopped
+    depends_on:
+      - api
+    ports:
+      - "8081:80"
 
 volumes:
   mongo_data:

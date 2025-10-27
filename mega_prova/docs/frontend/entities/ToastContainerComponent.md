@@ -1,4 +1,4 @@
-ok p# ToastContainerComponent
+# ToastContainerComponent
 
 - Tipo: `class`
 - Percorso sorgente: `frontend/pizzeria-app/src/app/ui/notifications/toast-container.component.ts`

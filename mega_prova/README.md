@@ -5,12 +5,27 @@ Applicazione full-stack per la gestione di pizzerie composta da:
 - **Frontend** Angular 18 standalone con ricerca client-side delle pizzerie.
 - **Infra** Docker Compose per MongoDB in locale e proxy dev Angular per integrare le API.
 
-## Avvio rapido
+## Avvio rapido (locale)
 - Backend: `cd backend/pizzeria-service && mvn spring-boot:run`
 - Frontend: `cd frontend/pizzeria-app && npm install && npm run start`
 - Database: `docker compose up -d mongo` (eseguito da `mega_prova`)
 
 Le API sono raggiungibili su `http://localhost:8080/api/pizzerias`, mentre il frontend utilizza il proxy su `http://localhost:4200`.
+
+## Esecuzione containerizzata
+Richiede Docker 24+ e Docker Compose:
+
+```bash
+docker compose build
+docker compose up -d
+```
+
+Servizi esposti:
+- Frontend (Nginx): `http://localhost:8081`
+- API Spring Boot: `http://localhost:8080/api/pizzerias`
+- MongoDB: `mongodb://localhost:27017/pizzeria`
+
+Per fermare tutto: `docker compose down` (aggiungi `-v` per rimuovere i dati Mongo).
 
 ## Documentazione
 La documentazione è generata automaticamente via `node scripts/generate-docs.js`.
