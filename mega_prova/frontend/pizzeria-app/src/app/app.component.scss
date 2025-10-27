@@ -180,6 +180,19 @@
   min-width: 120px;
 }
 
+.result-confirm {
+  margin-top: 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  background: rgba(198, 40, 40, 0.08);
+  border: 1px dashed rgba(198, 40, 40, 0.35);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  color: #732222;
+}
+
 .badge {
   display: inline-flex;
   align-items: center;

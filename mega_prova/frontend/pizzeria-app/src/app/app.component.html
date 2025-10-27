@@ -2,6 +2,8 @@
   <span class="logo">{{ title }}</span>
 </div>
 
+<app-toast-container></app-toast-container>
+
 <main class="content">
   <section class="card search-card">
     <h1>Trova la tua pizzeria preferita</h1>
@@ -15,7 +17,12 @@
         [value]="searchTerm"
         (input)="onSearchTermChange($any($event.target).value)"
       />
-      <button type="submit">Cerca</button>
+      <button type="submit" [disabled]="loading">
+        <ng-container *ngIf="loading; else searchLabel">
+          <app-spinner [inline]="true" ariaLabel="Ricerca in corso"></app-spinner>
+        </ng-container>
+        <ng-template #searchLabel> Cerca </ng-template>
+      </button>
     </form>
 
     <div class="state" *ngIf="loading">Caricamento in corso...</div>
@@ -49,10 +56,27 @@
           <button
             type="button"
             class="danger"
-            (click)="onDelete(pizzeria)"
+            (click)="requestDelete(pizzeria)"
             [disabled]="submitLoading || deletingId === pizzeria.id"
           >
-            {{ deletingId === pizzeria.id ? 'Eliminazione...' : 'Elimina' }}
+            {{ pendingDeleteId === pizzeria.id ? 'Annulla' : 'Elimina' }}
+          </button>
+        </div>
+        <div class="result-confirm" *ngIf="pendingDeleteId === pizzeria.id">
+          <span>Confermare l'eliminazione?</span>
+          <button
+            type="button"
+            class="danger"
+            (click)="confirmDelete(pizzeria)"
+            [disabled]="deletingId === pizzeria.id"
+          >
+            <ng-container *ngIf="deletingId === pizzeria.id; else confirmLabel">
+              <app-spinner [inline]="true" ariaLabel="Eliminazione in corso"></app-spinner>
+            </ng-container>
+            <ng-template #confirmLabel>Conferma</ng-template>
+          </button>
+          <button type="button" class="secondary" (click)="cancelDelete()" [disabled]="deletingId === pizzeria.id">
+            Annulla
           </button>
         </div>
       </li>
@@ -130,14 +154,14 @@
         <label for="deliveryAvailable">Consegna a domicilio disponibile</label>
       </div>
 
-      <div class="form-feedback" *ngIf="submitError || successMessage">
-        <div class="state error" *ngIf="submitError">{{ submitError }}</div>
-        <div class="state success" *ngIf="successMessage">{{ successMessage }}</div>
-      </div>
-
       <div class="form-actions">
         <button type="submit" [disabled]="submitLoading">
-          {{ submitLoading ? 'Salvataggio in corso...' : editingId ? 'Aggiorna pizzeria' : 'Aggiungi pizzeria' }}
+          <ng-container *ngIf="submitLoading; else submitLabel">
+            <app-spinner ariaLabel="Salvataggio in corso"></app-spinner>
+          </ng-container>
+          <ng-template #submitLabel>
+            {{ editingId ? 'Aggiorna pizzeria' : 'Aggiungi pizzeria' }}
+          </ng-template>
         </button>
         <button
           type="button"

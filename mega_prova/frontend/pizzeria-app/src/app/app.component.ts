@@ -6,11 +6,14 @@ import { firstValueFrom } from 'rxjs';
 
 import { Pizzeria, PizzeriaPayload } from './pizzerias/pizzeria.model';
 import { PizzeriaService } from './pizzerias/pizzeria.service';
+import { ToastContainerComponent } from './ui/notifications/toast-container.component';
+import { ToastService } from './ui/notifications/toast.service';
+import { SpinnerComponent } from './ui/spinner/spinner.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, FormsModule, ReactiveFormsModule, RouterOutlet],
+  imports: [CommonModule, FormsModule, ReactiveFormsModule, RouterOutlet, ToastContainerComponent, SpinnerComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -24,13 +27,13 @@ export class AppComponent implements OnInit {
   form: FormGroup;
   editingId: string | null = null;
   submitLoading = false;
-  submitError: string | null = null;
-  successMessage: string | null = null;
   deletingId: string | null = null;
+  pendingDeleteId: string | null = null;
 
   constructor(
     private readonly pizzeriaService: PizzeriaService,
-    private readonly formBuilder: FormBuilder
+    private readonly formBuilder: FormBuilder,
+    private readonly toastService: ToastService
   ) {
     this.form = this.buildForm();
   }
@@ -94,56 +97,87 @@ export class AppComponent implements OnInit {
     }
 
     this.submitLoading = true;
-    this.submitError = null;
-    this.successMessage = null;
 
     try {
       const payload = this.getPayloadFromForm();
 
       if (this.editingId) {
         await firstValueFrom(this.pizzeriaService.update(this.editingId, payload));
-        this.successMessage = 'Pizzeria aggiornata con successo.';
+        this.toastService.success('Pizzeria aggiornata con successo.');
       } else {
         await firstValueFrom(this.pizzeriaService.create(payload));
-        this.successMessage = 'Pizzeria aggiunta con successo.';
+        this.toastService.success('Pizzeria aggiunta con successo.');
       }
 
       await this.loadPizzerias();
 
       if (this.editingId) {
-        const updated = this.pizzerias.find((pizzeria) => pizzeria.id === this.editingId);
-        if (updated) {
-          this.startEdit(updated, { skipMessages: true });
+        const current = this.pizzerias.find((pizzeria) => pizzeria.id === this.editingId);
+        if (current) {
+          this.populateForm(current);
         } else {
-          this.startCreate({ skipMessages: true });
+          this.startCreate();
         }
       } else {
-        this.startCreate({ skipMessages: true });
+        this.startCreate();
       }
     } catch (err) {
       console.error('Failed to save pizzeria', err);
-      this.submitError = 'Errore durante il salvataggio. Riprova più tardi.';
+      this.toastService.error('Errore durante il salvataggio. Riprova più tardi.');
     } finally {
       this.submitLoading = false;
     }
   }
 
-  startCreate(options: { skipMessages?: boolean } = {}): void {
-    if (!options.skipMessages) {
-      this.successMessage = null;
-      this.submitError = null;
-    }
+  startCreate(): void {
     this.editingId = null;
+    this.pendingDeleteId = null;
     this.resetForm();
   }
 
-  startEdit(pizzeria: Pizzeria, options: { skipMessages?: boolean } = {}): void {
-    if (!options.skipMessages) {
-      this.successMessage = null;
-      this.submitError = null;
+  startEdit(pizzeria: Pizzeria): void {
+    this.editingId = pizzeria.id;
+    this.pendingDeleteId = null;
+    this.populateForm(pizzeria);
+  }
+
+  requestDelete(pizzeria: Pizzeria): void {
+    this.pendingDeleteId = this.pendingDeleteId === pizzeria.id ? null : pizzeria.id;
+  }
+
+  async confirmDelete(pizzeria: Pizzeria): Promise<void> {
+    if (this.deletingId || this.submitLoading) {
+      return;
     }
 
-    this.editingId = pizzeria.id;
+    this.deletingId = pizzeria.id;
+    this.pendingDeleteId = null;
+
+    try {
+      await firstValueFrom(this.pizzeriaService.delete(pizzeria.id));
+      this.toastService.info(`"${pizzeria.name}" è stata rimossa.`);
+      if (this.editingId === pizzeria.id) {
+        this.startCreate();
+      }
+      await this.loadPizzerias();
+    } catch (err) {
+      console.error('Failed to delete pizzeria', err);
+      this.toastService.error('Errore durante l\'eliminazione. Riprova più tardi.');
+    } finally {
+      this.deletingId = null;
+    }
+  }
+
+  cancelDelete(): void {
+    this.pendingDeleteId = null;
+  }
+
+  isFieldInvalid(controlName: keyof PizzeriaPayload): boolean {
+    const control = this.form.get(controlName);
+    return !!control && control.invalid && (control.dirty || control.touched);
+  }
+
+  private populateForm(pizzeria: Pizzeria): void {
     this.form.setValue({
       name: pizzeria.name,
       address: pizzeria.address,
@@ -153,36 +187,6 @@ export class AppComponent implements OnInit {
       deliveryAvailable: pizzeria.deliveryAvailable
     });
     this.form.markAsPristine();
-  }
-
-  async onDelete(pizzeria: Pizzeria): Promise<void> {
-    const confirmed = window.confirm(`Sei sicuro di voler eliminare "${pizzeria.name}"?`);
-    if (!confirmed) {
-      return;
-    }
-
-    this.deletingId = pizzeria.id;
-    this.submitError = null;
-    this.successMessage = null;
-
-    try {
-      await firstValueFrom(this.pizzeriaService.delete(pizzeria.id));
-      this.successMessage = 'Pizzeria rimossa con successo.';
-      if (this.editingId === pizzeria.id) {
-        this.startCreate({ skipMessages: true });
-      }
-      await this.loadPizzerias();
-    } catch (err) {
-      console.error('Failed to delete pizzeria', err);
-      this.submitError = 'Errore durante l\'eliminazione. Riprova più tardi.';
-    } finally {
-      this.deletingId = null;
-    }
-  }
-
-  isFieldInvalid(controlName: keyof PizzeriaPayload): boolean {
-    const control = this.form.get(controlName);
-    return !!control && control.invalid && (control.dirty || control.touched);
   }
 
   private buildForm(): FormGroup {

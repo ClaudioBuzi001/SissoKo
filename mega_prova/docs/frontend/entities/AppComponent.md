@@ -19,9 +19,8 @@ classDiagram
     AppComponent : +form : FormGroup
     AppComponent : +editingId : string | null
     AppComponent : +submitLoading : false
-    AppComponent : +submitError : string | null
-    AppComponent : +successMessage : string | null
     AppComponent : +deletingId : string | null
+    AppComponent : +pendingDeleteId : string | null
     AppComponent : +name : pizzeria.name,
       address: pizzeria.address,
       city: pizzeria.city,
@@ -57,16 +56,22 @@ classDiagram
     AppComponent : +trackById(number _, Pizzeria item) : string
     AppComponent : -applyFilter() : void
     AppComponent : +onSubmit() : Promise<void>
-    AppComponent : +startCreate(options arg1) : void
-    AppComponent : +startEdit(Pizzeria pizzeria, options arg2) : void
-    AppComponent : +onDelete(Pizzeria pizzeria) : Promise<void>
+    AppComponent : +startCreate() : void
+    AppComponent : +startEdit(Pizzeria pizzeria) : void
+    AppComponent : +requestDelete(Pizzeria pizzeria) : void
+    AppComponent : +confirmDelete(Pizzeria pizzeria) : Promise<void>
+    AppComponent : +cancelDelete() : void
     AppComponent : +isFieldInvalid(keyof PizzeriaPayload controlName) : boolean
+    AppComponent : -populateForm(Pizzeria pizzeria) : void
     AppComponent : -buildForm() : FormGroup
     AppComponent : -resetForm() : void
     AppComponent : -getPayloadFromForm() : PizzeriaPayload
     AppComponent --> Pizzeria
     AppComponent --> PizzeriaPayload
     AppComponent --> PizzeriaService
+    AppComponent --> SpinnerComponent
+    AppComponent --> ToastContainerComponent
+    AppComponent --> ToastService
 ```
 
 
@@ -78,10 +83,13 @@ classDiagram
 - `+ trackById(`number _`, `Pizzeria item`) : string`
 - `- applyFilter(nessun parametro) : void`
 - `+ onSubmit(nessun parametro) : Promise<void>`
-- `+ startCreate(`options arg1`) : void`
-- `+ startEdit(`Pizzeria pizzeria`, `options arg2`) : void`
-- `+ onDelete(`Pizzeria pizzeria`) : Promise<void>`
+- `+ startCreate(nessun parametro) : void`
+- `+ startEdit(`Pizzeria pizzeria`) : void`
+- `+ requestDelete(`Pizzeria pizzeria`) : void`
+- `+ confirmDelete(`Pizzeria pizzeria`) : Promise<void>`
+- `+ cancelDelete(nessun parametro) : void`
 - `+ isFieldInvalid(`keyof PizzeriaPayload controlName`) : boolean`
+- `- populateForm(`Pizzeria pizzeria`) : void`
 - `- buildForm(nessun parametro) : FormGroup`
 - `- resetForm(nessun parametro) : void`
 - `- getPayloadFromForm(nessun parametro) : PizzeriaPayload`
