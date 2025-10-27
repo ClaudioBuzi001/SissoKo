@@ -36,6 +36,8 @@ public class PizzeriaService {
         existing.setPhoneNumber(update.getPhoneNumber());
         existing.setOpeningHours(update.getOpeningHours());
         existing.setDeliveryAvailable(update.isDeliveryAvailable());
+        existing.setLatitude(update.getLatitude());
+        existing.setLongitude(update.getLongitude());
         return repository.save(existing);
     }
 

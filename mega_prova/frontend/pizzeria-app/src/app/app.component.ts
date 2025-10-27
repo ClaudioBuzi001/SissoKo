@@ -9,11 +9,20 @@ import { PizzeriaService } from './pizzerias/pizzeria.service';
 import { ToastContainerComponent } from './ui/notifications/toast-container.component';
 import { ToastService } from './ui/notifications/toast.service';
 import { SpinnerComponent } from './ui/spinner/spinner.component';
+import { PizzeriaMapComponent } from './pizzerias/pizzeria-map/pizzeria-map.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, FormsModule, ReactiveFormsModule, RouterOutlet, ToastContainerComponent, SpinnerComponent],
+  imports: [
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    RouterOutlet,
+    ToastContainerComponent,
+    SpinnerComponent,
+    PizzeriaMapComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -48,7 +57,8 @@ export class AppComponent implements OnInit {
     this.error = null;
 
     try {
-      this.pizzerias = await firstValueFrom(this.pizzeriaService.list());
+      const data = await firstValueFrom(this.pizzeriaService.list());
+      this.pizzerias = data.map((pizzeria) => this.normalizePizzeria(pizzeria));
       this.applyFilter();
     } catch (err) {
       console.error('Failed to load pizzerias', err);
@@ -184,7 +194,9 @@ export class AppComponent implements OnInit {
       city: pizzeria.city,
       phoneNumber: pizzeria.phoneNumber,
       openingHours: pizzeria.openingHours,
-      deliveryAvailable: pizzeria.deliveryAvailable
+      deliveryAvailable: pizzeria.deliveryAvailable,
+      latitude: pizzeria.latitude,
+      longitude: pizzeria.longitude
     });
     this.form.markAsPristine();
   }
@@ -196,7 +208,21 @@ export class AppComponent implements OnInit {
       city: ['', [Validators.required, Validators.maxLength(60)]],
       phoneNumber: ['', [Validators.required, Validators.maxLength(20)]],
       openingHours: ['', [Validators.required, Validators.maxLength(120)]],
-      deliveryAvailable: [false]
+      deliveryAvailable: [false],
+      latitude: [
+        null,
+        [
+          Validators.min(-90),
+          Validators.max(90)
+        ]
+      ],
+      longitude: [
+        null,
+        [
+          Validators.min(-180),
+          Validators.max(180)
+        ]
+      ]
     });
   }
 
@@ -207,7 +233,9 @@ export class AppComponent implements OnInit {
       city: '',
       phoneNumber: '',
       openingHours: '',
-      deliveryAvailable: false
+      deliveryAvailable: false,
+      latitude: null,
+      longitude: null
     });
     this.form.markAsPristine();
     this.form.markAsUntouched();
@@ -221,7 +249,25 @@ export class AppComponent implements OnInit {
       city: raw.city?.trim() ?? '',
       phoneNumber: raw.phoneNumber?.trim() ?? '',
       openingHours: raw.openingHours?.trim() ?? '',
-      deliveryAvailable: !!raw.deliveryAvailable
+      deliveryAvailable: !!raw.deliveryAvailable,
+      latitude: this.toNumberOrNull(raw.latitude),
+      longitude: this.toNumberOrNull(raw.longitude)
+    };
+  }
+
+  private toNumberOrNull(value: unknown): number | null {
+    if (value === null || value === undefined || value === '') {
+      return null;
+    }
+    const parsed = Number(value);
+    return Number.isFinite(parsed) ? parsed : null;
+  }
+
+  private normalizePizzeria(pizzeria: Pizzeria): Pizzeria {
+    return {
+      ...pizzeria,
+      latitude: this.toNumberOrNull(pizzeria.latitude),
+      longitude: this.toNumberOrNull(pizzeria.longitude)
     };
   }
 }

@@ -17,6 +17,8 @@ classDiagram
     Pizzeria : +phoneNumber : string
     Pizzeria : +openingHours : string
     Pizzeria : +deliveryAvailable : boolean
+    Pizzeria : +latitude : number | null
+    Pizzeria : +longitude : number | null
 ```
 
 

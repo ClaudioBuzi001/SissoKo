@@ -169,6 +169,11 @@
   margin-top: 0.5rem;
 }
 
+.coords {
+  color: #2e7d32;
+  font-weight: 600;
+}
+
 .result-actions {
   margin-top: 1.25rem;
   display: flex;
@@ -217,6 +222,17 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+
+.map-section {
+  margin-top: 2.5rem;
+  text-align: left;
+}
+
+.map-section h2 {
+  margin: 0 0 1rem;
+  font-size: 1.35rem;
+  font-weight: 600;
 }
 
 .management-header {
@@ -284,6 +300,12 @@
 .field-error {
   color: #c62828;
   font-size: 0.85rem;
+}
+
+.form-field-inline {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
 }
 
 .form-actions {

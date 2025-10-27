@@ -1,0 +1,13 @@
+<div class="map-wrapper">
+  <div
+    class="map"
+    leaflet
+    [leafletOptions]="options"
+    [leafletLayers]="layers"
+    [leafletFitBounds]="fitBounds"
+  ></div>
+
+  <div class="map-empty" *ngIf="!hasMarkers">
+    Nessuna posizione disponibile per le pizzerie selezionate.
+  </div>
+</div>

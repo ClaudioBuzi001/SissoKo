@@ -26,28 +26,51 @@ classDiagram
       city: pizzeria.city,
       phoneNumber: pizzeria.phoneNumber,
       openingHours: pizzeria.openingHours,
-      deliveryAvailable: pizzeria.deliveryAvailable
+      deliveryAvailable: pizzeria.deliveryAvailable,
+      latitude: pizzeria.latitude,
+      longitude: pizzeria.longitude
     })
     AppComponent : +name : ['', [Validators.required, Validators.maxLength(80)]],
       address: ['', [Validators.required, Validators.maxLength(120)]],
       city: ['', [Validators.required, Validators.maxLength(60)]],
       phoneNumber: ['', [Validators.required, Validators.maxLength(20)]],
       openingHours: ['', [Validators.required, Validators.maxLength(120)]],
-      deliveryAvailable: [false]
+      deliveryAvailable: [false],
+      latitude: [
+        null,
+        [
+          Validators.min(-90),
+          Validators.max(90)
+        ]
+      ],
+      longitude: [
+        null,
+        [
+          Validators.min(-180),
+          Validators.max(180)
+        ]
+      ]
     })
     AppComponent : +name : '',
       address: '',
       city: '',
       phoneNumber: '',
       openingHours: '',
-      deliveryAvailable: false
+      deliveryAvailable: false,
+      latitude: null,
+      longitude: null
     })
     AppComponent : +name : raw.name?.trim() ?? '',
       address: raw.address?.trim() ?? '',
       city: raw.city?.trim() ?? '',
       phoneNumber: raw.phoneNumber?.trim() ?? '',
       openingHours: raw.openingHours?.trim() ?? '',
-      deliveryAvailable: !!raw.deliveryAvailable
+      deliveryAvailable: !!raw.deliveryAvailable,
+      latitude: this.toNumberOrNull(raw.latitude),
+      longitude: this.toNumberOrNull(raw.longitude)
+    }
+    AppComponent : +latitude : this.toNumberOrNull(pizzeria.latitude),
+      longitude: this.toNumberOrNull(pizzeria.longitude)
     }
     AppComponent : +ngOnInit() : void
     AppComponent : +loadPizzerias() : Promise<void>
@@ -66,7 +89,10 @@ classDiagram
     AppComponent : -buildForm() : FormGroup
     AppComponent : -resetForm() : void
     AppComponent : -getPayloadFromForm() : PizzeriaPayload
+    AppComponent : -toNumberOrNull(unknown value) : number
+    AppComponent : -normalizePizzeria(Pizzeria pizzeria) : Pizzeria
     AppComponent --> Pizzeria
+    AppComponent --> PizzeriaMapComponent
     AppComponent --> PizzeriaPayload
     AppComponent --> PizzeriaService
     AppComponent --> SpinnerComponent
@@ -93,6 +119,8 @@ classDiagram
 - `- buildForm(nessun parametro) : FormGroup`
 - `- resetForm(nessun parametro) : void`
 - `- getPayloadFromForm(nessun parametro) : PizzeriaPayload`
+- `- toNumberOrNull(`unknown value`) : number`
+- `- normalizePizzeria(`Pizzeria pizzeria`) : Pizzeria`
 
 ---
 _Documento generato automaticamente. Modifica il file sorgente o lo script per personalizzare il contenuto._

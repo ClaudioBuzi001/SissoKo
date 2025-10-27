@@ -17,6 +17,8 @@ classDiagram
     Pizzeria : -phoneNumber : String
     Pizzeria : -openingHours : String
     Pizzeria : -deliveryAvailable : boolean
+    Pizzeria : -latitude : Double
+    Pizzeria : -longitude : Double
     Pizzeria : +getId() : String
     Pizzeria : +setId(String id) : void
     Pizzeria : +getName() : String
@@ -31,6 +33,10 @@ classDiagram
     Pizzeria : +setOpeningHours(String openingHours) : void
     Pizzeria : +isDeliveryAvailable() : boolean
     Pizzeria : +setDeliveryAvailable(boolean deliveryAvailable) : void
+    Pizzeria : +getLatitude() : Double
+    Pizzeria : +setLatitude(Double latitude) : void
+    Pizzeria : +getLongitude() : Double
+    Pizzeria : +setLongitude(Double longitude) : void
 ```
 
 
@@ -49,6 +55,10 @@ classDiagram
 - `+ setOpeningHours(`String openingHours`) : void`
 - `+ isDeliveryAvailable(nessun parametro) : boolean`
 - `+ setDeliveryAvailable(`boolean deliveryAvailable`) : void`
+- `+ getLatitude(nessun parametro) : Double`
+- `+ setLatitude(`Double latitude`) : void`
+- `+ getLongitude(nessun parametro) : Double`
+- `+ setLongitude(`Double longitude`) : void`
 
 
 ---

@@ -3,11 +3,13 @@
 - Percorso sorgente: `frontend/pizzeria-app/src/app/pizzerias`
 - Entità incluse:
 - [Pizzeria](../entities/Pizzeria.md)
+- [PizzeriaMapComponent](../entities/PizzeriaMapComponent.md)
 - [PizzeriaService](../entities/PizzeriaService.md)
 
 ## Relazioni interne
 ```mermaid
 graph TD
+    PizzeriaMapComponent --> Pizzeria
     PizzeriaService --> Pizzeria
 ```
 

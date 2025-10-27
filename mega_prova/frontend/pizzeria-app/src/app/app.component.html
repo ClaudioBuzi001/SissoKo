@@ -43,6 +43,9 @@
         <p class="details">
           <span class="phone">{{ pizzeria.phoneNumber }}</span>
           <span class="hours">{{ pizzeria.openingHours }}</span>
+          <span class="coords" *ngIf="pizzeria.latitude !== null && pizzeria.longitude !== null">
+            {{ pizzeria.latitude | number : '1.4-4' }}, {{ pizzeria.longitude | number : '1.4-4' }}
+          </span>
         </p>
         <div class="result-actions">
           <button
@@ -84,6 +87,11 @@
         Nessuna pizzeria trovata.
       </li>
     </ul>
+
+    <section class="map-section">
+      <h2>Mappa delle pizzerie</h2>
+      <app-pizzeria-map [pizzerias]="filtered"></app-pizzeria-map>
+    </section>
   </section>
 
   <section class="card management-card">
@@ -152,6 +160,35 @@
           formControlName="deliveryAvailable"
         />
         <label for="deliveryAvailable">Consegna a domicilio disponibile</label>
+      </div>
+
+      <div class="form-field-inline">
+        <div class="form-field">
+          <label for="latitude">Latitudine</label>
+          <input
+            id="latitude"
+            type="number"
+            formControlName="latitude"
+            step="0.0001"
+            placeholder="es. 45.4642"
+          />
+          <div class="field-error" *ngIf="isFieldInvalid('latitude')">
+            Valore compreso tra -90 e 90.
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="longitude">Longitudine</label>
+          <input
+            id="longitude"
+            type="number"
+            formControlName="longitude"
+            step="0.0001"
+            placeholder="es. 9.1900"
+          />
+          <div class="field-error" *ngIf="isFieldInvalid('longitude')">
+            Valore compreso tra -180 e 180.
+          </div>
+        </div>
       </div>
 
       <div class="form-actions">

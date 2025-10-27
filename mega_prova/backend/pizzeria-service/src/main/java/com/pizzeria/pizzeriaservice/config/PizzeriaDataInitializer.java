@@ -31,7 +31,9 @@ public class PizzeriaDataInitializer implements CommandLineRunner {
                         "Milano",
                         "+39 02 1234 5678",
                         "Lun-Dom 12:00-23:00",
-                        true
+                        true,
+                        45.4642,
+                        9.19
                 ),
                 new Pizzeria(
                         "Forno Romano",
@@ -39,7 +41,9 @@ public class PizzeriaDataInitializer implements CommandLineRunner {
                         "Roma",
                         "+39 06 9876 5432",
                         "Mar-Dom 11:30-22:30",
-                        true
+                        true,
+                        41.8986,
+                        12.4768
                 ),
                 new Pizzeria(
                         "Sapori di Napoli",
@@ -47,7 +51,9 @@ public class PizzeriaDataInitializer implements CommandLineRunner {
                         "Torino",
                         "+39 011 2468 1357",
                         "Lun-Sab 12:00-21:30",
-                        false
+                        false,
+                        45.0703,
+                        7.6869
                 )
         );
 

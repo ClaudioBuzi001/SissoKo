@@ -42,6 +42,7 @@ La documentazione è generata automaticamente via `node scripts/generate-docs.js
 ### Frontend (entità)
 - [AppComponent](docs/frontend/entities/AppComponent.md)
 - [Pizzeria](docs/frontend/entities/Pizzeria.md)
+- [PizzeriaMapComponent](docs/frontend/entities/PizzeriaMapComponent.md)
 - [PizzeriaService](docs/frontend/entities/PizzeriaService.md)
 - [SpinnerComponent](docs/frontend/entities/SpinnerComponent.md)
 - [Toast](docs/frontend/entities/Toast.md)
