@@ -1,19 +1,153 @@
 <div class="toolbar">
-  <span class="logo">Pizzeria</span>
+  <span class="logo">{{ title }}</span>
 </div>
 
 <main class="content">
-  <section class="search-card">
+  <section class="card search-card">
     <h1>Trova la tua pizzeria preferita</h1>
-    <form>
+    <form class="search-form" (submit)="onSearchSubmit($event)">
       <label class="visually-hidden" for="search">Ricerca pizzeria</label>
       <input
         id="search"
         type="search"
         placeholder="Cerca per nome o città..."
         aria-label="Cerca per nome o città"
+        [value]="searchTerm"
+        (input)="onSearchTermChange($any($event.target).value)"
       />
-      <button type="button">Cerca</button>
+      <button type="submit">Cerca</button>
+    </form>
+
+    <div class="state" *ngIf="loading">Caricamento in corso...</div>
+    <div class="state error" *ngIf="!loading && error">{{ error }}</div>
+
+    <ul class="results" *ngIf="!loading && !error">
+      <li *ngFor="let pizzeria of filtered; trackBy: trackById" class="result-item">
+        <header class="result-header">
+          <h2>{{ pizzeria.name }}</h2>
+          <span class="badge" [class.badge--inactive]="!pizzeria.deliveryAvailable">
+            {{ pizzeria.deliveryAvailable ? 'Consegna disponibile' : 'Solo asporto' }}
+          </span>
+        </header>
+        <p class="meta">
+          <span>{{ pizzeria.address }}</span>
+          <span>{{ pizzeria.city }}</span>
+        </p>
+        <p class="details">
+          <span class="phone">{{ pizzeria.phoneNumber }}</span>
+          <span class="hours">{{ pizzeria.openingHours }}</span>
+        </p>
+        <div class="result-actions">
+          <button
+            type="button"
+            class="secondary"
+            (click)="startEdit(pizzeria)"
+            [disabled]="submitLoading || deletingId === pizzeria.id"
+          >
+            Modifica
+          </button>
+          <button
+            type="button"
+            class="danger"
+            (click)="onDelete(pizzeria)"
+            [disabled]="submitLoading || deletingId === pizzeria.id"
+          >
+            {{ deletingId === pizzeria.id ? 'Eliminazione...' : 'Elimina' }}
+          </button>
+        </div>
+      </li>
+      <li class="state empty" *ngIf="filtered.length === 0">
+        Nessuna pizzeria trovata.
+      </li>
+    </ul>
+  </section>
+
+  <section class="card management-card">
+    <header class="management-header">
+      <div>
+        <h2>{{ editingId ? 'Modifica pizzeria' : 'Aggiungi nuova pizzeria' }}</h2>
+        <p class="management-subtitle">
+          Compila i campi obbligatori contrassegnati con *
+        </p>
+      </div>
+      <button
+        type="button"
+        class="secondary"
+        (click)="startCreate()"
+        [disabled]="submitLoading && !editingId"
+      >
+        Nuova pizzeria
+      </button>
+    </header>
+
+    <form class="crud-form" [formGroup]="form" (ngSubmit)="onSubmit()">
+      <div class="form-field">
+        <label for="name">Nome *</label>
+        <input id="name" type="text" formControlName="name" maxlength="80" />
+        <div class="field-error" *ngIf="isFieldInvalid('name')">
+          Inserisci il nome (max 80 caratteri).
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label for="address">Indirizzo *</label>
+        <input id="address" type="text" formControlName="address" maxlength="120" />
+        <div class="field-error" *ngIf="isFieldInvalid('address')">
+          Inserisci l'indirizzo (max 120 caratteri).
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label for="city">Città *</label>
+        <input id="city" type="text" formControlName="city" maxlength="60" />
+        <div class="field-error" *ngIf="isFieldInvalid('city')">
+          Inserisci la città (max 60 caratteri).
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label for="phoneNumber">Telefono *</label>
+        <input id="phoneNumber" type="text" formControlName="phoneNumber" maxlength="20" />
+        <div class="field-error" *ngIf="isFieldInvalid('phoneNumber')">
+          Inserisci un numero di telefono valido (max 20 caratteri).
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label for="openingHours">Orari di apertura *</label>
+        <input id="openingHours" type="text" formControlName="openingHours" maxlength="120" />
+        <div class="field-error" *ngIf="isFieldInvalid('openingHours')">
+          Inserisci gli orari di apertura (max 120 caratteri).
+        </div>
+      </div>
+
+      <div class="form-field checkbox">
+        <input
+          id="deliveryAvailable"
+          type="checkbox"
+          formControlName="deliveryAvailable"
+        />
+        <label for="deliveryAvailable">Consegna a domicilio disponibile</label>
+      </div>
+
+      <div class="form-feedback" *ngIf="submitError || successMessage">
+        <div class="state error" *ngIf="submitError">{{ submitError }}</div>
+        <div class="state success" *ngIf="successMessage">{{ successMessage }}</div>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" [disabled]="submitLoading">
+          {{ submitLoading ? 'Salvataggio in corso...' : editingId ? 'Aggiorna pizzeria' : 'Aggiungi pizzeria' }}
+        </button>
+        <button
+          type="button"
+          class="secondary"
+          (click)="startCreate()"
+          [disabled]="submitLoading"
+        >
+          Annulla modifica
+        </button>
+      </div>
     </form>
   </section>
 </main>
