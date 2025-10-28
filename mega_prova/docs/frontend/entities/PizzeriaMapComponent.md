@@ -11,9 +11,12 @@
 classDiagram
     class PizzeriaMapComponent
     PizzeriaMapComponent : +attribution : '&copy
-    PizzeriaMapComponent : +zoom : 6,
-    center: latLng(41.8719, 12.5674) // centro Italia
-  }
+    PizzeriaMapComponent : +detectRetina : true
+		})
+	],
+	zoom: 6,
+	center: latLng(41.8719, 12.5674) // centro Italia
+}
     PizzeriaMapComponent : +layers : Layer[]
     PizzeriaMapComponent : +fitBounds : LatLngBounds
     PizzeriaMapComponent : +hasMarkers : false

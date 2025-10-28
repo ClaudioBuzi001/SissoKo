@@ -21,6 +21,13 @@ classDiagram
     AppComponent : +submitLoading : false
     AppComponent : +deletingId : string | null
     AppComponent : +pendingDeleteId : string | null
+    AppComponent : -revealTimers : Array<ReturnType<typeof setTimeout>>
+    AppComponent : +duration : 900,
+              easing: 'cubic-bezier(0.19, 1, 0.22, 1)',
+              delay: index * 80,
+              fill: 'forwards'
+            }
+          )
     AppComponent : +name : pizzeria.name,
       address: pizzeria.address,
       city: pizzeria.city,
@@ -73,6 +80,8 @@ classDiagram
       longitude: this.toNumberOrNull(pizzeria.longitude)
     }
     AppComponent : +ngOnInit() : void
+    AppComponent : +ngAfterViewInit() : void
+    AppComponent : +ngOnDestroy() : void
     AppComponent : +loadPizzerias() : Promise<void>
     AppComponent : +onSearchTermChange(string term) : void
     AppComponent : +onSearchSubmit(Event event) : void
@@ -103,6 +112,8 @@ classDiagram
 
 ## Metodi
 - `+ ngOnInit(nessun parametro) : void`
+- `+ ngAfterViewInit(nessun parametro) : void`
+- `+ ngOnDestroy(nessun parametro) : void`
 - `+ loadPizzerias(nessun parametro) : Promise<void>`
 - `+ onSearchTermChange(`string term`) : void`
 - `+ onSearchSubmit(`Event event`) : void`
