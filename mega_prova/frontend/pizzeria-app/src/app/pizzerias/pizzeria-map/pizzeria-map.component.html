@@ -1,4 +1,7 @@
 <div class="map-wrapper">
+  <div class="map-holo"></div>
+  <div class="map-holo map-holo--alt"></div>
+
   <div
     class="map"
     leaflet
@@ -6,6 +9,11 @@
     [leafletLayers]="layers"
     [leafletFitBounds]="fitBounds"
   ></div>
+
+  <div class="map-grid" aria-hidden="true">
+    <div class="map-grid__line map-grid__line--h"></div>
+    <div class="map-grid__line map-grid__line--v"></div>
+  </div>
 
   <div class="map-empty" *ngIf="!hasMarkers">
     Nessuna posizione disponibile per le pizzerie selezionate.

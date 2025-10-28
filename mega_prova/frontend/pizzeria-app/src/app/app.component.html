@@ -1,214 +1,251 @@
-<div class="toolbar">
-  <span class="logo">{{ title }}</span>
-</div>
+<div class="cyber-app">
+  <div class="cyber-background">
+    <div class="cyber-grid"></div>
+    <div class="cyber-grid cyber-grid--shift"></div>
+    <div class="cyber-glow cyber-glow--pink"></div>
+    <div class="cyber-glow cyber-glow--cyan"></div>
+    <div class="cyber-noise"></div>
+  </div>
 
-<app-toast-container></app-toast-container>
+  <header class="toolbar" #revealEl data-reveal>
+    <div class="toolbar__brand">
+      <span class="logo glitch" [attr.data-text]="title">{{ title }}</span>
+      <span class="logo-subtitle">Synthwave Slice Tracker</span>
+    </div>
+    <div class="toolbar__status">
+      <span class="status-pip"></span>
+      <span>system nominal</span>
+    </div>
+  </header>
 
-<main class="content">
-  <section class="card search-card">
-    <h1>Trova la tua pizzeria preferita</h1>
-    <form class="search-form" (submit)="onSearchSubmit($event)">
-      <label class="visually-hidden" for="search">Ricerca pizzeria</label>
-      <input
-        id="search"
-        type="search"
-        placeholder="Cerca per nome o città..."
-        aria-label="Cerca per nome o città"
-        [value]="searchTerm"
-        (input)="onSearchTermChange($any($event.target).value)"
-      />
-      <button type="submit" [disabled]="loading">
-        <ng-container *ngIf="loading; else searchLabel">
-          <app-spinner [inline]="true" ariaLabel="Ricerca in corso"></app-spinner>
-        </ng-container>
-        <ng-template #searchLabel> Cerca </ng-template>
-      </button>
-    </form>
+  <app-toast-container></app-toast-container>
 
-    <div class="state" *ngIf="loading">Caricamento in corso...</div>
-    <div class="state error" *ngIf="!loading && error">{{ error }}</div>
-
-    <ul class="results" *ngIf="!loading && !error">
-      <li *ngFor="let pizzeria of filtered; trackBy: trackById" class="result-item">
-        <header class="result-header">
-          <h2>{{ pizzeria.name }}</h2>
-          <span class="badge" [class.badge--inactive]="!pizzeria.deliveryAvailable">
-            {{ pizzeria.deliveryAvailable ? 'Consegna disponibile' : 'Solo asporto' }}
-          </span>
-        </header>
-        <p class="meta">
-          <span>{{ pizzeria.address }}</span>
-          <span>{{ pizzeria.city }}</span>
-        </p>
-        <p class="details">
-          <span class="phone">{{ pizzeria.phoneNumber }}</span>
-          <span class="hours">{{ pizzeria.openingHours }}</span>
-          <span class="coords" *ngIf="pizzeria.latitude !== null && pizzeria.longitude !== null">
-            {{ pizzeria.latitude | number : '1.4-4' }}, {{ pizzeria.longitude | number : '1.4-4' }}
-          </span>
-        </p>
-        <div class="result-actions">
-          <button
-            type="button"
-            class="secondary"
-            (click)="startEdit(pizzeria)"
-            [disabled]="submitLoading || deletingId === pizzeria.id"
-          >
-            Modifica
-          </button>
-          <button
-            type="button"
-            class="danger"
-            (click)="requestDelete(pizzeria)"
-            [disabled]="submitLoading || deletingId === pizzeria.id"
-          >
-            {{ pendingDeleteId === pizzeria.id ? 'Annulla' : 'Elimina' }}
-          </button>
-        </div>
-        <div class="result-confirm" *ngIf="pendingDeleteId === pizzeria.id">
-          <span>Confermare l'eliminazione?</span>
-          <button
-            type="button"
-            class="danger"
-            (click)="confirmDelete(pizzeria)"
-            [disabled]="deletingId === pizzeria.id"
-          >
-            <ng-container *ngIf="deletingId === pizzeria.id; else confirmLabel">
-              <app-spinner [inline]="true" ariaLabel="Eliminazione in corso"></app-spinner>
-            </ng-container>
-            <ng-template #confirmLabel>Conferma</ng-template>
-          </button>
-          <button type="button" class="secondary" (click)="cancelDelete()" [disabled]="deletingId === pizzeria.id">
-            Annulla
-          </button>
-        </div>
-      </li>
-      <li class="state empty" *ngIf="filtered.length === 0">
-        Nessuna pizzeria trovata.
-      </li>
-    </ul>
-
-    <section class="map-section">
-      <h2>Mappa delle pizzerie</h2>
-      <app-pizzeria-map [pizzerias]="filtered"></app-pizzeria-map>
-    </section>
-  </section>
-
-  <section class="card management-card">
-    <header class="management-header">
-      <div>
-        <h2>{{ editingId ? 'Modifica pizzeria' : 'Aggiungi nuova pizzeria' }}</h2>
-        <p class="management-subtitle">
-          Compila i campi obbligatori contrassegnati con *
+  <main class="content">
+    <section class="card search-card hologram-card" #revealEl data-reveal>
+      <div class="card-head">
+        <span class="card-label">modalità ricerca</span>
+        <h1 class="hero-title glitch" data-text="Trova la tua pizzeria preferita">
+          Trova la tua pizzeria preferita
+        </h1>
+        <p class="hero-subtitle">
+          Interroga la rete neon e localizza in tempo reale le pizzerie più audaci del sistema.
         </p>
       </div>
-      <button
-        type="button"
-        class="secondary"
-        (click)="startCreate()"
-        [disabled]="submitLoading && !editingId"
-      >
-        Nuova pizzeria
-      </button>
-    </header>
 
-    <form class="crud-form" [formGroup]="form" (ngSubmit)="onSubmit()">
-      <div class="form-field">
-        <label for="name">Nome *</label>
-        <input id="name" type="text" formControlName="name" maxlength="80" />
-        <div class="field-error" *ngIf="isFieldInvalid('name')">
-          Inserisci il nome (max 80 caratteri).
-        </div>
-      </div>
-
-      <div class="form-field">
-        <label for="address">Indirizzo *</label>
-        <input id="address" type="text" formControlName="address" maxlength="120" />
-        <div class="field-error" *ngIf="isFieldInvalid('address')">
-          Inserisci l'indirizzo (max 120 caratteri).
-        </div>
-      </div>
-
-      <div class="form-field">
-        <label for="city">Città *</label>
-        <input id="city" type="text" formControlName="city" maxlength="60" />
-        <div class="field-error" *ngIf="isFieldInvalid('city')">
-          Inserisci la città (max 60 caratteri).
-        </div>
-      </div>
-
-      <div class="form-field">
-        <label for="phoneNumber">Telefono *</label>
-        <input id="phoneNumber" type="text" formControlName="phoneNumber" maxlength="20" />
-        <div class="field-error" *ngIf="isFieldInvalid('phoneNumber')">
-          Inserisci un numero di telefono valido (max 20 caratteri).
-        </div>
-      </div>
-
-      <div class="form-field">
-        <label for="openingHours">Orari di apertura *</label>
-        <input id="openingHours" type="text" formControlName="openingHours" maxlength="120" />
-        <div class="field-error" *ngIf="isFieldInvalid('openingHours')">
-          Inserisci gli orari di apertura (max 120 caratteri).
-        </div>
-      </div>
-
-      <div class="form-field checkbox">
+      <form class="search-form" (submit)="onSearchSubmit($event)">
+        <label class="visually-hidden" for="search">Ricerca pizzeria</label>
         <input
-          id="deliveryAvailable"
-          type="checkbox"
-          formControlName="deliveryAvailable"
+          id="search"
+          type="search"
+          placeholder="Cerca per nome o città..."
+          aria-label="Cerca per nome o città"
+          [value]="searchTerm"
+          (input)="onSearchTermChange($any($event.target).value)"
         />
-        <label for="deliveryAvailable">Consegna a domicilio disponibile</label>
-      </div>
-
-      <div class="form-field-inline">
-        <div class="form-field">
-          <label for="latitude">Latitudine</label>
-          <input
-            id="latitude"
-            type="number"
-            formControlName="latitude"
-            step="0.0001"
-            placeholder="es. 45.4642"
-          />
-          <div class="field-error" *ngIf="isFieldInvalid('latitude')">
-            Valore compreso tra -90 e 90.
-          </div>
-        </div>
-        <div class="form-field">
-          <label for="longitude">Longitudine</label>
-          <input
-            id="longitude"
-            type="number"
-            formControlName="longitude"
-            step="0.0001"
-            placeholder="es. 9.1900"
-          />
-          <div class="field-error" *ngIf="isFieldInvalid('longitude')">
-            Valore compreso tra -180 e 180.
-          </div>
-        </div>
-      </div>
-
-      <div class="form-actions">
-        <button type="submit" [disabled]="submitLoading">
-          <ng-container *ngIf="submitLoading; else submitLabel">
-            <app-spinner ariaLabel="Salvataggio in corso"></app-spinner>
+        <button type="submit" [disabled]="loading">
+          <ng-container *ngIf="loading; else searchLabel">
+            <app-spinner [inline]="true" ariaLabel="Ricerca in corso"></app-spinner>
           </ng-container>
-          <ng-template #submitLabel>
-            {{ editingId ? 'Aggiorna pizzeria' : 'Aggiungi pizzeria' }}
-          </ng-template>
+          <ng-template #searchLabel> Scansiona </ng-template>
         </button>
+      </form>
+
+      <div class="state" *ngIf="loading">Caricamento in corso...</div>
+      <div class="state error" *ngIf="!loading && error">{{ error }}</div>
+
+      <ul class="results" *ngIf="!loading && !error">
+        <li *ngFor="let pizzeria of filtered; trackBy: trackById" class="result-item">
+          <div class="result-holo"></div>
+          <header class="result-header">
+            <div>
+              <h2>{{ pizzeria.name }}</h2>
+              <p class="result-coords" *ngIf="pizzeria.latitude !== null && pizzeria.longitude !== null">
+                {{ pizzeria.latitude | number : '1.4-4' }}, {{ pizzeria.longitude | number : '1.4-4' }}
+              </p>
+            </div>
+            <span class="badge" [class.badge--inactive]="!pizzeria.deliveryAvailable">
+              {{ pizzeria.deliveryAvailable ? 'Consegna disponibile' : 'Solo asporto' }}
+            </span>
+          </header>
+
+          <div class="meta">
+            <span>{{ pizzeria.address }}</span>
+            <span>{{ pizzeria.city }}</span>
+          </div>
+
+          <div class="details">
+            <span class="phone">{{ pizzeria.phoneNumber }}</span>
+            <span class="hours">{{ pizzeria.openingHours }}</span>
+          </div>
+
+          <div class="result-actions">
+            <button
+              type="button"
+              class="secondary"
+              (click)="startEdit(pizzeria)"
+              [disabled]="submitLoading || deletingId === pizzeria.id"
+            >
+              Modifica
+            </button>
+            <button
+              type="button"
+              class="danger"
+              (click)="requestDelete(pizzeria)"
+              [disabled]="submitLoading || deletingId === pizzeria.id"
+            >
+              {{ pendingDeleteId === pizzeria.id ? 'Annulla' : 'Elimina' }}
+            </button>
+          </div>
+
+          <div class="result-confirm" *ngIf="pendingDeleteId === pizzeria.id">
+            <span>Confermare l'eliminazione?</span>
+            <button
+              type="button"
+              class="danger"
+              (click)="confirmDelete(pizzeria)"
+              [disabled]="deletingId === pizzeria.id"
+            >
+              <ng-container *ngIf="deletingId === pizzeria.id; else confirmLabel">
+                <app-spinner [inline]="true" ariaLabel="Eliminazione in corso"></app-spinner>
+              </ng-container>
+              <ng-template #confirmLabel>Conferma</ng-template>
+            </button>
+            <button type="button" class="secondary" (click)="cancelDelete()" [disabled]="deletingId === pizzeria.id">
+              Annulla
+            </button>
+          </div>
+        </li>
+        <li class="state empty" *ngIf="filtered.length === 0">
+          Nessuna pizzeria trovata.
+        </li>
+      </ul>
+
+      <section class="map-section hologram-panel" #revealEl data-reveal>
+        <div class="map-header">
+          <span class="card-label">satellite feed</span>
+        </div>
+        <h2>Mappa delle pizzerie</h2>
+        <app-pizzeria-map [pizzerias]="filtered"></app-pizzeria-map>
+      </section>
+    </section>
+
+    <section class="card management-card hologram-card" #revealEl data-reveal>
+      <header class="management-header">
+        <div>
+          <span class="card-label">{{ editingId ? 'protocollo update' : 'protocollo input' }}</span>
+          <h2>{{ editingId ? 'Modifica pizzeria' : 'Aggiungi nuova pizzeria' }}</h2>
+          <p class="management-subtitle">
+            Compila i campi obbligatori contrassegnati con *
+          </p>
+        </div>
         <button
           type="button"
           class="secondary"
           (click)="startCreate()"
-          [disabled]="submitLoading"
+          [disabled]="submitLoading && !editingId"
         >
-          Annulla modifica
+          Nuova pizzeria
         </button>
-      </div>
-    </form>
-  </section>
-</main>
+      </header>
+
+      <form class="crud-form" [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="form-field">
+          <label for="name">Nome *</label>
+          <input id="name" type="text" formControlName="name" maxlength="80" />
+          <div class="field-error" *ngIf="isFieldInvalid('name')">
+            Inserisci il nome (max 80 caratteri).
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="address">Indirizzo *</label>
+          <input id="address" type="text" formControlName="address" maxlength="120" />
+          <div class="field-error" *ngIf="isFieldInvalid('address')">
+            Inserisci l'indirizzo (max 120 caratteri).
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="city">Città *</label>
+          <input id="city" type="text" formControlName="city" maxlength="60" />
+          <div class="field-error" *ngIf="isFieldInvalid('city')">
+            Inserisci la città (max 60 caratteri).
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="phoneNumber">Telefono *</label>
+          <input id="phoneNumber" type="text" formControlName="phoneNumber" maxlength="20" />
+          <div class="field-error" *ngIf="isFieldInvalid('phoneNumber')">
+            Inserisci un numero di telefono valido (max 20 caratteri).
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="openingHours">Orari di apertura *</label>
+          <input id="openingHours" type="text" formControlName="openingHours" maxlength="120" />
+          <div class="field-error" *ngIf="isFieldInvalid('openingHours')">
+            Inserisci gli orari di apertura (max 120 caratteri).
+          </div>
+        </div>
+
+        <div class="form-field checkbox">
+          <input
+            id="deliveryAvailable"
+            type="checkbox"
+            formControlName="deliveryAvailable"
+          />
+          <label for="deliveryAvailable">Consegna a domicilio disponibile</label>
+        </div>
+
+        <div class="form-field-inline">
+          <div class="form-field">
+            <label for="latitude">Latitudine</label>
+            <input
+              id="latitude"
+              type="number"
+              formControlName="latitude"
+              step="0.0001"
+              placeholder="es. 45.4642"
+            />
+            <div class="field-error" *ngIf="isFieldInvalid('latitude')">
+              Valore compreso tra -90 e 90.
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="longitude">Longitudine</label>
+            <input
+              id="longitude"
+              type="number"
+              formControlName="longitude"
+              step="0.0001"
+              placeholder="es. 9.1900"
+            />
+            <div class="field-error" *ngIf="isFieldInvalid('longitude')">
+              Valore compreso tra -180 e 180.
+            </div>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" [disabled]="submitLoading">
+            <ng-container *ngIf="submitLoading; else submitLabel">
+              <app-spinner ariaLabel="Salvataggio in corso"></app-spinner>
+            </ng-container>
+            <ng-template #submitLabel>
+              {{ editingId ? 'Aggiorna pizzeria' : 'Aggiungi pizzeria' }}
+            </ng-template>
+          </button>
+          <button
+            type="button"
+            class="secondary"
+            (click)="startCreate()"
+            [disabled]="submitLoading"
+          >
+            Annulla modifica
+          </button>
+        </div>
+      </form>
+    </section>
+  </main>
+</div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, QueryList, ViewChildren } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
@@ -26,7 +26,9 @@ import { PizzeriaMapComponent } from './pizzerias/pizzeria-map/pizzeria-map.comp
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
+  @ViewChildren('revealEl') readonly revealElements!: QueryList<ElementRef<HTMLElement>>;
+
   title = 'Pizzeria';
   searchTerm = '';
   loading = false;
@@ -38,6 +40,7 @@ export class AppComponent implements OnInit {
   submitLoading = false;
   deletingId: string | null = null;
   pendingDeleteId: string | null = null;
+  private revealTimers: Array<ReturnType<typeof setTimeout>> = [];
 
   constructor(
     private readonly pizzeriaService: PizzeriaService,
@@ -50,6 +53,53 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     void this.loadPizzerias();
     this.resetForm();
+  }
+
+  ngAfterViewInit(): void {
+    const elements = this.revealElements?.toArray().map((ref) => ref.nativeElement) ?? [];
+
+    if (typeof window === 'undefined' || elements.length === 0) {
+      return;
+    }
+
+    elements.forEach((element, index) => {
+      const timer = setTimeout(() => {
+        if (typeof element.animate === 'function') {
+          const animation = element.animate(
+            [
+              { opacity: 0, transform: 'translate3d(0, 40px, 0)' },
+              { opacity: 1, transform: 'translate3d(0, 0, 0)' }
+            ],
+            {
+              duration: 900,
+              easing: 'cubic-bezier(0.19, 1, 0.22, 1)',
+              delay: index * 80,
+              fill: 'forwards'
+            }
+          );
+
+          void animation.finished
+            .then(() => {
+              element.style.opacity = '1';
+              element.style.transform = 'translate3d(0, 0, 0)';
+            })
+            .catch(() => {
+              element.style.opacity = '1';
+              element.style.transform = 'translate3d(0, 0, 0)';
+            });
+        } else {
+          element.style.opacity = '1';
+          element.style.transform = 'translate3d(0, 0, 0)';
+        }
+      }, index * 100);
+
+      this.revealTimers.push(timer);
+    });
+  }
+
+  ngOnDestroy(): void {
+    this.revealTimers.forEach((timer) => clearTimeout(timer));
+    this.revealTimers = [];
   }
 
   async loadPizzerias(): Promise<void> {

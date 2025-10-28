@@ -2,21 +2,17 @@ import { NgIf } from '@angular/common';
 import { Component, Input, OnChanges } from '@angular/core';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import * as L from 'leaflet';
-import { icon, latLng, LatLngBounds, Layer, marker, tileLayer } from 'leaflet';
+import { divIcon, latLng, LatLngBounds, Layer, marker, tileLayer } from 'leaflet';
 
 import { Pizzeria } from '../pizzeria.model';
 
-const defaultIcon = icon({
-  iconRetinaUrl: 'assets/leaflet/marker-icon-2x.png',
-  iconUrl: 'assets/leaflet/marker-icon.png',
-  shadowUrl: 'assets/leaflet/marker-shadow.png',
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
-  popupAnchor: [1, -28],
-  shadowSize: [41, 41]
+const neonMarker = divIcon({
+	className: 'neon-marker',
+	html: '<span class="neon-marker__glow"></span><span class="neon-marker__core"></span>',
+	iconSize: [32, 32],
+	iconAnchor: [16, 16],
+	popupAnchor: [0, -20]
 });
-
-L.Marker.prototype.options.icon = defaultIcon;
 
 const FALLBACK_BOUNDS = L.latLngBounds([35.0, 6.0], [47.5, 18.5]);
 
@@ -31,15 +27,17 @@ export class PizzeriaMapComponent implements OnChanges {
   @Input() pizzerias: Pizzeria[] = [];
 
   readonly options = {
-    maxZoom: 18,
-    layers: [
-      tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; OpenStreetMap contributors'
-      })
-    ],
-    zoom: 6,
-    center: latLng(41.8719, 12.5674) // centro Italia
-  };
+	maxZoom: 18,
+	minZoom: 3,
+	layers: [
+		tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+			attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
+			detectRetina: true
+		})
+	],
+	zoom: 6,
+	center: latLng(41.8719, 12.5674) // centro Italia
+};
 
   layers: Layer[] = [];
   fitBounds: LatLngBounds = FALLBACK_BOUNDS;
@@ -54,7 +52,8 @@ export class PizzeriaMapComponent implements OnChanges {
       .filter((pizzeria) => this.hasCoordinates(pizzeria))
       .map((pizzeria) =>
         marker([pizzeria.latitude as number, pizzeria.longitude as number], {
-          title: pizzeria.name
+          title: pizzeria.name,
+          icon: neonMarker
         }).bindPopup(this.buildPopupContent(pizzeria), { closeButton: false })
       );
 
