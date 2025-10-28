@@ -2,8 +2,9 @@ services:
   mongo:
     image: mongo:7
     restart: unless-stopped
+    # Bind Mongo only to localhost on the host to avoid exposing DB to the network
     ports:
-      - "27017:27017"
+      - "127.0.0.1:27017:27017"
     environment:
       MONGO_INITDB_DATABASE: pizzeria
     volumes:
